@@ -22,6 +22,9 @@ export const fold = (text: string) => text.normalize('NFD').replace(/\p{M}/gu, '
 /** Capitalised country and month words that collide with driver surnames; never read as bare surnames. */
 const NOT_SURNAMES = new Set(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December',
   'Ireland', 'England', 'France', 'Brazil', 'Japan', 'Italy', 'Spain', 'Monaco', 'Austria', 'Germany', 'Belgium', 'Holland', 'Canada', 'Mexico', 'Argentina', 'Portugal']);
+/** English words that are also F1DB surnames; ignored when they open a sentence before a lowercase word. */
+// Driver surnames that routinely open sentences in F1 prose ("Hunt", "Moss", "Pace", "Mass", "Hill") are deliberately absent.
+const COMMON_WORD_SURNAMES = new Set(['Speed', 'Will', 'Rose', 'Bell', 'Young', 'Long', 'Brown', 'White', 'Green', 'King', 'Stuck', 'Gray', 'Grey', 'Bird', 'Cross', 'Field']);
 const MONTHS = new Set(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']);
 const escapeRe =(text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 /** Surname as it appears in prose, from the F1DB slug: "elio-de-angelis" → "Angelis", "nelson-piquet-jr" → "Piquet". */
@@ -118,6 +121,9 @@ export class F1dbIndex {
       // "in Ireland" / "in March" are places and dates; "Innes Ireland" / "Stirling Ireland" are names.
       const afterCapital = i > 0 && /^\p{Lu}/u.test(words[i - 1].raw) && adjacent(words[i - 1], w);
       if (NOT_SURNAMES.has(w.raw) && !afterCapital) return;
+      // Sentence-initial common words that are also surnames ("Speed in the royal park") are words.
+      const sentenceInitial = i === 0 || /[.!?]\s*$/.test(text.normalize('NFC').slice(words[i - 1].end, w.at));
+      if (sentenceInitial && COMMON_WORD_SURNAMES.has(w.raw) && words[i + 1] && /^\p{Ll}/u.test(words[i + 1].raw)) return;
       const slugs = this.surnames.get(fold(w.raw));
       if (slugs) found.set(w.raw, slugs);
     });
@@ -136,9 +142,11 @@ export class F1dbIndex {
     // "ambiguous:<surname>", so evidence naming one Hill can never back a claim about another.
     let rest = text.normalize('NFC');
     for (const [mention, slugs] of this.mentionedDrivers(text)) {
-      keys.push(...(slugs.length > 1 && !mention.includes(' ') ? [`ambiguous:${fold(mention)}`] : slugs));
+      // A bare surname shared by several drivers, or that is also a team ("Williams", "Brabham"), is ambiguous.
+      const bare = !mention.includes(' ');
+      keys.push(...(bare && (slugs.length > 1 || this.isConstructorName(mention)) ? [`ambiguous:${fold(mention)}`] : slugs));
       // A full driver name ("Alain Prost", "Jack Brabham") is not also a mention of the team named after him.
-      if (mention.includes(' ')) rest = rest.replaceAll(mention, ' ');
+      if (!bare) rest = rest.replaceAll(mention, ' ');
     }
     // Constructors by name ("Ferrari", "Red Bull"), case-sensitive so "red" or "brabham" in prose are not teams.
     // A bare "Prost" or "Hill" matches both the driver and the team: deliberately ambiguous, so it fails closed.
@@ -150,11 +158,18 @@ export class F1dbIndex {
       if (new RegExp(pattern, 'u').test(rest)) keys.push(key);
     }
     if (locale === 'uk') {
-      const lower = text.normalize('NFC').toLowerCase();
-      for (const [form, key] of this.ukNames) if (new RegExp(`(?<![\\p{L}])${escapeRe(form.toLowerCase())}(?![\\p{L}])`, 'u').test(lower)) keys.push(key);
+      // Longest forms first, each consumed once found: "Айртона Сенни" is Ayrton Senna, not also a bare "Сенни".
+      let lower = text.normalize('NFC').toLowerCase();
+      for (const [form, key] of [...this.ukNames].sort((a, b) => b[0].length - a[0].length)) {
+        const re = new RegExp(`(?<![\\p{L}'’ʼ])${escapeRe(form.toLowerCase())}(?![\\p{L}'’ʼ])`, 'gu');
+        if (re.test(lower)) { keys.push(key); lower = lower.replace(re, ' '); }
+      }
     }
     return [...new Set(keys)];
   };
+
+  /** True when the word (case-sensitive) is the name of an F1DB constructor ("Williams", "Brabham"). */
+  isConstructorName = (word: string): boolean => this.constructorNames.some(([name]) => name === word);
 
   /**
    * Trusted canonical renderer for the editorial policy (StructuredRenderer). Only the winner and

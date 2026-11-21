@@ -123,13 +123,13 @@
  "src-05a991b7be3a": {
   "url": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
   "source_id": "src-05a991b7be3a",
-  "checked_at": "2026-11-16T11:22:04.382Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "5ef9d024c0a6b29af78595cf712d25e496638234a781882f66194d8d1e0597b9",
-  "bytes": 412401
+  "checked_at": "2026-11-17T00:13:07.245284+00:00",
+  "bytes_sha256": "e5e79fa834b7d5e364a78a7a9756cb71d4d967c7d10bdb97ef9f68437b18a8ab",
+  "bytes": 412401,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "48ef0b207c46facb281051200e9605686fe0c6abe15f7a321117f08e70401d19",
+  "text_chars": 1424
  },
  "src-0625e173881b": {
   "url": "https://www.formula1.com/en/latest/article/verstappen-beats-leclerc-and-perez-to-victory-in-action-packed-las-vegas.czJOEppYohzdjCwIugjwN",
@@ -145,13 +145,13 @@
  "src-062e4bc9df84": {
   "url": "https://www.fia.com/system/files/decision-document/2025_japanese_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_and_red_zone.pdf",
   "source_id": "src-062e4bc9df84",
-  "checked_at": "2026-11-16T11:22:05.376Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_japanese_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_and_red_zone.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "5a3416ffa78daee2bd8fa8cc0c5b163a48df895026cd4dd048c4cd66a169195c",
-  "bytes": 4045821
+  "checked_at": "2026-11-17T00:13:07.834152+00:00",
+  "bytes_sha256": "aff1230361e3581b426717f0d8fb5265301218d0b6fb0faada5b2460c9c3fc79",
+  "bytes": 4045821,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "50883e1a88e5ab9e4a95bb4c052ae4d2904585d2c7d45ec70b264b6cb76218cd",
+  "text_chars": 1917
  },
  "src-063f530ddc51": {
   "url": "https://www.formula1.com/en/latest/article/verstappen-stuns-with-maiden-win-in-spain.5fOZ6lEa2nGeQCXgG5VD2x",
@@ -178,13 +178,13 @@
  "src-067b0eebef11": {
   "url": "https://www.fia.com/sites/default/files/doc_1_-_2020_portuguese_grand_prix_-_circuit_map_0.pdf",
   "source_id": "src-067b0eebef11",
-  "checked_at": "2026-11-16T11:22:15.398Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/doc_1_-_2020_portuguese_grand_prix_-_circuit_map_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "9dca220e85637d090403e2ff066b0ea05ef7f61ff764a9fb1b00fa9627778be9",
-  "bytes": 513155
+  "checked_at": "2026-11-17T00:13:10.634751+00:00",
+  "bytes_sha256": "e907151a539db6ca406dab5a0ff6f6a60475bfbcc939ba4b6749c0c0150168d4",
+  "bytes": 513155,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "d8308d9363c6195b5f8b6a1a8d1ba14ac6a7054ad9b876e4c0987be26223a10a",
+  "text_chars": 318
  },
  "src-06c7c4ffc603": {
   "url": "https://www.formula1.com/en/latest/article/circuit-de-barcelona-catalunya-to-feature-new-configuration-for-2023-spanish.6ZQgemg7eOlAJbBtu56PHE",
@@ -253,13 +253,10 @@
  "src-0a89ac929e99": {
   "url": "https://www.fia.com/system/files/decision-document/2025_dutch_grand_prix_-_event_notes_-_circuit_map_pit_lane_map_emergency_exit_map_quarantine_zone_and_red_zones_.pdf",
   "source_id": "src-0a89ac929e99",
-  "checked_at": "2026-11-16T11:22:24.931Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_dutch_grand_prix_-_event_notes_-_circuit_map_pit_lane_map_emergency_exit_map_quarantine_zone_and_red_zones_.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "07cea57f742172181c82571405846c0256ab927571390a17f762cc35c8746920",
-  "bytes": 2250516
+  "checked_at": "2026-11-17T00:13:11.644567+00:00",
+  "outcome": "unreachable",
+  "http_status": null,
+  "error": "TimeoutError"
  },
  "src-0af1b49e0714": {
   "url": "https://www.motorsportmagazine.com/archive/article/january-1999/36/dont-fry-for-me/",
@@ -522,13 +519,13 @@
  "src-156f21f45328": {
   "url": "https://www.fia.com/sites/default/files/doc_1_-_2020_mugello_event_-_circuit_map_-_mugello_2.pdf",
   "source_id": "src-156f21f45328",
-  "checked_at": "2026-11-16T11:22:35.286Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/doc_1_-_2020_mugello_event_-_circuit_map_-_mugello_2.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "127faaba155d9cbd862be3f6f87adb32df371650601ef7370dae5ab05b4201b3",
-  "bytes": 733872
+  "checked_at": "2026-11-17T00:14:14.466566+00:00",
+  "bytes_sha256": "cf217272d9b44b41f87225557ae924baee8ab620bea845336867b35a5f87f6e9",
+  "bytes": 733872,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "99aebae4c420c6f853e00bb575560386047ef04f42c73a1b71565f41dd754998",
+  "text_chars": 1188
  },
  "src-18c4fbbe2d37": {
   "url": "https://www.motorsportmagazine.com/archive/article/november-1981/38/las-vegas-grand-prix-3/",
@@ -610,13 +607,13 @@
  "src-1a7439b14d54": {
   "url": "https://www.fia.com/system/files/decision-document/2025_hungarian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_quarantine_zone_and_red_zones.pdf",
   "source_id": "src-1a7439b14d54",
-  "checked_at": "2026-11-16T11:22:44.956Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_hungarian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_quarantine_zone_and_red_zones.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "cc165964a27abcc1285342d5e98ffd4db7e54afc4f2fa29554bad86089af26a5",
-  "bytes": 2454194
+  "checked_at": "2026-11-17T00:14:14.698377+00:00",
+  "bytes_sha256": "2c76642ef36cad71c0eadd8903173cb6bfc7e2c47d0bf9fc0264379139962120",
+  "bytes": 2454194,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "32107438a3dc7b616320f17cf031f13cde7f53206ccf891370d8b65b66cd8b76",
+  "text_chars": 2528
  },
  "src-1aa45e28788f": {
   "url": "https://www.motorsportmagazine.com/archive/article/june-1994/16/black-sunday/",
@@ -1086,13 +1083,13 @@
  "src-2e17b165b057": {
   "url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
   "source_id": "src-2e17b165b057",
-  "checked_at": "2026-11-16T11:22:55.406Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "55e8419df2c7977259f95e1645907d42f367254e6693f65e2f025df19d8b4cf2",
-  "bytes": 410454
+  "checked_at": "2026-11-17T00:14:17.165827+00:00",
+  "bytes_sha256": "d91d61779db31011098506302d2b875df2191498ca9b32fc3887f2e245d492a0",
+  "bytes": 410454,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "7abe8be4b236110950abb98d18228c101279c1380950a534d355eef916a47257",
+  "text_chars": 1561
  },
  "src-2ea9112d5fba": {
   "url": "https://www.formula1.com/en/results/1996/races/638/australia/race-result",
@@ -1300,13 +1297,13 @@
  "src-381e32329524": {
   "url": "https://www.fia.com/system/files/decision-document/2025_singapore_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_and_quarantine_zone.pdf",
   "source_id": "src-381e32329524",
-  "checked_at": "2026-11-16T11:23:05.252Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_singapore_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_and_quarantine_zone.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "bae5da4d03aa3f22b183639bc2ed04a0c302906a42f31daf4eb2e9f38114e095",
-  "bytes": 2447424
+  "checked_at": "2026-11-17T00:14:19.135680+00:00",
+  "bytes_sha256": "d36769fe74365d21594000c0bf4e9be4fccb4c30822678e166e89bdbad0a7625",
+  "bytes": 2447424,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "3d1f44aeefe0851b464dcd52113aef4c5c9baccc4c13607482f2a53fe234d994",
+  "text_chars": 2953
  },
  "src-388a6fc2566a": {
   "url": "https://commons.wikimedia.org/wiki/File:Circuito_de_Jerez_1994-2003.png",
@@ -1355,13 +1352,13 @@
  "src-395fbd1a4469": {
   "url": "https://driver61.com/wp-content/uploads/2020/10/Dijon-Prenois-Track-Map-Driver61.pdf",
   "source_id": "src-395fbd1a4469",
-  "checked_at": "2026-11-16T11:22:04.393Z",
-  "http_status": 200,
-  "final_url": "https://driver61.com/wp-content/uploads/2020/10/Dijon-Prenois-Track-Map-Driver61.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "5fcb2940673acfff3c613cba9a8027489e80ba3f916584969afe2475bb565aff",
-  "bytes": 370437
+  "checked_at": "2026-11-17T00:14:21.330190+00:00",
+  "bytes_sha256": "624c2776c8b286c304c91c30053ce315c77c282eb041197c5c80e4d385534634",
+  "bytes": 370437,
+  "pages": 1,
+  "outcome": "live_pdf_text",
+  "text_sha256": "b43491284b9a30582ab2a2a4ca61975420cec5f417516124051bcdc3e2b27687",
+  "text_chars": 625
  },
  "src-3976ecc6ee31": {
   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/paradise-lost-montjuic-and-the-1975-spanish-grand-prix/",
@@ -1703,13 +1700,13 @@
  "src-4554b5a1833d": {
   "url": "https://www.fia.com/system/files/decision-document/2025_bahrain_grand_prix_-_event_notes_-_circuit_map_v4.pdf",
   "source_id": "src-4554b5a1833d",
-  "checked_at": "2026-11-16T11:23:15.645Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_bahrain_grand_prix_-_event_notes_-_circuit_map_v4.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "35f5f071cf581896a0b5ed7c2142aa2784e3d362a2b07de412d2da7a320534c4",
-  "bytes": 503698
+  "checked_at": "2026-11-17T00:14:21.697209+00:00",
+  "bytes_sha256": "48a7838862ddd0258f52d7d3b4e67e316dc84d5f13e9839245bc24a3988e604d",
+  "bytes": 503698,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "4a001308a0e8ced26b5050ad6360fd0a12619eb1e493ec85644a53d081fcefb1",
+  "text_chars": 333
  },
  "src-46370b2f5cef": {
   "url": "https://www.formula1.com/en/racing/2025/qatar",
@@ -1802,13 +1799,13 @@
  "src-4be1ba409d6a": {
   "url": "https://www.fia.com/sites/default/files/decision-document/2021%20Russian%20Grand%20Prix%20-%20Circuit%20Map.pdf",
   "source_id": "src-4be1ba409d6a",
-  "checked_at": "2026-11-16T11:23:31.959Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/decision-document/2021%20Russian%20Grand%20Prix%20-%20Circuit%20Map.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "13579b719a659363b1732c15493d4e1e6a58e03474f7b3587ae2822af583409f",
-  "bytes": 629414
+  "checked_at": "2026-11-17T00:14:23.214119+00:00",
+  "bytes_sha256": "b7eb69fc8376f5aeacf371b17b4158ff67f7660d73f7d028008f095943ef75b9",
+  "bytes": 629414,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "c6defc70471cd32b8ca829387c0dc0a4ca0756b2f6c43aaf57274b59a6288121",
+  "text_chars": 332
  },
  "src-4c56933bc3bb": {
   "url": "https://www.motorsportmagazine.com/archive/article/december-1960/41/2nd-american-grand-prix/",
@@ -1857,13 +1854,13 @@
  "src-4ea462cf67db": {
   "url": "https://d24udp600h4lxn.cloudfront.net/dea/live/media/03-lotus-senna-uk-v9-web/03-lotus-senna-uk-v9-web.pdf",
   "source_id": "src-4ea462cf67db",
-  "checked_at": "2026-11-16T11:22:04.394Z",
-  "http_status": 200,
-  "final_url": "https://d24udp600h4lxn.cloudfront.net/dea/live/media/03-lotus-senna-uk-v9-web/03-lotus-senna-uk-v9-web.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "b17ffa7fa335617cbf3c26ad122f75e19fe80db71248fcb8346fdd5e47c223e2",
-  "bytes": 6558567
+  "checked_at": "2026-11-17T00:14:24.908974+00:00",
+  "bytes_sha256": "d05ace5d1bcdb2d63fe8a3ccf94df0cba98bf100e0c36a1ec66d6ba7125b7dfc",
+  "bytes": 6558567,
+  "pages": 16,
+  "outcome": "live_pdf_text",
+  "text_sha256": "68dbafcd978399fb6095966f2dd8a519ae0da79c7a114ff4ad8502fbd018d3a7",
+  "text_chars": 25961
  },
  "src-4efddb61f319": {
   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2006/races/14-turkey/race-results.yml",
@@ -2304,13 +2301,11 @@
  "src-6060ca0ec23f": {
   "url": "https://challengecupseries.com/wp-content/uploads/2016/05/201505MosportTrackMap.pdf",
   "source_id": "src-6060ca0ec23f",
-  "checked_at": "2026-11-16T11:22:04.396Z",
-  "http_status": 200,
-  "final_url": "https://challengecupseries.com/wp-content/uploads/2016/05/201505MosportTrackMap.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "4d2e3f9ab73cb5207660586c5b2cef467fd1324cc70ff78f5ab0c8c3fffcc82d",
-  "bytes": 16456
+  "checked_at": "2026-11-17T00:12:23.946721+00:00",
+  "bytes_sha256": "e504c3f3b540112d3f24dc4e1e45d008eafee1d498e14c9d77bd7b6b770205e1",
+  "bytes": 16456,
+  "pages": 1,
+  "outcome": "live_pdf_image_only"
  },
  "src-6060e31d61f9": {
   "url": "https://www.motorsportmagazine.com/archive/article/july-1972/34/the-belgian-formula-one-race/",
@@ -2348,13 +2343,13 @@
  "src-61ac619947f2": {
   "url": "https://www.fia.com/system/files/decision-document/2025_miami_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_zone_emergency_exits_and_red_zones_.pdf",
   "source_id": "src-61ac619947f2",
-  "checked_at": "2026-11-16T11:23:56.759Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_miami_grand_prix_-_event_notes_-_circuit_map_pit_lane_quarantine_zone_emergency_exits_and_red_zones_.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "dd744ea00b7300d8a62d16d31d0541852389e7de9e674c5e34275bd99ebb2118",
-  "bytes": 9702118
+  "checked_at": "2026-11-17T00:14:26.411515+00:00",
+  "bytes_sha256": "d6cad02032de20ce1eb797482480432ae0fc9d476fb436bb7206d5867968dcb4",
+  "bytes": 9702118,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "ee665c07f492bd051760f31f4c3a42919860be657f5df56c62fba88bfcc7d654",
+  "text_chars": 1549
  },
  "src-61f73b1934ed": {
   "url": "https://www.autosport.com/f1/news/the-full-verdict-from-the-fias-wmsc-4433046/4433046/",
@@ -2379,13 +2374,13 @@
  "src-630256191a15": {
   "url": "https://www.fia.com/system/files/decision-document/2025_chinese_grand_prix_-_event_notes_-_circuit_map_pit_lane_and_quarantine_zone.pdf",
   "source_id": "src-630256191a15",
-  "checked_at": "2026-11-16T11:23:57.385Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_chinese_grand_prix_-_event_notes_-_circuit_map_pit_lane_and_quarantine_zone.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "a0b11277ca980fb9248afe070c50dff28935497ea9f2d5ec981d38137dd9c3d7",
-  "bytes": 1180953
+  "checked_at": "2026-11-17T00:14:27.623380+00:00",
+  "bytes_sha256": "f52bb6941843f45927c22ea2ecf32df6697c9d34ef4c7f2b645082bf128272cd",
+  "bytes": 1180953,
+  "pages": 4,
+  "outcome": "live_pdf_text",
+  "text_sha256": "e4441f0a818a069a67e91e0115553cbf78335e722ed7c805381a06d6d81c718a",
+  "text_chars": 1285
  },
  "src-636e356b4110": {
   "url": "https://www.motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11/",
@@ -2520,13 +2515,13 @@
  "src-69eda46c60f3": {
   "url": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_map_red_zones_map.pdf",
   "source_id": "src-69eda46c60f3",
-  "checked_at": "2026-11-16T11:24:08.580Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_united_states_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_map_red_zones_map.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "e9f329486e2f378ead5fb93a81507c34d1b0ac13cdf69aa9cfe3d9358195072a",
-  "bytes": 2638592
+  "checked_at": "2026-11-17T00:14:29.243038+00:00",
+  "bytes_sha256": "7b7d350cb5ef5846e11127653eff51e5551d59a72a762745f07d960a42fc2bac",
+  "bytes": 2638592,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "5157a07cc390d56b83aa4c70af5e5e191e9f03241b4d2a3132e28773170d74c0",
+  "text_chars": 2675
  },
  "src-6a05c6778c6b": {
   "url": "https://www.formula1.com/en/racing/2025/miami",
@@ -2694,13 +2689,13 @@
  "src-7399dde62586": {
   "url": "https://www.fia.com/sites/default/files/2019_french_gp_preview.pdf",
   "source_id": "src-7399dde62586",
-  "checked_at": "2026-11-16T11:24:17.285Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/2019_french_gp_preview.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "522a5ad677830f5a53c7f6298ce3848afb8f7b517ab271dab357edd318674277",
-  "bytes": 480010
+  "checked_at": "2026-11-17T00:14:31.176355+00:00",
+  "bytes_sha256": "6310ae70211d75d037ff98918197bbb47250a6d879b6032a7a33cbc2e1a144df",
+  "bytes": 480010,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "f9b938d6aff75fe1c7e6eaa3c53f51d89f61baf4ecc2923f24f946740406b3f2",
+  "text_chars": 11919
  },
  "src-7489b82575d9": {
   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1986/races/09-great-britain/race-results.yml",
@@ -3066,13 +3061,13 @@
  "src-80567903601c": {
   "url": "https://www.gt-world-challenge-asia.com/documents/notice/1118/Okayama%2BDraft%2BBreifing%2Bslides%2B27.08.25%2BPD_JPN_SP%2BFINAL.pdf",
   "source_id": "src-80567903601c",
-  "checked_at": "2026-11-16T11:22:04.398Z",
-  "http_status": 200,
-  "final_url": "https://www.gt-world-challenge-asia.com/documents/notice/1118/Okayama%2BDraft%2BBreifing%2Bslides%2B27.08.25%2BPD_JPN_SP%2BFINAL.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "fe6b57a5e313df8acf8de8639c9a42d7ddc76c112d12b1d3e3348b19d68dc128",
-  "bytes": 7180011
+  "checked_at": "2026-11-17T00:12:25.023637+00:00",
+  "bytes_sha256": "52a0f8470586e9ee878c00429e90e88aab38a19dabce8517b27f6a2f0ff15bca",
+  "bytes": 7180011,
+  "pages": 62,
+  "outcome": "live_pdf_text",
+  "text_sha256": "7d9147626b8d98d13832814f37fa94d24cf342d7ee06122da95ab1b17965b67c",
+  "text_chars": 12127
  },
  "src-814ac6ed93d7": {
   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1959/races/06-germany/race-results.yml",
@@ -3099,13 +3094,13 @@
  "src-820af1ff7a49": {
   "url": "https://www.fia.com/system/files/decision-document/2025_saudi_arabian_grand_prix_-_event_notes_-_circuit_map_pit_lane_and_quarantine_zone.pdf",
   "source_id": "src-820af1ff7a49",
-  "checked_at": "2026-11-16T11:24:26.969Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_saudi_arabian_grand_prix_-_event_notes_-_circuit_map_pit_lane_and_quarantine_zone.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "af6fc0f5b6a7538dc8601ac2693cbb011d52b742ebe11d7f0d260c7c4d71173a",
-  "bytes": 1618900
+  "checked_at": "2026-11-17T00:14:32.785385+00:00",
+  "bytes_sha256": "fdbd4a72211efad4089aadb2efe261f75acfac67cbf8aa9dcd187e0fcbcfb7d0",
+  "bytes": 1618900,
+  "pages": 5,
+  "outcome": "live_pdf_text",
+  "text_sha256": "51366ca0f16f44aa42bab60efb64dff524b1f6669c0f4d3172f745c9eea48d01",
+  "text_chars": 1524
  },
  "src-82782c771b6a": {
   "url": "https://www.formula1.com/en/results/2005/races/779/united-states/race-result",
@@ -3280,13 +3275,13 @@
  "src-89e11c84f539": {
   "url": "https://www.fia.com/sites/default/files/2021_turkish_grand_prix_-_preview_0.pdf",
   "source_id": "src-89e11c84f539",
-  "checked_at": "2026-11-16T11:24:37.381Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/2021_turkish_grand_prix_-_preview_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "3f24a072f8c516028dd68886f1c10c3dee55fbdc594c4b0680f35756e8fc7478",
-  "bytes": 1169283
+  "checked_at": "2026-11-17T00:14:35.421308+00:00",
+  "bytes_sha256": "5f7907494e01621ff497696e1e8c7d62e7f824a5e5ef2c887e4ee70f33eccb5f",
+  "bytes": 1169283,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "ceab756c207de19d846b6326e6c27c39a7d8eddacd43f11018d9683222159d1e",
+  "text_chars": 11166
  },
  "src-8a66a58a8d8a": {
   "url": "https://www.formula1.com/en/latest/article/explained-how-every-corner-at-monza-got-its-name.53lIthEwI2Ko9BC8YRnuZK",
@@ -3428,13 +3423,13 @@
  "src-90b2cbdbc5c9": {
   "url": "https://www.fia.com/system/files/decision-document/2025_monza_event_-_circuit_map_-_monza_2025_0.pdf",
   "source_id": "src-90b2cbdbc5c9",
-  "checked_at": "2026-11-16T11:24:46.895Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_monza_event_-_circuit_map_-_monza_2025_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "25e3fc200fb53c9bb02e091c08cc585d2fcb215171c7c9179934fed0d54bf717",
-  "bytes": 420152
+  "checked_at": "2026-11-17T00:14:36.757425+00:00",
+  "bytes_sha256": "cde542ca01b4e81b68e1e2decec92928eacf64f1a5a8861bfb929378e37e291c",
+  "bytes": 420152,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "eb488622705f7d897691c3d41fee289838abacc8a6490688c9e1364485bd97da",
+  "text_chars": 1593
  },
  "src-91fb2573cbf1": {
   "url": "https://www.circuit-dijon-prenois.com/en/history-of-the-racetrack-en/",
@@ -3472,13 +3467,13 @@
  "src-94084d33fa52": {
   "url": "https://www.fia.com/system/files/decision-document/2025_baku_event_-_circuit_map_-_baku_2025.pdf",
   "source_id": "src-94084d33fa52",
-  "checked_at": "2026-11-16T11:24:57.323Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_baku_event_-_circuit_map_-_baku_2025.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "8ec6e1e61f0e6f4355a1f90812425dd269e313d29187e0d2f79183eb25ff423c",
-  "bytes": 418935
+  "checked_at": "2026-11-17T00:14:39.044980+00:00",
+  "bytes_sha256": "1770796dbcd2ef50d804dc962d07d7cd2ee30646431dfae5e3dfdbe4cd638a95",
+  "bytes": 418935,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "cc91ac944d14a22740d845f2ad580ab893c4a14bccd0598fc660c6ea053fbf1e",
+  "text_chars": 1492
  },
  "src-9465a8d1f101": {
   "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
@@ -3547,24 +3542,24 @@
  "src-972a496fd63d": {
   "url": "https://historicracinggroup.com/resources/Track_Maps/Circuit-Mont-Tremblant.pdf",
   "source_id": "src-972a496fd63d",
-  "checked_at": "2026-11-16T11:22:04.400Z",
-  "http_status": 200,
-  "final_url": "https://historicracinggroup.com/resources/Track_Maps/Circuit-Mont-Tremblant.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "c0554a904d727deb2bf305c749b74283a85378f59cda6a7c40b890325189c5fc",
-  "bytes": 234051
+  "checked_at": "2026-11-17T00:14:41.054553+00:00",
+  "bytes_sha256": "373ccace7ec22707e8740e4047c714e878735144c2efd0c26cccfc1e09a5ceb1",
+  "bytes": 234051,
+  "pages": 1,
+  "outcome": "live_pdf_text",
+  "text_sha256": "0edf787d10eef549cbacf9390f070065a724a6be76b0603b58879a7e25713587",
+  "text_chars": 132
  },
  "src-97d1e54957b6": {
   "url": "https://www.fia.com/system/files/decision-document/2025_imola_event_-_circuit_map_-_imola_2025_0.pdf",
   "source_id": "src-97d1e54957b6",
-  "checked_at": "2026-11-16T11:25:17.597Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_imola_event_-_circuit_map_-_imola_2025_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "42c34465f9c6c301500b78a8092585fc11201e5c37cf25930f99418e42f060c6",
-  "bytes": 420192
+  "checked_at": "2026-11-17T00:14:42.095734+00:00",
+  "bytes_sha256": "9704882851911000916edb5f328407a2e05e468c67e78751b8283a013a90aba7",
+  "bytes": 420192,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "956dc56c814e72381079539617fd630aace6906642d8e99f530e154182c5f2f7",
+  "text_chars": 1516
  },
  "src-989b25e741d2": {
   "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-red-bull-ring.76j6twpa7Be26Prj6fO90F",
@@ -3677,13 +3672,13 @@
  "src-9bcf556802f4": {
   "url": "https://www.fia.com/sites/default/files/2025mediakit0402a.pdf",
   "source_id": "src-9bcf556802f4",
-  "checked_at": "2026-11-16T11:25:37.639Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/2025mediakit0402a.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "34dc42f564d78f3b171162dbda96aa9733ebcd509eed74de5a5f7fe8b44c50c8",
-  "bytes": 13756675
+  "checked_at": "2026-11-17T00:14:43.041786+00:00",
+  "bytes_sha256": "527a355f27fb28c3102afc6121054e3059400adb5bd7022d39317695fe9eeee2",
+  "bytes": 13756675,
+  "pages": 42,
+  "outcome": "live_pdf_text",
+  "text_sha256": "e65d3067d730b9f53ffc4dc214faea88f32765edb6756bb7794787c721838886",
+  "text_chars": 41649
  },
  "src-9bec321a8ac7": {
   "url": "https://www.motorsportmagazine.com/archive/article/august-1971/27/the-4th-grand-prix-of-france/",
@@ -3710,13 +3705,13 @@
  "src-9c8571f03355": {
   "url": "https://www.fia.com/sites/default/files/2017_malaysian_preview_1.pdf",
   "source_id": "src-9c8571f03355",
-  "checked_at": "2026-11-16T11:25:47.267Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/2017_malaysian_preview_1.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "a1d7fd278020ba0654aa85592b2282f80aa5138a6357e3e04e26bdf0558f6bbe",
-  "bytes": 1089772
+  "checked_at": "2026-11-17T00:14:48.780157+00:00",
+  "bytes_sha256": "8e69019310407507fb3ae50094acb0f577b03950745da1acadf98d164943f4b5",
+  "bytes": 1089772,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "f7170f6fa99deb1d7fde76c74f4ee31608f64cae0102b80aff83de0a7c982d3a",
+  "text_chars": 12304
  },
  "src-9ccebd2500d6": {
   "url": "https://www.grandprix.com/races/mexican-gp-1963.html",
@@ -3732,13 +3727,13 @@
  "src-9e18f1d196bd": {
   "url": "https://www.fia.com/system/files/decision-document/2025_las_vegas_grand_prix_-_event_notes_-_circuit_map_v2_pit_lane_drawing_emergency_map_exits_quarantine_zone_and_red_zones.pdf",
   "source_id": "src-9e18f1d196bd",
-  "checked_at": "2026-11-16T11:25:56.896Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_las_vegas_grand_prix_-_event_notes_-_circuit_map_v2_pit_lane_drawing_emergency_map_exits_quarantine_zone_and_red_zones.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "924ca6afee991b2949d4f2bf967e4cbd1b20f24d651d2d924175830a11f70fde",
-  "bytes": 4429891
+  "checked_at": "2026-11-17T00:14:49.049051+00:00",
+  "bytes_sha256": "5725f5e2c9085a0d593ffea2c67c15f71f8943353b974fc379c58070df8ab9b4",
+  "bytes": 4429891,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "a770c9b4bb6dfae017f41cbf5d05e51fb03bcd96fca9212fa8f192e25e412fd2",
+  "text_chars": 2146
  },
  "src-9ec8b5a4e63e": {
   "url": "https://www.lapledger.org/circuits/zolder",
@@ -3787,13 +3782,13 @@
  "src-a0cc7f7b49d1": {
   "url": "https://api.fia.com/sites/default/files/2019_german_gp_preview_0.pdf",
   "source_id": "src-a0cc7f7b49d1",
-  "checked_at": "2026-11-16T11:22:16.190Z",
-  "http_status": 200,
-  "final_url": "https://api.fia.com/sites/default/files/2019_german_gp_preview_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "78f4ff3c8ea2b01f1fba61228db503814125c48eedf630663e224c8219c81b79",
-  "bytes": 565340
+  "checked_at": "2026-11-17T00:14:51.377504+00:00",
+  "bytes_sha256": "9f4ad2be3915e2585128e52c80435d6d9381337229e10cc084f7f1f6a233536d",
+  "bytes": 565340,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "3b1d434ef9b9c3ca60f51a30314b66f4eae8354c096809ff34d7605345ae7eda",
+  "text_chars": 13140
  },
  "src-a2df826858d1": {
   "url": "https://www.motorsportmagazine.com/archive/article/september-1957/16/xxv-gran-premio-pescara/",
@@ -4080,13 +4075,13 @@
  "src-ad9cf78c4f4d": {
   "url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
   "source_id": "src-ad9cf78c4f4d",
-  "checked_at": "2026-11-16T11:26:17.571Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "d0a51c2a80f1e456dc16c2c746f992d199995c2145e607ac41f5230285ffbdcc",
-  "bytes": 3714010
+  "checked_at": "2026-11-17T00:14:51.703604+00:00",
+  "bytes_sha256": "596191c397c17d82c4d52668c9603d7c5eaded90b57e32bb2d94fd8b25b284ff",
+  "bytes": 3714010,
+  "pages": 7,
+  "outcome": "live_pdf_text",
+  "text_sha256": "02cc8fcf7f4c7622bbcd576c6a219148f8e5dd09343c19c614bdc45bf80d26dd",
+  "text_chars": 2714
  },
  "src-ae1467495b2c": {
   "url": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
@@ -4366,13 +4361,13 @@
  "src-bfcd0ae8e46f": {
   "url": "https://www.fia.com/system/files/decision-document/2025_melbourne_event_-_circuit_map_-_melbourne_2025_0.pdf",
   "source_id": "src-bfcd0ae8e46f",
-  "checked_at": "2026-11-16T11:26:27.446Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_melbourne_event_-_circuit_map_-_melbourne_2025_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "98fa71b7d729809442bb96b2da6b994f86eea06eb6aae490d12be9936b49ce9f",
-  "bytes": 427203
+  "checked_at": "2026-11-17T00:14:53.450081+00:00",
+  "bytes_sha256": "09c5862c581a77156db19ec6ffc99418308a3fe7af24723acaab8a0b268fc5c4",
+  "bytes": 427203,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "01865d7641c625f4a32b28acbda866590da0e989ad744712dd9423976c01c161",
+  "text_chars": 320
  },
  "src-c0584daf33b8": {
   "url": "https://commons.wikimedia.org/wiki/File:Montju%C3%AFc_circuit.svg",
@@ -4509,24 +4504,22 @@
  "src-c6d92c8cfae5": {
   "url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
   "source_id": "src-c6d92c8cfae5",
-  "checked_at": "2026-11-16T11:22:04.402Z",
-  "http_status": 200,
-  "final_url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "7c2e16c6df031fb2c7b4e3afb1668c395c16186c0c4bf910c0234315fae584b9",
-  "bytes": 425081
+  "checked_at": "2026-11-17T00:12:27.591841+00:00",
+  "bytes_sha256": "c3a923be8d815eed42a706e16652098488085506d427a9f1116597f121d29892",
+  "bytes": 425081,
+  "pages": 1,
+  "outcome": "live_pdf_text",
+  "text_sha256": "9577c5596421e28e3a31ca85047bedc9eb57ef789670aa266233d3193493c18c",
+  "text_chars": 194
  },
  "src-c71dec0fcf1c": {
   "url": "https://porschecarshistory.com/wp-content/old/lib/magazines/autosport/1995/AS21.09.95.pdf",
   "source_id": "src-c71dec0fcf1c",
-  "checked_at": "2026-11-16T11:22:04.402Z",
-  "http_status": 200,
-  "final_url": "https://porschecarshistory.com/wp-content/old/lib/magazines/autosport/1995/AS21.09.95.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "0519ad030a139099047e5c617639cbb9f9c100840208b46bd250ff0dd50d8562",
-  "bytes": 34979150
+  "checked_at": "2026-11-17T00:12:28.445050+00:00",
+  "bytes_sha256": "ac9673b5b80705fb819751e86d9a1cdc67f6f5f21abb1835e6c1652e3b5423da",
+  "bytes": 34979150,
+  "pages": 96,
+  "outcome": "live_pdf_image_only"
  },
  "src-c7ad810ccc42": {
   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2013/races/16-india/race-results.yml",
@@ -4597,13 +4590,13 @@
  "src-c993dcea3020": {
   "url": "https://www.autodromoimola.it/downloads/Presentazione_MICE_Autodromo_2021_EN.pdf",
   "source_id": "src-c993dcea3020",
-  "checked_at": "2026-11-16T11:22:08.791Z",
-  "http_status": 200,
-  "final_url": "https://www.autodromoimola.it/downloads/Presentazione_MICE_Autodromo_2021_EN.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "b85635934cd4e0c0fdea8ad90096a6162446029b9a77ab13b23c93ec036d1427",
-  "bytes": 20017836
+  "checked_at": "2026-11-17T00:12:29.672691+00:00",
+  "bytes_sha256": "d9f5b899cf1d8640b1e397d17c556ef808649a0ceca11de750efd5254c574a62",
+  "bytes": 20017836,
+  "pages": 25,
+  "outcome": "live_pdf_text",
+  "text_sha256": "b53fa8dd288d20f1817edf225107ae607e765b530f60f634f808648946e97a78",
+  "text_chars": 9492
  },
  "src-c9b75e031e69": {
   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1954/races/04-france/race-results.yml",
@@ -4619,13 +4612,13 @@
  "src-cb4fd392dc04": {
   "url": "https://www.fia.com/system/files/decision-document/2025_mexico_city_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_quarantine_zone_area.pdf",
   "source_id": "src-cb4fd392dc04",
-  "checked_at": "2026-11-16T11:26:37.236Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_mexico_city_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_and_quarantine_zone_area.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "21ccb5dbb52a05b79769ebf8454fa66fc8d0f1cb21ddfb7e038a38715822af1d",
-  "bytes": 2416435
+  "checked_at": "2026-11-17T00:14:55.462487+00:00",
+  "bytes_sha256": "e81d4deff487a8b8b142dff6ca97209013d0089634401670788e7960234db6f1",
+  "bytes": 2416435,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "e67f79c4316302c64f132a5c9c579d01036fc205ae44fd50532210b6bd8f4d1a",
+  "text_chars": 2998
  },
  "src-cbff1977e72a": {
   "url": "https://www.washingtonpost.com/archive/sports/2005/07/23/formula-one-drops-guilty-verdicts-against-seven-teams/d84b8aca-c007-481b-9b41-124bbe3f217c/",
@@ -4736,13 +4729,13 @@
  "src-cfdc0d6b074a": {
   "url": "https://www.fia.com/system/files/decision-document/2025_canadian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_ers_battery_containment_area_red_zones.pdf",
   "source_id": "src-cfdc0d6b074a",
-  "checked_at": "2026-11-16T11:26:47.368Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_canadian_grand_prix_-_event_notes_-_circuit_map_pit_lane_emergency_exits_map_ers_battery_containment_area_red_zones.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "0f31b7790111a910c22d96f13bab9f079c65ccd1b0768bceee1163788dd78354",
-  "bytes": 3447670
+  "checked_at": "2026-11-17T00:14:57.433918+00:00",
+  "bytes_sha256": "573b99039d5f6557158b752a09603f7890b7ba87198000585588676433e18f68",
+  "bytes": 3447670,
+  "pages": 7,
+  "outcome": "live_pdf_text",
+  "text_sha256": "33ae4be32108a4e8a7ebb19973382bbce337cebdebc47df565350fe4d6842a2c",
+  "text_chars": 3115
  },
  "src-cfea5c08d370": {
   "url": "https://www.fia.com/event-2012-european-grand-prix",
@@ -4981,13 +4974,13 @@
  "src-dc89f17e4233": {
   "url": "https://www.fia.com/system/files/decision-document/2025_spielberg_event_-_circuit_map_-_spielberg_2025.pdf",
   "source_id": "src-dc89f17e4233",
-  "checked_at": "2026-11-16T11:27:19.719Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_spielberg_event_-_circuit_map_-_spielberg_2025.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "a0dd6e7ffd5e8bd95ebb8291f9f4744db32f391e36ac487bcae7c8792b367186",
-  "bytes": 410596
+  "checked_at": "2026-11-17T00:14:59.585329+00:00",
+  "bytes_sha256": "68df2cc4e30474fff0cc970c8e774484588dd6f4afc75f86a520e6449e6c10fd",
+  "bytes": 410596,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "42ad896017818bc2aa84863a6661bc8baaccadf280559bc3a63e7027db78b622",
+  "text_chars": 1447
  },
  "src-dcb82a7721e1": {
   "url": "https://en.wikipedia.org/wiki/Adelaide_Street_Circuit",
@@ -5076,13 +5069,13 @@
  "src-e0ebae547241": {
   "url": "https://www.fia.com/sites/default/files/doc_1_-_2019_german_grand_prix_-_circuit_map.pdf",
   "source_id": "src-e0ebae547241",
-  "checked_at": "2026-11-16T11:27:27.754Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/doc_1_-_2019_german_grand_prix_-_circuit_map.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "1dc47fe3bb6c40a0175e780555e4cb2b6f08ba450724fdf6eb995ebee7366f18",
-  "bytes": 1022887
+  "checked_at": "2026-11-17T00:15:01.440922+00:00",
+  "bytes_sha256": "1b74d9e82f8272f352493da9b8dc9a28a515fdacd3c548d876868db1cdeb0d7a",
+  "bytes": 1022887,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "3759575b5760213995564b81b36f7b2be6e5cb8e0f26af3b42182f0c8f6d22fd",
+  "text_chars": 297
  },
  "src-e13ae27e284a": {
   "url": "https://www.detroitgp.com/event-info/recaps/formula-1",
@@ -5109,13 +5102,13 @@
  "src-e1c68aea8df0": {
   "url": "https://www.fia.com/sites/default/files/decision-document/2020%20Eifel%20Grand%20Prix%20-%20Circuit%20Map.pdf",
   "source_id": "src-e1c68aea8df0",
-  "checked_at": "2026-11-16T11:27:37.385Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/decision-document/2020%20Eifel%20Grand%20Prix%20-%20Circuit%20Map.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "2e0e47d893ba26edc01d10fe14ed97b11a79863ff0f45ec395329030bd634ab3",
-  "bytes": 547933
+  "checked_at": "2026-11-17T00:15:03.064675+00:00",
+  "bytes_sha256": "ebf6f31086f297a39c0e39a3abe32d896a6d5ed23b148577c2bc38161a284309",
+  "bytes": 547933,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "928bd6fc65722acf3b0428c20f5faf94fbdf81ebabd3a868534d876e8ad85469",
+  "text_chars": 1483
  },
  "src-e1d6f451f9bd": {
   "url": "https://www.formula1.com/en/results/1964/races/221/austria/race-result",
@@ -5402,9 +5395,13 @@
  "src-eed519ba4f55": {
   "url": "https://www.fia.com/sites/default/files/external_archive/node3784/14-korea-circuit-print.pdf",
   "source_id": "src-eed519ba4f55",
-  "checked_at": "2026-11-16T11:27:47.383Z",
-  "outcome": "robots_disallowed",
-  "final_url": "https://www.fia.com/sites/default/files/external_archive/node3784/14-korea-circuit-print.pdf"
+  "checked_at": "2026-11-17T00:15:05.182576+00:00",
+  "bytes_sha256": "19ac4ca6bfc88e60389e79a85d09aa3eab2ee0f4c856c9aa05e5bbf199bdf8b5",
+  "bytes": 93199,
+  "pages": 1,
+  "outcome": "live_pdf_text",
+  "text_sha256": "3142698081da43c6aaef2d767fa0caf01a99307811fa94e1612b9f34ccf37014",
+  "text_chars": 3336
  },
  "src-eef6bceee1fa": {
   "url": "https://www.formula1.com/en/results/1975/races/347/spain/race-result",
@@ -5561,13 +5558,13 @@
  "src-f471275d7099": {
   "url": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
   "source_id": "src-f471275d7099",
-  "checked_at": "2026-11-16T11:27:47.384Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "f4adcd0845a53c79295e5e59a2f59c16d6fe819a494beb3dc4b40349549fdd66",
-  "bytes": 1025844
+  "checked_at": "2026-11-17T00:15:07.012556+00:00",
+  "bytes_sha256": "635412c87f01abbb1cad945a36147fe25a32367839713197609d2cb81d78beaf",
+  "bytes": 1025844,
+  "pages": 20,
+  "outcome": "live_pdf_text",
+  "text_sha256": "5e36d60e4b6eb0768e787a60af3080107cfbd540eb35880e6cb7083339f70c54",
+  "text_chars": 24006
  },
  "src-f580e153f6d1": {
   "url": "https://saloneevents.co.uk/how-to-drive-donington-circuit/",
@@ -5583,9 +5580,13 @@
  "src-f5a001d2cefc": {
   "url": "https://www.fia.com/sites/default/files/external_archive/node3786/16-india-circuit-print.pdf",
   "source_id": "src-f5a001d2cefc",
-  "checked_at": "2026-11-16T11:27:57.391Z",
-  "outcome": "robots_disallowed",
-  "final_url": "https://www.fia.com/sites/default/files/external_archive/node3786/16-india-circuit-print.pdf"
+  "checked_at": "2026-11-17T00:15:09.268867+00:00",
+  "bytes_sha256": "991404b16484b691992eaad6153a49465691a4abbbcfbc1b89aca80510cc4d70",
+  "bytes": 83467,
+  "pages": 1,
+  "outcome": "live_pdf_text",
+  "text_sha256": "46026fc0d21e086dcea569379de3718170de59f8d61ed6927e4858b18d4fc237",
+  "text_chars": 3079
  },
  "src-f5bc18beb8a3": {
   "url": "https://www.motorsportmagazine.com/archive/article/july-1978/25/swedish-grand-prix-6/",
@@ -5685,13 +5686,13 @@
  "src-f9d3f84d2aa5": {
   "url": "https://www.fia.com/system/files/decision-document/2025_abu_dhabi_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones.pdf",
   "source_id": "src-f9d3f84d2aa5",
-  "checked_at": "2026-11-16T11:27:57.391Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_abu_dhabi_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "ded3514266ebe3d04ac362e5851e525aef56fef863d3ec40ce531eccc0c5a635",
-  "bytes": 2252459
+  "checked_at": "2026-11-17T00:15:11.103140+00:00",
+  "bytes_sha256": "5d7fe92297123c0db9d430652755cdbf95d1af5d6d6aeaa628903e6bcb7f8aeb",
+  "bytes": 2252459,
+  "pages": 6,
+  "outcome": "live_pdf_text",
+  "text_sha256": "011fb84010eddda605d980af91f12ff8ff2f617c0b7d691a12dbafceb4777d46",
+  "text_chars": 2838
  },
  "src-fa70c74a3ba3": {
   "url": "https://www.formula1.com/en/results/2017/races/973/malaysia/race-result",
@@ -5740,13 +5741,13 @@
  "src-fd3bd62e280f": {
   "url": "https://www.fia.com/system/files/decision-document/2025_barcelona_event_-_circuit_map_-_barcelona_2025_0.pdf",
   "source_id": "src-fd3bd62e280f",
-  "checked_at": "2026-11-16T11:28:07.752Z",
-  "http_status": 200,
-  "final_url": "https://www.fia.com/system/files/decision-document/2025_barcelona_event_-_circuit_map_-_barcelona_2025_0.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "e2d004954447ed0ca5c35b5807d49ebdfc94784c39ada7011c7137d7dbe8c270",
-  "bytes": 369137
+  "checked_at": "2026-11-17T00:15:13.682578+00:00",
+  "bytes_sha256": "1bd35ac2b583d3d38a6cbb4232ce8aef4e1295860df960b00b674606283ea2b8",
+  "bytes": 369137,
+  "pages": 2,
+  "outcome": "live_pdf_text",
+  "text_sha256": "31e076f223c6b2e5bc0af905203c1eb2696af7255d9f7fccd3bd40d4ca7c0fa0",
+  "text_chars": 1365
  },
  "src-fde41c5bd336": {
   "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/2020/races/12-portugal/race-results.yml",
@@ -5762,13 +5763,13 @@
  "src-fe319ff28ef8": {
   "url": "https://www.autodromoimola.it/downloads/f1/F1_IMOLA_2025_pricelist_v1.pdf",
   "source_id": "src-fe319ff28ef8",
-  "checked_at": "2026-11-16T11:22:11.487Z",
-  "http_status": 200,
-  "final_url": "https://www.autodromoimola.it/downloads/f1/F1_IMOLA_2025_pricelist_v1.pdf",
-  "content_type": "application/pdf",
-  "outcome": "live_pdf_no_text",
-  "bytes_sha256": "7011bb47ca4b3ee7831d20acff4932103e233e5732fb33cfa21d105e60c54624",
-  "bytes": 6356654
+  "checked_at": "2026-11-17T00:12:34.113449+00:00",
+  "bytes_sha256": "59a23794c8adaa2aae3859288f1596ba52ebeff32dc4b11b8af4170a91d09648",
+  "bytes": 6356654,
+  "pages": 5,
+  "outcome": "live_pdf_text",
+  "text_sha256": "50fd3843f8e5cd63de1162c977b2d070f03f89a3a8cc365570d20a97ed6eca2a",
+  "text_chars": 10741
  },
  "src-fe56f2601c08": {
   "url": "https://www.motorsportmagazine.com/archive/article/june-1994/12/benetton-at-the-double/",

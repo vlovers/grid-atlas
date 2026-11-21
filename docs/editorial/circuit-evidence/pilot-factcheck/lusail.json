@@ -1,0 +1,1538 @@
+{
+ "circuit_id": "lusail",
+ "checker": "factcheck-agent-D",
+ "checked_at": "2026-11-17T00:26:01.531Z",
+ "checker_declared_at": "2026-11-17T00:00:00Z",
+ "policy_version": "grid-atlas-editorial-policy/1.8.0",
+ "claims_in_package": 51,
+ "claims_checked": 51,
+ "missing_claims": [],
+ "counts": {
+  "checker_verified_policy_rejected": 17,
+  "unsupported": 29,
+  "verified": 4,
+  "disputed": 1
+ },
+ "records": [
+  {
+   "claim_id": "lusail:short_summary#s1",
+   "block_kind": "short_summary",
+   "assertion": "Hamilton won the first F1 Qatar GP, held at Lusail in 2021.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "excerpt_sha256": "1181c2fe9f5080597b922865ae0d265492a054416cd7845a84c4f59139ff782e",
+     "offset": 1775,
+     "length": 24,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    },
+    {
+     "race_id": "1055",
+     "field": "season",
+     "value": "2021"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB: the earliest Lusail race is 2021, and Hamilton was P1."
+  },
+  {
+   "claim_id": "lusail:short_summary#s2",
+   "block_kind": "short_summary",
+   "assertion": "Lusail was known from motorcycle racing before F1 arrived.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source_does_not_cover"
+   ],
+   "notes": "The only cited source is the F1DB results file, which says nothing about this. The F1.com page cited elsewhere says the circuit was built for MotoGP in 2004."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s1",
+   "block_kind": "long_history_draft",
+   "assertion": "Hamilton controlled the 2021 Qatar GP, while tyre risk decided the fight for third.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "excerpt_sha256": "24a5c8a246d35ff11cb039e2323e2bc6fce3ca008197abd7369d88a18bdeb998",
+     "offset": 105,
+     "length": 118,
+     "locator": "Intro",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "d1bc93aee620c1868ffcd8ae9daa7d07ef56993c149207f50e6d88a20b1b1263",
+     "offset": 3992,
+     "length": 148,
+     "locator": "Section 'A carnival of punctures and tension'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Both elements are supported."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s2",
+   "block_kind": "long_history_draft",
+   "assertion": "Verstappen recovered from a grid penalty to finish second.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "eda738dc2ff8485756ee50dba193ce343cc390aad3eeec29995d9322ae1a69dd",
+     "offset": 301,
+     "length": 103,
+     "locator": "Intro bullets",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "excerpt_sha256": "ce84207660f41a68caff6ab110a1964938c6f9d83e9c74867702962f8fb1706d",
+     "offset": 354,
+     "length": 63,
+     "locator": "Section 'PENALTY'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "second",
+     "value": "max-verstappen"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": "UK 'після штрафу на старті' can be read as a penalty at the start rather than a grid penalty. 'штрафу на стартовій решітці' would be more precise.",
+   "issues": [],
+   "notes": "F1DB: gridPosition 7, finished P2."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s3",
+   "block_kind": "long_history_draft",
+   "assertion": "Alonso one-stopped for Alpine while punctures hit drivers on long stints, including Bottas and Norris.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "excerpt_sha256": "08a63211fc8552bf8856f6872962985c37b6414d6d10800c1d7f4827fe9d51a8",
+     "offset": 3475,
+     "length": 54,
+     "locator": "Section 'THIRD'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "33fe4958119021e4fb1519b64c7bfcbdc666b19c10c87e1cfc742b45e5767051",
+     "offset": 3213,
+     "length": 115,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "excerpt_sha256": "9e2e4484ceadde33d940b28bc909f5299b20359288a9e517e5be8f95acfb6642",
+     "offset": 2092,
+     "length": 130,
+     "locator": "Section 'NORRIS'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "norris_long_stint_implicit"
+   ],
+   "notes": "The Bottas long stint is explicit. That Norris's puncture came on a long stint is only implied, by his lap-50 deflation."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s4",
+   "block_kind": "long_history_draft",
+   "assertion": "Pérez was closing on Alonso when a late VSC, caused by Latifi's tyre failure, eased the pressure.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "98914bb899827da85067da3d3f9f1670b606ef582809bd905a1b0e0c94b70f84",
+     "offset": 3922,
+     "length": 64,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "excerpt_sha256": "721557f0b70b8a4e1ee507cfba1111d1efa75a833cac31e18b7ada2e9cc40019",
+     "offset": 2264,
+     "length": 99,
+     "locator": "Section 'BLOWOUT' (second)",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "f048534ce868f5a7d5e36163996d4130ab52afe806971cef883fc007a2117eac",
+     "offset": 847,
+     "length": 57,
+     "locator": "Para beginning 'Spaniard Alonso, 40'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB lists Latifi as DNF with Puncture. 'Rapidly' is a mild embellishment."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s5",
+   "block_kind": "long_history_draft",
+   "assertion": "Alonso finished third, his first F1 podium since 2014.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "4cb4a33b38b94127dd7e3207f296e43d64e862e2e1164f023e4f5f430fb5cfe6",
+     "offset": 537,
+     "length": 90,
+     "locator": "Intro bullets",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "excerpt_sha256": "52e94fe310ee56884b3d99a90e1f5e6304a660b95ee8d139d6f9887a40292ce4",
+     "offset": 3536,
+     "length": 68,
+     "locator": "Section 'FIRST'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "third",
+     "value": "fernando-alonso"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "The 'unmatched' F1DB check on 2014 does not matter here: 2014 refers to the Hungarian GP, not Lusail."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s6",
+   "block_kind": "long_history_draft",
+   "assertion": "The podium was Hamilton, Verstappen and Alonso; the late tension was whether Alonso's tyres would last.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "d1bc93aee620c1868ffcd8ae9daa7d07ef56993c149207f50e6d88a20b1b1263",
+     "offset": 3992,
+     "length": 148,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    },
+    {
+     "race_id": "1055",
+     "field": "second",
+     "value": "max-verstappen"
+    },
+    {
+     "race_id": "1055",
+     "field": "third",
+     "value": "fernando-alonso"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK leaves out the three names and Alonso. It says only that 'the protocol names the podium' and 'whether the tyres would hold'.",
+   "issues": [],
+   "notes": "The podium matches F1DB."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s7",
+   "block_kind": "long_history_draft",
+   "assertion": "Alonso's podium came from a tyre-life gamble, not just a good start.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "excerpt_sha256": "ab221c2a89e4d82b5adad10b13f6d4095913278d8d0fe2849fdba7781aece75b",
+     "offset": 3752,
+     "length": 69,
+     "locator": "Alonso quote after 'FIRST'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "28eadb2b4d5474f9a8c8ffc7271731858e65a96040eb3266e0e40fe86a1ed67d",
+     "offset": 4909,
+     "length": 76,
+     "locator": "Driver of the day caption",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "evaluative"
+   ],
+   "notes": "Alonso's own quote makes the same risk evaluation explicitly. He started 3rd (F1DB grid 3)."
+  },
+  {
+   "claim_id": "lusail:long_history_draft#s8",
+   "block_kind": "long_history_draft",
+   "assertion": "Punctures and the late neutralisation made the final laps uncertain, although Hamilton's win was safe.",
+   "checker_verdict": "DISPUTED",
+   "contradicted": true,
+   "final": "disputed",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_rejected"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "b722a8a45cafc2e1bcae85ce9c4bc775a54cba9a6f08dfde5e16a50b94fea1f4",
+     "offset": 1069,
+     "length": 70,
+     "locator": "Intro",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "f048534ce868f5a7d5e36163996d4130ab52afe806971cef883fc007a2117eac",
+     "offset": 847,
+     "length": 57,
+     "locator": "Para beginning 'Spaniard Alonso, 40'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "causality_reversed_for_vsc"
+   ],
+   "notes": "The punctures created tension, which is supported. BBC says the VSC removed the uncertainty ('beyond doubt'); it did not cause it. So the claim is partly wrong."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t1#s1",
+   "block_kind": "corner_section",
+   "assertion": "The main straight is over 1 km long and ends at Turn 1.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "excerpt_sha256": "32b588dc1b331be55353b4805f865279ba044758f239bf65e2fc3d3a1e10be92",
+     "offset": 1640,
+     "length": 142,
+     "locator": "Section 'What’s the circuit like?'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Stated explicitly by F1.com."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t1#s2",
+   "block_kind": "corner_section",
+   "assertion": "Turn 1 is the clearest heavy-braking overtaking spot on an otherwise fast, flowing lap.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "excerpt_sha256": "f4d5326cc6a901a6b08b2193018067e9198531e073565595637a27a43bf63838",
+     "offset": 1463,
+     "length": 176,
+     "locator": "Section 'What’s the circuit like?'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "superlative_and_braking_not_in_source"
+   ],
+   "notes": "The source supports the flowing character and overtaking into T1. Neither 'clearest' nor 'heavy-braking' is stated."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t2#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 2 follows T1 and rebuilds rhythm (descriptive).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "The corner sequence is trivial. The driving description has no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t2#s2",
+   "block_kind": "corner_section",
+   "assertion": "Overshooting T1 leaves less road for acceleration at T2 (driving technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t3#s1",
+   "block_kind": "corner_section",
+   "assertion": "T3 is part of a flowing opening complex.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "F1.com describes the whole track as flowing, not T3 specifically."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t3#s2",
+   "block_kind": "corner_section",
+   "assertion": "Drivers carry speed with linked steering inputs and manage lateral tyre load (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t4#s1",
+   "block_kind": "corner_section",
+   "assertion": "T4 continues the fast opening sequence.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "No corner-specific source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t4#s2",
+   "block_kind": "corner_section",
+   "assertion": "T4's exit sets up T5; a correction can spoil the approach to the next sector boundary (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "This is consistent with the FIA map placing S1 between T5 and T6, but it is a driving description."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t5#s1",
+   "block_kind": "corner_section",
+   "assertion": "On the 2025 FIA map, T5 is the last numbered corner before the first sector line.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "dde11723a4661bd7dae8b846732fe801955ee409ee283453086420192ed7ea08",
+     "offset": 931,
+     "length": 107,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "0ec7c44a04d5e1760a2e9d9987aae1920ca9f09962046a7abcdfa9ab1f7d494f",
+     "offset": 864,
+     "length": 81,
+     "locator": "[[page 2]] legend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "pdf_label_mapping_inferred"
+   ],
+   "notes": "The PDF text is flattened. Reading Sector 1 as '80m Before Turn 6' is the only consistent pairing, but it should be confirmed against the visual map."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t5#s2",
+   "block_kind": "corner_section",
+   "assertion": "The sector-1 timing line is 80 m before T6.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "dde11723a4661bd7dae8b846732fe801955ee409ee283453086420192ed7ea08",
+     "offset": 931,
+     "length": 107,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "pdf_label_mapping_inferred"
+   ],
+   "notes": "The 80m-before-T6 marker is present. Its pairing with Sector 1 is inferred from the flattened legend."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t6#s1",
+   "block_kind": "corner_section",
+   "assertion": "T6 starts a new group of linked bends after the S1 split.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "dde11723a4661bd7dae8b846732fe801955ee409ee283453086420192ed7ea08",
+     "offset": 931,
+     "length": 107,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "The position after the S1 split is supported (inferred). The 'linked bends' description has no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t6#s2",
+   "block_kind": "corner_section",
+   "assertion": "Balance corner speed against car placement (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t7#s1",
+   "block_kind": "corner_section",
+   "assertion": "T7 follows T6 closely (descriptive).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "The source gives no corner spacing."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t7#s2",
+   "block_kind": "corner_section",
+   "assertion": "Lusail was originally built for motorcycle racing, and this sequence rewards a continuous line.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "excerpt_sha256": "5ed2da7cd907445a26fc514692d91300cc03ba284e87c6067a72b0379b5a128d",
+     "offset": 1105,
+     "length": 76,
+     "locator": "Section 'When was the Lusail International Circuit built?'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "The first clause (built for motorcycle racing) is supported by F1.com. The corner-specific driving claim has no source. Consider splitting the sentence."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t8#s1",
+   "block_kind": "corner_section",
+   "assertion": "T8 lies in a fast middle sector.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "From the inferred FIA map, T8 is in sector 2. The source does not describe the sector as fast."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t8#s2",
+   "block_kind": "corner_section",
+   "assertion": "Keep the platform settled while changing direction (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t9#s1",
+   "block_kind": "corner_section",
+   "assertion": "T9 continues the run of medium- and high-speed corners.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "excerpt_sha256": "86908ed90a8bfdc740e57584ceca136f6d755aa3d9e6a9da9ae4b0d93b795d30",
+     "offset": 1561,
+     "length": 78,
+     "locator": "Section 'What’s the circuit like?'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "The source describes the whole circuit, not T9."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t9#s2",
+   "block_kind": "corner_section",
+   "assertion": "Tyre temperature matters at T9 under repeated lateral load (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t10#s1",
+   "block_kind": "corner_section",
+   "assertion": "T10 is a fast middle-sector link, not a hairpin.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "No source gives the speed or shape of T10."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t10#s2",
+   "block_kind": "corner_section",
+   "assertion": "Drivers aim for minimal scrub and a clean exit to T11 (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": "UK says 'clean entry into T11' where EN says 'clean exit into Turn 11'. The meaning is equivalent.",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t11#s1",
+   "block_kind": "corner_section",
+   "assertion": "T11 is the last corner before the sector-2 boundary.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "dde11723a4661bd7dae8b846732fe801955ee409ee283453086420192ed7ea08",
+     "offset": 931,
+     "length": 107,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "pdf_label_mapping_inferred"
+   ],
+   "notes": "Sector 2 is inferred to be 75m before T12."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t11#s2",
+   "block_kind": "corner_section",
+   "assertion": "On the 2025 FIA map, the sector split is 75 m before T12.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "dde11723a4661bd7dae8b846732fe801955ee409ee283453086420192ed7ea08",
+     "offset": 931,
+     "length": 107,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "0ec7c44a04d5e1760a2e9d9987aae1920ca9f09962046a7abcdfa9ab1f7d494f",
+     "offset": 864,
+     "length": 81,
+     "locator": "[[page 2]] legend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "pdf_label_mapping_inferred"
+   ],
+   "notes": "The marker is present. Its pairing with Sector 2 is inferred from the flattened text."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t12#s1",
+   "block_kind": "corner_section",
+   "assertion": "T12 opens the long closing sequence of flowing corners.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "No corner-specific source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t12#s2",
+   "block_kind": "corner_section",
+   "assertion": "Several bends follow without a straight, so stable aero grip is needed (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t13#s1",
+   "block_kind": "corner_section",
+   "assertion": "T13 is part of a demanding final run with sustained load.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "No corner-specific source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t13#s2",
+   "block_kind": "corner_section",
+   "assertion": "Avoiding a slide protects T14 (technique).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving description with no source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t14#s1",
+   "block_kind": "corner_section",
+   "assertion": "T14 is taken at final-sector rhythm, not as a hairpin.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "corner_character_not_in_source"
+   ],
+   "notes": "No corner-specific source."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t14#s2",
+   "block_kind": "corner_section",
+   "assertion": "T15 shapes the approach to the last corner (descriptive).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "The sequence is trivial (16 corners). The rest is description."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t15#s1",
+   "block_kind": "corner_section",
+   "assertion": "T15 prepares the entry to the last corner (descriptive).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "The sequence is trivial. The rest is description."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t15#s2",
+   "block_kind": "corner_section",
+   "assertion": "The 2025 FIA DRS detection point is 40 m after T15.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "dde11723a4661bd7dae8b846732fe801955ee409ee283453086420192ed7ea08",
+     "offset": 931,
+     "length": 107,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "pdf_label_mapping_inferred"
+   ],
+   "notes": "The marker is present. Its pairing with DRS Detection is inferred from the flattened legend. 'Not a corner name' is editorial."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t16#s1",
+   "block_kind": "corner_section",
+   "assertion": "T16 is the final corner and leads onto the main straight of about 1 km.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-46370b2f5cef",
+     "excerpt_sha256": "0d44404cb687d218cb9167310a6c75074ec6971c221e105f8469e3aef9da1a4c",
+     "offset": 1640,
+     "length": 78,
+     "locator": "Section 'What’s the circuit like?'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "8908eea521a664e4ab806bccf3baef08e8e7546c9ce47ac4abd9b164adc48fdc",
+     "offset": 407,
+     "length": 53,
+     "locator": "[[page 2]] corner numbers",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "evaluative_part"
+   ],
+   "notes": "F1DB layout lusail-1 has 16 turns."
+  },
+  {
+   "claim_id": "lusail:corner:lusail-t16#s2",
+   "block_kind": "corner_section",
+   "assertion": "The 2025 FIA map puts DRS activation 305 m after T16.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2e17b165b057",
+     "excerpt_sha256": "28a55b143ac9ef9bdd2409b76bedbef0d966e99dae732cc47626b4f8ba066e8c",
+     "offset": 931,
+     "length": 70,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "The label and the distance sit next to each other in the text."
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s1",
+   "block_kind": "corner_group",
+   "assertion": "Hamilton won the first Lusail GP in 2021, and tyre management decided the last podium place.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_value_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "excerpt_sha256": "1181c2fe9f5080597b922865ae0d265492a054416cd7845a84c4f59139ff782e",
+     "offset": 1775,
+     "length": 24,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partial_support_only"
+   ],
+   "notes": "F1DB supports the winner and the first race. The only cited source cannot establish the tyre-management clause. BBC (cited elsewhere) does support it."
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s2",
+   "block_kind": "corner_group",
+   "assertion": "Alonso one-stopped while long stints caused punctures for others.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "excerpt_sha256": "fc0a9e830e0496fdb46d6967de13f308b0b02fd5a5fe2fb219d572c508bcc5bd",
+     "offset": 6509,
+     "length": 30,
+     "locator": "race-results.yml, valtteri-bottas entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source_does_not_cover"
+   ],
+   "notes": "F1DB records punctures for Bottas and Latifi but nothing on strategy. The claim needs a BBC or Grandprix citation."
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s3",
+   "block_kind": "corner_group",
+   "assertion": "Pérez closed in until a late VSC eased the pressure.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source_does_not_cover"
+   ],
+   "notes": "The F1DB file cannot show the VSC or the closing trend. Pérez was P4, 2.849s behind Alonso. BBC supports the claim but is not cited here."
+  },
+  {
+   "claim_id": "lusail:corner_group:0#s4",
+   "block_kind": "corner_group",
+   "assertion": "Alonso finished third, his first podium since 2014.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-cf227b1fbbf6",
+     "excerpt_sha256": "48923ff2440030d868de9f1fd233aa870fe2a07d21ebf9d5a0fb01995d8f7532",
+     "offset": 2268,
+     "length": 25,
+     "locator": "race-results.yml, position: 3 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "third",
+     "value": "fernando-alonso"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partial_support_only"
+   ],
+   "notes": "F1DB supports third place. 'First since 2014' is not in the cited source; BBC and Grandprix support it elsewhere."
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s1",
+   "block_kind": "corner_group",
+   "assertion": "Hamilton won the first Lusail F1 GP, and the late suspense was about Alonso.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "8caba5364bb4eeaf40a9c33e25c52ae37b3c43abf20cb5d25be966de9a1b83b6",
+     "offset": 147,
+     "length": 61,
+     "locator": "Intro",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "c6998ac194578c43c13eab12faf30c0206a3feec6faba09728fa9a4e040d6577",
+     "offset": 3992,
+     "length": 57,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    },
+    {
+     "race_id": "1055",
+     "field": "season",
+     "value": "2021"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "'First' comes from F1DB: the earliest Lusail race is 2021."
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s2",
+   "block_kind": "corner_group",
+   "assertion": "Alpine kept Alonso on one stop while long stints caused punctures for Bottas and Norris.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "28eadb2b4d5474f9a8c8ffc7271731858e65a96040eb3266e0e40fe86a1ed67d",
+     "offset": 4909,
+     "length": 76,
+     "locator": "Driver of the day caption",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "33fe4958119021e4fb1519b64c7bfcbdc666b19c10c87e1cfc742b45e5767051",
+     "offset": 3213,
+     "length": 115,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "f6937165752670fd39ff6bb1297f3a1beb9c222daf4e960738d0999510a65435",
+     "offset": 3854,
+     "length": 67,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "norris_long_stint_implicit"
+   ],
+   "notes": "BBC does not say that Norris's puncture was caused by a long stint."
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s3",
+   "block_kind": "corner_group",
+   "assertion": "Pérez was closing on third when a late VSC reduced the pressure.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "98914bb899827da85067da3d3f9f1670b606ef582809bd905a1b0e0c94b70f84",
+     "offset": 3922,
+     "length": 64,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "1227ae19063c17a8dc1bed140b23104c756cff2fe40328dea226d7f897b2321e",
+     "offset": 4254,
+     "length": 52,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Supported by BBC."
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s4",
+   "block_kind": "corner_group",
+   "assertion": "Alonso finished third, his first F1 podium since 2014.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "4cb4a33b38b94127dd7e3207f296e43d64e862e2e1164f023e4f5f430fb5cfe6",
+     "offset": 537,
+     "length": 90,
+     "locator": "Intro bullets",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "third",
+     "value": "fernando-alonso"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "2014 refers to the Hungarian GP; the 'unmatched' F1DB check does not matter."
+  },
+  {
+   "claim_id": "lusail:corner_group:1#s5",
+   "block_kind": "corner_group",
+   "assertion": "The result gives the top three, and the tyre gamble explains the fight for third.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-4f4029399294",
+     "excerpt_sha256": "d1bc93aee620c1868ffcd8ae9daa7d07ef56993c149207f50e6d88a20b1b1263",
+     "offset": 3992,
+     "length": 148,
+     "locator": "Section 'A carnival of punctures'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1055",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    },
+    {
+     "race_id": "1055",
+     "field": "second",
+     "value": "max-verstappen"
+    },
+    {
+     "race_id": "1055",
+     "field": "third",
+     "value": "fernando-alonso"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Supported by BBC and F1DB."
+  }
+ ]
+}

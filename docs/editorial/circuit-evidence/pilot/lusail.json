@@ -30,6 +30,12 @@
    "narrative": 19
   },
   "claims_unaligned_uk": 4,
+  "name_agreement": {
+   "agree": 13,
+   "differ": 0,
+   "uk_unrecognised": 0,
+   "no_names": 34
+  },
   "dataset_checks": {
    "supported": 3,
    "conflict": 0,
@@ -44,11 +50,21 @@
    "cited_sources_unavailable": 0,
    "no_cited_sources": 0
   },
-  "claims_verified": 0,
+  "claims_verified": 4,
+  "factcheck": {
+   "checked": 51,
+   "verified": 4,
+   "checker": "factcheck-agent-D",
+   "counts": {
+    "checker_verified_policy_rejected": 17,
+    "unsupported": 29,
+    "verified": 4,
+    "disputed": 1
+   }
+  },
   "sources": {
    "cited": 5,
-   "live": 4,
-   "live_pdf_no_text": 1
+   "live": 4
   },
   "source_structural_issues": 0,
   "corners": {
@@ -196,7 +212,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "Max Verstappen recovered from a grid penalty to finish second.",
-   "uk": "Макс Ферстаппен після штрафу на старті прорвався на друге місце.",
+   "uk": "Макс Ферстаппен, покараний втратою позицій на стартовій решітці, прорвався на друге місце.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -368,7 +384,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "The classification lists Hamilton, Verstappen and Alonso; the late drama was whether Alonso's tyres would last until the flag.",
-   "uk": "Протокол називає призерів, а напруга останніх кіл була в тому, чи витримають шини.",
+   "uk": "Протокол називає Гамільтона, Ферстаппена й Алонсо; напруга останніх кіл полягала в тому, чи витримають шини Алонсо до фінішу.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -430,32 +446,32 @@
    "block_id": "lusail:long_history_draft",
    "claim_type": "statistic",
    "importance": "critical",
-   "en": "The punctures elsewhere and the late neutralisation explain why the final laps felt so uncertain, even though Hamilton's victory was secure.",
-   "uk": "Проколи в суперників і пізня нейтралізація пояснюють, чому останні кола були такими напруженими, хоча перемога Гамільтона вже не викликала сумнівів.",
+   "en": "Late punctures elsewhere kept the closing laps tense, even though Hamilton's victory was already secure.",
+   "uk": "Пізні проколи в суперників тримали напругу в останніх колах, хоча перемога Гамільтона вже не викликала сумнівів.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
     {
-     "source_id": "src-bc638cbca6a3",
-     "passage_sha256": "114a5f96bdf57010808460e33731d19b658ec1892d8c98c5989ea42cde7cec1b",
-     "offset": 554,
-     "length": 252,
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "288d1675eb2ab70f467a7ade10025cfec060c39fda2c52e8cb8d78218dcc1bd2",
+     "offset": 628,
+     "length": 276,
      "numbers_covered": true,
      "names_matched": [
-      "Hamilton's"
+      "Late"
      ],
      "score": 4
     },
     {
-     "source_id": "src-bc638cbca6a3",
-     "passage_sha256": "805dd4c1ecefd6a962a299280f5f437bbdc4e70eb06b11c206cd0ca5d5137edd",
-     "offset": 246,
-     "length": 41,
+     "source_id": "src-4f4029399294",
+     "passage_sha256": "5ec9a7fd391a332aa823ae48bd2c22983f15e27615db3b294b7de363ed506ec6",
+     "offset": 2511,
+     "length": 95,
      "numbers_covered": true,
      "names_matched": [
-      "Hamilton's"
+      "Late"
      ],
-     "score": 3
+     "score": 4
     }
    ]
   },
@@ -1582,13 +1598,13 @@
    "status": {
     "url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
     "source_id": "src-2e17b165b057",
-    "checked_at": "2026-11-16T11:22:55.406Z",
-    "http_status": 200,
-    "final_url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
-    "content_type": "application/pdf",
-    "outcome": "live_pdf_no_text",
-    "bytes_sha256": "55e8419df2c7977259f95e1645907d42f367254e6693f65e2f025df19d8b4cf2",
-    "bytes": 410454
+    "checked_at": "2026-11-17T00:14:17.165827+00:00",
+    "bytes_sha256": "d91d61779db31011098506302d2b875df2191498ca9b32fc3887f2e245d492a0",
+    "bytes": 410454,
+    "pages": 2,
+    "outcome": "live_pdf_text",
+    "text_sha256": "7abe8be4b236110950abb98d18228c101279c1380950a534d355eef916a47257",
+    "text_chars": 1561
    }
   },
   {

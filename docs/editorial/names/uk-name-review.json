@@ -1,0 +1,516 @@
+{
+ "reviewer": "uk-name-review-agent",
+ "reviewed_on": "2026-11-17",
+ "method": "Each nominative was checked against Ukrainian practical transcription (2019 orthography) and prevailing Ukrainian motorsport usage, and every generated full and surname form was checked by hand against Ukrainian declension rules for foreign masculine names, including the -й stem, к/г/х stem locative and к→ц alternation cases that the generator does not handle.",
+ "binding": "forms_sha256 = sha256(JSON.stringify([uk, full_forms, surname_forms])) at review time; a changed form invalidates the approval",
+ "entries": {
+  "alain-prost": {
+   "status": "approved",
+   "forms_sha256": "d374c43bfbecc190f45457043edaed4c633eb7446d0e3361b49f02bba27c3d32",
+   "note": "Standard form; hard-stem paradigm correct."
+  },
+  "alan-jones": {
+   "status": "approved",
+   "forms_sha256": "1354d5a272347ca65d695f67e446b0695dd5b0536359ed0346c295b794ce2452",
+   "note": "Standard form; paradigm correct."
+  },
+  "alberto-ascari": {
+   "status": "approved",
+   "forms_sha256": "ef1dc529482c87883b480b4b397ce0fc3ae0573a324b1aed25b29bdfc7082115",
+   "note": "Both parts end in a vowel (-о/-і) and are not declined."
+  },
+  "ayrton-senna": {
+   "status": "approved",
+   "forms_sha256": "5c79fceb962177749684b9439ed8dad45ad293bc62e03c9792285e1add5c0548",
+   "note": "Standard form; a-declension of Сенна correct."
+  },
+  "bruce-mclaren": {
+   "status": "approved",
+   "forms_sha256": "c9fb5973ea998916c22166d61635e243ee1fdf643c7cdfeeaec7ef015cd36b11",
+   "note": "Standard form; paradigm correct. The EN field reads 'Mclaren' (should be 'McLaren'); this does not affect the UK form."
+  },
+  "carlos-pace": {
+   "status": "changes_required",
+   "forms_sha256": "525ffa69697afbc768a897eba4cfc33f72e02e02067a8f0b51cf6d46ad4f99fd",
+   "nominative": "Карлос Пасе",
+   "wrong_forms": [
+    "Карлос Паче",
+    "Карлоса Паче",
+    "Карлосу Паче",
+    "Карлосом Паче",
+    "Карлосі Паче",
+    "Паче"
+   ],
+   "missing_forms": [
+    "Карлос Пасе",
+    "Карлоса Пасе",
+    "Карлосу Пасе",
+    "Карлосом Пасе",
+    "Карлосі Пасе",
+    "Пасе"
+   ],
+   "note": "Pace was Brazilian, and the name is read in Portuguese, not Italian, so 'Паче' is an Italian reading. Use Пасе (the usual form in Ukrainian and Russian-language sources). Confirm against a Ukrainian source before re-approving, and update the drafts that use Паче. The surname is not declined either way."
+  },
+  "carlos-reutemann": {
+   "status": "approved",
+   "forms_sha256": "098fe3b89d98a687475357e4ff6d527f4206a4f44d300617fb0d6138f7695dc5",
+   "note": "Ройтеманн is the established form; keeping the double -нн in a proper name is allowed. Paradigm correct."
+  },
+  "carlos-sainz-jr": {
+   "status": "approved",
+   "forms_sha256": "a9317b386da685567daa92c4814e6a4b9eb08fd4f9292079b49bdec506bc9c49",
+   "note": "Сайнс is the established Ukrainian media form; paradigm correct."
+  },
+  "charles-leclerc": {
+   "status": "approved",
+   "forms_sha256": "f515dd476b3da426cb33a140d66516065eb9ffd510af00a1f3867e2265ba93b2",
+   "note": "Standard form. The soft-stem given name (Шарля/Шарлю/Шарлем/Шарлі) is correct; Шарлеві is an optional variant that is not generated."
+  },
+  "clay-regazzoni": {
+   "status": "approved",
+   "forms_sha256": "47bb4d2a2dec6b07c85f45007dd62de19ee673726fdeb87468316cd0a42f9b8e",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Клейа Регаццоні",
+     "Клейу Регаццоні",
+     "Клейом Регаццоні",
+     "Клейі Регаццоні"
+    ]
+   },
+   "note": "The -й stem now declines correctly: Клея, Клею, Клея (acc), Клеєм, Клеї. Регаццоні is not declined. Клеєві is an optional variant that is not generated, consistent with other given names."
+  },
+  "damon-hill": {
+   "status": "approved",
+   "forms_sha256": "89d0c2dfc7ffc7ac33e14cb669f4b020d821772bea413e4f4fa54c813a8dd7e6",
+   "note": "Деймон Гілл (H→Г) is the established form; paradigm correct."
+  },
+  "david-coulthard": {
+   "status": "approved",
+   "forms_sha256": "aa9067a684557cffab49dd462acb69253f8987e249a7e6988b0e673c5f88f22f",
+   "note": "Култгард follows the archive's H→Г rule (Coult+hard). 'Култхард' also appears in Ukrainian media, so keep Култгард as the house form for consistency. Paradigm correct."
+  },
+  "denny-hulme": {
+   "status": "approved",
+   "forms_sha256": "e095f98c3a6a156aa59eb0a66ed8f4ef4086e9fabace0c4ac210b294f2b9936a",
+   "note": "Денні is not declined; Галм declines as a hard stem. Correct."
+  },
+  "emerson-fittipaldi": {
+   "status": "approved",
+   "forms_sha256": "d8bf16a272b7817b11f7b111e1119b9ef382991bf5cea7c3900c01e9b6c3db2d",
+   "note": "Фіттіпальді is not declined; correct."
+  },
+  "felipe-massa": {
+   "status": "approved",
+   "forms_sha256": "08ac1e358474cfe145977a25c459b07c9331f6334d183a7dcb54b7b7dba44e27",
+   "note": "Established form; a-declension correct. Warning: Масса, Массу and Массі collide with forms of Масс (jochen-mass), but the surname_key is not marked ambiguous."
+  },
+  "fernando-alonso": {
+   "status": "approved",
+   "forms_sha256": "b3ae2f4b132829f91a544790534b675d9f4ce52a386e70b539d910ef20187a38",
+   "note": "Not declined; correct."
+  },
+  "george-russell": {
+   "status": "approved",
+   "forms_sha256": "1596c9a63e14b468160cb17bd2125cb178c9b5512ad4ba23ef02d8a650812102",
+   "note": "Established form. Джорджем (instrumental after ж) is correct; Джорджеві is an optional dative/locative variant that is not generated."
+  },
+  "giancarlo-fisichella": {
+   "status": "approved",
+   "forms_sha256": "b3519d44bd673b17e9ec46857f37d31242e72138f4c3f86ae3a432722c5b6d26",
+   "note": "Established form; a-declension correct."
+  },
+  "gilles-villeneuve": {
+   "status": "approved",
+   "forms_sha256": "84ee9b79e78999f1b20dc899f547f6fe3a916c7230400c761b516150815ba5ab",
+   "note": "Established form; the soft stem Жиль is correct."
+  },
+  "graham-hill": {
+   "status": "approved",
+   "forms_sha256": "2e5a88add72333ee6ad3d69f58cf88ea17ffea731e0a3c2ad88a3eb91b60c628",
+   "note": "Ґрем follows the 2019 orthography, which allows ґ for [g] in names, and it keeps G apart from H (Гілл). Ukrainian media more often write 'Грем Гілл'; make a house-style decision and apply it consistently. Paradigm correct."
+  },
+  "jack-brabham": {
+   "status": "approved",
+   "forms_sha256": "f65446adc7cbd112acd2476fe5d6e3ede99f871ded91a69a0761a9cce9ae57a7",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Джекі Брабемі",
+     "Джекі Брабемові"
+    ]
+   },
+   "note": "The locative is now Джекові, and the collision with 'Джекі' (Jackie Stewart) is gone. Брабем paradigm correct."
+  },
+  "jackie-stewart": {
+   "status": "approved",
+   "forms_sha256": "e33df5b51920b04bc5a0018dca9422ece41bf345d9f355dd7a27fb88c7816d41",
+   "note": "Джекі is not declined; Стюарт declines as a hard stem. Correct."
+  },
+  "jacques-laffite": {
+   "status": "approved",
+   "forms_sha256": "ed4ccc0beb0f973dd63b947511eeb63807cef67a34acced3e9e6a3cf3fa09933",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Жакі Лаффіті",
+     "Жакі Лаффітові"
+    ]
+   },
+   "note": "The к-stem locative Жакові is correct; Лаффіт paradigm correct."
+  },
+  "jacques-villeneuve": {
+   "status": "approved",
+   "forms_sha256": "a632c4eca202fbbea1d43e6309d9a9a14cf7824679692a02ac559ccf355d2b7d",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Жакі Вільневі",
+     "Жакі Вільневові"
+    ]
+   },
+   "note": "The к-stem locative Жакові is correct; Вільнев paradigm correct."
+  },
+  "james-hunt": {
+   "status": "approved",
+   "forms_sha256": "812fc9ec10c4cae869a02ea260808e15b461c9c16a74c3ca08be7a134e3cd1c2",
+   "note": "Джеймс Гант is the established form; paradigm correct."
+  },
+  "jarno-trulli": {
+   "status": "approved",
+   "forms_sha256": "1882468e0b667bceb273cc35bc3f0310b3bdb2e68cc3fcfe46d11cb125134d0d",
+   "note": "Not declined; correct."
+  },
+  "jean-pierre-beltoise": {
+   "status": "approved",
+   "forms_sha256": "dff2bfaaf459ed881ae7333c7db1a5c405e87f56a69ae8fdbc4679e64d823e0c",
+   "note": "Hyphenated given name: only the last element declines (Жан-П'єра), as in Жан-Поля Сартра. Apostrophe placement correct."
+  },
+  "jean-pierre-jarier": {
+   "status": "approved",
+   "forms_sha256": "a5bfd3f812cedd7ce73b28973795fea40730ecb87d9306a372de0cd7b3698aa6",
+   "note": "Жар'є is correct, with the apostrophe before є, and is not declined. The hyphenated given name is handled correctly."
+  },
+  "jenson-button": {
+   "status": "approved",
+   "forms_sha256": "a95c42b8ae1a073930f6c537b23b1e4ab8a3a06e831a08d2684b04db1ffe3306",
+   "note": "Established form; paradigm correct."
+  },
+  "jim-clark": {
+   "status": "approved",
+   "forms_sha256": "c7d7f7e80079e789fdc680b5d76ed4cdd9c256deb6e7b2696a13f900062927f7",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Кларкі",
+     "Джимі Кларкі"
+    ]
+   },
+   "note": "Кларкі has been removed. The locative is Кларкові/Кларку, with Джимі as the given-name locative; all forms correct."
+  },
+  "jo-siffert": {
+   "status": "changes_required",
+   "forms_sha256": "652d2810b00b50ec276eef3effffaa92cab73d2eb0ac8be77a424135251866b3",
+   "nominative": "Жо Сіфферт",
+   "wrong_forms": [
+    "Жо Сіффер",
+    "Жо Сіффера",
+    "Жо Сіфферу",
+    "Жо Сіфферові",
+    "Жо Сіффером",
+    "Жо Сіффері",
+    "Сіффер",
+    "Сіффера",
+    "Сіфферу",
+    "Сіфферові",
+    "Сіффером",
+    "Сіффері"
+   ],
+   "missing_forms": [
+    "Жо Сіфферт",
+    "Жо Сіфферта",
+    "Жо Сіфферту",
+    "Жо Сіффертові",
+    "Жо Сіффертом",
+    "Жо Сіфферті",
+    "Сіфферт",
+    "Сіфферта",
+    "Сіфферту",
+    "Сіффертові",
+    "Сіффертом",
+    "Сіфферті"
+   ],
+   "note": "Siffert is a Swiss (Fribourg) surname of German origin, and the final -t is pronounced. Reference works write it with -т (Сіфферт). Dropping it as in French is not justified. The form is not attested in the drafts, so confirm it before approval. Жо is not declined; correct."
+  },
+  "jochen-mass": {
+   "status": "approved",
+   "forms_sha256": "c906f26913039ce3c10507c76ea9f94fbdf52de679ea1b679b81440e772c40b8",
+   "note": "Йохен Масс is correct; paradigm correct. Warning: Масса, Массу and Массі are identical to forms of Масса (felipe-massa), so the surname_key should be ambiguous and the recogniser must not resolve these forms on their own."
+  },
+  "jochen-rindt": {
+   "status": "approved",
+   "forms_sha256": "7056aed4394d547bbbad2a31959d16e254eb6596f5656e93649bfb9cef511709",
+   "note": "Established form; paradigm correct."
+  },
+  "jody-scheckter": {
+   "status": "approved",
+   "forms_sha256": "30b97fab74a55366addcf40dd7c81a92dbf421e073d4f94de3db4a004cf70d75",
+   "note": "Джоді is not declined; Шектер is correct."
+  },
+  "john-surtees": {
+   "status": "approved",
+   "forms_sha256": "2d038a7f9a6589db91512ad5b7385dfcdf8e40e04e4563aca3e23f3e5a5c1867",
+   "note": "Сертіс is the established form; paradigm correct."
+  },
+  "john-watson": {
+   "status": "approved",
+   "forms_sha256": "09643afaad3da6db7dc9c86a96361ccff2d37833fc3182e1319b05a746210d6d",
+   "note": "Вотсон follows the W→В rule; correct."
+  },
+  "johnny-herbert": {
+   "status": "approved",
+   "forms_sha256": "9465b174c33ad94e768bad6077e8f91a8c47540152f495a1f69108709fb3e65d",
+   "note": "Джонні is not declined; Герберт is correct."
+  },
+  "jose-froilan-gonzalez": {
+   "status": "approved",
+   "forms_sha256": "af67cfb04d7e452deb2bbc7292052f1cb5906b599419533c02213c4ab5791b54",
+   "note": "Хосе is not declined; Фройлан and Гонсалес decline as hard stems. Correct."
+  },
+  "juan-manuel-fangio": {
+   "status": "approved",
+   "forms_sha256": "c2ee80290154fee9ace998a03e24156c61aa7d2cf89b35159a66c34c290c3b91",
+   "note": "Хуан (hard) and Мануель (soft) both decline; Фанхіо is not declined. Correct."
+  },
+  "juan-pablo-montoya": {
+   "status": "approved",
+   "forms_sha256": "2a73632d73565a0c504dc1bde92dceb407e12be947b7136982b784afab814af6",
+   "note": "Пабло is not declined, and the я-declension of Монтойя is correct (Монтойї, Монтойєю). 'Монтоя' also appears in Ukrainian sources; keep the attested Монтойя."
+  },
+  "keke-rosberg": {
+   "status": "approved",
+   "forms_sha256": "9c72b9c71e2ef84859c748b3db398cd84c1fd499ea50ca55d0ec4a1bfca16b3f",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Кеке Росбергі",
+     "Росбергі"
+    ]
+   },
+   "note": "Росбергі has been removed. The г-stem locative is Росбергові/Росбергу, which is identical to the dative forms already listed. Кеке is not declined."
+  },
+  "kimi-antonelli": {
+   "status": "approved",
+   "forms_sha256": "54d5a2986df33d342dd8337c88b9df310b48a3dbd881c3b2248081fb29221e4a",
+   "note": "Not declined; correct."
+  },
+  "kimi-raikkonen": {
+   "status": "approved",
+   "forms_sha256": "2e9722540dc88297b8df90db404c1f9bf31ab957f9f75a57bc997e70233c78e5",
+   "note": "Райкконен is the established Ukrainian media form; paradigm correct."
+  },
+  "lando-norris": {
+   "status": "approved",
+   "forms_sha256": "c0736a5cc1fde87f8c9d664a5bd7ff6ac1b2c49af58e37b3e4638ae3c19bd687",
+   "note": "Established form; paradigm correct."
+  },
+  "lewis-hamilton": {
+   "status": "approved",
+   "forms_sha256": "0e37dc0d2bf5c454c596c125a564aa58e3a30ad436e96dd99bf90e726d48068d",
+   "note": "Гамільтон is the established Ukrainian form, preferred over Гемілтон. Paradigm correct."
+  },
+  "luigi-musso": {
+   "status": "approved",
+   "forms_sha256": "48b71422135682dbf580aba615f4cf8bc47d075f3bcac982299375138379f7db",
+   "note": "Not declined; correct."
+  },
+  "mark-webber": {
+   "status": "approved",
+   "forms_sha256": "733f01798576f075dfa50fb3c949ac83e3dc027fbca43ce6f82673260a5eb827",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Маркі Веббері",
+     "Маркі Вебберові"
+    ]
+   },
+   "note": "The к-stem locative Маркові is correct; Веббер paradigm correct."
+  },
+  "maurice-trintignant": {
+   "status": "approved",
+   "forms_sha256": "ec72b654cb0949c8ef999f16ef5b04d8c6d67434782dfbda50d9851d1c60393a",
+   "note": "Трентіньян renders the French 'in' as 'ен'; correct. Paradigm correct."
+  },
+  "max-verstappen": {
+   "status": "approved",
+   "forms_sha256": "127aa1ca77b471a560ca7aad9f8f1d67bc5ba7cf4ec0a3f6eb97db488987ecc4",
+   "note": "Ферстаппен is the established Ukrainian media form, preferred over Верстаппен. Paradigm correct."
+  },
+  "michael-schumacher": {
+   "status": "approved",
+   "forms_sha256": "6e8fe3e7e96948279025748d9d6447c7bbee4fe07ca56e1522d20fc3a4f8e18a",
+   "note": "Міхаель (German reading) is the established form; the soft-stem paradigm is correct."
+  },
+  "mika-hakkinen": {
+   "status": "approved",
+   "forms_sha256": "f2e794189ef0414739e117449b699abc5bce6b84119d9206d07a815887259ee3",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Мікі Хаккінену",
+     "Мікі Хаккіненові",
+     "Мікі Хаккінені"
+    ]
+   },
+   "note": "The к→ц change is applied: Міці in the dative and locative. Міки, Міку and Мікою are correct, and so is the Хаккінен paradigm."
+  },
+  "mike-hawthorn": {
+   "status": "approved",
+   "forms_sha256": "731ed85eb643d5e3493e6ee2f7b72db14235aabe24d1e64bb7f23ec7108d85ad",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Майкі Готорні",
+     "Майкі Готорнові"
+    ]
+   },
+   "note": "The к-stem locative Майкові is correct; Готорн paradigm correct."
+  },
+  "nelson-piquet": {
+   "status": "approved",
+   "forms_sha256": "c0c0bc7f313ae5caf556a96aca22d3ba2667b7f1910fafc62c9a3cd90e0d2bb9",
+   "note": "Піке is not declined; correct."
+  },
+  "nicholas-latifi": {
+   "status": "approved",
+   "forms_sha256": "bd3795093ecfa62f2f98d848738b800083aa0005e0bef9e8924f49ddf81f48ee",
+   "note": "Латіфі is not declined; correct."
+  },
+  "nico-rosberg": {
+   "status": "approved",
+   "forms_sha256": "b310c1bbe0c64ec0917a0c519ac7c724a3002ed8d3847c032fd8d5121c80f6ba",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Ніко Росбергі",
+     "Росбергі"
+    ]
+   },
+   "note": "Росбергі has been removed. The г-stem locative is Росбергові/Росбергу (the same strings as the dative). Ніко is not declined."
+  },
+  "nigel-mansell": {
+   "status": "approved",
+   "forms_sha256": "14d4c5c579687a00d8fa6ec5e10e26b3b510fdcc1d59ed082b3c9df34677e3f2",
+   "note": "Менселл is the established form; paradigm correct."
+  },
+  "niki-lauda": {
+   "status": "approved",
+   "forms_sha256": "0590113cd94ae1ff17239b022f8cf817077560ddb444c9c0f0e1eb5282771ef0",
+   "note": "Нікі is not declined; the a-declension of Лауда is correct."
+  },
+  "nino-farina": {
+   "status": "approved",
+   "forms_sha256": "aca9fea0a8964b9b49fbb27f9ffc5fa5e9a3124da28ce078fca32fb46c6fb1a3",
+   "note": "The Ніно and Джузеппе variants are both correct; a-declension correct."
+  },
+  "olivier-panis": {
+   "status": "approved",
+   "forms_sha256": "c48424167ee3cf409bfe2b9bb21b29c266be22601ba990dedaa2aab4895e576e",
+   "note": "Олів'є (apostrophe before є) is correct and not declined; Паніс is correct."
+  },
+  "patrick-depailler": {
+   "status": "approved",
+   "forms_sha256": "b176dcd55f85f0bd7d52cba2b1820ba1d5b2b9ca3a3376403480a3bfb4273279",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Патрікі Депайє"
+    ]
+   },
+   "note": "The locative Патрікові is correct; the locative variant Патріку is the same string as the dative. Депайє is not declined."
+  },
+  "peter-collins": {
+   "status": "approved",
+   "forms_sha256": "551ca6035cb1628b89db1e016ae3bac2fd90421648ad090d95b92b5d78bd3f36",
+   "note": "Коллінз is correct; paradigm correct."
+  },
+  "peter-revson": {
+   "status": "approved",
+   "forms_sha256": "162f82235da3054a3057d998de20c6193437accb62426fa18a8ee660e6b77aef",
+   "note": "Correct."
+  },
+  "rene-arnoux": {
+   "status": "approved",
+   "forms_sha256": "dc70577973d9c5aedfac88a80445a7245a14d9b6e85e100e10afe0d5cc8ce7d4",
+   "note": "Not declined; correct."
+  },
+  "riccardo-patrese": {
+   "status": "approved",
+   "forms_sha256": "df856b9502dcccaec73732beaec49e6380fe83cf0a554eef163d38723e9761b4",
+   "note": "Рікардо Патрезе is the common media form ('Ріккардо' also occurs). Not declined."
+  },
+  "ronnie-peterson": {
+   "status": "approved",
+   "forms_sha256": "b91e8a3e2d657b6dbbd0d7ee18e944ddb38a4961e7f82700f4e4dad971ff387c",
+   "note": "Ронні is not declined; Петерсон is correct."
+  },
+  "rubens-barrichello": {
+   "status": "approved",
+   "forms_sha256": "bf31fba2e7b470837ce1d7ad2cfc0143ced750e7613c3332ce8e9a0ffb98a696",
+   "note": "Барікелло is the established media form and is not declined; correct."
+  },
+  "sebastian-vettel": {
+   "status": "approved",
+   "forms_sha256": "63edd84567d102c505d61ae8e498fb5299bf23e1ab70277a0951a12b0e7ab1b1",
+   "note": "Феттель is the established form; the soft-stem paradigm (Феттелеві, Феттелем) is correct."
+  },
+  "sergio-perez": {
+   "status": "approved",
+   "forms_sha256": "946522d248e4271cb8fd1dcfc4a48db2e5a7b192e0571d08e2b6f4ef2bb02f64",
+   "note": "Серхіо Перес is correct; paradigm correct."
+  },
+  "stirling-moss": {
+   "status": "approved",
+   "forms_sha256": "b8b2eaad139712f7f7720f8978aea21c111035d283e3910a5bf525a59f17df7a",
+   "pass": 2,
+   "previous": {
+    "status": "changes_required",
+    "wrong_forms": [
+     "Стірлінгі Моссі",
+     "Стірлінгі Моссові"
+    ]
+   },
+   "note": "The г-stem locative Стірлінгові is correct; Мосс paradigm correct."
+  },
+  "valtteri-bottas": {
+   "status": "approved",
+   "forms_sha256": "b14c476ce9bf37fbd55f5119fcaf7dd7b0355cc687238fab32e587945db85f24",
+   "note": "Валттері is not declined; Боттас is correct."
+  }
+ },
+ "passes": [
+  {
+   "pass": 1,
+   "reviewer": "uk-name-review-agent",
+   "reviewed_on": "2026-11-17",
+   "scope": "all 70 entries"
+  },
+  {
+   "pass": 2,
+   "reviewer": "uk-name-review-agent",
+   "reviewed_on": "2026-11-17",
+   "scope": "12 entries regenerated after pass-1 generator fixes (locative after к/г/х, -й stems, a-stem alternation)"
+  }
+ ]
+}

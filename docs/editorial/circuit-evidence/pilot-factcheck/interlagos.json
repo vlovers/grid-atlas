@@ -1,0 +1,2195 @@
+{
+ "circuit_id": "interlagos",
+ "checker": "factcheck-agent-B",
+ "checked_at": "2026-11-17T00:24:57.388Z",
+ "checker_declared_at": "2026-11-17T00:00:00Z",
+ "policy_version": "grid-atlas-editorial-policy/1.8.0",
+ "claims_in_package": 74,
+ "claims_checked": 74,
+ "missing_claims": [],
+ "counts": {
+  "checker_verified_policy_rejected": 12,
+  "disputed": 1,
+  "unsupported": 46,
+  "contradicted": 1,
+  "verified": 14
+ },
+ "records": [
+  {
+   "claim_id": "interlagos:short_summary#s1",
+   "block_kind": "short_summary",
+   "assertion": "Fittipaldi won the 1973 Brazilian GP (first championship Brazilian GP at Interlagos) and 1974; Pace won 1975.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_records_inconsistent",
+    "claim_number_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-326d3a0df9bf",
+     "excerpt_sha256": "2f05de5132f385fb3fca7bdc07a57c99c637b1738865b0d4e5a88cbd282f0466",
+     "offset": 807,
+     "length": 50,
+     "locator": "race result table, P1 row",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "222",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    },
+    {
+     "race_id": "237",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    },
+    {
+     "race_id": "252",
+     "field": "winner",
+     "value": "carlos-pace"
+    }
+   ],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [],
+   "notes": "'First championship Brazilian GP at Interlagos' rests on F1DB: race 222 (1973) is the earliest championship race at this circuit. 1974/1975 winners from F1DB only."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s1",
+   "block_kind": "long_history_draft",
+   "assertion": "Before 1975 a Brazilian driver had already won at Interlagos.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-326d3a0df9bf",
+     "excerpt_sha256": "2f05de5132f385fb3fca7bdc07a57c99c637b1738865b0d4e5a88cbd282f0466",
+     "offset": 807,
+     "length": 50,
+     "locator": "1973 race result, P1 row",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "222",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    },
+    {
+     "race_id": "237",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK sentence merges EN s1 and s2 (adds Fittipaldi 1973 first championship win and 1974 repeat); UK alignment is shifted by one sentence for s2-s6.",
+   "issues": [
+    "uk_alignment_shift"
+   ],
+   "notes": "Rhetorical sentence; implied fact (prior Brazilian win) holds via F1DB 1973/1974."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s2",
+   "block_kind": "long_history_draft",
+   "assertion": "Fittipaldi won the first World Championship Brazilian GP at Interlagos in 1973 and won again in 1974.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_records_inconsistent",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "254339911ac619128fc6d0f420d7c10c2c40b28f62312176e37d0675f68c982c",
+     "offset": 4642,
+     "length": 161,
+     "locator": "pre-qualifying paragraph (1973 record)",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-326d3a0df9bf",
+     "excerpt_sha256": "2f05de5132f385fb3fca7bdc07a57c99c637b1738865b0d4e5a88cbd282f0466",
+     "offset": 807,
+     "length": 50,
+     "locator": "1973 race result, P1 row",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "222",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    },
+    {
+     "race_id": "237",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK sentence is about Pace in January 1975 (matches EN s3, not s2).",
+   "issues": [
+    "uk_alignment_shift"
+   ],
+   "notes": "1974 win from F1DB only; 'first WC' from F1DB circuit ordering."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s3",
+   "block_kind": "long_history_draft",
+   "assertion": "In January 1975 home crowd followed Brazilian Carlos Pace driving a Brabham.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "c30765fea03bc8714cc52b57e4a14e6a885fa6102382dae9ae2c8c1cc915bbd8",
+     "offset": 12388,
+     "length": 71,
+     "locator": "race section, pre-start paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "dff2d1010d7b2329e3cb9d495da3953765ad4ed70eb6bf1f7e6ba47f65a7221f",
+     "offset": 3617,
+     "length": 123,
+     "locator": "entry overview paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-d2bb5883a897",
+     "excerpt_sha256": "3c522ff1db4091310d37503d37f8231de0125fe1c1d84e78de86eb8c46c9acc7",
+     "offset": 800,
+     "length": 45,
+     "locator": "1975 race result, P1 row",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "252",
+     "field": "season",
+     "value": "1975 (date 1975-01-26)"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK sentence describes Jarier's Shadow and lap-32 fuel failure (EN s4 content).",
+   "issues": [
+    "uk_alignment_shift"
+   ],
+   "notes": "Date 26 Jan 1975 confirmed by F1DB and both sources."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s4",
+   "block_kind": "long_history_draft",
+   "assertion": "Jarier's Shadow was fastest, pulled clear, and retired with fuel-system trouble on lap 32.",
+   "checker_verdict": "DISPUTED",
+   "contradicted": false,
+   "final": "disputed",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "a0f7be98f25f93e54a35eb53d9038bcae4ebbdc27321d3dcbf2e35f3ace5f8d1",
+     "offset": 15073,
+     "length": 119,
+     "locator": "race narrative, early laps",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "b165c126d31171b26b5a4988dca9ee5e14932445f5336ab14c8d9a2cfbbbf24e",
+     "offset": 16538,
+     "length": 146,
+     "locator": "race narrative, lap 32",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "6e23a4fe4536b25a2843e3011a3e71f69d204518802501b67958df12f32f57b0",
+     "offset": 20630,
+     "length": 72,
+     "locator": "retirements list",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-d2bb5883a897",
+     "excerpt_sha256": "291cd75bd9d5a7f0f2932f164ff7a5657a5296353d61680d2359fd94e5b6751c",
+     "offset": 1556,
+     "length": 43,
+     "locator": "1975 race result, NC rows",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "252",
+     "field": "pole",
+     "value": "jean-pierre-jarier"
+    },
+    {
+     "race_id": "252",
+     "field": "fastest_lap",
+     "value": "jean-pierre-jarier"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK sentence says Pace took the lead with Fittipaldi closing (EN s5 content).",
+   "issues": [
+    "lap_number_ambiguity_32_vs_33",
+    "uk_alignment_shift"
+   ],
+   "notes": "Substance correct. Same source says lap 32 (narrative) and lap 33 (retirement list); F1.com shows 32 laps completed. Safer wording: 'after 32 laps'."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s5",
+   "block_kind": "long_history_draft",
+   "assertion": "After Jarier's retirement Pace led, with Fittipaldi's McLaren closing on him.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "5d53cd5237791e9c7cfab1f0133bc283c4e6ebd2a6c4288929c93ab2236c69b9",
+     "offset": 16792,
+     "length": 219,
+     "locator": "race narrative after Jarier retirement",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "3aaf0eab6f28d0ff596f19951d93d02cec7777f8254bd6528e49f6c251773b4b",
+     "offset": 17516,
+     "length": 115,
+     "locator": "final race paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": false,
+   "uk_issue": "UK sentence says Carlos held on and took his only F1 win (EN s6 content).",
+   "issues": [
+    "uk_alignment_shift"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s6",
+   "block_kind": "long_history_draft",
+   "assertion": "Pace won (his only F1 victory), Fittipaldi second, Mass third.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-d2bb5883a897",
+     "excerpt_sha256": "3c522ff1db4091310d37503d37f8231de0125fe1c1d84e78de86eb8c46c9acc7",
+     "offset": 800,
+     "length": 45,
+     "locator": "1975 race result, P1 row",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "39377dd58a54938e9301119a6c94085972d02a7f65cc630e67618e6e706e6561",
+     "offset": 17705,
+     "length": 80,
+     "locator": "final race paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "252",
+     "field": "winner",
+     "value": "carlos-pace"
+    },
+    {
+     "race_id": "252",
+     "field": "second",
+     "value": "emerson-fittipaldi"
+    },
+    {
+     "race_id": "252",
+     "field": "third",
+     "value": "jochen-mass"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK sentence gives only the podium (2nd/3rd); 'only victory' sits in UK s5 due to alignment shift.",
+   "issues": [
+    "partial_support",
+    "only_victory_not_in_cited_sources",
+    "uk_alignment_shift"
+   ],
+   "notes": "Podium verified by F1DB. Cited sources say 'first', not 'only'. Uncited FIA media kit (src-f471275d7099 p1) states 'the only victory of his career' — add that citation."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s7",
+   "block_kind": "long_history_draft",
+   "assertion": "1975 classification was a Brazilian one-two; Jarier had looked set to win.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "761fba24bfe3044f1a7251b2e41e1d809760c2b375ced02341abf061b270ee60",
+     "offset": 15647,
+     "length": 105,
+     "locator": "race narrative, lap 18",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "0b997ca347ac8bc3e3dbe425ae04e0b404771cc6f95931ee8cc78c9d9e3abd69",
+     "offset": 12239,
+     "length": 102,
+     "locator": "pre-start paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "252",
+     "field": "winner",
+     "value": "carlos-pace"
+    },
+    {
+     "race_id": "252",
+     "field": "second",
+     "value": "emerson-fittipaldi"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK omits Jarier and the crowd ending; says only that the day could have gone differently.",
+   "issues": [
+    "uk_omission_minor"
+   ],
+   "notes": "Brazilian nationality of both from 'home crowd'/'home Grand Prix' passages."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s8",
+   "block_kind": "long_history_draft",
+   "assertion": "After Jarier retired, Fittipaldi stayed close enough to Pace to make the finish a real contest.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": true,
+   "final": "contradicted",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "claim_rejected"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "61e4e2e67cdce560fc0eb1f86259bb75e432e65fdc53565094fcd8156740a012",
+     "offset": 17787,
+     "length": 80,
+     "locator": "final race paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "3aaf0eab6f28d0ff596f19951d93d02cec7777f8254bd6528e49f6c251773b4b",
+     "offset": 17516,
+     "length": 115,
+     "locator": "final race paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-d2bb5883a897",
+     "excerpt_sha256": "00a457ddc62fa64e68e2fe2cff06b343eb04b9827a7f34b6bf941b58dc6ccffc",
+     "offset": 850,
+     "length": 48,
+     "locator": "1975 race result, P2 row",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "characterisation_conflicts_with_source"
+   ],
+   "notes": "Source says Fittipaldi was catching but never got close enough; margin 5.79s. 'Real contest' overstates it; 'Fittipaldi was closing' would be supported."
+  },
+  {
+   "claim_id": "interlagos:long_history_draft#s9",
+   "block_kind": "long_history_draft",
+   "assertion": "Two Brazilians on the podium: reigning champion Fittipaldi chasing, and Pace taking his only championship GP win.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "61e4e2e67cdce560fc0eb1f86259bb75e432e65fdc53565094fcd8156740a012",
+     "offset": 17787,
+     "length": 80,
+     "locator": "final race paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-636e356b4110",
+     "excerpt_sha256": "39377dd58a54938e9301119a6c94085972d02a7f65cc630e67618e6e706e6561",
+     "offset": 17705,
+     "length": 80,
+     "locator": "final race paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "252",
+     "field": "winner",
+     "value": "carlos-pace"
+    },
+    {
+     "race_id": "252",
+     "field": "second",
+     "value": "emerson-fittipaldi"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK says 'the only one of his career' (broader than EN 'only championship Grand Prix').",
+   "issues": [
+    "partial_support",
+    "only_victory_not_in_cited_sources"
+   ],
+   "notes": "Podium and champion status supported; 'only' not in cited sources (FIA media kit, uncited here, supports it)."
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s1",
+   "block_kind": "narrative_biography",
+   "assertion": "Interlagos originated in plans for a resort between the Guarapiranga and Billings reservoirs.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "a3b5388ba313c733c35ded2a8146c2d27e368f5b44af8d3b46ee7aa0282b1538",
+     "offset": 360,
+     "length": 162,
+     "locator": "'When was the track built?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Cited page mentions neither a resort plan nor the reservoirs. Mercedes page (uncited here) names the two lakes but not a resort."
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s2",
+   "block_kind": "narrative_biography",
+   "assertion": "The circuit opened in 1940; F1 championship came in 1973 amid Fittipaldi's success.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "d7a4924786032e8bcad10b6c40314a8b42a5cae3a96a9c3a7baed6f40babe4d1",
+     "offset": 699,
+     "length": 131,
+     "locator": "'When was its first Grand Prix?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "222",
+     "field": "season",
+     "value": "1973"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partial_support",
+    "opening_year_1940_unsourced"
+   ],
+   "notes": "1973 and Fittipaldi context supported; source gives 1938 construction start only, no 1940 opening date. UK 'had already made' vs EN 'was making' is a slight nuance shift."
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s3",
+   "block_kind": "narrative_biography",
+   "assertion": "The long original layout was replaced by a much shorter one in 1990.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "832532608035fd4022c0bf59735b9b2879207e672abdabf9c3f6def8819fd21b",
+     "offset": 1252,
+     "length": 103,
+     "locator": "'What's the circuit like?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "486",
+     "field": "season",
+     "value": "1990 (layout interlagos-2, 4.309 km; interlagos-1 7.873 km used 1973-1980)"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Length change established by F1DB layouts."
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s4",
+   "block_kind": "narrative_biography",
+   "assertion": "The Senna S leads downhill to a winding infield and the lap climbs back to the start.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "1e2f31e74a3314a3e41a5872a7b390a26ae79a98b0faa49a51eef2c9ec377c01",
+     "offset": 1357,
+     "length": 215,
+     "locator": "'What's the circuit like?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:narrative_biography#s5",
+   "block_kind": "narrative_biography",
+   "assertion": "All of Fittipaldi's Interlagos wins came on the long (pre-1990) layout.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "verification_method_mismatch",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "222",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    },
+    {
+     "race_id": "237",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB: Fittipaldi wins 1973/1974 only, both on interlagos-1 (7.873 km). Second clause is evaluative."
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1973-home-beginning#s1",
+   "block_kind": "defining_moment",
+   "assertion": "Fittipaldi, driving for Lotus, won the first World Championship Brazilian GP at Interlagos.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "d7a4924786032e8bcad10b6c40314a8b42a5cae3a96a9c3a7baed6f40babe4d1",
+     "offset": 699,
+     "length": 131,
+     "locator": "'When was its first Grand Prix?' section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "c34d8418dfa3144ad1f6f5f1b9faea60c712e4a906f67b33e9297873e89dc3de",
+     "offset": 831,
+     "length": 149,
+     "locator": "'When was its first Grand Prix?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "222",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partial_support",
+    "team_not_in_cited_source"
+   ],
+   "notes": "Win and 'first WC race' supported; 'for Lotus' not in the cited page. Lotus appears in uncited snapshots (F1.com 1973 result, FIA kit) — add a citation."
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1973-home-beginning#s2",
+   "block_kind": "defining_moment",
+   "assertion": "Fittipaldi won again in 1974 and Pace won in 1975: home wins in the first three championship races at the venue.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_value_not_stated",
+    "dataset_records_inconsistent",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "c34d8418dfa3144ad1f6f5f1b9faea60c712e4a906f67b33e9297873e89dc3de",
+     "offset": 831,
+     "length": 149,
+     "locator": "'When was its first Grand Prix?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "237",
+     "field": "winner",
+     "value": "emerson-fittipaldi"
+    },
+    {
+     "race_id": "252",
+     "field": "winner",
+     "value": "carlos-pace"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1991-senna-gearbox#s1",
+   "block_kind": "defining_moment",
+   "assertion": "In 1991 Senna's McLaren began losing gears while he was heading for victory.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-35a1f5021090",
+     "excerpt_sha256": "e4454d8367f9870cebffb50f6388f8ceba39011ab631a8e094a4cfe4d34febe6",
+     "offset": 639,
+     "length": 84,
+     "locator": "Senna 1991 section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-35a1f5021090",
+     "excerpt_sha256": "690c6aafe917a3ec70a0707e0c2aaff82d0677b2046a6d645bff58572cba4996",
+     "offset": 725,
+     "length": 72,
+     "locator": "Senna 1991 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "502",
+     "field": "winner",
+     "value": "ayrton-senna"
+    }
+   ],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:moment:interlagos-1991-senna-gearbox#s2",
+   "block_kind": "defining_moment",
+   "assertion": "Senna finished using sixth gear ahead of a closing Patrese, his first home GP win.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_season_not_stated",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-35a1f5021090",
+     "excerpt_sha256": "b02a91cc5a70d0192f74ff3a65fa58d598db57b4d1c774e0b69b5d2ae2565fa3",
+     "offset": 803,
+     "length": 146,
+     "locator": "Senna 1991 section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-35a1f5021090",
+     "excerpt_sha256": "fd2b38ba34be9b6ebc46f0e69f6470b3cb88b68d4469654c1a83a55aa262d297",
+     "offset": 508,
+     "length": 92,
+     "locator": "Senna 1991 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "502",
+     "field": "winner",
+     "value": "ayrton-senna"
+    },
+    {
+     "race_id": "502",
+     "field": "second",
+     "value": "riccardo-patrese"
+    }
+   ],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t1#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 1 (S do Senna) is a left-hander dropping downhill from the pit straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-ad9cf78c4f4d",
+     "excerpt_sha256": "a4f3fd14a6e9711d92d446b0efe985049eb840c938136fe7e2f3f2413b1d6b5e",
+     "offset": 463,
+     "length": 43,
+     "locator": "[[page 2]] circuit map labels",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "FIA map text gives only corner numbers; media kit has no corner descriptions. Mercedes page (uncited here) supports left-right downhill."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t1#s2",
+   "block_kind": "corner_section",
+   "assertion": "The Senna S was created in the 1990 redesign with Senna's input; T1 braking is the main overtaking spot.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [
+    "not_in_cited_source",
+    "historical_claim_unsourced"
+   ],
+   "notes": "No cited source mentions the 1990 redesign or Senna's input. Historical claim needs a dedicated source."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t2#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 2 is a right-hander immediately after the downhill Turn 1.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "FIA map text lacks corner directions; media kit irrelevant."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t2#s2",
+   "block_kind": "corner_section",
+   "assertion": "Late braking into T1 compromises T2 and the exit through Curva do Sol.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Driving-technique description."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t3#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 3 Curva do Sol ('Curve of the Sun') is a long left after the Senna S.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Cited FIA documents carry no corner names. Mercedes page (uncited here) supports it."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t3#s2",
+   "block_kind": "corner_section",
+   "assertion": "A good T3 exit matters for slipstreaming on the Reta Oposta before braking for T4.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-ad9cf78c4f4d",
+     "excerpt_sha256": "e95892ce29a687117b76f201f79ed55781da9d8f31f65f788334f03e792fd92b",
+     "offset": 892,
+     "length": 59,
+     "locator": "[[page 2]] DRS label list",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Map lists DRS positions near T3/T4 but label-to-position mapping is unclear in extracted text; does not state the slipstream claim."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t4#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 4 is a left at the end of Reta Oposta, starting Descida do Lago.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes page (uncited here) supports Turns 4 & 5 as Descida do Lago left-handers."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t4#s2",
+   "block_kind": "corner_section",
+   "assertion": "Turn 4 is a major overtaking zone.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t5#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 5 is the second left of Descida do Lago, continuing downhill before the road climbs to Ferradura.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [
+    "not_in_cited_source",
+    "possible_conflict_uncited_source"
+   ],
+   "notes": "Mercedes page (uncited) says Descida do Lago starts at a low point heading upward and calls Ferradura 'two downhill right-handers' — elevation description may be wrong."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t5#s2",
+   "block_kind": "corner_section",
+   "assertion": "Descida do Lago refers to a lakeside descent; exit prepares for the faster right-hand section.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t6#s1",
+   "block_kind": "corner_section",
+   "assertion": "Ferradura means horseshoe, after the section's curved right-hand shape.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes page (uncited here) supports the translation."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t6#s2",
+   "block_kind": "corner_section",
+   "assertion": "Turn 6 starts a faster sequence; drivers balance the car rather than chase one late apex.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no UK sentence (unaligned)",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t7#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 7 continues the right-hand Ferradura with elevation change.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t7#s2",
+   "block_kind": "corner_section",
+   "assertion": "Smooth steering at T7 to prepare for the tighter infield is more valuable than sliding wide.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t8#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 8 Laranjinha ('Little Orange') is a tighter right-hander in the middle sector.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes page (uncited here) supports name and right-hander."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t8#s2",
+   "block_kind": "corner_section",
+   "assertion": "Origin of the Laranjinha name is disputed (editorial meta-statement).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact",
+    "editorial_meta_text"
+   ],
+   "notes": "Sentence refers to 'the guide' itself; no source on competing explanations."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t9#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 9 Pinheirinho ('Little Pine Tree') is a slow infield left.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes page (uncited here) supports it."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t9#s2",
+   "block_kind": "corner_section",
+   "assertion": "A wide T9 exit compromises the very tight right-hand Bico de Pato.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t10#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 10 Bico de Pato ('Duck's Bill') is a sharp right-hand hairpin.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes page (uncited here) supports name/right-hander; 'hairpin' unsourced."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t10#s2",
+   "block_kind": "corner_section",
+   "assertion": "T10 is the slowest part of the middle sector; exit affects the left-hand Mergulho.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t11#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 11 Mergulho ('Dive') is a downhill left before Junção.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes (uncited) supports 'Dive' and downhill; direction not stated there."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t11#s2",
+   "block_kind": "corner_section",
+   "assertion": "Drivers must anticipate the slower left after the downhill T11.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t12#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 12 Junção ('Junction') is the key slow left before the long uphill acceleration.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-ad9cf78c4f4d",
+     "excerpt_sha256": "0a24896d838834715379bc7f35592ff5d8d1670633cdaec5634285a39b9930f6",
+     "offset": 952,
+     "length": 40,
+     "locator": "[[page 2]] DRS label list",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "FIA map only references T12 in DRS labels. Mercedes page (uncited here) supports name and criticality."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t12#s2",
+   "block_kind": "corner_section",
+   "assertion": "Junção exit traction determines speed onto the pit straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t13#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 13 Curva do Café begins the uphill, largely flat-out run after Junção.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes (uncited) supports full-speed left-hander."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t13#s2",
+   "block_kind": "corner_section",
+   "assertion": "The Café name refers to coffee's role in São Paulo regional history.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source",
+    "etymology_unsourced"
+   ],
+   "notes": "No source in the package (cited or not) links the name to coffee history."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t13#s3",
+   "block_kind": "corner_section",
+   "assertion": "T13 is taken as a flowing sweep, not a braking point.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t14#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 14 is part of the uphill run to the pit straight, associated with Subida dos Boxes.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "not_in_cited_source"
+   ],
+   "notes": "Mercedes (uncited) names Turn 14 itself 'Subida dos Boxes' (10% gradient)."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t14#s2",
+   "block_kind": "corner_section",
+   "assertion": "Precise line matters; T14 has no established individual name.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact",
+    "editorial_meta_text"
+   ],
+   "notes": "Implication that T14 lacks a name conflicts with Mercedes page (uncited), which calls Turn 14 'Subida dos Boxes'."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t15#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 15 is the last numbered corner, completing the uphill sweep onto the start-finish straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-ad9cf78c4f4d",
+     "excerpt_sha256": "a4f3fd14a6e9711d92d446b0efe985049eb840c938136fe7e2f3f2413b1d6b5e",
+     "offset": 463,
+     "length": 43,
+     "locator": "[[page 2]] circuit map labels",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partial_support"
+   ],
+   "notes": "15 numbered corners consistent with map and F1DB layout interlagos-2 (15 turns); uphill character not in cited sources."
+  },
+  {
+   "claim_id": "interlagos:corner:interlagos-t15#s2",
+   "block_kind": "corner_section",
+   "assertion": "A poor Junção exit leaves drivers vulnerable on the climb to Turn 1.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:0#s1",
+   "block_kind": "corner_group",
+   "assertion": "The Senna S forms the opening bends and leads downhill towards the next section.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "8a9b6cd8296f6e3611183f414008165fe22c5fc7da5fbd3cb83fb7a1c0266baf",
+     "offset": 1357,
+     "length": 53,
+     "locator": "'What's the circuit like?' section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "e54c6bb09ddfd94b7262cad76d6931477c8ccac56e3f00adc17094fb40c217dd",
+     "offset": 2180,
+     "length": 68,
+     "locator": "'Where is the best place to watch?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "'Next straight' implied by 'down to Turn 4', not stated."
+  },
+  {
+   "claim_id": "interlagos:corner_group:0#s2",
+   "block_kind": "corner_group",
+   "assertion": "The first braking zone offers overtaking; cars change direction on a descent.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "ea49c3cf5824847899146aca8c55ff48bed3caa7d0a838f67c7fbadaa418d3a1",
+     "offset": 2180,
+     "length": 116,
+     "locator": "'Where is the best place to watch?' section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "8a9b6cd8296f6e3611183f414008165fe22c5fc7da5fbd3cb83fb7a1c0266baf",
+     "offset": 1357,
+     "length": 53,
+     "locator": "'What's the circuit like?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:0#s3",
+   "block_kind": "corner_group",
+   "assertion": "A bad Senna S exit leaves the driver exposed on the following straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:1#s1",
+   "block_kind": "corner_group",
+   "assertion": "The final section climbs from the infield to the pit straight.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-42e2fe1c7c1f",
+     "excerpt_sha256": "031104dee5de5322411c2269ab2601fea9b09aa8d7fe31314c1730419a727f90",
+     "offset": 1505,
+     "length": 66,
+     "locator": "'What's the circuit like?' section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "'Steeply' is not stated in the source."
+  },
+  {
+   "claim_id": "interlagos:corner_group:1#s2",
+   "block_kind": "corner_group",
+   "assertion": "A clean exit from the preceding left is needed to build speed uphill.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:1#s3",
+   "block_kind": "corner_group",
+   "assertion": "The acceleration zone decides whether an attacker can challenge at T1.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:2#s1",
+   "block_kind": "corner_group",
+   "assertion": "After the Senna S, Curva do Sol is a long left onto the Reta Oposta.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "4b405b83ea6d13a2758975ccac0a018c7309347d3358f9f0b0f3fd852490ed7b",
+     "offset": 1596,
+     "length": 129,
+     "locator": "Turn 3 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:2#s2",
+   "block_kind": "corner_group",
+   "assertion": "Curva do Sol means Curve of the Sun.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "f0079cda50222f1f7948e4109e240adc922330e38e86f5bfbc9f5f55058de0e7",
+     "offset": 1556,
+     "length": 39,
+     "locator": "Turn 3 heading",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Source oddly attributes the name to 'immense curvature'; the translation itself is supported."
+  },
+  {
+   "claim_id": "interlagos:corner_group:2#s3",
+   "block_kind": "corner_group",
+   "assertion": "Avoid running wide at Curva do Sol; a clean exit gains time to the next braking zone.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:3#s1",
+   "block_kind": "corner_group",
+   "assertion": "At the end of the Reta Oposta, cars brake for the left-hand Descida do Lago.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "beb0244fadfbf09281a1b4f5063db20f5e5e25fe028f3dbd356cc032f0351b0e",
+     "offset": 2124,
+     "length": 45,
+     "locator": "Turns 4 & 5 heading",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "ddbc14309c8751c3f6ec3c8956c1843c479732c919eab1146fc4ba101475c098",
+     "offset": 2170,
+     "length": 84,
+     "locator": "Turns 4 & 5 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": "UK adds the translation 'Спуском до озера' here (moved from EN s2); consistent.",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:3#s2",
+   "block_kind": "corner_group",
+   "assertion": "Descida do Lago means Descent to the Lake, reflecting local terrain.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "beb0244fadfbf09281a1b4f5063db20f5e5e25fe028f3dbd356cc032f0351b0e",
+     "offset": 2124,
+     "length": 45,
+     "locator": "Turns 4 & 5 heading",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "2f51c1bf145c094fc6f8c9a277899eec7eaff10796e54353e234bec307ae6e83",
+     "offset": 2256,
+     "length": 59,
+     "locator": "Turns 4 & 5 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": false,
+   "uk_issue": "UK omits the translation (it appears in UK s1 instead); says only that the name recalls the terrain.",
+   "issues": [
+    "uk_omission_minor"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:3#s3",
+   "block_kind": "corner_group",
+   "assertion": "Descida do Lago is a passing opportunity; overshooting the first left spoils the second.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "8a29c18ee4977bbec2ea2bc49eed30c258bd82e1790e830520764000e3ea9b38",
+     "offset": 2363,
+     "length": 96,
+     "locator": "Turns 4 & 5 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Source mentions a duel here but does not state it is a passing opportunity or the overshoot effect."
+  },
+  {
+   "claim_id": "interlagos:corner_group:4#s1",
+   "block_kind": "corner_group",
+   "assertion": "Right-hand Ferradura (Horseshoe) leads into the right-hander Laranjinha.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "dc09e0a9959e721061344830e7ff1a2ee7bd00c0934404f95bbd7ac6c263b1b8",
+     "offset": 2571,
+     "length": 34,
+     "locator": "Turns 6 & 7 heading",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "4f2a172a7138154112dbd82af2db091a8a9fc5e1dc52a5008e566a8c3f80f001",
+     "offset": 2606,
+     "length": 65,
+     "locator": "Turns 6 & 7 section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "dd6fd629b479a120bfb30d0d4462384b2c2c2930a96005f36fdcad97c4565d9d",
+     "offset": 2880,
+     "length": 71,
+     "locator": "Turn 8 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "'Tightening' not stated in source."
+  },
+  {
+   "claim_id": "interlagos:corner_group:4#s2",
+   "block_kind": "corner_group",
+   "assertion": "These bends begin the technical infield section.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "23f8d8e8ae3978a2fa053c8f257e75095903f083fe8143cdd775636cce389939",
+     "offset": 2719,
+     "length": 124,
+     "locator": "Turns 6 & 7 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:4#s3",
+   "block_kind": "corner_group",
+   "assertion": "Drivers balance the car through Ferradura/Laranjinha rather than attack each apex.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:5#s1",
+   "block_kind": "corner_group",
+   "assertion": "Pinheirinho is a tight left followed by the tighter right-hand Bico de Pato (Duck's Bill).",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "846016c2581fa2f999c4fb33fc217aaa2c088584792b7be393b2702acbe9218d",
+     "offset": 3393,
+     "length": 45,
+     "locator": "Turn 9 section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "c61a844e257eb948f5fd8b88ed8bef76e6111e6ed228f8e362e040f75729f191",
+     "offset": 3572,
+     "length": 91,
+     "locator": "Turn 10 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "'Even tighter' comparison not stated in source."
+  },
+  {
+   "claim_id": "interlagos:corner_group:5#s2",
+   "block_kind": "corner_group",
+   "assertion": "Pinheirinho and Bico de Pato force drivers to slow and change direction.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Left-then-right sequence consistent with Mercedes page."
+  },
+  {
+   "claim_id": "interlagos:corner_group:5#s3",
+   "block_kind": "corner_group",
+   "assertion": "A rushed entry hampers traction on exit.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:6#s1",
+   "block_kind": "corner_group",
+   "assertion": "Mergulho is a fast downhill left leading to the slower left Junção.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "16e7930bd877ce30393a2146b4f6c615ebb208aaaab0341d611af8d9feefb98c",
+     "offset": 3873,
+     "length": 54,
+     "locator": "Turn 11 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partial_support"
+   ],
+   "notes": "Downhill supported; source gives no direction for Mergulho or Junção and does not call Mergulho fast."
+  },
+  {
+   "claim_id": "interlagos:corner_group:6#s2",
+   "block_kind": "corner_group",
+   "assertion": "Junção is crucial because its exit starts the long uphill run to the finish line.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "f158adb7e13acee142fce14a11cb0efd0754543a39bbf52bb88ba03f3e6db1b0",
+     "offset": 4145,
+     "length": 112,
+     "locator": "Turn 12 section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "aab23c495ab1a866027421003f13f6722aa538aa37e1350bbd95635b11ba6984",
+     "offset": 5104,
+     "length": 90,
+     "locator": "Turn 14 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:6#s3",
+   "block_kind": "corner_group",
+   "assertion": "Giving up some entry speed at Junção pays off on the climb.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:7#s1",
+   "block_kind": "corner_group",
+   "assertion": "After Junção the track climbs through fast left-hand sweeps to the start-finish straight.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "337d5f2a02dc60f358e3e1e68793293fc33449f910e6c6c9f131ca221dd75cf9",
+     "offset": 4708,
+     "length": 112,
+     "locator": "Turn 13 section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "9428f2c950de1f47a7eb79ce46b58d2a397f4406f3a6d27aa35d4586be597cda",
+     "offset": 5057,
+     "length": 137,
+     "locator": "Turn 14 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "interlagos:corner_group:7#s2",
+   "block_kind": "corner_group",
+   "assertion": "Subida dos Boxes means Climb to the Pits; Arquibancadas refers to grandstands.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "ce5509aeedf6150416a90be4676fbc2b409b898669668744ee6ef26bb0bedbf6",
+     "offset": 4986,
+     "length": 42,
+     "locator": "Turn 14 heading",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "44e3cc6498c50760cf41a81dc3bf8d4fd757593d832da81c4a654f13a6b53f4e",
+     "offset": 5360,
+     "length": 58,
+     "locator": "Turn 15 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Source renders Arquibancadas as 'Bleachers'."
+  },
+  {
+   "claim_id": "interlagos:corner_group:7#s3",
+   "block_kind": "corner_group",
+   "assertion": "Drivers stay flat out from Junção to the Senna S.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "excerpt_sha256": "b72deeda794eb1810b02d2dd58fab8243851fac8194a2bfe06c9b13f078a86ba",
+     "offset": 4586,
+     "length": 98,
+     "locator": "Turn 12 section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  }
+ ]
+}

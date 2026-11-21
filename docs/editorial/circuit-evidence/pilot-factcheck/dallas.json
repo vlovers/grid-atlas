@@ -1,0 +1,659 @@
+{
+ "circuit_id": "dallas",
+ "checker": "factcheck-agent-D",
+ "checked_at": "2026-11-17T00:23:51.289Z",
+ "checker_declared_at": "2026-11-17T00:00:00Z",
+ "policy_version": "grid-atlas-editorial-policy/1.8.0",
+ "claims_in_package": 17,
+ "claims_checked": 17,
+ "missing_claims": [],
+ "counts": {
+  "checker_verified_policy_rejected": 13,
+  "unsupported": 3,
+  "verified": 1
+ },
+ "records": [
+  {
+   "claim_id": "dallas:short_summary#s1",
+   "block_kind": "short_summary",
+   "assertion": "Keke Rosberg won the 1984 Dallas Grand Prix.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-8a871b52a0a3",
+     "excerpt_sha256": "57e7f496c3fe968dcd026b5458572ce5d86845e4b2424bca7a9fa9bb3a51690d",
+     "offset": 2167,
+     "length": 22,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "winner",
+     "value": "keke-rosberg"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB position 1 = keke-rosberg."
+  },
+  {
+   "claim_id": "dallas:short_summary#s2",
+   "block_kind": "short_summary",
+   "assertion": "F1 visited Dallas only once, on a temporary Texan street circuit, and summer heat became part of the event's reputation.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "season",
+     "value": "1984"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source_does_not_cover"
+   ],
+   "notes": "Only cited source is the F1DB results file, which says nothing about a street circuit or heat. F1DB shows one race only. The Motor Sport report (cited elsewhere) would support it."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s1",
+   "block_kind": "long_history_draft",
+   "assertion": "Dallas hosted exactly one F1 Grand Prix, which was memorable for the Texas summer heat.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "7b43c5bb603980fdcda0f72fc0b85d793d38ec180fd4240b85897e88983465a0",
+     "offset": 4907,
+     "length": 57,
+     "locator": "Qualifying section, para 1",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "4f2e0ff239de52c56dd509e46c7d0ce0cb0c735ada80ef6c45af8775a5f86feb",
+     "offset": 4821,
+     "length": 80,
+     "locator": "Qualifying section, para 1",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "season",
+     "value": "1984"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "rhetorical_flourish"
+   ],
+   "notes": "The single race comes from F1DB (only Dallas race is 1984). The heat comes from Motor Sport. 'Nobody forgot it' is rhetorical."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s2",
+   "block_kind": "long_history_draft",
+   "assertion": "In 1984 the temporary Fair Park surface broke up while the heat punished drivers and cars.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "618fb90d15d8396f5d67c2fddbdd4ab8ac7d2fdd03eff3f491d8fb91c697a70e",
+     "offset": 274,
+     "length": 97,
+     "locator": "Opening paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "9010c30704dc91a3f809a9fb341e338743db866ff52281180fad93d30184fb4a",
+     "offset": 4506,
+     "length": 63,
+     "locator": "Qualifying section, para 1",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "163553b5f830aa2a0b1b2d7fe3cebc83600a1d22988c6b43f6987332ef54a33b",
+     "offset": 5212,
+     "length": 112,
+     "locator": "Qualifying section, para 1",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Supported by the period report."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s3",
+   "block_kind": "long_history_draft",
+   "assertion": "Mansell took pole but did not win; Rosberg won for Williams.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "fcd241b5ceceb9fb33642f9cbae774c17e728be9cf9a570a17058526a55aceab",
+     "offset": 5449,
+     "length": 104,
+     "locator": "Qualifying section, para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-8a871b52a0a3",
+     "excerpt_sha256": "3d35ef208245b90e72c76c2d28753e18a27069ba7739148a6273b307c1d58eb8",
+     "offset": 2190,
+     "length": 23,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "pole",
+     "value": "nigel-mansell"
+    },
+    {
+     "race_id": "397",
+     "field": "winner",
+     "value": "keke-rosberg"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": "UK leaves out 'did not take the victory' and 'survived the conditions', but the facts it states are the same.",
+   "issues": [],
+   "notes": "F1DB pole and winner match."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s4",
+   "block_kind": "long_history_draft",
+   "assertion": "Rosberg is classified first, and the track surface barely held up through the race.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "5d50d6d31fbbf75eef7c8a14126671b727fdbde5ceba358de72d62aefdf8f09c",
+     "offset": 3057,
+     "length": 96,
+     "locator": "Para beginning 'Yet, taking another point of view'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "winner",
+     "value": "keke-rosberg"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "narrative_framing"
+   ],
+   "notes": "Classification and surface break-up are both supported. The rest is framing."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s5",
+   "block_kind": "long_history_draft",
+   "assertion": "A Can-Am race damaged the surface further, and the Sunday warm-up was cancelled for repair work.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "0d437a4269d264190c997c72a1129c747ac1f2b6bfb2aba52406e242980183a2",
+     "offset": 11767,
+     "length": 257,
+     "locator": "Race section, para 1",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "UK adds 'Saturday' for the Can-Am race, which the source supports."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s6",
+   "block_kind": "long_history_draft",
+   "assertion": "Mansell led the first 35 laps until Rosberg passed him; Prost later led and then retired after hitting a wall.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "b8395127cdfc17ecd297ccbec40dae5e9a768e16c030cfd877fdcfd2688ec625",
+     "offset": 13638,
+     "length": 37,
+     "locator": "Race section, para after Mansell collapse caption",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "a7e904505ceb4abe8892059a83bfb0e7ceef90dfa203890d981142a56ceb6142",
+     "offset": 15239,
+     "length": 47,
+     "locator": "Race section, para beginning 'At the end of the day'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "02e8728060b7dfdf3778c55dd36831fca6f4cf9bbf8eca64d1da34981e71ec6b",
+     "offset": 15452,
+     "length": 143,
+     "locator": "Race section, para beginning 'At the end of the day'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source_internal_lap_inconsistency"
+   ],
+   "notes": "The report text says Prost retired on lap 59; its results table says lap 57, and F1DB has 56 laps with 'Puncture'. The claim gives no lap number, so this does not affect it."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s7",
+   "block_kind": "long_history_draft",
+   "assertion": "After Prost retired, Rosberg took the lead again.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "978ab22513513b89ac46e2f16d61863a1748433bc7a4a25277f0275b9c11aca8",
+     "offset": 15794,
+     "length": 80,
+     "locator": "Para after 'Rosberg takes the chequered flag' caption",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": "UK 'знову став першим' (became first again) leaves out 'inherited'. Minor.",
+   "issues": [],
+   "notes": "Matches the source wording."
+  },
+  {
+   "claim_id": "dallas:long_history_draft#s8",
+   "block_kind": "long_history_draft",
+   "assertion": "Arnoux came from the back of the grid to finish second; an exhausted Mansell collapsed while pushing his Lotus towards the finish.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "8f01a522f3bad7ff1f4c3a1e4ecd44485bda6a88c508efd1c931edc5fe92b35c",
+     "offset": 16629,
+     "length": 205,
+     "locator": "Para after 'Rosberg takes the chequered flag' caption",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "102ac6c064a4e39a36856865dabeb9dcbbf53c3b3a21b1b6421644ef751c92e5",
+     "offset": 17854,
+     "length": 53,
+     "locator": "Para beginning 'De Angelis wound up third'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "8d62910ad4b4b2e14cb417c783158a5f5689fc9a1d87ed94b312dc02d24a5a48",
+     "offset": 17756,
+     "length": 96,
+     "locator": "Para beginning 'De Angelis wound up third'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "second",
+     "value": "rene-arnoux"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "f1db_gridposition_4_vs_back_of_grid_start"
+   ],
+   "notes": "F1DB gives Arnoux gridPosition 4, his qualifying slot. The source says he actually started from the back after a dummy-grid failure. These can both be true, but a reviewer should be aware of it."
+  },
+  {
+   "claim_id": "dallas:corner_group:0#s1",
+   "block_kind": "corner_group",
+   "assertion": "The 1984 Dallas GP used a temporary, concrete-walled street course around Fair Park.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "283be89aeedd9737e07f8edfc062c432916ac9905da315e370fe18ec2b79c685",
+     "offset": 480,
+     "length": 74,
+     "locator": "Opening paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "b7c5d005c70dd657ef791bd34eb16a2b37080ae38ee9d97078188eedf57a5848",
+     "offset": 4059,
+     "length": 92,
+     "locator": "Para after 'Rosberg charged through' caption",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "season",
+     "value": "1984"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "permanence_inferred"
+   ],
+   "notes": "'Never designed as a permanent facility' is inferred from the makeshift-circuit context, not stated outright."
+  },
+  {
+   "claim_id": "dallas:corner_group:0#s2",
+   "block_kind": "corner_group",
+   "assertion": "Rosberg won for Williams-Honda in extreme heat.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "01fb71aed6081e9a2c5f2d36cc398eec1e50dc142a88bdd2f3cb5c8ed44b447a",
+     "offset": 274,
+     "length": 56,
+     "locator": "Opening paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "7b43c5bb603980fdcda0f72fc0b85d793d38ec180fd4240b85897e88983465a0",
+     "offset": 4907,
+     "length": 57,
+     "locator": "Qualifying section, para 1",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "winner",
+     "value": "keke-rosberg"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "There is no UK sentence. F1DB also has williams/honda."
+  },
+  {
+   "claim_id": "dallas:corner_group:0#s3",
+   "block_kind": "corner_group",
+   "assertion": "Dallas held exactly one World Championship GP, separate from the Watkins Glen and other US races.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "57c73a4b3d80407cbbc5452cbdd3d0426e29720fbfef2a1e0f0eda2aebc38a13",
+     "offset": 18348,
+     "length": 38,
+     "locator": "Final paragraph before results",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "season",
+     "value": "1984"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "distinctness_clause_unsourced"
+   ],
+   "notes": "The count of one comes from F1DB (the circuit has only the 1984 race). The source only says 'first'. The distinctness clause is definitional and has no source."
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s1",
+   "block_kind": "corner_group",
+   "assertion": "Before the 1984 race started, the surface was already breaking up after practice and support races in the heat.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "9010c30704dc91a3f809a9fb341e338743db866ff52281180fad93d30184fb4a",
+     "offset": 4506,
+     "length": 63,
+     "locator": "Qualifying section, para 1",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "3f3e22d0166d3c08bec01564c86a334be74cb54729cd891ef6f104b0d2e74a93",
+     "offset": 11767,
+     "length": 125,
+     "locator": "Race section, para 1",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "The source does not name the material as 'asphalt'; repairs used quick-drying concrete."
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s2",
+   "block_kind": "corner_group",
+   "assertion": "Workers patched the track overnight, and the race-morning warm-up was cancelled.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "21ca0e06d278e50134771878e2389ba23284614d5224ecd6a35db2d964b604b6",
+     "offset": 3155,
+     "length": 169,
+     "locator": "Para beginning 'Yet, taking another point of view'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "overnight_timing_not_in_source"
+   ],
+   "notes": "The cancelled warm-up is supported. The source puts the repair work on race morning, in place of the warm-up, and never says 'overnight'."
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s3",
+   "block_kind": "corner_group",
+   "assertion": "In the race, drivers avoided loose surface and concrete walls while managing tyre wear and temperatures.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "a6ae98132d41944709cbef7fa3426221284ad49368968f856c09811d333725c1",
+     "offset": 15875,
+     "length": 112,
+     "locator": "Para after 'Rosberg takes the chequered flag' caption",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": false,
+   "uk_issue": "UK says 'fought tyre overheating'. EN says 'managing tyre wear and temperatures', so the UK drops wear and narrows the meaning.",
+   "issues": [
+    "tyre_management_not_in_source"
+   ],
+   "notes": "Walls and surface are supported. Tyre wear and tyre temperature management are not mentioned in the source."
+  },
+  {
+   "claim_id": "dallas:corner_group:1#s4",
+   "block_kind": "corner_group",
+   "assertion": "The condition of the track surface shaped the race Rosberg won.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "excerpt_sha256": "618fb90d15d8396f5d67c2fddbdd4ab8ac7d2fdd03eff3f491d8fb91c697a70e",
+     "offset": 274,
+     "length": 97,
+     "locator": "Opening paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "397",
+     "field": "winner",
+     "value": "keke-rosberg"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "The source makes the same point explicitly."
+  }
+ ]
+}

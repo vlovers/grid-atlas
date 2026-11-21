@@ -6,3 +6,4 @@ export * from './sources.ts';
 export * from './quality.ts';
 export * from './corners.ts';
 export * from './factcheck.ts';
+export * from './uk-names.ts';

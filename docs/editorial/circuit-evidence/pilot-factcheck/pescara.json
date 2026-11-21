@@ -1,0 +1,579 @@
+{
+ "circuit_id": "pescara",
+ "checker": "factcheck-agent-D",
+ "checked_at": "2026-11-17T00:24:27.797Z",
+ "checker_declared_at": "2026-11-17T00:00:00Z",
+ "policy_version": "grid-atlas-editorial-policy/1.8.0",
+ "claims_in_package": 16,
+ "claims_checked": 16,
+ "missing_claims": [],
+ "counts": {
+  "checker_verified_policy_rejected": 8,
+  "unsupported": 4,
+  "disputed": 1,
+  "verified": 3
+ },
+ "records": [
+  {
+   "claim_id": "pescara:short_summary#s1",
+   "block_kind": "short_summary",
+   "assertion": "Stirling Moss won the 1957 Pescara GP, held on an Italian public-road circuit.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-98f89c9b20b2",
+     "excerpt_sha256": "3c72686e0bd5ec019b591f9acceeb64b4acb62f1abc230cb9b4fccba3be08502",
+     "offset": 1553,
+     "length": 23,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "63",
+     "field": "winner",
+     "value": "stirling-moss"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "descriptor_not_in_cited_source"
+   ],
+   "notes": "F1DB supports the winner. The cited F1DB file does not state 'public-road circuit'; the Motor Sport report (cited elsewhere) does."
+  },
+  {
+   "claim_id": "pescara:short_summary#s2",
+   "block_kind": "short_summary",
+   "assertion": "Pescara's lap of about 25 km is the longest layout ever used for an F1 World Championship race.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "63",
+     "field": "season",
+     "value": "1957"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "superlative_not_established"
+   ],
+   "notes": "The F1DB package supports the 25.579 km length (layout pescara-1). The cited race-results file has no lengths and nothing that establishes 'longest ever'. Motor Sport says only 'one of the longest'."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s1",
+   "block_kind": "long_history_draft",
+   "assertion": "The 1957 Pescara GP was 18 laps, and Moss won in just under three hours.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "excerpt_too_short",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-98f89c9b20b2",
+     "excerpt_sha256": "51a81798565a0a96b6a1796f383e70ce42f7f82f793942e4c171c40b404830dd",
+     "offset": 1667,
+     "length": 19,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "7f90729767f13a9b93dc187d89cbca2d02c77126317da334240ae5305c73338d",
+     "offset": 1785,
+     "length": 78,
+     "locator": "Para 4",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "63",
+     "field": "winner",
+     "value": "stirling-moss"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB: 18 laps, 2:59:22.7."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s2",
+   "block_kind": "long_history_draft",
+   "assertion": "One lap of the public-road course was about 25 km.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "65bf74108b5b3ecb686b931cf05b31cca8a9363a7b6adb9ecea8a25a900e0812",
+     "offset": 490,
+     "length": 71,
+     "locator": "Para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "cea5e96f34b9d81232e7f342b46000f7011c126ea800964a95aa74bfd02f3a5e",
+     "offset": 898,
+     "length": 64,
+     "locator": "Para 3",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "comparison_to_modern_calendar_unsourced"
+   ],
+   "notes": "F1DB layout length is 25.579 km. The comparison with today's calendar is obviously true but has no source."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s3",
+   "block_kind": "long_history_draft",
+   "assertion": "The distance between corners and the length of the route shaped the race as much as the result did (evaluative).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "0a3c78d81003b5ea25e030ff500c6169f90e61333f0f77939b9f722ca27521fb",
+     "offset": 1480,
+     "length": 160,
+     "locator": "Para 4",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": false,
+   "uk_issue": "UK keeps only 'the huge distance between corners' and drops 'the sheer length of the route'.",
+   "issues": [
+    "evaluation_similar_not_same"
+   ],
+   "notes": "The source makes a similar point about the road conditions, but does not attribute it to corner spacing or route length."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s4",
+   "block_kind": "long_history_draft",
+   "assertion": "Pescara hosted one World Championship GP, held in an afternoon, and set an unmatched lap-length record.",
+   "checker_verdict": "DISPUTED",
+   "contradicted": true,
+   "final": "disputed",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_rejected"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "471ff14b3f59ef0f892274dc45ac54adb3ee311e59ab325302326e04149c1774",
+     "offset": 11707,
+     "length": 149,
+     "locator": "Race section, para 1",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "65bf74108b5b3ecb686b931cf05b31cca8a9363a7b6adb9ecea8a25a900e0812",
+     "offset": 490,
+     "length": 71,
+     "locator": "Para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "63",
+     "field": "season",
+     "value": "1957"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK drops 'single afternoon' and 'unmatched'. It says only that a lap-length record was left.",
+   "issues": [
+    "afternoon_contradicted_by_source",
+    "superlative_not_established"
+   ],
+   "notes": "One GP is correct per F1DB. The race started at about 9.30am and lasted about 3h, so it was not an afternoon. The 'unmatched record' is not established by the sources."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s5",
+   "block_kind": "long_history_draft",
+   "assertion": "On lap 10 the oil tank of Musso's Ferrari split, leaving oil on the road before the engine seized.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "caab1f29135824d5ca1c0fe6ee94b949a73f4f253135fa1eb827327048a1d78c",
+     "offset": 16494,
+     "length": 171,
+     "locator": "Para after 'A pit stop to change a damaged wheel' caption",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-98f89c9b20b2",
+     "excerpt_sha256": "0149b4d3e3790852574a48bdf4f4ad33efb6a0f9a0ad45e40c08c5c2a680970a",
+     "offset": 3872,
+     "length": 23,
+     "locator": "race-results.yml, luigi-musso entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB: Musso completed 9 laps, Oil leak. This is consistent with a failure on lap 10. The source calls the car a Lancia/Ferrari."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s6",
+   "block_kind": "long_history_draft",
+   "assertion": "Fangio slid on the oil, damaged a rear wheel on the kerbs, and lost time pitting for repairs.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "823d34edfa53e02d3a947c2b9cdbe9de441f4f8c4cafc71041431a6dee84eac6",
+     "offset": 16743,
+     "length": 130,
+     "locator": "Para after 'A pit stop to change a damaged wheel' caption",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "b5683b146ab283cfbf7759b544eceb7bb63f80b9a6fa8fa33bad3cf5f44d764a",
+     "offset": 17040,
+     "length": 35,
+     "locator": "Para after pull-quote 'Moss was now out on his own'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Supported by the period report."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s7",
+   "block_kind": "long_history_draft",
+   "assertion": "Moss stopped to take on oil and still won by more than three minutes.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "excerpt_too_short",
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "fe6006056eef846cfff07246f353de67e9d3296574150c936d92bac904d2fe72",
+     "offset": 18129,
+     "length": 68,
+     "locator": "Para after 'Schell brought his Maserati home' caption",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-98f89c9b20b2",
+     "excerpt_sha256": "323249ec315dec04b7a6d842aac430d2c873d46801d5b8280938627fb4ccbe85",
+     "offset": 1940,
+     "length": 16,
+     "locator": "race-results.yml, position: 2 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "63",
+     "field": "winner",
+     "value": "stirling-moss"
+    },
+    {
+     "race_id": "63",
+     "field": "second",
+     "value": "juan-manuel-fangio"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Winning margin was 3:13.9 per F1DB."
+  },
+  {
+   "claim_id": "pescara:long_history_draft#s8",
+   "block_kind": "long_history_draft",
+   "assertion": "The long lap magnified every delay (evaluative).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "This is an interpretive sentence. The source does not make this evaluation explicitly."
+  },
+  {
+   "claim_id": "pescara:corner_group:0#s1",
+   "block_kind": "corner_group",
+   "assertion": "The Pescara road course was about 25.6 km through Abruzzo, including a long coastal straight and an inland climb.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "0f71a4614a07fa31d3aba928bb4d67068fc8084f388d031bf798691230b27954",
+     "offset": 701,
+     "length": 196,
+     "locator": "Para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "d6af8b4eaa178be236eb87d60539fdf9255b341e25898b66f8468e805d178a4d",
+     "offset": 563,
+     "length": 59,
+     "locator": "Para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "coastal_straight_wording_imprecise"
+   ],
+   "notes": "F1DB pescara-1 is 25.579 km. In the source, the 'long fast straight' runs perpendicular to the coast; the coast road is a separate section that is not described as long. Consider rewording."
+  },
+  {
+   "claim_id": "pescara:corner_group:0#s2",
+   "block_kind": "corner_group",
+   "assertion": "Pescara hosted one F1 World Championship race, in 1957.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "12821acb4b66b3d12fffb22b57361ce6be1ba1d8af66f7c9bb8a336a4995a0e6",
+     "offset": 3353,
+     "length": 126,
+     "locator": "Para after pull-quote",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "63",
+     "field": "season",
+     "value": "1957"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "The 1957 race is the only Pescara race in F1DB."
+  },
+  {
+   "claim_id": "pescara:corner_group:0#s3",
+   "block_kind": "corner_group",
+   "assertion": "A lap here covered far more ground than a modern lap, and period maps are needed before using modern corner names (editorial guidance).",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "editorial_guidance_not_fact"
+   ],
+   "notes": "The length comparison is consistent with the 25.579 km layout. The guidance about period maps is editorial and has no checkable fact."
+  },
+  {
+   "claim_id": "pescara:corner_group:1#s1",
+   "block_kind": "corner_group",
+   "assertion": "Moss won the 1957 Pescara GP in a Vanwall over 18 laps.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "7f90729767f13a9b93dc187d89cbca2d02c77126317da334240ae5305c73338d",
+     "offset": 1785,
+     "length": 78,
+     "locator": "Para 4",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "8bd82672f29d31d2ba969b3a8a57684817aa3514162fa4637e57b34b311ff57a",
+     "offset": 19455,
+     "length": 92,
+     "locator": "Para beginning 'This had been a hard grim battle'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "63",
+     "field": "winner",
+     "value": "stirling-moss"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB winner is stirling-moss with constructor vanwall and 18 laps."
+  },
+  {
+   "claim_id": "pescara:corner_group:1#s2",
+   "block_kind": "corner_group",
+   "assertion": "Musso challenged early in a Ferrari, then Moss built a lead.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "bf5fbde191fe70ec61d63e1b0b7fe0186b2618f20d07d53917d67910aaca411f",
+     "offset": 12243,
+     "length": 80,
+     "locator": "Race section, para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "c46b89fd27c65f4a2c148b8c9a17303e36ebc614653f410da81fc68ec3e8ea6f",
+     "offset": 15675,
+     "length": 76,
+     "locator": "Para before 'A pit stop to change a damaged wheel' caption",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Musso actually led for part of lap 1, so 'challenged early' understates it slightly."
+  },
+  {
+   "claim_id": "pescara:corner_group:1#s3",
+   "block_kind": "corner_group",
+   "assertion": "The long lap and public roads shaped strategy and risk; 18 laps still made a long race.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "excerpt_too_short"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-a2df826858d1",
+     "excerpt_sha256": "471ff14b3f59ef0f892274dc45ac54adb3ee311e59ab325302326e04149c1774",
+     "offset": 11707,
+     "length": 149,
+     "locator": "Race section, para 1",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-98f89c9b20b2",
+     "excerpt_sha256": "51a81798565a0a96b6a1796f383e70ce42f7f82f793942e4c171c40b404830dd",
+     "offset": 1667,
+     "length": 19,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "evaluative_part"
+   ],
+   "notes": "18 laps took about 3 hours. The source shows race timing planned around the duration."
+  }
+ ]
+}

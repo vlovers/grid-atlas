@@ -1,0 +1,2791 @@
+{
+ "circuit_id": "silverstone",
+ "checker": "factcheck-agent-A",
+ "checked_at": "2026-11-17T00:26:05.102Z",
+ "checker_declared_at": "2026-11-17T00:00:00Z",
+ "policy_version": "grid-atlas-editorial-policy/1.8.0",
+ "claims_in_package": 87,
+ "claims_checked": 87,
+ "missing_claims": [],
+ "counts": {
+  "checker_verified_policy_rejected": 23,
+  "unsupported": 49,
+  "unverifiable": 1,
+  "verified": 13,
+  "disputed": 1
+ },
+ "records": [
+  {
+   "claim_id": "silverstone:narrative_biography#s1",
+   "block_kind": "narrative_biography",
+   "assertion": "The first World Championship race was held at Silverstone in May 1950.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "f5221205a2b8e2f4cde29d4d69d673a3065c2b665327b740e33ef2baeed71139",
+     "offset": 975,
+     "length": 122,
+     "locator": "section '1950 – Farina wins first championship race', para 1",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1",
+     "field": "season",
+     "value": "1950 (date 1950-05-13)"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Source and F1DB race 1 agree."
+  },
+  {
+   "claim_id": "silverstone:narrative_biography#s2",
+   "block_kind": "narrative_biography",
+   "assertion": "Evaluative framing: Silverstone's history links the 1950 Alfa Romeo win with home heroes, rain and late-race battles.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "aed5ff8a61d01ed29a2a8fce00a974fd33dc51f26f6118a6cf2aa7dad8bc8d97",
+     "offset": 627,
+     "length": 64,
+     "locator": "intro, para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Editorial synthesis; source lists the ingredients (1950 Alfa win, Mansell/Hamilton, wet 2008) but does not make this evaluation. Tagged 'statistic' but contains no statistic."
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1950#s1",
+   "block_kind": "defining_moment",
+   "assertion": "In 1950 Farina won and Alfa Romeo drivers took all three podium places.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "c5a63e59fc82c7cefa6510e2b9457664a164fbf2b96c4fbbe598ea993a3d9e49",
+     "offset": 1354,
+     "length": 85,
+     "locator": "section 1950, para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1",
+     "field": "winner",
+     "value": "nino-farina"
+    },
+    {
+     "race_id": "1",
+     "field": "second",
+     "value": "luigi-fagioli"
+    },
+    {
+     "race_id": "1",
+     "field": "third",
+     "value": "reg-parnell"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Podium matches F1DB; source states all three were Alfa drivers."
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1987#s1",
+   "block_kind": "defining_moment",
+   "assertion": "In 1987 Mansell caught leader Piquet and overtook him at Stowe.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "5f83bebf7b6af9612a71abc2a0badaadb427afd874c2f4ee2a225f9cce49fccb",
+     "offset": 3330,
+     "length": 82,
+     "locator": "section 1987, para 3",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "443",
+     "field": "winner",
+     "value": "nigel-mansell"
+    },
+    {
+     "race_id": "443",
+     "field": "second",
+     "value": "nelson-piquet"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1991#s1",
+   "block_kind": "defining_moment",
+   "assertion": "In 1991 race winner Mansell gave Senna, stopped out of fuel, a lift back to the pits.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "300f21f1a38acdf2815c39d15d0d0b23a0789eb27b9b06af46e19568e6637224",
+     "offset": 4120,
+     "length": 113,
+     "locator": "section 1991, para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "5b259d62f38b66307975cd7823e80efd742a23dbc6f228e0b888f33178baf665",
+     "offset": 4234,
+     "length": 67,
+     "locator": "section 1991, para 3",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "508",
+     "field": "winner",
+     "value": "nigel-mansell"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": "UK omits 'stranded'; facts otherwise same.",
+   "issues": [],
+   "notes": "Tagged 'statistic' but is a narrative event."
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-1998#s1",
+   "block_kind": "defining_moment",
+   "assertion": "In 1998 Schumacher won while serving his penalty on the final lap.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "224ce06bdd3c66491ce2dae776bb05ad1d66acead0954489c238aae9c6fc82d7",
+     "offset": 6220,
+     "length": 142,
+     "locator": "section 1998, para 3",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "623",
+     "field": "winner",
+     "value": "michael-schumacher"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Penalty's legality was contested at the time (background knowledge), but the claim's wording is supported."
+  },
+  {
+   "claim_id": "silverstone:moment:silverstone-2008#s1",
+   "block_kind": "defining_moment",
+   "assertion": "Hamilton's first Silverstone win came in 2008 in wet conditions.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "4560f3dc75cd6bfaae572a36d2faf4775edf5c495ac95522e6ff3ce421fc1f72",
+     "offset": 6632,
+     "length": 130,
+     "locator": "section 2008, para 1",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "119b40c0da003b7d7d9ae96d1bf8c388d3871fbcc9d1e39ba2d29ac074a5d023",
+     "offset": 7059,
+     "length": 54,
+     "locator": "section 2008, para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "794",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    },
+    {
+     "race_id": "777",
+     "field": "winner",
+     "value": "kimi-raikkonen"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB shows no earlier Hamilton win here (2007 won by Raikkonen)."
+  },
+  {
+   "claim_id": "silverstone:legacy_introduction#s1",
+   "block_kind": "legacy_history",
+   "assertion": "Silverstone developed from an RAF airfield and hosted the first round of the new F1 World Championship.",
+   "checker_verdict": "UNVERIFIABLE",
+   "contradicted": false,
+   "final": "unverifiable",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "1",
+     "field": "season",
+     "value": "1950 (first championship race)"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_sources_cited"
+   ],
+   "notes": "No source cited. F1DB supports the opening-race part only; RAF-airfield origin is uncited here (other snapshots in this package do mention it)."
+  },
+  {
+   "claim_id": "silverstone:legacy_moment:0#s1",
+   "block_kind": "legacy_moment",
+   "assertion": "On 13 May 1950 Giuseppe Farina won the first World Championship Grand Prix driving an Alfa Romeo.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-5fae26c9d32a",
+     "excerpt_sha256": "87feb3f818e80d4e781fbb94851d4e65737ff2b7f031f2441f963362206058f1",
+     "offset": 752,
+     "length": 170,
+     "locator": "section 'When was its first Grand Prix?'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1",
+     "field": "winner",
+     "value": "nino-farina"
+    },
+    {
+     "race_id": "1",
+     "field": "season",
+     "value": "1950 (date 1950-05-13)"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:legacy_moment:1#s1",
+   "block_kind": "legacy_moment",
+   "assertion": "Mansell caught Williams team-mate Piquet and passed him at Stowe with three laps to go (1987).",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "c25c5396fe728e821da6bc321f8bd8080d7ce229163ed5cf0c88dcecaba54020",
+     "offset": 2987,
+     "length": 139,
+     "locator": "section 1987, para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "5f83bebf7b6af9612a71abc2a0badaadb427afd874c2f4ee2a225f9cce49fccb",
+     "offset": 3330,
+     "length": 82,
+     "locator": "section 1987, para 3",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-426220cb7ae6",
+     "excerpt_sha256": "656f9c8b590fe9358ee9fa7a3219efcef7261d08ad4dcae615efa1be89c088f7",
+     "offset": 3414,
+     "length": 86,
+     "locator": "section 1987, para 3",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "443",
+     "field": "winner",
+     "value": "nigel-mansell"
+    },
+    {
+     "race_id": "443",
+     "field": "second",
+     "value": "nelson-piquet"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Team = Williams is inferred from 'team mate' plus 'his Williams'."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t1#s1",
+   "block_kind": "corner_section",
+   "assertion": "Abbey is the first corner of the current lap and is a very fast right-hander.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "3d8fe7b182b8d12659faa96c1c94b334fa6bc3dcbebe0d86283c33918c1ec604",
+     "offset": 492,
+     "length": 76,
+     "locator": "intro",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source",
+    "speed_not_in_cited_source"
+   ],
+   "notes": "Turn 1 position supported. Right-hand direction and speed not stated in cited sources; FIA map text gives numbers only."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t1#s2",
+   "block_kind": "corner_section",
+   "assertion": "Abbey is named after the nearby remains of Luffield Abbey; Farm, a shallow left, follows immediately.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "a5592cf51296f9b74e6822387bd78b31d28e9f62cd4e2f920698a35e762efff7",
+     "offset": 773,
+     "length": 133,
+     "locator": "section 'Turn 1 – Abbey'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "19e739e5c7430b2e99eb40ff5d6c29855d43d1dc09c58ce4f37e3a6d3cab2886",
+     "offset": 1198,
+     "length": 95,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Etymology supported; Farm being a left is not stated in cited sources. Driving advice not checkable."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t2#s1",
+   "block_kind": "corner_section",
+   "assertion": "Farm is now a gentle left bend after Abbey, distinct from the earlier Farm Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1011,
+     "length": 186,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "19e739e5c7430b2e99eb40ff5d6c29855d43d1dc09c58ce4f37e3a6d3cab2886",
+     "offset": 1198,
+     "length": 95,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "All supported except 'left'. Uncited 2015 F1 article calls it a 'lazy left hander'; cite it to verify."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t2#s2",
+   "block_kind": "corner_section",
+   "assertion": "Farm's name comes from a farm beside the original route; the corner leads towards heavy braking at Village.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1011,
+     "length": 186,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "3b130e7b38aed49ae3707686118c41369e4c810664346a016204b3b354e04692",
+     "offset": 1311,
+     "length": 140,
+     "locator": "section 'Turn 3 – Village'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": "'Flowing' is descriptive; consistent with 'gentle curve'."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t3#s1",
+   "block_kind": "corner_section",
+   "assertion": "Village (Turn 3) is the first major braking point, a right-hander named after Silverstone village.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "3b130e7b38aed49ae3707686118c41369e4c810664346a016204b3b354e04692",
+     "offset": 1311,
+     "length": 140,
+     "locator": "section 'Turn 3 – Village'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "'Tight' is not stated explicitly; treated as descriptive."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t3#s2",
+   "block_kind": "corner_section",
+   "assertion": "Driving advice: brake into Village without running wide because The Loop, a left hairpin, follows closely.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "d0b488b6c8e4e0d4a1e150c153c38b8067466f1adc8eb84ed60e19115af2b2cc",
+     "offset": 1629,
+     "length": 79,
+     "locator": "section 'Turn 4 – The Loop'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": "UK paraphrases loosely (keep a narrow line; hairpin starts right after the exit); same substance.",
+   "issues": [
+    "no_checkable_fact",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Technique not in sources; The Loop being a left is not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t4#s1",
+   "block_kind": "corner_section",
+   "assertion": "The Loop is named for its shape and is a slow left hairpin.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "086436e84071f3e545c6d71943abf5f0efd510fb4a396a774f00759b0f57b381",
+     "offset": 1558,
+     "length": 70,
+     "locator": "section 'Turn 4 – The Loop'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "d0b488b6c8e4e0d4a1e150c153c38b8067466f1adc8eb84ed60e19115af2b2cc",
+     "offset": 1629,
+     "length": 79,
+     "locator": "section 'Turn 4 – The Loop'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Name and slowness supported; 'left' not stated in cited sources."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t4#s2",
+   "block_kind": "corner_section",
+   "assertion": "Driving advice: give up entry speed at The Loop for a clean exit through Aintree onto Wellington Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "015cd3251101cbaa99652d233cddef3c5f7f85be9fb66e03ab627fdd4c5f9180",
+     "offset": 2475,
+     "length": 149,
+     "locator": "section 'Turn 6 – Brooklands'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": "UK adds 'часто' (often), softening the claim.",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Corner sequence supported; technique not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t5#s1",
+   "block_kind": "corner_section",
+   "assertion": "Aintree is a quick left leading onto Wellington Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "015cd3251101cbaa99652d233cddef3c5f7f85be9fb66e03ab627fdd4c5f9180",
+     "offset": 2475,
+     "length": 149,
+     "locator": "section 'Turn 6 – Brooklands'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Position before Wellington Straight supported; 'quick left' not stated (uncited 2015 article says 'left hander')."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t5#s2",
+   "block_kind": "corner_section",
+   "assertion": "Aintree is named after the former British GP venue in Liverpool; the next hard braking is at Brooklands.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b17b2b431487e6aaf7950c6e35951d177344e1eb0dfbd13638911d3ee3b662eb",
+     "offset": 1936,
+     "length": 123,
+     "locator": "section 'Turn 5 – Aintree'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "af7e3ac89945de354bb35a0d7ea988bb2b8c5175fe5d1924d1afa2af2b320a6b",
+     "offset": 1822,
+     "length": 66,
+     "locator": "section 'Turn 5 – Aintree'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported"
+   ],
+   "notes": "Name origin verified. Cited sources do not describe braking at Brooklands; only the corner order is supported."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t6#s1",
+   "block_kind": "corner_section",
+   "assertion": "Brooklands is a left-hander after Wellington Straight, named after Britain's pioneering racing venue.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "cb5490ab7146d088afaea837ebae9a73d4a2f2e9372f9a9a56bc08a60d55cf2c",
+     "offset": 2625,
+     "length": 119,
+     "locator": "section 'Turn 6 – Brooklands'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": false,
+   "uk_issue": "UK says 'one of the oldest British autodromes' rather than 'pioneering venue'; different assertion.",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Commemoration and position supported; 'left-hander' not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t6#s2",
+   "block_kind": "corner_section",
+   "assertion": "Driving advice: after long acceleration, judge braking at Brooklands while setting up the long right-hand Luffield.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2942,
+     "length": 143,
+     "locator": "section 'Turn 7 – Luffield'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Luffield as long right-hander supported; braking judgement at Brooklands not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t7#s1",
+   "block_kind": "corner_section",
+   "assertion": "Luffield is a long right-hander whose name also refers to the medieval abbey.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "e17b609ee6ad43e34c3ab7644c7d3033b2e4cdb398c5baf9a7c6b07b7d7a070c",
+     "offset": 2805,
+     "length": 136,
+     "locator": "section 'Turn 7 – Luffield'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2942,
+     "length": 143,
+     "locator": "section 'Turn 7 – Luffield'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "'Medieval' comes from the Abbey section ('medieval monastery')."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t7#s2",
+   "block_kind": "corner_section",
+   "assertion": "Luffield was once two separate bends; it now leads onto Woodcote.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2942,
+     "length": 143,
+     "locator": "section 'Turn 7 – Luffield'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": "UK drops 'named' and adds 'без пробуксовки' (without wheelspin); minor.",
+   "issues": [],
+   "notes": "'Named' bends is not explicit in cited source. Throttle advice is descriptive. Tagged dated_event but has no date."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t8#s1",
+   "block_kind": "corner_section",
+   "assertion": "Woodcote is a fast right-hand sweep that used to end the lap.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b3b791eb6ba0b92f817228cb303e35c5280c9040c4cc5824325302ee9caec4af",
+     "offset": 3472,
+     "length": 149,
+     "locator": "section 'Turn 8 – Woodcote'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t8#s2",
+   "block_kind": "corner_section",
+   "assertion": "Woodcote is named after Woodcote Park, linked to the RAC.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b3b791eb6ba0b92f817228cb303e35c5280c9040c4cc5824325302ee9caec4af",
+     "offset": 3472,
+     "length": 149,
+     "locator": "section 'Turn 8 – Woodcote'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t8#s3",
+   "block_kind": "corner_section",
+   "assertion": "Woodcote now leads to Copse (Turn 9) rather than the finish.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b3b791eb6ba0b92f817228cb303e35c5280c9040c4cc5824325302ee9caec4af",
+     "offset": 3472,
+     "length": 149,
+     "locator": "section 'Turn 8 – Woodcote'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "ec906e5c2900ee990fcb973b1b33bb6ca6e7bafd9a358bf3a1896b98efe8c3e8",
+     "offset": 636,
+     "length": 59,
+     "locator": "section 'Turn 1 – Abbey'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Turn 8 → Turn 9 Copse order from the article's numbering."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t9#s1",
+   "block_kind": "corner_section",
+   "assertion": "Copse is a high-speed right-hander named after nearby woodland.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "4d18c0537f4b52cb1343d47dfc05de00156768581b260be7dc2282fd3f1fd1e2",
+     "offset": 3709,
+     "length": 160,
+     "locator": "section 'Turn 9 – Copse'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Name and speed supported; 'right-hander' not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t9#s2",
+   "block_kind": "corner_section",
+   "assertion": "Driving advice: Copse rewards commitment and mistakes compromise Maggotts–Becketts–Chapel.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Sequence order supported; evaluation not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t9#s3",
+   "block_kind": "corner_section",
+   "assertion": "Hamilton and Verstappen collided at Copse in 2021, an important moment in the title fight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_value_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "1045",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    },
+    {
+     "race_id": "1045",
+     "field": "pole",
+     "value": "max-verstappen"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": "UK says 'part of' the title fight rather than 'central to'; weaker.",
+   "issues": [
+    "not_covered_by_cited_sources"
+   ],
+   "notes": "Neither cited source mentions 2021. F1DB cannot confirm a collision. Widely reported elsewhere; needs a citation."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t10#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 10 is the first corner, a left, in the five-turn Maggotts–Becketts–Chapel sequence.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Turns 10-14 sequence supported; left direction not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t10#s2",
+   "block_kind": "corner_section",
+   "assertion": "Maggotts is named after nearby Maggot Moor.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "4eec104d7bd8c929ca68b2130ebb0f1bce31d127dfb284518ca68833361240aa",
+     "offset": 4119,
+     "length": 94,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "spelling_variant"
+   ],
+   "notes": "Source spells it 'Maggots Moor'; the claim says 'Maggot Moor' (the uncited 2015 article uses 'Maggot Moor')."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t10#s3",
+   "block_kind": "corner_section",
+   "assertion": "Driving advice: too much entry speed leaves no room for the next change of direction.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t11#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 11 is a right-hand flick within Maggotts–Becketts–Chapel.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "That T11 is in the complex is supported; that it is a right is not."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t11#s2",
+   "block_kind": "corner_section",
+   "assertion": "Driving description: Turn 11 is not a separate braking zone; the challenge is weight transfer under load.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": false,
+   "uk_issue": "UK says 'not a separate zone of heavy braking' (adds 'сильного'), whereas EN says not a separate braking zone at all.",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t12#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 12 is a left within the sequence.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Tagged dated_event; no date."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t12#s2",
+   "block_kind": "corner_section",
+   "assertion": "Becketts and Chapel are named after a medieval chapel linked to Thomas Becket; the bends form one continuous sequence.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "80cfde93f1a68e796bdd24f0932232a8f0a2e3b476761c432bae236b6edbfe2a",
+     "offset": 4252,
+     "length": 192,
+     "locator": "section 'Turns 10-14', para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14', para 1",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t13#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 13 is a right before the final left of the complex.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "direction_not_in_cited_source"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t13#s2",
+   "block_kind": "corner_section",
+   "assertion": "The Becketts name refers to the old chapel; the complex leads onto Hangar Straight.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "80cfde93f1a68e796bdd24f0932232a8f0a2e3b476761c432bae236b6edbfe2a",
+     "offset": 4252,
+     "length": 192,
+     "locator": "section 'Turns 10-14', para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b8d7f0f94e2bdb03af64d27eda84ee556c1786d28f3bb093e7233c6e7ab7d3c2",
+     "offset": 4461,
+     "length": 65,
+     "locator": "section 'Hangar Straight'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": "Advice about balance is descriptive."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t14#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 14 is the last corner, a left, of Maggotts–Becketts–Chapel.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "That it is the final corner is supported; left is not."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t14#s2",
+   "block_kind": "corner_section",
+   "assertion": "Chapel recalls a medieval chapel demolished for the wartime airfield; the exit leads onto Hangar Straight.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "80cfde93f1a68e796bdd24f0932232a8f0a2e3b476761c432bae236b6edbfe2a",
+     "offset": 4252,
+     "length": 192,
+     "locator": "section 'Turns 10-14', para 2",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "a3f58f07d35945c4f76d85b0426a477dccfeb9a4555f0fb57c10a6e2bd636adf",
+     "offset": 2257,
+     "length": 53,
+     "locator": "section 'Wellington Straight'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": "1943 = wartime. Advice about the exit is descriptive."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t15#s1",
+   "block_kind": "corner_section",
+   "assertion": "Stowe follows Hangar Straight; it is a fast right-hander with a demanding braking approach.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b8af36ff02e2639e8616388bd72d6a7b814463b66e7bf842442bf0f0b3106197",
+     "offset": 4698,
+     "length": 167,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Position and braking supported; 'right-hander' not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t15#s2",
+   "block_kind": "corner_section",
+   "assertion": "Stowe is named after nearby Stowe School.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "f32fa61f2dc62a0034e85c6ab1915d27428130855427ebabf30cdbd4af162913",
+     "offset": 4866,
+     "length": 127,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "word_match_only"
+   ],
+   "notes": "The cited passage mentions Stowe School but does not say the corner is named after it. The uncited 2015 F1 article states it explicitly; cite that."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t15#s3",
+   "block_kind": "corner_section",
+   "assertion": "Michael Schumacher crashed at Stowe in 1999.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b8af36ff02e2639e8616388bd72d6a7b814463b66e7bf842442bf0f0b3106197",
+     "offset": 4698,
+     "length": 167,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "The evaluative clause is consistent with 'notoriously tricky'."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t16#s1",
+   "block_kind": "corner_section",
+   "assertion": "Vale is a slower left-hand section after Stowe, leading to Club.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "28c1f46ca2d3085ee95d7f548312505429dea54d604d01ba683ec3c5838d6be2",
+     "offset": 5213,
+     "length": 165,
+     "locator": "section 'Turn 16 – Vale'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Order (T15 Stowe, T16 Vale, T17/18 Club) supported; left and slower not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t16#s2",
+   "block_kind": "corner_section",
+   "assertion": "There are two explanations for the name Vale: a dip in otherwise flat terrain, or the Aylesbury Vale district.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "28c1f46ca2d3085ee95d7f548312505429dea54d604d01ba683ec3c5838d6be2",
+     "offset": 5213,
+     "length": 165,
+     "locator": "section 'Turn 16 – Vale'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "772360fffc73792d7dfcbbe7b6a64e0eabbe8a5ba26198b48ebfe713a433e394",
+     "offset": 5379,
+     "length": 121,
+     "locator": "section 'Turn 16 – Vale'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t16#s3",
+   "block_kind": "corner_section",
+   "assertion": "Driving description: drivers brake at Vale and position the car for the two-part final corner.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "09bae622d8d679f36ac59d5a2df6056449373a3531f2837c0d02e19cf644096e",
+     "offset": 5520,
+     "length": 67,
+     "locator": "section 'Turns 17/18 – Club'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Club as the final two-part corner (T17/18) supported; braking at Vale not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t17#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 17 is the first part of Club, a left after Vale.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "09bae622d8d679f36ac59d5a2df6056449373a3531f2837c0d02e19cf644096e",
+     "offset": 5520,
+     "length": 67,
+     "locator": "section 'Turns 17/18 – Club'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "That T17 is part of Club is supported (heading 'Turns 17/18'); left is not."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t17#s2",
+   "block_kind": "corner_section",
+   "assertion": "Club is named after the RAC's London clubhouse.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "09bae622d8d679f36ac59d5a2df6056449373a3531f2837c0d02e19cf644096e",
+     "offset": 5520,
+     "length": 67,
+     "locator": "section 'Turns 17/18 – Club'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t17#s3",
+   "block_kind": "corner_section",
+   "assertion": "Driving advice: position the car in the first part for a clean exit from the final right.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact",
+    "direction_not_in_cited_source"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t18#s1",
+   "block_kind": "corner_section",
+   "assertion": "Turn 18 is the final corner of Club and of the lap, a right leading onto Hamilton Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [
+    "layout:silverstone-8.season"
+   ],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "09bae622d8d679f36ac59d5a2df6056449373a3531f2837c0d02e19cf644096e",
+     "offset": 5520,
+     "length": 67,
+     "locator": "section 'Turns 17/18 – Club'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "ec906e5c2900ee990fcb973b1b33bb6ca6e7bafd9a358bf3a1896b98efe8c3e8",
+     "offset": 636,
+     "length": 59,
+     "locator": "section 'Turn 1 – Abbey'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-05a991b7be3a",
+     "excerpt_sha256": "b122e0ae14f50c0aa49a45943d74b4c72ab2ade1ad67e1efe880d4ed042ec757",
+     "offset": 949,
+     "length": 35,
+     "locator": "[[page 2]]",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "layout:silverstone-8",
+     "field": "season",
+     "value": "2010-2026, 5.891 km, 18 turns"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Final corner and Hamilton Straight supported, and 18 turns matches F1DB; right-hand direction not stated."
+  },
+  {
+   "claim_id": "silverstone:corner:silverstone-t18#s2",
+   "block_kind": "corner_section",
+   "assertion": "Club is named for the RAC, which shaped Silverstone's early history and is linked to the British GP trophy.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "e8e54c2fb56f5dd35025973368448e4c175300055ec03c9e8bc26341821bbcaf",
+     "offset": 5588,
+     "length": 136,
+     "locator": "section 'Turns 17/18 – Club'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "e49eee512d964aa7250c823f92387564b0ed93e69692235cdc6113f18c7f9c8d",
+     "offset": 3285,
+     "length": 92,
+     "locator": "section 'Turn 8 – Woodcote'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:0#s1",
+   "block_kind": "corner_group",
+   "assertion": "Maggotts starts a fast left-right sequence with several changes of direction before Hangar Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Interlinked sequence ending at Hangar Straight supported; left-right pattern not stated."
+  },
+  {
+   "claim_id": "silverstone:corner_group:0#s2",
+   "block_kind": "corner_group",
+   "assertion": "Becketts and Chapel are named after local history, including a medieval chapel linked to Thomas Becket.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "80cfde93f1a68e796bdd24f0932232a8f0a2e3b476761c432bae236b6edbfe2a",
+     "offset": 4252,
+     "length": 192,
+     "locator": "section 'Turns 10-14', para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:0#s3",
+   "block_kind": "corner_group",
+   "assertion": "Viewing tip: a poor line at the first change of direction costs speed all the way to the straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:1#s1",
+   "block_kind": "corner_group",
+   "assertion": "Copse is a fast right-hander that follows the old pit straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2b444c96193c",
+     "excerpt_sha256": "805e12d261288e0f31128851eb76ed36be0f3f872be75657dfa902b0d1b660c6",
+     "offset": 3528,
+     "length": 163,
+     "locator": "section 'Copse (Turn 9)'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Speed and former first-turn status supported (the old pit straight is implied); right-hander not stated."
+  },
+  {
+   "claim_id": "silverstone:corner_group:1#s2",
+   "block_kind": "corner_group",
+   "assertion": "Driving advice: precise Copse entry matters because Maggotts–Becketts–Chapel follows.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2b444c96193c",
+     "excerpt_sha256": "1fcba06fccda0691e20314332571e3a5ac64d16eebb079d3e70152143969d07f",
+     "offset": 3692,
+     "length": 45,
+     "locator": "section heading after Copse",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Order supported; advice not."
+  },
+  {
+   "claim_id": "silverstone:corner_group:1#s3",
+   "block_kind": "corner_group",
+   "assertion": "Copse is named for nearby woodland, and Hamilton and Verstappen made contact there in 2021 during their title fight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_value_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-2b444c96193c",
+     "excerpt_sha256": "805e12d261288e0f31128851eb76ed36be0f3f872be75657dfa902b0d1b660c6",
+     "offset": 3528,
+     "length": 163,
+     "locator": "section 'Copse (Turn 9)'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "1045",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    }
+   ],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "not_covered_by_cited_sources"
+   ],
+   "notes": "Etymology supported. The cited article is from 2015 and cannot cover 2021."
+  },
+  {
+   "claim_id": "silverstone:corner_group:2#s1",
+   "block_kind": "corner_group",
+   "assertion": "Stowe is named after nearby Stowe School and follows Hangar Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "f32fa61f2dc62a0034e85c6ab1915d27428130855427ebabf30cdbd4af162913",
+     "offset": 4866,
+     "length": 127,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b8af36ff02e2639e8616388bd72d6a7b814463b66e7bf842442bf0f0b3106197",
+     "offset": 4698,
+     "length": 167,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "word_match_only"
+   ],
+   "notes": "Position after Hangar Straight supported. The cited source does not say the name comes from the school."
+  },
+  {
+   "claim_id": "silverstone:corner_group:2#s2",
+   "block_kind": "corner_group",
+   "assertion": "Stowe has heavy braking after a long high-speed section.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "ef476933d09ac2b18001a8a750f44b05d7908eef694fca8c85bbab4237400612",
+     "offset": 4590,
+     "length": 91,
+     "locator": "section 'Hangar Straight'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b8af36ff02e2639e8616388bd72d6a7b814463b66e7bf842442bf0f0b3106197",
+     "offset": 4698,
+     "length": 167,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:3#s1",
+   "block_kind": "corner_group",
+   "assertion": "Abbey opens the lap at high speed and is followed by heavy braking at Village.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "3b130e7b38aed49ae3707686118c41369e4c810664346a016204b3b354e04692",
+     "offset": 1311,
+     "length": 140,
+     "locator": "section 'Turn 3 – Village'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "partially_supported",
+    "speed_not_in_cited_source"
+   ],
+   "notes": "Village braking supported; Abbey's speed is not described in the cited source."
+  },
+  {
+   "claim_id": "silverstone:corner_group:3#s2",
+   "block_kind": "corner_group",
+   "assertion": "The Loop turns cars towards Wellington Straight.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "015cd3251101cbaa99652d233cddef3c5f7f85be9fb66e03ab627fdd4c5f9180",
+     "offset": 2475,
+     "length": 149,
+     "locator": "section 'Turn 6 – Brooklands'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Sequence T4 Loop → T5 Aintree → Wellington Straight."
+  },
+  {
+   "claim_id": "silverstone:corner_group:3#s3",
+   "block_kind": "corner_group",
+   "assertion": "Racing advice: a late move into Village must leave room for the slow left that follows.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "d0b488b6c8e4e0d4a1e150c153c38b8067466f1adc8eb84ed60e19115af2b2cc",
+     "offset": 1629,
+     "length": 79,
+     "locator": "section 'Turn 4 – The Loop'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact",
+    "direction_not_in_cited_source"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:4#s1",
+   "block_kind": "corner_group",
+   "assertion": "The 2010 Arena extension added Abbey, Farm, Village, The Loop and Aintree to the Grand Prix lap.",
+   "checker_verdict": "DISPUTED",
+   "contradicted": true,
+   "final": "disputed",
+   "policy_findings": [
+    "claim_rejected"
+   ],
+   "checker_dataset_disagreements": [
+    "layout:silverstone-7.season",
+    "layout:silverstone-8.season"
+   ],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1011,
+     "length": 186,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "layout:silverstone-7",
+     "field": "season",
+     "value": "1997-2009, 5.141 km, 17 turns"
+    },
+    {
+     "race_id": "layout:silverstone-8",
+     "field": "season",
+     "value": "2010-2026, 5.891 km, 18 turns"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "contradicted_by_source",
+    "not_covered_by_cited_sources"
+   ],
+   "notes": "F1DB supports a new layout in 2010. The source says Farm was on the original circuit, and it never mentions 'Arena' or Abbey/Loop/Aintree being new. Abbey also predates 2010 (background knowledge)."
+  },
+  {
+   "claim_id": "silverstone:corner_group:4#s2",
+   "block_kind": "corner_group",
+   "assertion": "Older layouts start the lap with different corners, so corner numbers are not comparable across eras.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [
+    "layout:silverstone-1.season",
+    "layout:silverstone-8.season"
+   ],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b90bd0bb7ed771046a14a1c4629a3cc28ece8123d23b846b39c64a5bf9cd3bb7",
+     "offset": 1011,
+     "length": 186,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "layout:silverstone-1",
+     "field": "season",
+     "value": "1950-1973, 8 turns"
+    },
+    {
+     "race_id": "layout:silverstone-8",
+     "field": "season",
+     "value": "2010-2026, 18 turns"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Advisory. F1DB layouts (8 to 18 turns) agree that numbering changed, but the cited source does not establish a different opening sequence."
+  },
+  {
+   "claim_id": "silverstone:corner_group:4#s3",
+   "block_kind": "corner_group",
+   "assertion": "In the current layout the heavy Village braking zone comes near the start of the lap.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "3b130e7b38aed49ae3707686118c41369e4c810664346a016204b3b354e04692",
+     "offset": 1311,
+     "length": 140,
+     "locator": "section 'Turn 3 – Village'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Village is Turn 3."
+  },
+  {
+   "claim_id": "silverstone:corner_group:5#s1",
+   "block_kind": "corner_group",
+   "assertion": "Abbey is a fast right-hander named after the nearby remains of Luffield Abbey.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "a5592cf51296f9b74e6822387bd78b31d28e9f62cd4e2f920698a35e762efff7",
+     "offset": 773,
+     "length": 133,
+     "locator": "section 'Turn 1 – Abbey'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source",
+    "speed_not_in_cited_source"
+   ],
+   "notes": "Etymology supported; speed and direction not stated."
+  },
+  {
+   "claim_id": "silverstone:corner_group:5#s2",
+   "block_kind": "corner_group",
+   "assertion": "Farm is a gentle left after Abbey, named after a former straight that passed a farm.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "19e739e5c7430b2e99eb40ff5d6c29855d43d1dc09c58ce4f37e3a6d3cab2886",
+     "offset": 1198,
+     "length": 95,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "All supported except 'left'."
+  },
+  {
+   "claim_id": "silverstone:corner_group:5#s3",
+   "block_kind": "corner_group",
+   "assertion": "Driving advice: Abbey and Farm reward a smooth line, not heavy braking.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "19e739e5c7430b2e99eb40ff5d6c29855d43d1dc09c58ce4f37e3a6d3cab2886",
+     "offset": 1198,
+     "length": 95,
+     "locator": "section 'Turn 2 – Farm'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Consistent with Village being the first big braking point. Tagged dated_event but has no date."
+  },
+  {
+   "claim_id": "silverstone:corner_group:6#s1",
+   "block_kind": "corner_group",
+   "assertion": "Village is named after the nearby settlement and is the first major braking zone.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "3b130e7b38aed49ae3707686118c41369e4c810664346a016204b3b354e04692",
+     "offset": 1311,
+     "length": 140,
+     "locator": "section 'Turn 3 – Village'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:6#s2",
+   "block_kind": "corner_group",
+   "assertion": "The Loop is the slowest corner on the circuit; Aintree is named after the Liverpool venue that hosted the British GP.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "d0b488b6c8e4e0d4a1e150c153c38b8067466f1adc8eb84ed60e19115af2b2cc",
+     "offset": 1629,
+     "length": 79,
+     "locator": "section 'Turn 4 – The Loop'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b17b2b431487e6aaf7950c6e35951d177344e1eb0dfbd13638911d3ee3b662eb",
+     "offset": 1936,
+     "length": 123,
+     "locator": "section 'Turn 5 – Aintree'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:6#s3",
+   "block_kind": "corner_group",
+   "assertion": "Driving advice: rotating the car through The Loop is key to the following acceleration.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Source mentions only energy harvesting at The Loop."
+  },
+  {
+   "claim_id": "silverstone:corner_group:7#s1",
+   "block_kind": "corner_group",
+   "assertion": "Brooklands is named after Britain's pioneering circuit, and Luffield after the local abbey.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "cb5490ab7146d088afaea837ebae9a73d4a2f2e9372f9a9a56bc08a60d55cf2c",
+     "offset": 2625,
+     "length": 119,
+     "locator": "section 'Turn 6 – Brooklands'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "e17b609ee6ad43e34c3ab7644c7d3033b2e4cdb398c5baf9a7c6b07b7d7a070c",
+     "offset": 2805,
+     "length": 136,
+     "locator": "section 'Turn 7 – Luffield'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": "'Pioneering' is supported by its hosting the first British GP."
+  },
+  {
+   "claim_id": "silverstone:corner_group:7#s2",
+   "block_kind": "corner_group",
+   "assertion": "Woodcote is named after an estate owned by the RAC.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b3b791eb6ba0b92f817228cb303e35c5280c9040c4cc5824325302ee9caec4af",
+     "offset": 3472,
+     "length": 149,
+     "locator": "section 'Turn 8 – Woodcote'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:7#s3",
+   "block_kind": "corner_group",
+   "assertion": "Braking into Brooklands and the long right at Luffield set up the faster Woodcote sweep.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "92f1be67cc64986010c065c4bf17421688222e9ac8fa78bf095ad145abdcc093",
+     "offset": 2942,
+     "length": 143,
+     "locator": "section 'Turn 7 – Luffield'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported"
+   ],
+   "notes": "Luffield long right and the Woodcote sweep are supported; braking into Brooklands is not stated."
+  },
+  {
+   "claim_id": "silverstone:corner_group:8#s1",
+   "block_kind": "corner_group",
+   "assertion": "Copse is a very fast right-hander named after small nearby woods.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "4d18c0537f4b52cb1343d47dfc05de00156768581b260be7dc2282fd3f1fd1e2",
+     "offset": 3709,
+     "length": 160,
+     "locator": "section 'Turn 9 – Copse'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "partially_supported",
+    "direction_not_in_cited_source"
+   ],
+   "notes": "Speed and name supported; 'right-hander' not stated."
+  },
+  {
+   "claim_id": "silverstone:corner_group:8#s2",
+   "block_kind": "corner_group",
+   "assertion": "Driving advice: precise Copse entry matters because Maggotts–Becketts follows immediately.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Corner order T9 → T10 is consistent with the source."
+  },
+  {
+   "claim_id": "silverstone:corner_group:8#s3",
+   "block_kind": "corner_group",
+   "assertion": "In 2021 Hamilton and Verstappen collided at Copse, a key scene in that season's title fight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_value_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "1045",
+     "field": "winner",
+     "value": "lewis-hamilton"
+    },
+    {
+     "race_id": "1045",
+     "field": "pole",
+     "value": "max-verstappen"
+    }
+   ],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "not_covered_by_cited_sources"
+   ],
+   "notes": "The cited source does not mention 2021. Widely reported elsewhere; needs a citation."
+  },
+  {
+   "claim_id": "silverstone:corner_group:9#s1",
+   "block_kind": "corner_group",
+   "assertion": "Turns 10-14 are five linked changes of direction forming one continuous high-speed sequence.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "0b35036e639987063b0f544b8b592bfe5450b682b3226e5bba754b8c229563ec",
+     "offset": 4000,
+     "length": 117,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": "'High-speed' is not explicit in the cited source (the uncited 2015 article gives ~300 km/h)."
+  },
+  {
+   "claim_id": "silverstone:corner_group:9#s2",
+   "block_kind": "corner_group",
+   "assertion": "Maggotts is named after Maggot Moor; Becketts and Chapel after a medieval chapel linked to Thomas Becket.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "4eec104d7bd8c929ca68b2130ebb0f1bce31d127dfb284518ca68833361240aa",
+     "offset": 4119,
+     "length": 94,
+     "locator": "section 'Turns 10-14'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "80cfde93f1a68e796bdd24f0932232a8f0a2e3b476761c432bae236b6edbfe2a",
+     "offset": 4252,
+     "length": 192,
+     "locator": "section 'Turns 10-14', para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "spelling_variant"
+   ],
+   "notes": "Spelling 'Maggots Moor' vs 'Maggot Moor'."
+  },
+  {
+   "claim_id": "silverstone:corner_group:9#s3",
+   "block_kind": "corner_group",
+   "assertion": "Driving advice: an error at the first apex costs speed onto Hangar Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:10#s1",
+   "block_kind": "corner_group",
+   "assertion": "Stowe is at the end of Hangar Straight and needs commitment and exit control.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b8af36ff02e2639e8616388bd72d6a7b814463b66e7bf842442bf0f0b3106197",
+     "offset": 4698,
+     "length": 167,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Position supported; demands are evaluative ('notoriously tricky' is close but not the same)."
+  },
+  {
+   "claim_id": "silverstone:corner_group:10#s2",
+   "block_kind": "corner_group",
+   "assertion": "Stowe is named after nearby Stowe School.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "f32fa61f2dc62a0034e85c6ab1915d27428130855427ebabf30cdbd4af162913",
+     "offset": 4866,
+     "length": 127,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "word_match_only"
+   ],
+   "notes": "The source does not state the naming link. The uncited 2015 F1 article states it explicitly."
+  },
+  {
+   "claim_id": "silverstone:corner_group:10#s3",
+   "block_kind": "corner_group",
+   "assertion": "The long Hangar Straight approach makes Stowe a natural overtaking spot under braking; running wide hurts Vale.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "ef476933d09ac2b18001a8a750f44b05d7908eef694fca8c85bbab4237400612",
+     "offset": 4590,
+     "length": 91,
+     "locator": "section 'Hangar Straight'",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "b8af36ff02e2639e8616388bd72d6a7b814463b66e7bf842442bf0f0b3106197",
+     "offset": 4698,
+     "length": 167,
+     "locator": "section 'Turn 15 – Stowe'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": "The 'running wide' clause is driving description; the T15 → T16 order is supported."
+  },
+  {
+   "claim_id": "silverstone:corner_group:11#s1",
+   "block_kind": "corner_group",
+   "assertion": "Vale is a dip after Stowe, and its name suggests a valley.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "28c1f46ca2d3085ee95d7f548312505429dea54d604d01ba683ec3c5838d6be2",
+     "offset": 5213,
+     "length": 165,
+     "locator": "section 'Turn 16 – Vale'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "omits_alternative_explanation"
+   ],
+   "notes": "Supported as a theory; the source also gives the Aylesbury Vale explanation. 'Valley' is not in the cited source (it is in the uncited 2015 article)."
+  },
+  {
+   "claim_id": "silverstone:corner_group:11#s2",
+   "block_kind": "corner_group",
+   "assertion": "Club is named after the Royal Automobile Club.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "09bae622d8d679f36ac59d5a2df6056449373a3531f2837c0d02e19cf644096e",
+     "offset": 5520,
+     "length": 67,
+     "locator": "section 'Turns 17/18 – Club'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "silverstone:corner_group:11#s3",
+   "block_kind": "corner_group",
+   "assertion": "Driving advice: change direction through Vale, then take a clean line through the two-part Club onto Hamilton Straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-fc0276b0cbbd",
+     "excerpt_sha256": "ec906e5c2900ee990fcb973b1b33bb6ca6e7bafd9a358bf3a1896b98efe8c3e8",
+     "offset": 636,
+     "length": 59,
+     "locator": "section 'Turn 1 – Abbey'",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": null,
+   "uk_issue": "no aligned UK sentence",
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Layout order supported; technique not stated."
+  }
+ ]
+}

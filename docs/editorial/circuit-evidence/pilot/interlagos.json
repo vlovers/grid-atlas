@@ -30,6 +30,12 @@
    "narrative": 49
   },
   "claims_unaligned_uk": 9,
+  "name_agreement": {
+   "agree": 13,
+   "differ": 3,
+   "uk_unrecognised": 1,
+   "no_names": 48
+  },
   "dataset_checks": {
    "supported": 2,
    "conflict": 0,
@@ -38,26 +44,37 @@
   "factcheck_status": {
    "dataset_conflict": 0,
    "dataset_supported": 2,
-   "passages_cover_numbers": 28,
-   "passages_partial": 1,
-   "no_passage_in_live_sources": 12,
-   "cited_sources_unavailable": 31,
+   "passages_cover_numbers": 49,
+   "passages_partial": 5,
+   "no_passage_in_live_sources": 18,
+   "cited_sources_unavailable": 0,
    "no_cited_sources": 0
   },
-  "claims_verified": 0,
+  "claims_verified": 14,
+  "factcheck": {
+   "checked": 74,
+   "verified": 14,
+   "checker": "factcheck-agent-B",
+   "counts": {
+    "checker_verified_policy_rejected": 12,
+    "disputed": 1,
+    "unsupported": 46,
+    "contradicted": 1,
+    "verified": 14
+   }
+  },
   "sources": {
    "cited": 8,
-   "live": 6,
-   "live_pdf_no_text": 2
+   "live": 6
   },
   "source_structural_issues": 0,
   "corners": {
    "numbered_turns_all_layouts": 41,
    "layouts_with_guide": 1,
    "named_in_guide": 13,
-   "names_found_in_cited_source": 0,
-   "names_not_in_cited_text": 0,
-   "names_sources_unavailable": 13,
+   "names_found_in_cited_source": 10,
+   "names_not_in_cited_text": 3,
+   "names_sources_unavailable": 0,
    "turns_queued": 26
   },
   "quality": {
@@ -67,7 +84,7 @@
    "generic": 0,
    "en_uk_issues": 0
   },
-  "evidence_lead_rate": 0.405,
+  "evidence_lead_rate": 0.689,
   "content_complete": false
  },
  "tasks": [
@@ -132,7 +149,7 @@
    "claim_type": "statistic",
    "importance": "critical",
    "en": "Interlagos already knew what a Brazilian victory sounded like.",
-   "uk": "Інтерлагос уже знав, як звучить домашня перемога: Емерсон Фіттіпальді виграв тут перший заліковий Гран-прі Бразилії 1973 року й повторив успіх у 1974-му.",
+   "uk": "Інтерлагос уже знав, як звучить домашня перемога.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -169,7 +186,7 @@
    "claim_type": "statistic",
    "importance": "critical",
    "en": "Emerson Fittipaldi won the first World Championship Brazilian Grand Prix here in 1973 and returned to win in 1974.",
-   "uk": "Але в січні 1975-го трибуни стежили за іншим бразильцем — Карлосом Паче на Brabham.",
+   "uk": "Емерсон Фіттіпальді виграв тут перший заліковий Гран-прі Бразилії 1973 року й повторив успіх у 1974-му.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -204,7 +221,7 @@
    "claim_type": "dated_event",
    "importance": "critical",
    "en": "But in January 1975 the grandstands were watching a different home contender: Carlos Pace in a Brabham.",
-   "uk": "Найшвидшим був Жан-П'єр Жар'є: його Shadow відірвався від суперників, поки на 32-му колі не підвела паливна система.",
+   "uk": "Але в січні 1975-го трибуни стежили за іншим бразильцем — Карлосом Паче на Brabham.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -241,8 +258,8 @@
    "block_id": "interlagos:long_history_draft",
    "claim_type": "dated_event",
    "importance": "critical",
-   "en": "Jean-Pierre Jarier's Shadow had been the quickest car and pulled clear, until trouble with its fuel system ended his race on lap 32.",
-   "uk": "Паче очолив гонку, та попереду ще був фініш, а позаду наближався McLaren Фіттіпальді.",
+   "en": "Jean-Pierre Jarier's Shadow had been the quickest car and pulled clear, until trouble with its fuel system ended his race after 32 laps.",
+   "uk": "Найшвидшим був Жан-П'єр Жар'є: його Shadow відірвався від суперників, поки після 32 кіл не підвела паливна система.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -256,7 +273,7 @@
       "Jean-Pierre",
       "Shadow"
      ],
-     "score": 11
+     "score": 12
     },
     {
      "source_id": "src-636e356b4110",
@@ -279,8 +296,8 @@
    "block_id": "interlagos:long_history_draft",
    "claim_type": "narrative",
    "importance": "standard",
-   "en": "Pace inherited the lead, but he still had to keep Fittipaldi's closing McLaren behind him.",
-   "uk": "Карлос утримав перевагу й здобув свою єдину перемогу у Формулі-1.",
+   "en": "Pace inherited the lead, with Fittipaldi's McLaren the car he had to keep behind him.",
+   "uk": "Паче очолив гонку, а позаду, за McLaren, ішов Фіттіпальді, якого треба було стримати.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -319,7 +336,7 @@
    "claim_type": "statistic",
    "importance": "critical",
    "en": "He did, taking his only Formula 1 victory with Fittipaldi second and Jochen Mass third.",
-   "uk": "Фіттіпальді став другим, Йохен Масс — третім.",
+   "uk": "Йому це вдалося: це була його єдина перемога у Формулі-1, Фіттіпальді фінішував другим, Йохен Масс — третім.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -356,7 +373,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "The result is a Brazilian one-two in the classification; the story is about a race that looked destined for Jarier before the crowd got its ending.",
-   "uk": "Протокол показує бразильський дубль; перебіг гонки нагадує, наскільки іншим міг бути цей день.",
+   "uk": "Протокол показує бразильський дубль, але гонка, здавалося, належала Жар'є, доки трибуни не отримали свій фінал.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -392,8 +409,8 @@
    "block_id": "interlagos:long_history_draft",
    "claim_type": "statistic",
    "importance": "critical",
-   "en": "Pace did not inherit an easy victory: once Jarier was out, Fittipaldi remained close enough to make the finish a real contest.",
-   "uk": "Перемога не дісталася Паче автоматично: після сходу Жар'є Фіттіпальді залишався досить близько, щоб тиснути до фінішу.",
+   "en": "Once Jarier was out, Fittipaldi gave chase but never came close enough to challenge Pace for the win.",
+   "uk": "Після сходу Жар'є Фіттіпальді переслідував Паче, але так і не наблизився настільки, щоб поборотися за перемогу.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -404,11 +421,11 @@
      "length": 305,
      "numbers_covered": true,
      "names_matched": [
-      "Pace",
       "Jarier",
-      "Fittipaldi"
+      "Fittipaldi",
+      "Pace"
      ],
-     "score": 10
+     "score": 9
     },
     {
      "source_id": "src-636e356b4110",
@@ -417,9 +434,9 @@
      "length": 272,
      "numbers_covered": true,
      "names_matched": [
-      "Pace",
       "Jarier",
-      "Fittipaldi"
+      "Fittipaldi",
+      "Pace"
      ],
      "score": 9
     }
@@ -432,7 +449,7 @@
    "claim_type": "statistic",
    "importance": "critical",
    "en": "The two Brazilians on the podium represented very different paths to this particular afternoon — an established champion chasing and a local winner collecting his only championship Grand Prix triumph.",
-   "uk": "На подіумі опинилися два бразильці з різними історіями — чемпіон, який наздоганяв, і переможець, для якого цей Гран-прі став єдиним у кар'єрі.",
+   "uk": "На подіумі опинилися два бразильці з різними історіями — чемпіон, який наздоганяв, і місцевий переможець, для якого цей Гран-прі став єдиною перемогою в чемпіонаті.",
    "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
@@ -745,9 +762,32 @@
    "importance": "standard",
    "en": "The opening left of S do Senna plunges downhill from the pit straight.",
    "uk": null,
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b72deeda794eb1810b02d2dd58fab8243851fac8194a2bfe06c9b13f078a86ba",
+     "offset": 4586,
+     "length": 98,
+     "numbers_covered": true,
+     "names_matched": [
+      "Senna"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "82c5859f978c2bc65eb6b78ef141bf1f746f03643942089a625f94c16f859c27",
+     "offset": 978,
+     "length": 346,
+     "numbers_covered": true,
+     "names_matched": [
+      "Senna"
+     ],
+     "score": 3
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t1#s2",
@@ -757,9 +797,21 @@
    "importance": "critical",
    "en": "The linked turns were created during the 1990 redesign with Ayrton Senna's input; the heavy braking zone remains the lap's clearest chance to attempt a pass.",
    "uk": null,
-   "status": "cited_sources_unavailable",
+   "status": "passages_partial",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "82c5859f978c2bc65eb6b78ef141bf1f746f03643942089a625f94c16f859c27",
+     "offset": 978,
+     "length": 346,
+     "numbers_covered": false,
+     "names_matched": [
+      "Ayrton"
+     ],
+     "score": 5
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t2#s1",
@@ -769,9 +821,32 @@
    "importance": "critical",
    "en": "Turn 2 immediately swings right after the downhill first part of Senna S.",
    "uk": "Другий поворот одразу переводить болід праворуч після спуску першої частини Senna S.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "82c5859f978c2bc65eb6b78ef141bf1f746f03643942089a625f94c16f859c27",
+     "offset": 978,
+     "length": 346,
+     "numbers_covered": true,
+     "names_matched": [
+      "Senna"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b72deeda794eb1810b02d2dd58fab8243851fac8194a2bfe06c9b13f078a86ba",
+     "offset": 4586,
+     "length": 98,
+     "numbers_covered": false,
+     "names_matched": [
+      "Senna"
+     ],
+     "score": 4
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t2#s2",
@@ -781,9 +856,36 @@
    "importance": "critical",
    "en": "Drivers who brake too late for Turn 1 can end up badly positioned here, losing the chance to accelerate cleanly through the following Curva do Sol.",
    "uk": "Ті, хто надто пізно загальмував перед першим, опиняються тут у невигідному положенні й втрачають розгін через наступний Curva do Sol.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_partial",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "13d31a86fb9762e3d23599b12bad7811fd911605640b67f7939eec63e56aac1b",
+     "offset": 1556,
+     "length": 169,
+     "numbers_covered": false,
+     "names_matched": [
+      "Drivers",
+      "Curva",
+      "Sol"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "6c6822c34b30a8b5a221d9ce90ae4094e52e7c360cb78b8bac04139ab91d2484",
+     "offset": 1726,
+     "length": 234,
+     "numbers_covered": false,
+     "names_matched": [
+      "Drivers",
+      "Curva",
+      "Sol"
+     ],
+     "score": 8
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t3#s1",
@@ -793,9 +895,36 @@
    "importance": "standard",
    "en": "Curva do Sol, the Curve of the Sun, is the long left that releases the car from Senna S.",
    "uk": "Curva do Sol — «Поворот Сонця» — довга ліва дуга після Senna S.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "13d31a86fb9762e3d23599b12bad7811fd911605640b67f7939eec63e56aac1b",
+     "offset": 1556,
+     "length": 169,
+     "numbers_covered": true,
+     "names_matched": [
+      "Curva",
+      "Sol",
+      "Curve",
+      "Sun"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "6c6822c34b30a8b5a221d9ce90ae4094e52e7c360cb78b8bac04139ab91d2484",
+     "offset": 1726,
+     "length": 234,
+     "numbers_covered": true,
+     "names_matched": [
+      "Curva",
+      "Sol"
+     ],
+     "score": 5
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t3#s2",
@@ -805,9 +934,31 @@
    "importance": "critical",
    "en": "A smooth, fast exit matters because it opens the Reta Oposta, where rivals can use the slipstream before braking at Turn 4.",
    "uk": "Плавний швидкий вихід важливий, адже він відкриває Reta Oposta, де суперники можуть використати повітряний мішок перед гальмуванням у четвертому повороті.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_partial",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "13d31a86fb9762e3d23599b12bad7811fd911605640b67f7939eec63e56aac1b",
+     "offset": 1556,
+     "length": 169,
+     "numbers_covered": false,
+     "names_matched": [
+      "Reta",
+      "Oposta"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "eb92ef43cc64d36d6ff889cca138a81607abe5003dc582e190506fb5e695b268",
+     "offset": 2124,
+     "length": 238,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 3
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t4#s1",
@@ -817,9 +968,34 @@
    "importance": "critical",
    "en": "Turn 4 starts the Descida do Lago section with a left at the end of Reta Oposta.",
    "uk": "Четвертий поворот відкриває Descida do Lago лівим віражем після Reta Oposta.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "eb92ef43cc64d36d6ff889cca138a81607abe5003dc582e190506fb5e695b268",
+     "offset": 2124,
+     "length": 238,
+     "numbers_covered": true,
+     "names_matched": [
+      "Descida",
+      "Lago"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "13d31a86fb9762e3d23599b12bad7811fd911605640b67f7939eec63e56aac1b",
+     "offset": 1556,
+     "length": 169,
+     "numbers_covered": false,
+     "names_matched": [
+      "Reta",
+      "Oposta"
+     ],
+     "score": 8
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t4#s2",
@@ -829,7 +1005,7 @@
    "importance": "standard",
    "en": "It is a major overtaking zone: drivers must slow from a long straight without running so wide that they compromise the second left.",
    "uk": "Це важлива зона обгонів: потрібно загальмувати після довгої прямої й не виїхати надто широко перед другим лівим поворотом.",
-   "status": "cited_sources_unavailable",
+   "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
   },
@@ -841,9 +1017,33 @@
    "importance": "standard",
    "en": "The second left of Descida do Lago continues the descent before the road climbs towards Ferradura.",
    "uk": null,
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "eb92ef43cc64d36d6ff889cca138a81607abe5003dc582e190506fb5e695b268",
+     "offset": 2124,
+     "length": 238,
+     "numbers_covered": true,
+     "names_matched": [
+      "Descida",
+      "Lago"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "57d6641acf522800e143856bb246a225f80b56be695877782118c7ef95b92fcb",
+     "offset": 2571,
+     "length": 273,
+     "numbers_covered": true,
+     "names_matched": [
+      "Ferradura"
+     ],
+     "score": 3
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t5#s2",
@@ -853,7 +1053,7 @@
    "importance": "standard",
    "en": "Its name refers to the lake-side descent; the exit is about getting the car settled for the faster right-hand section ahead.",
    "uk": null,
-   "status": "cited_sources_unavailable",
+   "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
   },
@@ -865,9 +1065,21 @@
    "importance": "standard",
    "en": "Ferradura means horseshoe, a reference to the curved shape of this right-hand section.",
    "uk": null,
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "57d6641acf522800e143856bb246a225f80b56be695877782118c7ef95b92fcb",
+     "offset": 2571,
+     "length": 273,
+     "numbers_covered": true,
+     "names_matched": [
+      "Ferradura"
+     ],
+     "score": 6
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t6#s2",
@@ -877,9 +1089,19 @@
    "importance": "critical",
    "en": "Turn 6 begins a faster sequence after the lake descent; drivers need to keep the car balanced through the second part rather than chase a single late apex.",
    "uk": null,
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "57d6641acf522800e143856bb246a225f80b56be695877782118c7ef95b92fcb",
+     "offset": 2571,
+     "length": 273,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t7#s1",
@@ -889,9 +1111,21 @@
    "importance": "critical",
    "en": "Turn 7 continues the right-hand Ferradura complex as the track changes elevation.",
    "uk": "Сьомий поворот продовжує праву зв'язку Ferradura на змінному рельєфі.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "57d6641acf522800e143856bb246a225f80b56be695877782118c7ef95b92fcb",
+     "offset": 2571,
+     "length": 273,
+     "numbers_covered": true,
+     "names_matched": [
+      "Ferradura"
+     ],
+     "score": 7
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t7#s2",
@@ -901,9 +1135,19 @@
    "importance": "critical",
    "en": "The car is still carrying speed from Turn 6, so steering smoothly and preparing the approach to the tighter infield is more valuable than sliding wide.",
    "uk": "Болід усе ще швидкий після шостого, тому плавне кермування й підготовка до тіснішої внутрішньої секції важливіші за ковзання на виході.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "57d6641acf522800e143856bb246a225f80b56be695877782118c7ef95b92fcb",
+     "offset": 2571,
+     "length": 273,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 4
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t8#s1",
@@ -913,9 +1157,34 @@
    "importance": "standard",
    "en": "Laranjinha, often translated as Little Orange, is a tighter right-hander in Interlagos's technical middle sector.",
    "uk": "Laranjinha, назву якого часто перекладають як «Маленький апельсин», — тісніший правий поворот технічної середньої секції Інтерлагоса.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "df3491c0b076d0158d57dcb30a345d09410ef67bb3967c7e2e92919cda18af0c",
+     "offset": 2845,
+     "length": 178,
+     "numbers_covered": true,
+     "names_matched": [
+      "Laranjinha",
+      "Little",
+      "Orange"
+     ],
+     "score": 11
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "dddb59795c19a89d8a24c345a928c3446c9c632c4e84db2226c35d617175d204",
+     "offset": 3024,
+     "length": 211,
+     "numbers_covered": true,
+     "names_matched": [
+      "Orange"
+     ],
+     "score": 4
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t8#s2",
@@ -925,7 +1194,7 @@
    "importance": "standard",
    "en": "Its name has competing local explanations, so the guide records the established name without asserting a single unverified origin.",
    "uk": "Походження назви пояснюють по-різному, тому довідник не видає одну неперевірену версію за факт.",
-   "status": "cited_sources_unavailable",
+   "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
   },
@@ -937,9 +1206,35 @@
    "importance": "standard",
    "en": "Pinheirinho means Little Pine Tree and marks a slow left in the infield.",
    "uk": "Pinheirinho означає «Маленька сосна» й позначає повільний лівий поворот усередині траси.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "16909192e54910b5e76aa9d48e40e873dc00eb257b06ee32c420290a0e7c0943",
+     "offset": 3236,
+     "length": 156,
+     "numbers_covered": true,
+     "names_matched": [
+      "Pinheirinho",
+      "Little",
+      "Pine",
+      "Tree"
+     ],
+     "score": 12
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "df3491c0b076d0158d57dcb30a345d09410ef67bb3967c7e2e92919cda18af0c",
+     "offset": 2845,
+     "length": 178,
+     "numbers_covered": true,
+     "names_matched": [
+      "Little"
+     ],
+     "score": 3
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t9#s2",
@@ -949,9 +1244,22 @@
    "importance": "standard",
    "en": "The corner demands a tidy change of direction and controlled traction, because a wide exit leaves the car poorly positioned for the very tight right-hand Bico de Pato.",
    "uk": "Потрібні точна перекладка й контроль зчеплення: широкий вихід ускладнює підхід до дуже тісного правого Bico de Pato.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "1d5e458b507f35dba3e2e74e4f5495ab546b3aa5d4fdeb32cf6e7ca1c3c9b0a0",
+     "offset": 3512,
+     "length": 151,
+     "numbers_covered": true,
+     "names_matched": [
+      "Bico",
+      "Pato"
+     ],
+     "score": 8
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t10#s1",
@@ -961,9 +1269,24 @@
    "importance": "standard",
    "en": "Bico de Pato means Duck's Bill, a name that fits the sharp right-hand hairpin.",
    "uk": "Bico de Pato означає «Качиний дзьоб» — влучна назва різкої правої шпильки.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "1d5e458b507f35dba3e2e74e4f5495ab546b3aa5d4fdeb32cf6e7ca1c3c9b0a0",
+     "offset": 3512,
+     "length": 151,
+     "numbers_covered": true,
+     "names_matched": [
+      "Bico",
+      "Pato",
+      "Duck's",
+      "Bill"
+     ],
+     "score": 15
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t10#s2",
@@ -973,9 +1296,21 @@
    "importance": "standard",
    "en": "The slowest part of the middle sector requires strong rotation and patient throttle; an impatient exit can ruin the line into the following left-hand Mergulho.",
    "uk": "У цій повільній частині середнього сектору потрібно розвернути болід і терпляче додати газ; поспішний вихід псує лінію до лівого Mergulho.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "598c703de6b2174377c4922f76b586a2e7e437ad42e061e5146282a19c15616f",
+     "offset": 3804,
+     "length": 68,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mergulho"
+     ],
+     "score": 3
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t11#s1",
@@ -985,9 +1320,33 @@
    "importance": "standard",
    "en": "Mergulho translates as Dive, fitting the left-hand bend that drops away before Junção.",
    "uk": "Mergulho означає «Пірнання» — назва пасує лівій дузі, що спускається перед Junção.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "598c703de6b2174377c4922f76b586a2e7e437ad42e061e5146282a19c15616f",
+     "offset": 3804,
+     "length": 68,
+     "numbers_covered": true,
+     "names_matched": [
+      "Mergulho",
+      "Dive"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "32dea7d65927b52678b3cdfd9421c8d9b581491ecaf2d96de89617f5adf7d5cb",
+     "offset": 4089,
+     "length": 43,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 4
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t11#s2",
@@ -997,7 +1356,7 @@
    "importance": "standard",
    "en": "The car gathers speed while the road falls, so drivers must anticipate the slower left ahead instead of arriving there with too much momentum.",
    "uk": "Болід набирає швидкість на схилі, тому пілот має заздалегідь готувати повільніший лівий віраж, а не під'їжджати до нього з надмірною швидкістю.",
-   "status": "cited_sources_unavailable",
+   "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
   },
@@ -1009,9 +1368,33 @@
    "importance": "standard",
    "en": "Junção means Junction and is the decisive slow left before Interlagos's long uphill acceleration.",
    "uk": "Junção означає «З'єднання» — це вирішальний повільний лівий перед довгим розгоном угору.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "32dea7d65927b52678b3cdfd9421c8d9b581491ecaf2d96de89617f5adf7d5cb",
+     "offset": 4089,
+     "length": 43,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção",
+      "Junction"
+     ],
+     "score": 6
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "7a134b5501e6f1fd0c1e4911c586ac0bb74be835f2b384ca40b0ff599280d732",
+     "offset": 5057,
+     "length": 165,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 5
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t12#s2",
@@ -1021,7 +1404,7 @@
    "importance": "standard",
    "en": "A clean exit is worth far more than a dramatic entry: poor traction here costs speed through the sweeping final section and onto the pit straight.",
    "uk": "Чистий вихід важливіший за ефектний вхід: втрата зчеплення тут забирає швидкість на всій фінальній дузі та стартовій прямій.",
-   "status": "cited_sources_unavailable",
+   "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
   },
@@ -1033,9 +1416,32 @@
    "importance": "standard",
    "en": "Curva do Café begins the uphill, largely full-throttle run after Junção.",
    "uk": "Curva do Café відкриває висхідний, майже повністю швидкісний відрізок після Junção.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b72deeda794eb1810b02d2dd58fab8243851fac8194a2bfe06c9b13f078a86ba",
+     "offset": 4586,
+     "length": 98,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "5bdd67bfd4dd6f1531ec26f31ca2f1563b7d9c7e98275bd35d017fd41c8c8430",
+     "offset": 4685,
+     "length": 135,
+     "numbers_covered": true,
+     "names_matched": [
+      "Café"
+     ],
+     "score": 4
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t13#s2",
@@ -1045,9 +1451,32 @@
    "importance": "standard",
    "en": "The name recalls coffee, central to São Paulo's regional history.",
    "uk": "Назва нагадує про каву, важливу для історії регіону Сан-Паулу.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "70a5b741de4173b4fbf5b5167573a177bad9074c81f73f19e1320a34341439bd",
+     "offset": 800,
+     "length": 177,
+     "numbers_covered": true,
+     "names_matched": [
+      "São"
+     ],
+     "score": 4
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "82c5859f978c2bc65eb6b78ef141bf1f746f03643942089a625f94c16f859c27",
+     "offset": 978,
+     "length": 346,
+     "numbers_covered": true,
+     "names_matched": [
+      "Paulo's"
+     ],
+     "score": 3
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t13#s3",
@@ -1057,9 +1486,32 @@
    "importance": "standard",
    "en": "Drivers keep the car flowing through the left-hand sweep rather than treating it as a fresh slow braking point.",
    "uk": "Пілоти плавно проходять ліву дугу, а не сприймають її як нову повільну зону гальмування.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b86c55fc0aba7405d471043bbb7ab0a3094930aa96a05a9150c0426e6a0f9ee9",
+     "offset": 4821,
+     "length": 164,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 5
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "06415abebdf0c351ff45a7e7548eeed2ba723914e55847606c5dd1c6fe693468",
+     "offset": 1325,
+     "length": 92,
+     "numbers_covered": true,
+     "names_matched": [
+      "Drivers"
+     ],
+     "score": 4
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t14#s1",
@@ -1069,9 +1521,22 @@
    "importance": "critical",
    "en": "Turn 14 is part of the sustained uphill run towards the pit straight, often discussed with the Subida dos Boxes section.",
    "uk": "Чотирнадцятий поворот належить до тривалого підйому на стартову пряму, який часто описують разом із Subida dos Boxes.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "7556c2293d9cf7b03541147b7527e4a24f57a542bdf7f92b55d605517b0985dc",
+     "offset": 4986,
+     "length": 70,
+     "numbers_covered": true,
+     "names_matched": [
+      "Subida",
+      "Boxes"
+     ],
+     "score": 10
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t14#s2",
@@ -1081,9 +1546,32 @@
    "importance": "standard",
    "en": "The car is already accelerating hard after Junção; a precise line matters more than searching for an invented individual corner name.",
    "uk": "Після Junção болід уже інтенсивно прискорюється; точна траєкторія важливіша за вигадану окрему назву віражу.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_cover_numbers",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "32dea7d65927b52678b3cdfd9421c8d9b581491ecaf2d96de89617f5adf7d5cb",
+     "offset": 4089,
+     "length": 43,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 3
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b72deeda794eb1810b02d2dd58fab8243851fac8194a2bfe06c9b13f078a86ba",
+     "offset": 4586,
+     "length": 98,
+     "numbers_covered": true,
+     "names_matched": [
+      "Junção"
+     ],
+     "score": 3
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner:interlagos-t15#s1",
@@ -1093,7 +1581,7 @@
    "importance": "standard",
    "en": "The last numbered bend completes Interlagos's uphill sweep onto the start-finish straight.",
    "uk": "Останній пронумерований перегин завершує підйом Інтерлагоса до стартової прямої.",
-   "status": "cited_sources_unavailable",
+   "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
   },
@@ -1105,9 +1593,34 @@
    "importance": "critical",
    "en": "Drivers usually stay committed to acceleration, but a poor exit from Junção can still leave them vulnerable on the long climb to the braking zone at Turn 1.",
    "uk": "Пілоти здебільшого продовжують розгін, але невдалий вихід із Junção залишає їх уразливими на довгому підйомі до гальмування перед першим поворотом.",
-   "status": "cited_sources_unavailable",
+   "status": "passages_partial",
    "dataset": [],
-   "passages": []
+   "passages": [
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "b72deeda794eb1810b02d2dd58fab8243851fac8194a2bfe06c9b13f078a86ba",
+     "offset": 4586,
+     "length": 98,
+     "numbers_covered": false,
+     "names_matched": [
+      "Drivers",
+      "Junção"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-eab4b8e4cfe6",
+     "passage_sha256": "7a134b5501e6f1fd0c1e4911c586ac0bb74be835f2b384ca40b0ff599280d732",
+     "offset": 5057,
+     "length": 165,
+     "numbers_covered": false,
+     "names_matched": [
+      "Drivers",
+      "Junção"
+     ],
+     "score": 7
+    }
+   ]
   },
   {
    "claim_id": "interlagos:corner_group:0#s1",
@@ -1736,8 +2249,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_not_in_cited_text",
    "period": "within_layout_seasons"
   },
   {
@@ -1751,8 +2264,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_not_in_cited_text",
    "period": "within_layout_seasons"
   },
   {
@@ -1766,8 +2279,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1781,8 +2294,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1796,8 +2309,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1811,8 +2324,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1826,8 +2339,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1841,8 +2354,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1856,8 +2369,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1871,8 +2384,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1886,8 +2399,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1901,8 +2414,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_found_in_cited_source",
    "period": "within_layout_seasons"
   },
   {
@@ -1916,8 +2429,8 @@
    "numbering_year": 2025,
    "layout_seasons": "1990-2026",
    "cited_sources": 2,
-   "live_sources": 0,
-   "status": "cited_sources_unavailable",
+   "live_sources": 1,
+   "status": "name_not_in_cited_text",
    "period": "within_layout_seasons"
   }
  ],
@@ -2165,13 +2678,13 @@
    "status": {
     "url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
     "source_id": "src-ad9cf78c4f4d",
-    "checked_at": "2026-11-16T11:26:17.571Z",
-    "http_status": 200,
-    "final_url": "https://www.fia.com/system/files/decision-document/2025_sao_paulo_grand_prix_-_event_notes_-_circuit_map_pit_lane_drawing_emergency_exits_map_quarantine_zone_and_red_zones_map.pdf",
-    "content_type": "application/pdf",
-    "outcome": "live_pdf_no_text",
-    "bytes_sha256": "d0a51c2a80f1e456dc16c2c746f992d199995c2145e607ac41f5230285ffbdcc",
-    "bytes": 3714010
+    "checked_at": "2026-11-17T00:14:51.703604+00:00",
+    "bytes_sha256": "596191c397c17d82c4d52668c9603d7c5eaded90b57e32bb2d94fd8b25b284ff",
+    "bytes": 3714010,
+    "pages": 7,
+    "outcome": "live_pdf_text",
+    "text_sha256": "02cc8fcf7f4c7622bbcd576c6a219148f8e5dd09343c19c614bdc45bf80d26dd",
+    "text_chars": 2714
    }
   },
   {
@@ -2206,6 +2719,21 @@
    "host": "mercedesamgf1.com",
    "class": "other",
    "cited_by": [
+    "interlagos:corner:interlagos-t1",
+    "interlagos:corner:interlagos-t2",
+    "interlagos:corner:interlagos-t3",
+    "interlagos:corner:interlagos-t4",
+    "interlagos:corner:interlagos-t5",
+    "interlagos:corner:interlagos-t6",
+    "interlagos:corner:interlagos-t7",
+    "interlagos:corner:interlagos-t8",
+    "interlagos:corner:interlagos-t9",
+    "interlagos:corner:interlagos-t10",
+    "interlagos:corner:interlagos-t11",
+    "interlagos:corner:interlagos-t12",
+    "interlagos:corner:interlagos-t13",
+    "interlagos:corner:interlagos-t14",
+    "interlagos:corner:interlagos-t15",
     "interlagos:corner_group:2",
     "interlagos:corner_group:3",
     "interlagos:corner_group:4",
@@ -2236,21 +2764,7 @@
    "host": "fia.com",
    "class": "fia_official",
    "cited_by": [
-    "interlagos:corner:interlagos-t1",
-    "interlagos:corner:interlagos-t2",
-    "interlagos:corner:interlagos-t3",
-    "interlagos:corner:interlagos-t4",
-    "interlagos:corner:interlagos-t5",
-    "interlagos:corner:interlagos-t6",
-    "interlagos:corner:interlagos-t7",
-    "interlagos:corner:interlagos-t8",
-    "interlagos:corner:interlagos-t9",
-    "interlagos:corner:interlagos-t10",
-    "interlagos:corner:interlagos-t11",
-    "interlagos:corner:interlagos-t12",
-    "interlagos:corner:interlagos-t13",
-    "interlagos:corner:interlagos-t14",
-    "interlagos:corner:interlagos-t15"
+    "interlagos:long_history_draft"
    ],
    "circuits": [
     "interlagos"
@@ -2259,13 +2773,13 @@
    "status": {
     "url": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
     "source_id": "src-f471275d7099",
-    "checked_at": "2026-11-16T11:27:47.384Z",
-    "http_status": 200,
-    "final_url": "https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf",
-    "content_type": "application/pdf",
-    "outcome": "live_pdf_no_text",
-    "bytes_sha256": "f4adcd0845a53c79295e5e59a2f59c16d6fe819a494beb3dc4b40349549fdd66",
-    "bytes": 1025844
+    "checked_at": "2026-11-17T00:15:07.012556+00:00",
+    "bytes_sha256": "635412c87f01abbb1cad945a36147fe25a32367839713197609d2cb81d78beaf",
+    "bytes": 1025844,
+    "pages": 20,
+    "outcome": "live_pdf_text",
+    "text_sha256": "5e36d60e4b6eb0768e787a60af3080107cfbd540eb35880e6cb7083339f70c54",
+    "text_chars": 24006
    }
   }
  ]
