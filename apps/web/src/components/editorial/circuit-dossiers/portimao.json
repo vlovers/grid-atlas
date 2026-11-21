@@ -1,0 +1,57 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "portimao",
+ "writer": "research-batch-5",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "portimao:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "Back on the Formula 1 calendar for 2027",
+    "uk": "Повернення до календаря Формули 1 у 2027 році"
+   },
+   "text": {
+    "en": "The last Formula 1 races at the Algarve International Circuit were the 2020 and 2021 Portuguese Grands Prix, both won by Lewis Hamilton. On 16 December 2025 Formula 1 announced that it will return to the Autódromo Internacional do Algarve, a 4.6 km track at Portimão, for 2027 and 2028 under a two-year agreement with the Portuguese government, Turismo de Portugal and the promoter Parkalgar. The announcement did not give race dates.",
+    "uk": "Останніми гонками Формули 1 на Міжнародному автодромі Алгарве стали Гран-прі Португалії 2020 і 2021 років, обидва виграв Льюїс Гамільтон. 16 грудня 2025 року Формула 1 оголосила, що повернеться на Autódromo Internacional do Algarve, 4,6-кілометрову трасу в Портімау, у 2027 і 2028 роках за дворічною угодою з урядом Португалії, Turismo de Portugal і промоутером Parkalgar. Дат гонок в анонсі не вказано."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/formula-1-to-return-to-portugal-in-2027-and-2028.6kRRgAnvEoGiOkJMkzp1Cr.6kRRgAnvEoGiOkJMkzp1Cr",
+     "publisher": "Formula 1",
+     "locator": "Announcement of 16 December 2025: circuit, last races, agreement parties"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "portimao-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Non-F1 use of the circuit between 2021 and 2027 was not confirmed by any opened page, so the legacy text does not describe it; a web search summary mentioned World Superbike, MotoGP, ELMS and GT World Challenge in 2026, which an editor should source from the circuit's official calendar.",
+  "No opened source names corners 1-14 and tied them to turn numbers; all are listed as without established name. A search summary mentioned a corner named after Craig Jones, unverified and unlocated.",
+  "Imagery not assessed."
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "paul-ricard",
+ "writer": "research-batch-5",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "paul-ricard:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "Blue Zones and 167 configurations",
+    "uk": "Сині зони та 167 конфігурацій"
+   },
+   "text": {
+    "en": "Between 1990 and 2018 the circuit gained its distinctive blue and red run-off areas, known as Blue Zones, designed to slow a car without gravel traps while still punishing errors. The venue is also unusually flexible: Pirelli says it offers 167 possible configurations, ranging from 826 to 5,861 metres. Formula 1 returned in 2018 on the 5.842 km layout with 53 laps and a 309.69 km race distance.",
+    "uk": "Між 1990 і 2018 роками траса отримала характерні синьо-червоні зони безпеки, відомі як Blue Zones; вони мали гальмувати автомобіль без гравійних пасток, але водночас карати за помилки. Місце також незвично гнучке: за даними Pirelli, воно пропонує 167 можливих конфігурацій завдовжки від 826 до 5861 метра. Формула 1 повернулася 2018 року на конфігурації завдовжки 5,842 км із 53 колами та дистанцією гонки 309,69 км."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+     "publisher": "Formula 1",
+     "locator": "Paul Ricard section: Between 1990 and 2018, Blue Zone run-off areas"
+    },
+    {
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/circuit-paul-ricard-49733/",
+     "publisher": "Pirelli",
+     "locator": "Layout history list: Today, 167 possible configurations"
+    },
+    {
+     "url": "https://www.formula1.com/en/information/france-circuit-paul-ricard-le-castellet.2puNt6JNpM6cVBD7YpbTZt",
+     "publisher": "Formula 1",
+     "locator": "Circuit facts: 5.842 km, 53 laps"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "paul-ricard-1",
+   "seasons": "1971-1985",
+   "length_km": 5.809,
+   "turns": 14,
+   "change": {
+    "en": "The original Grand Prix layout opened in April 1970 and was dominated by the mile-long Mistral straight, which led to the very fast Signes right-hander. Racing there was fast enough that in 1985 Marc Surer was recorded at 210 mph on the straight in a Brabham-BMW. It stayed in use for every race up to 1985, and set the 1985 lap record of Keke Rosberg's Williams-Honda.",
+    "uk": "Початкова Гран-прі конфігурація відкрилася в квітні 1970 року, і в ній домінувала довга приблизно в милю пряма Mistral, що вела до дуже швидкого правого повороту Signes. Траса була настільки швидкою, що 1985 року Марк Сюрер розвинув на прямій 210 миль на годину на Brabham-BMW. Конфігурація використовувалася в кожній гонці до 1985 року, а рекорд кола 1985 року встановив Кеке Росберг на Williams-Honda."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+     "publisher": "Formula 1",
+     "locator": "Paul Ricard section: original layout, Mistral straight, Surer 210 mph"
+    },
+    {
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/circuit-paul-ricard-49733/",
+     "publisher": "Pirelli",
+     "locator": "Layout history: original layout 5.809 km, 14 turns, opened April 1970; Rosberg 1985 lap record"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "paul-ricard-2",
+   "seasons": "1986-1990",
+   "length_km": 3.813,
+   "turns": 9,
+   "change": {
+    "en": "After serious accidents to Ayrton Senna and Nigel Mansell during the 1985 race weekend and Elio de Angelis's fatal crash in testing in 1986, the track was cut from about 3.6 to 2.4 miles, with a shortened lap that is 3.813 km in F1DB. Lap times fell by around 30 seconds. French Grand Prix racing stayed here until 1990 and moved to Magny-Cours in 1991 under political pressure.",
+    "uk": "Після серйозних аварій Айртона Сенни та Найджела Менселла під час гоночного вікенду 1985 року і смертельної аварії Еліо де Анжеліса на тестах 1986 року трасу скоротили приблизно з 3,6 до 2,4 милі; за F1DB коротке коло становить 3,813 км. Часи кола зменшилися приблизно на 30 секунд. Гран-прі Франції проходило тут до 1990 року, а 1991 року через політичний тиск переїхало до Маньї-Кур."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+     "publisher": "Formula 1",
+     "locator": "Paul Ricard section: 1985-1986 rework paragraph"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/paul-ricard/",
+     "publisher": "Motor Sport Magazine",
+     "locator": "History: de Angelis, move to Magny-Cours in 1991"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "paul-ricard-3",
+   "seasons": "2018-2022",
+   "length_km": 5.842,
+   "turns": 15,
+   "change": {
+    "en": "The full circuit was restored for the return of the French Grand Prix in 2018, with a length of 5.842 km and 15 turns. Between 1990 and 2018 the track gained its Blue Zone run-offs, and the long Mistral straight was broken up by a chicane while it still ends at Signes. Pirelli notes a 1999 redevelopment that re-profiled many corners and removed the Bendor chicane; Bernie Ecclestone bought the circuit in 1998 and redeveloped it as a testing venue.",
+    "uk": "Повну конфігурацію відновили для повернення Гран-прі Франції 2018 року: довжина 5,842 км і 15 поворотів. Між 1990 і 2018 роками на трасі з'явилися зони безпеки Blue Zone, а довгу пряму Mistral розірвала шикана, хоча вона й досі закінчується поворотом Signes. Pirelli відзначає перебудову 1999 року, коли багато поворотів перепрофілювали, а шикану Bendor прибрали; Берні Екклстоун купив трасу 1998 року й перетворив її на тестовий центр."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/a-history-of-the-french-gp-in-7-circuits.4jWYb4usZay2AK6geWksCo",
+     "publisher": "Formula 1",
+     "locator": "Paul Ricard section: Between 1990 and 2018; chicane on the Mistral; 2018 return"
+    },
+    {
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/circuit-paul-ricard-49733/",
+     "publisher": "Pirelli",
+     "locator": "Layout history: 1999 redevelopment"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/paul-ricard/",
+     "publisher": "Motor Sport Magazine",
+     "locator": "History: Ecclestone bought the circuit in 1998"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "paul-ricard-3",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   12,
+   13,
+   14
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The turn number 15 for Virage du Pont is inferred: sources say it is the final corner before the main straight and F1DB lists 15 turns; no opened source gives the number explicitly.",
+  "No opened source gave names with turn numbers for turns 1-7 and 12-14; a Verrerie S name appears for the V2 variant in a search snippet but was not opened. Turns 1-7 and 12-14 are listed as without established name.",
+  "No opened source describes exactly what the four corners modified for 2018 were; the 1990-2018 changes were described only generically.",
+  "The Formula 1 article says Paul Ricard hosted 14 races from 1971 to 1990, whereas F1DB records 14 races in 1971-1990 (consistent) plus 4 later, but this article predates 2019-2022.",
+  "The reason the French Grand Prix left the calendar after 2022 was not researched.",
+  "The existing prose claim about Norris, Ricciardo and Turn 8 was not verified; the season is not stated in the brief.",
+  "Imagery not assessed.",
+  "Virage du Pont (paul-ricard-3) withheld: the source places it before the main straight, but the turn number 15 was inferred."
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "phoenix",
+ "writer": "research-batch-5",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "phoenix:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A downtown revival project",
+    "uk": "Проєкт пожвавлення центру міста"
+   },
+   "text": {
+    "en": "The Phoenix street race grew out of the city government's wish to revitalise downtown and attract attention. A citizens committee, prompted by local motorsport enthusiasts, chose Formula 1 as the series to pursue, which surprised officials who had expected IMSA or IndyCar. On 13 January 1989 the city council signed a five-year agreement for a June race, leaving under six months to prepare. Construction began in February 1989: streets were resurfaced and barriers, grandstands and pit garages were built. The temporary circuit used downtown's grid of streets, which produced many 90-degree turns and long, flat straights. The first race took place on 2 June 1989 in extreme desert heat.",
+    "uk": "Вуличні перегони у Фініксі виросли з прагнення міської влади пожвавити центр міста й привернути увагу. Громадянський комітет, підштовхнутий місцевими прихильниками автоспорту, обрав для проєкту Формулу 1, що здивувало посадовців, які очікували IMSA чи IndyCar. 13 січня 1989 року міська рада підписала п'ятирічну угоду про червневу гонку, залишивши менш як шість місяців на підготовку. Будівництво розпочалося в лютому 1989 року: вулиці перекрили новим асфальтом, збудували огорожі, трибуни та піт-гаражі. Тимчасова траса використовувала сітку вулиць центру міста, що дало багато поворотів на 90 градусів і довгі рівні прямі. Перша гонка відбулася 2 червня 1989 року в надзвичайну пустельну спеку."
+   },
+   "sources": [
+    {
+     "url": "https://cronkitenews.azpbs.org/2026/10/28/formula-one-phoenix-history/",
+     "publisher": "Cronkite News (Arizona PBS)",
+     "locator": "Origins (1988-1989) and Layout paragraphs"
+    },
+    {
+     "url": "https://www.formulaonehistory.com/circuits/phoenix-street-circuit/",
+     "publisher": "Formula One History",
+     "locator": "Origins; 1989-1990 layout"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "phoenix-1",
+   "seasons": "1989-1990",
+   "length_km": 3.8,
+   "turns": 15,
+   "change": {
+    "en": "The original downtown circuit, built in the first months of 1989, was 3.800 km with 15 corners, narrow street sections and long straights along wide avenues. The race was held in June in 1989 and moved to March in 1990, when it opened the season. Gerhard Berger set the fastest lap on this layout, 1:31.050.",
+    "uk": "Початкова траса в центрі міста, збудована в перші місяці 1989 року, мала довжину 3,800 км і 15 поворотів, вузькі вуличні ділянки та довгі прямі вздовж широких проспектів. 1989 року гонка проходила в червні, а 1990 року її перенесли на березень, і вона відкрила сезон. Найшвидше коло на цій конфігурації проїхав Герхард Бергер — 1:31.050."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/phoenix-street-circuit/",
+     "publisher": "Formula One History",
+     "locator": "1989-1990 layout paragraph"
+    },
+    {
+     "url": "https://cronkitenews.azpbs.org/2026/10/28/formula-one-phoenix-history/",
+     "publisher": "Cronkite News (Arizona PBS)",
+     "locator": "Schedule change paragraph"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "phoenix-2",
+   "seasons": "1991-1991",
+   "length_km": 3.721,
+   "turns": 15,
+   "change": {
+    "en": "For 1991 the layout was slightly revised, shortening the lap from 3.800 km to 3.721 km; the turn count stays at 15 in F1DB. Ayrton Senna won again, in a McLaren MP4/6, and his 1:21.434 lap is the official lap record for this layout. The reasons for the revision were not established from the sources opened. Formula 1 ended the Phoenix contract on 7 October 1991, and F1 did not return to the United States until 2000.",
+    "uk": "Для 1991 року конфігурацію дещо переглянули, скоротивши коло з 3,800 км до 3,721 км; кількість поворотів у F1DB лишилася 15. Айртон Сенна знову переміг, цього разу на McLaren MP4/6, а його коло 1:21.434 є офіційним рекордом цієї конфігурації. Причини перегляду з відкритих джерел встановити не вдалося. Формула 1 розірвала контракт із Фініксом 7 жовтня 1991 року, і F1 повернулася до США лише 2000 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/phoenix-street-circuit/",
+     "publisher": "Formula One History",
+     "locator": "1991 changes paragraph"
+    },
+    {
+     "url": "https://cronkitenews.azpbs.org/2026/10/28/formula-one-phoenix-history/",
+     "publisher": "Cronkite News (Arizona PBS)",
+     "locator": "Why it ended: contract ended Oct. 7, 1991"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "phoenix-2",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ]
+ },
+ "inconsistencies": [
+  {
+   "existing_text": "Construction of a basketball arena forced a major eastern-route redesign for 1991: the shorter phoenix-2 layout must not inherit the 1989–90 turn order.",
+   "problem": "None of the opened sources says that an arena forced the 1991 redesign; Formula One History says only that the layout was slightly revised and shortened to 3.721 km. 'Major' is also unsupported.",
+   "correct": "The 1991 layout was slightly revised, shortening the lap to 3.721 km; the cause was not established.",
+   "source": {
+    "url": "https://www.formulaonehistory.com/circuits/phoenix-street-circuit/",
+    "publisher": "Formula One History",
+    "locator": "1991 changes paragraph"
+   },
+   "resolution": "editor_decision_required"
+  }
+ ],
+ "limitations": [
+  "Sources disagree on 1989 attrition: Formula One History says only six of 26 starters finished, Cronkite News says nine; not used in the text.",
+  "The reason and the detailed geometry for the 1991 revision (a Phoenix Newtimes page returned 403) were not found, so the layout timeline states only the length change.",
+  "No opened source names any corner of the circuit; all 15 turns are listed as without established name.",
+  "The existing prose's claim about an arena and the Alesi lap 34 duel were not verified against opened sources.",
+  "Present-day state of the downtown streets was not researched.",
+  "Imagery not assessed."
+ ]
+}
