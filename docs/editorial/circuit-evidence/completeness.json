@@ -1,14 +1,14 @@
 {
  "totals": {
   "circuits": 78,
-  "blocks": 1792,
-  "claims": 5069,
-  "dataset_supported": 327,
-  "dataset_conflicts": 1,
-  "dataset_unmatched": 152,
-  "claims_with_lead": 2491,
+  "blocks": 1841,
+  "claims": 5245,
+  "dataset_supported": 389,
+  "dataset_conflicts": 3,
+  "dataset_unmatched": 183,
+  "claims_with_lead": 2500,
   "claims_verified": 48,
-  "sources_cited": 672,
+  "sources_cited": 713,
   "sources_live": 456,
   "named_corners": 218,
   "names_found_in_cited_source": 140,
@@ -16,7 +16,7 @@
   "turns_queued": 1882,
   "blocks_shallow": 459,
   "blocks_repetitive": 5,
-  "blocks_en_uk_issues": 92,
+  "blocks_en_uk_issues": 96,
   "content_complete": 0,
   "snapshots_available": true
  },
@@ -5401,11 +5401,11 @@
    "name": "Shanghai International Circuit",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
     "layout_evolution": "not_applicable",
@@ -5416,33 +5416,33 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 73,
+   "claims": 79,
    "claims_by_type": {
     "statistic": 8,
-    "dated_event": 36,
+    "dated_event": 39,
     "measurement": 3,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 26
+    "narrative": 29
    },
    "claims_unaligned_uk": 11,
    "name_agreement": {
     "agree": 0,
     "differ": 3,
     "uk_unrecognised": 1,
-    "no_names": 58
+    "no_names": 64
    },
    "dataset_checks": {
-    "supported": 2,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 1
    },
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 0,
-    "passages_cover_numbers": 33,
-    "passages_partial": 17,
-    "no_passage_in_live_sources": 23,
+    "passages_cover_numbers": 36,
+    "passages_partial": 18,
+    "no_passage_in_live_sources": 25,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
    },
@@ -5452,8 +5452,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 9,
-    "live": 8
+    "cited": 11,
+    "live": 8,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5463,16 +5464,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 0
+    "turns_queued": 0,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 16
    },
    "quality": {
-    "blocks": 28,
+    "blocks": 29,
     "shallow": 7,
     "repetitive": 1,
     "generic": 0,
-    "en_uk_issues": 0
+    "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.452,
+   "evidence_lead_rate": 0.456,
    "content_complete": false
   },
   {
@@ -5480,49 +5483,49 @@
    "name": "Silverstone Circuit",
    "pilot": true,
    "layouts": 8,
-   "sections_with_editorial_text": 4,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
-    "formula1_history": "absent",
+    "origins": "draft",
+    "formula1_history": "draft",
     "defining_moments": "draft:7",
-    "layout_evolution": "absent",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:18/109",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 87,
+   "claims": 121,
    "claims_by_type": {
-    "statistic": 5,
-    "dated_event": 17,
-    "measurement": 0,
+    "statistic": 10,
+    "dated_event": 33,
+    "measurement": 7,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 65
+    "narrative": 71
    },
    "claims_unaligned_uk": 36,
    "name_agreement": {
-    "agree": 9,
+    "agree": 14,
     "differ": 0,
-    "uk_unrecognised": 1,
-    "no_names": 41
+    "uk_unrecognised": 2,
+    "no_names": 69
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 15,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 0,
+    "dataset_supported": 2,
     "passages_cover_numbers": 70,
     "passages_partial": 5,
     "no_passage_in_live_sources": 11,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 32,
     "no_cited_sources": 1
    },
    "claims_verified": 13,
@@ -5539,8 +5542,9 @@
     }
    },
    "sources": {
-    "cited": 5,
-    "live": 4
+    "cited": 8,
+    "live": 4,
+    "not_checked": 3
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5550,16 +5554,18 @@
     "names_found_in_cited_source": 18,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 91
+    "turns_queued": 91,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 0
    },
    "quality": {
-    "blocks": 39,
+    "blocks": 50,
     "shallow": 9,
     "repetitive": 0,
     "generic": 0,
-    "en_uk_issues": 0
+    "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.805,
+   "evidence_lead_rate": 0.595,
    "content_complete": false
   },
   {
@@ -5567,7 +5573,7 @@
    "name": "Sirius Autodrom",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
@@ -5578,38 +5584,38 @@
     "corners": "one_layout_drafted:18/18",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 62,
+   "claims": 67,
    "claims_by_type": {
-    "statistic": 5,
-    "dated_event": 38,
-    "measurement": 4,
+    "statistic": 6,
+    "dated_event": 40,
+    "measurement": 5,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 15
+    "narrative": 16
    },
    "claims_unaligned_uk": 3,
    "name_agreement": {
-    "agree": 10,
+    "agree": 11,
     "differ": 1,
     "uk_unrecognised": 0,
-    "no_names": 48
+    "no_names": 52
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 3,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 4
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 0,
+    "dataset_supported": 1,
     "passages_cover_numbers": 37,
     "passages_partial": 18,
     "no_passage_in_live_sources": 7,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 4,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -5618,8 +5624,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 8,
-    "live": 6
+    "cited": 11,
+    "live": 6,
+    "not_checked": 3
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5629,16 +5636,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 0
+    "turns_queued": 0,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 18
    },
    "quality": {
-    "blocks": 25,
+    "blocks": 26,
     "shallow": 12,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.597,
+   "evidence_lead_rate": 0.567,
    "content_complete": false
   },
   {
@@ -5646,14 +5655,14 @@
    "name": "Circuit de Spa-Francorchamps",
    "pilot": false,
    "layouts": 4,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
-    "formula1_history": "absent",
+    "origins": "draft",
+    "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "mentioned_in_draft",
+    "layout_evolution": "draft",
     "corners": "grouped_sections_only",
     "important_races": "draft",
     "records_statistics": "dataset_only",
@@ -5661,34 +5670,34 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 21,
+   "claims": 47,
    "claims_by_type": {
-    "statistic": 1,
-    "dated_event": 3,
-    "measurement": 0,
+    "statistic": 3,
+    "dated_event": 13,
+    "measurement": 12,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 17
+    "narrative": 19
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
-    "agree": 1,
-    "differ": 0,
+    "agree": 5,
+    "differ": 1,
     "uk_unrecognised": 0,
-    "no_names": 20
+    "no_names": 41
    },
    "dataset_checks": {
-    "supported": 0,
-    "conflict": 0,
-    "unmatched": 0
+    "supported": 10,
+    "conflict": 1,
+    "unmatched": 5
    },
    "factcheck_status": {
-    "dataset_conflict": 0,
+    "dataset_conflict": 1,
     "dataset_supported": 0,
     "passages_cover_numbers": 11,
     "passages_partial": 2,
     "no_passage_in_live_sources": 6,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 25,
     "no_cited_sources": 2
    },
    "claims_verified": 0,
@@ -5697,8 +5706,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 3,
-    "live": 3
+    "cited": 6,
+    "live": 3,
+    "not_checked": 3
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5708,16 +5718,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 78
+    "turns_queued": 78,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 0
    },
    "quality": {
-    "blocks": 9,
+    "blocks": 15,
     "shallow": 2,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.524,
+   "evidence_lead_rate": 0.234,
    "content_complete": false
   },
   {
@@ -5732,7 +5744,7 @@
     "origins": "mentioned_in_draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "mentioned_in_draft",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:10/44",
     "important_races": "draft",
     "records_statistics": "dataset_only",
@@ -5740,26 +5752,26 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 69,
+   "claims": 78,
    "claims_by_type": {
     "statistic": 4,
-    "dated_event": 26,
-    "measurement": 1,
+    "dated_event": 30,
+    "measurement": 5,
     "quotation": 0,
     "interpretation": 1,
-    "narrative": 37
+    "narrative": 38
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
     "agree": 9,
     "differ": 3,
-    "uk_unrecognised": 1,
-    "no_names": 56
+    "uk_unrecognised": 2,
+    "no_names": 64
    },
    "dataset_checks": {
-    "supported": 0,
+    "supported": 8,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 2
    },
    "factcheck_status": {
     "dataset_conflict": 0,
@@ -5767,7 +5779,7 @@
     "passages_cover_numbers": 33,
     "passages_partial": 10,
     "no_passage_in_live_sources": 26,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 9,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -5776,8 +5788,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 9,
-    "live": 7
+    "cited": 11,
+    "live": 7,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5787,16 +5800,18 @@
     "names_found_in_cited_source": 1,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 34
+    "turns_queued": 34,
+    "dossier_named_turns": 5,
+    "dossier_turns_without_established_name": 4
    },
    "quality": {
-    "blocks": 28,
+    "blocks": 31,
     "shallow": 12,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.478,
+   "evidence_lead_rate": 0.423,
    "content_complete": false
   },
   {
@@ -5804,49 +5819,49 @@
    "name": "Suzuka Circuit",
    "pilot": false,
    "layouts": 2,
-   "sections_with_editorial_text": 5,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
-    "formula1_history": "absent",
+    "origins": "draft",
+    "formula1_history": "draft",
     "defining_moments": "draft:7",
-    "layout_evolution": "mentioned_in_draft",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:18/36",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 60,
+   "claims": 81,
    "claims_by_type": {
-    "statistic": 3,
-    "dated_event": 31,
-    "measurement": 1,
+    "statistic": 5,
+    "dated_event": 42,
+    "measurement": 5,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 25
+    "narrative": 29
    },
    "claims_unaligned_uk": 10,
    "name_agreement": {
-    "agree": 9,
+    "agree": 13,
     "differ": 1,
-    "uk_unrecognised": 0,
-    "no_names": 40
+    "uk_unrecognised": 1,
+    "no_names": 56
    },
    "dataset_checks": {
-    "supported": 0,
-    "conflict": 0,
-    "unmatched": 0
+    "supported": 7,
+    "conflict": 1,
+    "unmatched": 8
    },
    "factcheck_status": {
-    "dataset_conflict": 0,
-    "dataset_supported": 0,
+    "dataset_conflict": 1,
+    "dataset_supported": 1,
     "passages_cover_numbers": 21,
     "passages_partial": 14,
     "no_passage_in_live_sources": 11,
-    "cited_sources_unavailable": 13,
+    "cited_sources_unavailable": 32,
     "no_cited_sources": 1
    },
    "claims_verified": 0,
@@ -5855,8 +5870,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 4,
-    "live": 2
+    "cited": 10,
+    "live": 2,
+    "not_checked": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5866,16 +5882,18 @@
     "names_found_in_cited_source": 5,
     "names_not_in_cited_text": 12,
     "names_sources_unavailable": 0,
-    "turns_queued": 18
+    "turns_queued": 18,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 1
    },
    "quality": {
-    "blocks": 32,
+    "blocks": 37,
     "shallow": 12,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.35,
+   "evidence_lead_rate": 0.272,
    "content_complete": false
   },
   {
@@ -5883,7 +5901,7 @@
    "name": "Valencia Street Circuit",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
@@ -5894,14 +5912,14 @@
     "corners": "one_layout_drafted:25/25",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 77,
+   "claims": 82,
    "claims_by_type": {
-    "statistic": 10,
-    "dated_event": 34,
+    "statistic": 11,
+    "dated_event": 38,
     "measurement": 0,
     "quotation": 0,
     "interpretation": 0,
@@ -5909,10 +5927,10 @@
    },
    "claims_unaligned_uk": 10,
    "name_agreement": {
-    "agree": 7,
+    "agree": 8,
     "differ": 4,
     "uk_unrecognised": 1,
-    "no_names": 55
+    "no_names": 59
    },
    "dataset_checks": {
     "supported": 3,
@@ -5925,7 +5943,7 @@
     "passages_cover_numbers": 49,
     "passages_partial": 7,
     "no_passage_in_live_sources": 19,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 5,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -5934,8 +5952,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 8,
-    "live": 8
+    "cited": 11,
+    "live": 8,
+    "not_checked": 3
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5945,16 +5964,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 0
+    "turns_queued": 0,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 25
    },
    "quality": {
-    "blocks": 32,
+    "blocks": 33,
     "shallow": 16,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 3
    },
-   "evidence_lead_rate": 0.662,
+   "evidence_lead_rate": 0.622,
    "content_complete": false
   },
   {
@@ -5962,14 +5983,14 @@
    "name": "Watkins Glen International",
    "pilot": false,
    "layouts": 3,
-   "sections_with_editorial_text": 7,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "mentioned_in_draft",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:11/30",
     "important_races": "draft",
     "records_statistics": "dataset_only",
@@ -5977,26 +5998,26 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 66,
+   "claims": 75,
    "claims_by_type": {
     "statistic": 7,
-    "dated_event": 27,
-    "measurement": 0,
+    "dated_event": 32,
+    "measurement": 3,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 32
+    "narrative": 33
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
-    "agree": 3,
+    "agree": 4,
     "differ": 7,
     "uk_unrecognised": 10,
-    "no_names": 46
+    "no_names": 54
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 3,
     "conflict": 0,
-    "unmatched": 2
+    "unmatched": 4
    },
    "factcheck_status": {
     "dataset_conflict": 0,
@@ -6004,7 +6025,7 @@
     "passages_cover_numbers": 33,
     "passages_partial": 9,
     "no_passage_in_live_sources": 15,
-    "cited_sources_unavailable": 8,
+    "cited_sources_unavailable": 17,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -6013,8 +6034,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 10,
-    "live": 7
+    "cited": 14,
+    "live": 7,
+    "not_checked": 4
    },
    "source_structural_issues": 0,
    "corners": {
@@ -6024,16 +6046,18 @@
     "names_found_in_cited_source": 1,
     "names_not_in_cited_text": 8,
     "names_sources_unavailable": 0,
-    "turns_queued": 30
+    "turns_queued": 30,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 2
    },
    "quality": {
-    "blocks": 18,
+    "blocks": 22,
     "shallow": 4,
     "repetitive": 0,
     "generic": 0,
-    "en_uk_issues": 0
+    "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.515,
+   "evidence_lead_rate": 0.453,
    "content_complete": false
   },
   {
@@ -6041,39 +6065,39 @@
    "name": "Yas Marina Circuit",
    "pilot": false,
    "layouts": 2,
-   "sections_with_editorial_text": 4,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
-    "defining_moments": "absent",
-    "layout_evolution": "absent",
+    "defining_moments": "draft:2",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:16/37",
-    "important_races": "absent",
+    "important_races": "draft",
     "records_statistics": "dataset_only",
     "legacy_present_day": "mentioned_in_draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 53,
+   "claims": 73,
    "claims_by_type": {
-    "statistic": 3,
-    "dated_event": 27,
-    "measurement": 2,
+    "statistic": 6,
+    "dated_event": 36,
+    "measurement": 4,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 21
+    "narrative": 27
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
-    "agree": 4,
-    "differ": 3,
+    "agree": 8,
+    "differ": 6,
     "uk_unrecognised": 0,
-    "no_names": 46
+    "no_names": 59
    },
    "dataset_checks": {
-    "supported": 0,
+    "supported": 5,
     "conflict": 0,
     "unmatched": 0
    },
@@ -6083,7 +6107,7 @@
     "passages_cover_numbers": 27,
     "passages_partial": 12,
     "no_passage_in_live_sources": 14,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 20,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -6092,8 +6116,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 7,
-    "live": 5
+    "cited": 13,
+    "live": 5,
+    "not_checked": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -6103,16 +6128,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 21
+    "turns_queued": 21,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 16
    },
    "quality": {
-    "blocks": 22,
+    "blocks": 27,
     "shallow": 8,
     "repetitive": 0,
     "generic": 0,
-    "en_uk_issues": 2
+    "en_uk_issues": 3
    },
-   "evidence_lead_rate": 0.509,
+   "evidence_lead_rate": 0.37,
    "content_complete": false
   },
   {
@@ -6120,11 +6147,11 @@
    "name": "Korea International Circuit",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
     "layout_evolution": "not_applicable",
@@ -6135,34 +6162,34 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 62,
+   "claims": 67,
    "claims_by_type": {
-    "statistic": 8,
-    "dated_event": 35,
+    "statistic": 9,
+    "dated_event": 36,
     "measurement": 2,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 17
+    "narrative": 20
    },
    "claims_unaligned_uk": 8,
    "name_agreement": {
-    "agree": 6,
+    "agree": 7,
     "differ": 1,
-    "uk_unrecognised": 0,
-    "no_names": 47
+    "uk_unrecognised": 1,
+    "no_names": 50
    },
    "dataset_checks": {
-    "supported": 2,
+    "supported": 4,
     "conflict": 0,
     "unmatched": 1
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 2,
+    "dataset_supported": 3,
     "passages_cover_numbers": 46,
     "passages_partial": 5,
     "no_passage_in_live_sources": 9,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 4,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -6171,8 +6198,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 7,
-    "live": 6
+    "cited": 9,
+    "live": 6,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -6182,16 +6210,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 0
+    "turns_queued": 0,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 18
    },
    "quality": {
-    "blocks": 25,
+    "blocks": 26,
     "shallow": 7,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 2
    },
-   "evidence_lead_rate": 0.774,
+   "evidence_lead_rate": 0.731,
    "content_complete": false
   },
   {
@@ -6199,41 +6229,41 @@
    "name": "Circuit Zandvoort",
    "pilot": false,
    "layouts": 5,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
     "origins": "mentioned_in_draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "absent",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:14/90",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 79,
+   "claims": 95,
    "claims_by_type": {
     "statistic": 6,
-    "dated_event": 30,
-    "measurement": 0,
+    "dated_event": 41,
+    "measurement": 5,
     "quotation": 0,
     "interpretation": 0,
     "narrative": 43
    },
    "claims_unaligned_uk": 9,
    "name_agreement": {
-    "agree": 3,
+    "agree": 4,
     "differ": 1,
     "uk_unrecognised": 0,
-    "no_names": 66
+    "no_names": 81
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 6,
     "conflict": 0,
-    "unmatched": 1
+    "unmatched": 3
    },
    "factcheck_status": {
     "dataset_conflict": 0,
@@ -6241,7 +6271,7 @@
     "passages_cover_numbers": 41,
     "passages_partial": 19,
     "no_passage_in_live_sources": 19,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 16,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -6250,9 +6280,10 @@
     "verified": 0
    },
    "sources": {
-    "cited": 8,
+    "cited": 10,
     "live": 7,
-    "unreachable": 1
+    "unreachable": 1,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -6262,16 +6293,18 @@
     "names_found_in_cited_source": 11,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 76
+    "turns_queued": 76,
+    "dossier_named_turns": 1,
+    "dossier_turns_without_established_name": 2
    },
    "quality": {
-    "blocks": 25,
+    "blocks": 31,
     "shallow": 4,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.519,
+   "evidence_lead_rate": 0.432,
    "content_complete": false
   },
   {
@@ -6279,11 +6312,11 @@
    "name": "Zeltweg",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
     "layout_evolution": "not_applicable",
@@ -6294,21 +6327,21 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 31,
+   "claims": 36,
    "claims_by_type": {
     "statistic": 8,
-    "dated_event": 10,
+    "dated_event": 13,
     "measurement": 0,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 13
+    "narrative": 15
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
     "agree": 0,
     "differ": 2,
     "uk_unrecognised": 9,
-    "no_names": 20
+    "no_names": 25
    },
    "dataset_checks": {
     "supported": 1,
@@ -6321,7 +6354,7 @@
     "passages_cover_numbers": 14,
     "passages_partial": 8,
     "no_passage_in_live_sources": 8,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 5,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -6330,8 +6363,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 6,
-    "live": 6
+    "cited": 8,
+    "live": 6,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -6341,16 +6375,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 4
+    "turns_queued": 4,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 4
    },
    "quality": {
-    "blocks": 11,
+    "blocks": 12,
     "shallow": 3,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.484,
+   "evidence_lead_rate": 0.417,
    "content_complete": false
   },
   {
@@ -6358,49 +6394,49 @@
    "name": "Circuit Zolder",
    "pilot": false,
    "layouts": 2,
-   "sections_with_editorial_text": 5,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "absent",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:15/29",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 55,
+   "claims": 70,
    "claims_by_type": {
-    "statistic": 9,
-    "dated_event": 17,
-    "measurement": 0,
+    "statistic": 11,
+    "dated_event": 24,
+    "measurement": 4,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 29
+    "narrative": 31
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
-    "agree": 8,
+    "agree": 11,
     "differ": 3,
-    "uk_unrecognised": 5,
-    "no_names": 39
+    "uk_unrecognised": 6,
+    "no_names": 50
    },
    "dataset_checks": {
-    "supported": 4,
+    "supported": 10,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 8
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 4,
+    "dataset_supported": 5,
     "passages_cover_numbers": 27,
     "passages_partial": 6,
     "no_passage_in_live_sources": 18,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 14,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -6409,8 +6445,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 9,
-    "live": 9
+    "cited": 12,
+    "live": 9,
+    "not_checked": 3
    },
    "source_structural_issues": 0,
    "corners": {
@@ -6420,16 +6457,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 29
+    "turns_queued": 29,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 15
    },
    "quality": {
-    "blocks": 22,
+    "blocks": 26,
     "shallow": 9,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.564,
+   "evidence_lead_rate": 0.457,
    "content_complete": false
   }
  ]

@@ -1,0 +1,165 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "spielberg",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [],
+ "layout_timeline": [
+  {
+   "layout_id": "spielberg-1",
+   "seasons": "1970-1976",
+   "length_km": 5.911,
+   "turns": 16,
+   "change": {
+    "en": "The Österreichring opened in 1969, ending use of the bumpy Zeltweg airfield track, and staged its first Formula 1 race in 1970 on the 5.911 km layout of 16 turns recorded in F1DB. It was a fast, sweeping circuit in the Styrian hills; safety problems, including fatalities, were later behind its replacement.",
+    "uk": "Österreichring відкрили в 1969 році, відмовившись від нерівної траси на аеродромі Цельтвег, а першу гонку Формули 1 він прийняв у 1970 році на конфігурації довжиною 5,911 км із 16 поворотами, зафіксованій у F1DB. Це була швидка траса з довгими поворотами в горах Штирії; проблеми з безпекою, зокрема загибелі, пізніше стали причиною її заміни."
+   },
+   "sources": [
+    {
+     "url": "https://www.redbullring.com/en/history/",
+     "publisher": "Red Bull Ring (official site)",
+     "locator": "History timeline, 1969 entry"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "spielberg-2",
+   "seasons": "1977-1987",
+   "length_km": 5.942,
+   "turns": 18,
+   "change": {
+    "en": "The official history says a chicane, the Hella S curve, was installed after Mark Donohue died in a crash during warm-up for the Austrian Grand Prix in 1975, to make the circuit safer. The page dates the change to 1975 while its photograph is from 1977; F1DB first lists the changed layout (5.942 km, 18 turns) from 1977. The last F1 race on the old Österreichring was in 1987.",
+    "uk": "Офіційна історія повідомляє, що шикану, S-подібний поворот Hella, встановили після того, як Марк Донахью загинув унаслідок аварії під час розминки перед Гран-прі Австрії 1975 року, щоб зробити трасу безпечнішою. Сторінка датує зміну 1975 роком, тоді як її фотографія датована 1977-м; у F1DB змінена конфігурація (5,942 км, 18 поворотів) вперше з'являється з 1977 року. Остання гонка Ф1 на старому Österreichring відбулася у 1987 році."
+   },
+   "sources": [
+    {
+     "url": "https://www.redbullring.com/en/history/",
+     "publisher": "Red Bull Ring (official site)",
+     "locator": "History timeline, 1975 and 1987 entries"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "spielberg-3",
+   "seasons": "1997-2026",
+   "length_km": 4.326,
+   "turns": 10,
+   "change": {
+    "en": "After a major reconstruction the circuit reopened in 1996 as the A1-Ring, widened, shortened to about 4.3 km and given more run-off for safety; Hermann Tilke is credited with the rebuild by the Red Bull Ring's Wikipedia summary, which cites 1995-96 as the period. F1DB lists 4.326 km and 10 turns from 1997. The track closed after the 2003 race, was bought by Dietrich Mateschitz and reopened as the Red Bull Ring on 15 May 2011. It was resurfaced in 2015-2016 for MotoGP, and a chicane at turn 2 was added for motorcycles only in 2022.",
+    "uk": "Після масштабної реконструкції траса знову відкрилася в 1996 році як A1-Ring: її розширили, скоротили приблизно до 4,3 км і додали більше зон виїзду з міркувань безпеки; перебудову приписують Герману Тільке в короткому описі Red Bull Ring у Вікіпедії, де вказано період 1995-96. F1DB наводить 4,326 км і 10 поворотів з 1997 року. Трасу закрили після гонки 2003 року, її придбав Дітріх Матешіц, і 15 травня 2011 року вона відкрилася як Red Bull Ring. У 2015-2016 роках її перекрили асфальтом для MotoGP, а в 2022 році на повороті 2 з'явилася шикана лише для мотоциклів."
+   },
+   "sources": [
+    {
+     "url": "https://www.redbullring.com/en/history/",
+     "publisher": "Red Bull Ring (official site)",
+     "locator": "History timeline: 1996, 2003, 2011, 2015-2016, 2022 entries"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Red_Bull_Ring",
+     "publisher": "Wikipedia (lead only: Tilke 1995-96, Mateschitz purchase)",
+     "locator": "Introduction"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [
+  {
+   "layout_id": "spielberg-3",
+   "turns": [
+    1
+   ],
+   "name": "Niki Lauda Turn",
+   "status": "official",
+   "period": "present (page checked 2026)",
+   "source": {
+    "url": "https://redbullring.com/en/events-tickets/formula-1/formula-1-circuit",
+    "publisher": "Red Bull Ring (official site)",
+    "locator": "Formula 1 circuit page, corner list: T1"
+   },
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "spielberg-3",
+   "turns": [
+    2
+   ],
+   "name": "Münzer Turn",
+   "status": "official",
+   "period": "present (page checked 2026)",
+   "source": {
+    "url": "https://redbullring.com/en/events-tickets/formula-1/formula-1-circuit",
+    "publisher": "Red Bull Ring (official site)",
+    "locator": "Formula 1 circuit page, corner list: T2"
+   },
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "spielberg-3",
+   "turns": [
+    3
+   ],
+   "name": "Interwetten Turn",
+   "status": "official",
+   "period": "present (page checked 2026); sponsor-linked name",
+   "source": {
+    "url": "https://redbullring.com/en/events-tickets/formula-1/formula-1-circuit",
+    "publisher": "Red Bull Ring (official site)",
+    "locator": "Formula 1 circuit page, corner list: T3"
+   },
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "spielberg-3",
+   "turns": [
+    4
+   ],
+   "name": "Rauch Turn",
+   "status": "official",
+   "period": "present (page checked 2026); sponsor-linked name",
+   "source": {
+    "url": "https://redbullring.com/en/events-tickets/formula-1/formula-1-circuit",
+    "publisher": "Red Bull Ring (official site)",
+    "locator": "Formula 1 circuit page, corner list: T4"
+   },
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "spielberg-3",
+   "turns": [
+    7
+   ],
+   "name": "Graz Turn",
+   "status": "official",
+   "period": "present (page checked 2026)",
+   "source": {
+    "url": "https://redbullring.com/en/events-tickets/formula-1/formula-1-circuit",
+    "publisher": "Red Bull Ring (official site)",
+    "locator": "Formula 1 circuit page, corner list: T7"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "spielberg-3",
+  "turns": [
+   5,
+   6,
+   8,
+   10
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The official page names T9 as Jochen Rindt Turn (existing corner guide: 'Rindt'), consistent; T5, T6, T8 and T10 are unnamed on that page.",
+  "The sponsor-linked names (Interwetten, Rauch) have changed over time (a 2014 Motorsport Week item cited by search says Niki Lauda, Remus and Power Horse names were replaced by sponsored names, and a MotoGP guide still calls T1 'Niki Lauda'); names are applied only to the present period and should not be projected onto 1997-2013 or the Österreichring.",
+  "Hella S curve date: the official page says 1975 but dates its photo to 1977; F1DB layout 2 begins 1977. The year of installation is therefore uncertain (1975 or 1977).",
+  "The A1-Ring rebuild date (1995-96) and Hermann Tilke attribution come from Wikipedia's lead only; the official history page gives only 1996 reopening and does not name Tilke or support a 1995 start. Existing prose says 'winter of 1995-96'; the official page supports only 1996.",
+  "Donohue's name: Ukrainian 'Марк Донахью' is a transliteration, not in the name table; Dietrich Mateschitz as 'Дітріх Матешіц' likewise.",
+  "Existing prose claims (1970 and 1982 race details, Berger retirement announcement) were not independently re-verified in this session.",
+  "Imagery not assessed."
+ ]
+}

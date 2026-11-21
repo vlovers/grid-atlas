@@ -1,0 +1,163 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "zolder",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "zolder:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A permanent road course in the Limburg pines",
+    "uk": "Постійна шосейна траса серед лімбурзьких сосен"
+   },
+   "text": {
+    "en": "Zolder was built in Heusden-Zolder in the Flemish part of Belgium as a permanent road course and opened on 19 June 1963 under the name Circuit Terlamen. Motor Sport Magazine's circuit database describes it as set in pine woodland and, in its words, narrow, rough and hard on brakes. It quickly became one of Belgium's major racing circuits, and a national 24-hour touring car race, introduced in 1983, became an annual highlight. Formula 1 first came in 1973, when the Belgian Grand Prix moved to Zolder from Spa; Jackie Stewart won that race. None of the sources opened names the person who designed or built the circuit.",
+    "uk": "Zolder збудували в Гойсден-Зольдері у фламандській частині Бельгії як постійну шосейну трасу, і вона відкрилася 19 червня 1963 року під назвою Circuit Terlamen. База даних траси Motor Sport Magazine описує її як розташовану серед соснового лісу, вузьку, нерівну й важку для гальм. Вона швидко стала однією з головних гоночних трас Бельгії, а національні 24-годинні перегони туристичних авто, запроваджені у 1983 році, перетворилися на щорічну подію. Формула 1 уперше приїхала у 1973 році, коли Гран-прі Бельгії перенесли зі Спа до Зольдера; ту гонку виграв Джекі Стюарт. Жодне з відкритих джерел не називає того, хто спроєктував чи збудував трасу."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/circuit-zolder/",
+     "publisher": "Formula One History",
+     "locator": "Origins: Location and opening (19 June 1963, Circuit Terlamen), Purpose"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/zolder",
+     "publisher": "Motor Sport Magazine database",
+     "locator": "Origins: opened 1963, pine woodland; 24-hour race introduced 1983"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-at-zolder-unravelling-the-history-of-belgiums-other-iconic-circuit",
+     "publisher": "Motor Sport Magazine",
+     "locator": "F1 history, 1973 entry: first Belgian Grand Prix moved from Spa; Stewart won"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "zolder:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "Still a busy motor sport venue",
+    "uk": "Досі жвавий автоспортивний майданчик"
+   },
+   "text": {
+    "en": "Formula 1 left Zolder after the 1984 race, when Michele Alboreto won, and the Belgian Grand Prix returned to Spa in 1985. The circuit remains active: Formula One History lists touring car, GT, endurance and truck racing, including the Belgian Truck Grand Prix and the 24 Hours of Zolder, plus past DTM, Champ Car, WTCC/WTCR and NASCAR Euro Series events and cycling championships. Motor Sport Magazine calls it a busy and thriving venue and notes a 2019 W Series race. The circuit was revised after Gilles Villeneuve's fatal 1982 accident, when a chicane was added where he crashed, now named Gilles Villeneuve Bocht, and another major revision in 2002 produced the current 4.010 km Grand Prix circuit, which is shorter than the F1 layouts.",
+    "uk": "Формула 1 залишила Zolder після гонки 1984 року, яку виграв Мікеле Альборето, а Гран-прі Бельгії повернулося до Спа у 1985 році. Траса залишається діючою: Formula One History перелічує перегони туристичних авто, GT, на витривалість і вантажівок, зокрема Гран-прі Бельгії вантажівок і 24 години Zolder, а також минулі етапи DTM, Champ Car, WTCC/WTCR і NASCAR Euro Series та велосипедні чемпіонати. Motor Sport Magazine називає її жвавим і процвітаючим майданчиком і згадує гонку W Series 2019 року. Трасу переробили після смертельної аварії Жиля Вільнева 1982 року: там, де він розбився, з'явилася шикана, нині названа Gilles Villeneuve Bocht, а ще одна велика реконструкція 2002 року створила чинну трасу Гран-прі довжиною 4,010 км, коротшу за конфігурації Ф1."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/circuit-zolder/",
+     "publisher": "Formula One History",
+     "locator": "Layout changes (1986, 2002) and Present use"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-at-zolder-unravelling-the-history-of-belgiums-other-iconic-circuit",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Layout changes 1986 (Turn 7 chicane, Gilles Villeneuve Bocht) and Present status"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/zolder",
+     "publisher": "Motor Sport Magazine database",
+     "locator": "Layout history: 1986 renovation, chicane where Villeneuve crashed"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "zolder-1",
+   "seasons": "1973-1973",
+   "length_km": 4.22,
+   "turns": 14,
+   "change": {
+    "en": "The layout used for Zolder's first Belgian Grand Prix in 1973 is recorded by F1DB at 4.22 km with 14 turns. Formula One History says the original configuration was just over 4.1 km, and Motor Sport Magazine notes that Turn 7 was then a fast right-hander. Race 1974 was held at Nivelles, so Zolder had no race that year.",
+    "uk": "Конфігурацію першого Гран-прі Бельгії на Zolder у 1973 році F1DB фіксує як 4,22 км із 14 поворотами. Formula One History зазначає, що початкова конфігурація була трохи довшою за 4,1 км, а Motor Sport Magazine повідомляє, що поворот 7 тоді був швидким правим. Гонку 1974 року провели в Нівеллі, тож Zolder того року не приймав гонки."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/circuit-zolder/",
+     "publisher": "Formula One History",
+     "locator": "Layout changes, 1973 entry"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-at-zolder-unravelling-the-history-of-belgiums-other-iconic-circuit",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Layout changes 1973; F1 history 1974 entry"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "zolder-2",
+   "seasons": "1975-1984",
+   "length_km": 4.262,
+   "turns": 15,
+   "change": {
+    "en": "F1DB lists a slightly longer lap of 4.262 km with 15 turns from 1975 to 1984. None of the sources opened describes what changed between 1973 and 1975. Motor Sport Magazine says Turn 7 grew faster by 1982 as cars became more powerful and grippier; the tighter Turn 7 chicane (later named Gilles Villeneuve Bocht) was added in 1986 after Villeneuve's fatal 1982 accident, after the last F1 race, and so is not part of this F1 layout.",
+    "uk": "F1DB наводить трохи довше коло — 4,262 км із 15 поворотами — з 1975 до 1984 року. Жодне з відкритих джерел не описує, що змінилося між 1973 і 1975 роками. Motor Sport Magazine повідомляє, що до 1982 року поворот 7 став ще швидшим, оскільки боліди стали потужнішими й чіпкішими; вужчу шикану на повороті 7 (пізніше названу Gilles Villeneuve Bocht) додали у 1986 році після смертельної аварії Вільнева 1982 року, уже після останньої гонки Ф1, тож вона не є частиною цієї конфігурації Ф1."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-at-zolder-unravelling-the-history-of-belgiums-other-iconic-circuit",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Layout changes: 1982 and 1986 entries"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/zolder",
+     "publisher": "Motor Sport Magazine database",
+     "locator": "Layout history by year: 1986 renovation"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "zolder-2",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ]
+ },
+ "inconsistencies": [
+  {
+   "existing_text": "Its 4.262-kilometre 1984 layout had fifteen turns in F1DB; the present shorter ten-corner circuit should not be substituted for it.",
+   "problem": "Not an error, but the sources opened do not give the present circuit's corner count; 'ten-corner' is unverified. Formula One History gives 4.010 km for the current Grand Prix circuit.",
+   "correct": "Remove or verify 'ten-corner'; the current Grand Prix circuit is 4.010 km per Formula One History.",
+   "source": {
+    "url": "https://www.formulaonehistory.com/circuits/circuit-zolder/",
+    "publisher": "Formula One History",
+    "locator": "Layout changes, 2002 entry"
+   },
+   "resolution": "corrected_in_research_draft (pilot-revisions.json)"
+  }
+ ],
+ "limitations": [
+  "No source opened names the designer or builder of the circuit.",
+  "The 1973-to-1975 layout change is not described in any source opened; the layout_timeline text says so.",
+  "The Turn 7 chicane named Gilles Villeneuve Bocht is attested by Motor Sport Magazine for the post-1986 layout; the corner guide for zolder-2 (1984) has no names, and no names are accepted for the 1975-1984 turns. Names such as Terlamenbocht or other turn names were seen only in search snippets and not opened.",
+  "Sources give different figures for the 1973 length (4.22 km F1DB, 'just over 4.1 km' in text, 4.262 km in a stats box); the text avoids asserting one beyond F1DB.",
+  "The existing prose passages were checked against the 1982 classification on formula1.com (Watson won by 7.268 s from Rosberg; Lauda is listed as DSQ without a reason on that page); the reason (weighing) and 'penultimate lap pass' claims were not re-verified.",
+  "'Race 1974 was held at Nivelles' is from Motor Sport Magazine. The Ukrainian name 'Гойсден-Зольдер' is a transliteration; Michele Alboreto 'Мікеле Альборето' and Gilles Villeneuve 'Жиль Вільнев' are transliterations not in the name table (Gilles Villeneuve exists in the base list as an entry; confirm form).",
+  "The claim that the current circuit is shorter than the F1 layouts is computed (4.010 km versus 4.262 km).",
+  "Imagery not assessed."
+ ]
+}

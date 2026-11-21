@@ -1,0 +1,81 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "valencia",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "valencia:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "An abandoned harbourside circuit",
+    "uk": "Покинута портова траса"
+   },
+   "text": {
+    "en": "The 2012 European Grand Prix, won by Fernando Alonso, was the last Formula 1 race at the Valencia Street Circuit and the circuit has not hosted F1 since. The venue had been planned for a seven-year run, but Motor Sport Magazine says it ended after five races when the local government changed, and a plan to alternate the Spanish Grand Prix between Valencia and Barcelona did not come to fruition. Motor Sport Magazine's November 2025 article describes the site as abandoned: the harbourside pit buildings are fenced off and gutted, while the former pitlane is used by runners and cyclists and kerbs, barriers and the port swing bridge remain. A 2022 report said the track was open to the public to walk, and that an investment group owning the land was working with the city on redevelopment as demolition progressed. Neither article reports racing events since 2012.",
+    "uk": "Гран-прі Європи 2012 року, яке виграв Фернандо Алонсо, стало останньою гонкою Формули 1 на міській трасі Валенсії, і відтоді траса Ф1 не приймала. Для майданчика планували сім років гонок, але, за Motor Sport Magazine, вони закінчилися після п'яти гонок, коли змінилася місцева влада, а план чергувати Гран-прі Іспанії між Валенсією та Барселоною не здійснився. Стаття Motor Sport Magazine за листопад 2025 року описує територію як покинуту: портові піт-будівлі обгороджені й випотрошені, колишній піт-лейн використовують бігуни та велосипедисти, а бордюри, огородження та поворотний міст порту залишаються. У звіті 2022 року зазначено, що траса була відкрита для пішої прогулянки, а інвестиційна група, яка володіє землею, разом із містом працювала над перепланування, поки тривав демонтаж. Жодна зі статей не повідомляє про гоночні події після 2012 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/the-270m-ghost-inside-valencias-abandoned-street-circuit/",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Article of 14 November 2025: sections on present condition, why F1 left and what remains"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/valencia-street-circuit/",
+     "publisher": "Motor Sport Magazine database",
+     "locator": "Circuit entry: last race 2012; Spanish GP alternation did not come to fruition"
+    },
+    {
+     "url": "https://www.carscoops.com/2022/10/people-are-free-to-walk-around-on-the-old-valencia-f1-track/",
+     "publisher": "Carscoops",
+     "locator": "Article of 1 October 2022: open to the public to walk; redevelopment talks and demolition"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "valencia-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No source opened gives corner names for the Valencia street circuit; all 25 turns are listed as without established name.",
+  "The 2022 redevelopment report is from a secondary outlet (Carscoops) citing a video; the two articles differ in tone and may describe different access conditions (open to the public in 2022 versus fenced pit buildings in 2025). The current status in late 2026 was not checked.",
+  "The cost figure of about 308 million euros is not used in the text because it is a reported estimate.",
+  "Allegations of corruption mentioned by the sources were deliberately omitted pending legal-accuracy review.",
+  "Existing prose claims (all 24 starters classified in 2011, Schumacher's only podium after his return) were not re-verified.",
+  "Imagery not assessed."
+ ]
+}

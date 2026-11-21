@@ -1,0 +1,56 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "zeltweg",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "zeltweg:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A racing circuit on an Austrian air base",
+    "uk": "Гоночна траса на австрійській авіабазі"
+   },
+   "text": {
+    "en": "The Zeltweg circuit was laid out on an active military airfield in Styria, in the Mur valley. According to Audi's history feature, the National Automobile Club wanted to use the air base as a racing venue, inspired by Silverstone's conversion from an RAF airfield. The track was a simple L-shaped course of four turns using the runways and perimeter roads, with two straights on the concrete runway separated by straw bales; the paddock was in a large hangar and the pits stood in the middle of the runway. Motor Sport Magazine lists the temporary circuit as used from 1957 to 1969, and non-championship Formula 1 events were held in 1961 and 1963 before the 1964 Austrian Grand Prix became a World Championship round. The concrete surface, laid in slabs with wide gaps, proved very rough, and sports car racing continued there until the permanent Österreichring opened in 1969.",
+    "uk": "Трасу Цельтвег прокладено на діючому військовому аеродромі в Штирії, у долині Мура. Згідно з історичним матеріалом Audi, Національний автомобільний клуб хотів використати авіабазу як гоночний майданчик, надихнувшись переобладнанням аеродрому Королівських ВПС у Сілверстоун. Траса була простим Г-подібним колом із чотирьох поворотів, що використовувало злітні смуги та периметральні дороги, із двома прямими на бетонній смузі, розділеними тюками соломи; паддок містився у великому ангарі, а піти стояли посеред смуги. Motor Sport Magazine вказує, що тимчасову трасу використовували з 1957 до 1969 року, а позачемпіонатні гонки Формули 1 відбулися у 1961 та 1963 роках, перш ніж Гран-прі Австрії 1964 року стало етапом чемпіонату світу. Бетонне покриття з плит із широкими проміжками виявилося дуже нерівним, а перегони спорткарів тривали там до відкриття постійної траси Österreichring у 1969 році."
+   },
+   "sources": [
+    {
+     "url": "https://www.audif1.com/en/news/2026/zeltweg-the-airfield-that-hosted-an-f1-race",
+     "publisher": "Audi F1",
+     "locator": "Feature 'Zeltweg: the airfield that hosted an F1 race': origins, layout, early races"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/zeltweg/",
+     "publisher": "Motor Sport Magazine database",
+     "locator": "Origins and history; Layout and details (used 1957 to 1969)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "zeltweg-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No source opened names the four turns of the airfield layout; all remain unnamed.",
+  "Sources differ on the date the circuit was first used: Motor Sport Magazine says 1957-1969, Audi mentions non-championship events in 1961 and 1963, and a search snippet gave 6 October 1957 and 1959 for construction. The text attributes each date to its source and does not claim a single opening year. Motor Sport Magazine also says the 1963 non-championship winner was Jack Brabham, which was not used.",
+  "Length differs by source: Motor Sport Magazine lists 1.988 miles (3.2 km), consistent with F1DB's 3.186 km.",
+  "The name of the 'National Automobile Club' is given in English by Audi; the Austrian organisation's proper name was not verified. 'піти' means pits.",
+  "Existing prose (Bandini won, Ginther second; Surtees, Clark and Gurney retiring) not re-verified in detail; Audi's feature confirms Bandini won with Ginther about six seconds behind and says only these two completed all 105 laps, which sits uneasily with the existing claim that Anderson was third (a third-place finisher would normally be classified a lap or more behind, not necessarily contradicting).",
+  "Audi's feature says Jochen Rindt made his F1 debut at this race and was the first Austrian to race in the sport; not included in the text.",
+  "Imagery not assessed."
+ ]
+}

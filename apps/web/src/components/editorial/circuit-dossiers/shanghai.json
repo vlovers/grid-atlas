@@ -1,0 +1,71 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "shanghai",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "shanghai:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A circuit built on Jiading swampland",
+    "uk": "Траса, споруджена на болотистих землях Цзядіна"
+   },
+   "text": {
+    "en": "Shanghai International Circuit was the first circuit in China built specifically for Formula 1. Hermann Tilke designed the track and its buildings. The site is in the Jiading district in the north-west of the city, on land that had been swampland and rice paddies, so extensive groundworks were needed. Formula One History reports that building began in April and May 2003, took 18 months and employed about 3,000 workers, with a budget of about 450 million US dollars from a government-funded joint-venture company. The layout is loosely based on the Chinese character 上 (shang), the first character of the city's name. Its first Formula 1 race, the 2004 Chinese Grand Prix on 26 September, was one of two new venues on that year's calendar alongside Bahrain.",
+    "uk": "Міжнародна траса Шанхая була першою в Китаї трасою, збудованою спеціально для Формули 1. Трасу та її будівлі спроєктував Герман Тільке. Майданчик розташований у районі Цзядін на північному заході міста, на землях, що були болотами та рисовими полями, тому знадобилися масштабні земляні роботи. За даними Formula One History, будівництво почалося у квітні-травні 2003 року, тривало 18 місяців і залучало близько 3000 робітників, а бюджет у приблизно 450 мільйонів доларів США надала спільна компанія з державним фінансуванням. Конфігурація приблизно відтворює китайський ієрогліф 上 (shang) — перший у назві міста. Перша гонка Формули 1, Гран-прі Китаю 26 вересня 2004 року, була одним із двох нових етапів того сезону поряд із Бахрейном."
+   },
+   "sources": [
+    {
+     "url": "https://formulaonehistory.com/circuits/shanghai-international-circuit",
+     "publisher": "Formula One History",
+     "locator": "Construction, Designer, Opening and First F1 race entries"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/shanghai",
+     "publisher": "Motor Sport Magazine database",
+     "locator": "Designer, Site (former swamp in Jiading), Layout (shang symbol), Build (government-funded)"
+    },
+    {
+     "url": "https://www.formula1.com/en/results/2004/races/768/china/race-result",
+     "publisher": "Formula1.com",
+     "locator": "2004 Chinese Grand Prix result header: 26 Sep 2004"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "shanghai-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No source opened names individual corners at Shanghai; all 16 turns are left without an established name (the Formula One History page explicitly lists none).",
+  "The 450 million US dollar budget, 18-month build and 3,000 workers are from Formula One History (and a Wikipedia-derived account); not confirmed by an official circuit source, treat as reported figures. The Wikipedia lead (used only for leads) gives a 6 June 2004 opening date and 2.6 billion yuan cost, not used in the text.",
+  "Existing prose checked against the 2004 classification on formula1.com (Button +1.035s, Raikkonen +1.469s, Schumacher 12th, a lap down): consistent. The 2018 defining moment (Ricciardo) and the 2025 resurfacing claim were not re-verified.",
+  "Hermann Tilke is rendered 'Герман Тільке', a transliteration not in the UK name table.",
+  "Imagery not assessed."
+ ]
+}
