@@ -5,14 +5,14 @@
   "name": "Autódromo José Carlos Pace",
   "pilot": true,
   "layouts": 2,
-  "sections_with_editorial_text": 7,
+  "sections_with_editorial_text": 8,
   "sections": {
    "introduction": "draft",
    "essential_facts": "dataset_only",
    "origins": "mentioned_in_draft",
    "formula1_history": "draft",
    "defining_moments": "draft:2",
-   "layout_evolution": "absent",
+   "layout_evolution": "draft",
    "corners": "one_layout_drafted:15/41",
    "important_races": "draft",
    "records_statistics": "dataset_only",
@@ -20,24 +20,24 @@
    "related_people": "dataset_only",
    "sources_methodology": "cited"
   },
-  "claims": 74,
+  "claims": 83,
   "claims_by_type": {
    "statistic": 11,
-   "dated_event": 14,
-   "measurement": 0,
+   "dated_event": 17,
+   "measurement": 5,
    "quotation": 0,
    "interpretation": 0,
-   "narrative": 49
+   "narrative": 50
   },
   "claims_unaligned_uk": 9,
   "name_agreement": {
-   "agree": 13,
+   "agree": 14,
    "differ": 3,
    "uk_unrecognised": 1,
-   "no_names": 48
+   "no_names": 56
   },
   "dataset_checks": {
-   "supported": 2,
+   "supported": 6,
    "conflict": 0,
    "unmatched": 0
   },
@@ -47,7 +47,7 @@
    "passages_cover_numbers": 49,
    "passages_partial": 5,
    "no_passage_in_live_sources": 18,
-   "cited_sources_unavailable": 0,
+   "cited_sources_unavailable": 9,
    "no_cited_sources": 0
   },
   "claims_verified": 14,
@@ -64,8 +64,9 @@
    }
   },
   "sources": {
-   "cited": 8,
-   "live": 6
+   "cited": 10,
+   "live": 6,
+   "not_checked": 2
   },
   "source_structural_issues": 0,
   "corners": {
@@ -75,16 +76,18 @@
    "names_found_in_cited_source": 10,
    "names_not_in_cited_text": 3,
    "names_sources_unavailable": 0,
-   "turns_queued": 26
+   "turns_queued": 26,
+   "dossier_named_turns": 2,
+   "dossier_turns_without_established_name": 0
   },
   "quality": {
-   "blocks": 28,
+   "blocks": 30,
    "shallow": 5,
    "repetitive": 0,
    "generic": 0,
-   "en_uk_issues": 0
+   "en_uk_issues": 2
   },
-  "evidence_lead_rate": 0.689,
+  "evidence_lead_rate": 0.614,
   "content_complete": false
  },
  "tasks": [
@@ -2235,6 +2238,169 @@
      "score": 5
     }
    ]
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-1#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The long original-era circuit used for the championship rounds of 1973-1980 is recorded by F1DB at 7.873 km with 26 turns.",
+   "uk": "Довга траса початкової епохи, що приймала етапи чемпіонату 1973-1980 років, за F1DB має 7.873 км і 26 поворотів.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:interlagos-1",
+       "field": "length_km"
+      }
+     ],
+     "detail": "7.873 km matches interlagos-1."
+    },
+    {
+     "kind": "turn_count",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:interlagos-1",
+       "field": "turns"
+      }
+     ],
+     "detail": "26 turns matches interlagos-1."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-1#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The city's timeline says a 1978 reform brought the track to 7,873 m from an earlier, longer length, without giving a reason.",
+   "uk": "За хронологією міської адміністрації, реформа 1978 року скоротила трасу до 7873 м від попередньої, довшої довжини, причину не названо.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-1#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "Honda's circuit guide describes the pre-1990 course as roughly 8 km.",
+   "uk": "Путівник Honda описує трасу до 1990 року як приблизно 8 км.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-1#s4",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "This is the layout that the 1990 rebuild replaced.",
+   "uk": "Саме цю конфігурацію замінила перебудова 1990 року.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-2#s1",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-2",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "At the end of 1989 the circuit was rebuilt to bring Formula 1 back, cutting the lap to roughly 4.3 km; the city timeline gives 4,325 m for that first rebuild and presents it as part of a move toward circuits of up to 4,500 m.",
+   "uk": "Наприкінці 1989 року трасу перебудували, щоб повернути Формулу 1, скоротивши коло приблизно до 4.3 км; хронологія міста називає для першої перебудови 4325 м і подає її як частину тенденції до трас завдовжки до 4500 м.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:interlagos-2",
+       "field": "length_km"
+      }
+     ],
+     "detail": "4.3 km matches interlagos-2."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-2#s2",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The rebuilt lap kept the elevation changes, and the opening Senna S was created in the redesign with input from Ayrton Senna.",
+   "uk": "Нове коло зберегло перепади висот, а початковий S do Senna створили під час перепроєктування за участі Айртона Сенни.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-2#s3",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-2",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The reopened circuit hosted the 1990 race on 23 March.",
+   "uk": "Оновлена траса прийняла гонку 1990 року 23 березня.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-2#s4",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-2",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The current length is given by Honda as 4.309 km, matching F1DB.",
+   "uk": "Нинішню довжину Honda подає як 4.309 км, що збігається з F1DB.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:interlagos-2",
+       "field": "length_km"
+      }
+     ],
+     "detail": "4.309 km matches interlagos-2."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "interlagos:layout:interlagos-2#s5",
+   "circuit_id": "interlagos",
+   "block_id": "interlagos:layout:interlagos-2",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Later work did not change the layout in the sources opened: a 2007 asphalt and drainage project with a new pit entrance, safety reforms at several points in 2009, new pits and paddock in 2014 and a full resurfacing in 2023.",
+   "uk": "Подальші роботи, згадані у відкритих джерелах, конфігурацію не змінювали: у 2007 році — проєкт з асфальтом і дренажем та новий в'їзд до піт-лейну, у 2009 році — безпекові доробки в кількох місцях, у 2014 році — нові піти й паддок, у 2023 році — повне перекриття асфальту.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
   }
  ],
  "corner_names": [
@@ -2541,9 +2707,54 @@
     "shallow:few_specifics"
    ],
    "en_uk": []
+  },
+  {
+   "block_id": "interlagos:layout:interlagos-1",
+   "circuit_id": "interlagos",
+   "kind": "dossier_layout_change",
+   "en_words": 65,
+   "uk_words": 56,
+   "sentences": 4,
+   "specificity": 0.154,
+   "lexical_diversity": 0.815,
+   "flags": [],
+   "en_uk": [
+    "number_only_in_uk:7873"
+   ]
+  },
+  {
+   "block_id": "interlagos:layout:interlagos-2",
+   "circuit_id": "interlagos",
+   "kind": "dossier_layout_change",
+   "en_words": 135,
+   "uk_words": 117,
+   "sentences": 5,
+   "specificity": 0.141,
+   "lexical_diversity": 0.696,
+   "flags": [],
+   "en_uk": [
+    "number_only_in_en:4.325/4.500",
+    "number_only_in_uk:4325/4500"
+   ]
   }
  ],
  "sources": [
+  {
+   "source_id": "src-00cacd2cfad1",
+   "url": "https://prefeitura.sp.gov.br/web/autodromodeinterlagos/linhadotempo",
+   "normalized": "https://prefeitura.sp.gov.br/web/autodromodeinterlagos/linhadotempo",
+   "host": "prefeitura.sp.gov.br",
+   "class": "other",
+   "cited_by": [
+    "interlagos:layout:interlagos-1",
+    "interlagos:layout:interlagos-2"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": null
+  },
   {
    "source_id": "src-326d3a0df9bf",
    "url": "https://www.formula1.com/en/results/1973/races/315/brazil/race-result",
@@ -2647,6 +2858,22 @@
     "text_sha256": "dfe5f39889aa147a27b483b83de41bb02ee54da21c8869095e31a60968826c45",
     "text_chars": 21973
    }
+  },
+  {
+   "source_id": "src-64203cebf2d7",
+   "url": "https://global.honda/en/F1/circuit/autodromo-jose-carlos-pace/",
+   "normalized": "https://global.honda/en/F1/circuit/autodromo-jose-carlos-pace",
+   "host": "global.honda",
+   "class": "other",
+   "cited_by": [
+    "interlagos:layout:interlagos-1",
+    "interlagos:layout:interlagos-2"
+   ],
+   "circuits": [
+    "interlagos"
+   ],
+   "issues": [],
+   "status": null
   },
   {
    "source_id": "src-ad9cf78c4f4d",

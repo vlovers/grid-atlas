@@ -1,0 +1,195 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "nurburgring",
+ "writer": "research-batch-5",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "nurburgring:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "A working circuit after its last Grand Prix",
+    "uk": "Діюча траса після останнього Гран-прі"
+   },
+   "text": {
+    "en": "The last Formula 1 race at the Nürburgring was the 2020 Eifel Grand Prix, run on the 5.148 km Grand Prix circuit during the pandemic-affected season. The venue has stayed active since. Its 2026 programme lists the ADAC 24h Nürburgring in May, DTM in August, GT World Challenge in late August, the Truck Grand Prix in July, classic-car meetings and the Rock am Ring festival. The Nordschleife continues to host endurance racing. F1 itself returned briefly in April 2026 as a two-day Pirelli tyre test with Mercedes and McLaren, which was reported as the first F1 activity at the venue in six years; no Grand Prix is listed on the circuit's own 2026 calendar.",
+    "uk": "Останньою гонкою Формули 1 на Нюрбургрингу стало Гран-прі Айфеля 2020 року, яке пройшло на Гран-прі трасі завдовжки 5,148 км у сезоні, зміненому пандемією. Відтоді траса лишається діючою. Її програма на 2026 рік включає ADAC 24h Nürburgring у травні, DTM у серпні, GT World Challenge наприкінці серпня, Truck Grand Prix у липні, зустрічі класичних автомобілів і фестиваль Rock am Ring. Нордшляйфе й надалі приймає перегони на витривалість. Сама Ф1 ненадовго повернулася в квітні 2026 року у вигляді дводенного тесту шин Pirelli за участі Mercedes і McLaren, який описали як першу діяльність Ф1 на трасі за шість років; у власному календарі траси на 2026 рік Гран-прі немає."
+   },
+   "sources": [
+    {
+     "url": "https://www.crash.net/f1/news/1092902/1/nurburgring-set-first-f1-action-six-years-mercedes-test",
+     "publisher": "Crash.net",
+     "locator": "Article on the 14-15 April Pirelli test; last F1 event paragraph"
+    },
+    {
+     "url": "https://mobile.nuerburgring.de/news/nuerburgring-gibt-ausblick-auf-den-jahreskalender-2026?locale=en",
+     "publisher": "Nürburgring (official)",
+     "locator": "2026 annual calendar preview: Motorsport, Classics, Music sections"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+     "publisher": "Formula 1",
+     "locator": "Later races paragraph (events until 2013, return in 2020)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "nurburgring:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "Senna opens the new circuit",
+    "uk": "Сенна відкриває нову трасу"
+   },
+   "text": {
+    "en": "To open the new Grand Prix circuit in 1984, an exhibition race was run in identical Mercedes 190 saloon cars, with drivers including Ayrton Senna, James Hunt, Niki Lauda and Stirling Moss. Pitpass records that Senna won ahead of Lauda. The circuit that followed was described as built to the highest safety standards of its day, a deliberate contrast to the 22.81 km Nordschleife, which had been judged unsuitable for Formula 1 after Niki Lauda's near-fatal crash at Bergwerk in 1976.",
+    "uk": "Щоб відкрити нову Гран-прі трасу 1984 року, провели показову гонку на однакових седанах Mercedes 190 за участі Айртона Сенни, Джеймса Ганта, Нікі Лауди та Стірлінга Мосса. Pitpass повідомляє, що Сенна переміг, випередивши Лауду. Нова траса, за описом, відповідала найвищим стандартам безпеки свого часу і була свідомою протилежністю 22,81-кілометровому Нордшляйфе, який визнали непридатним для Формули 1 після майже фатальної аварії Нікі Лауди в Бергверку 1976 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.pitpass.com/circuits/14/nurburgring",
+     "publisher": "Pitpass",
+     "locator": "1984: New circuit"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+     "publisher": "Formula 1",
+     "locator": "1984 opening paragraph (Mercedes 190 cars)"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/database/circuits/418-nurburgring",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Later changes: Lauda crash at Bergwerk, CSI ruling"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "nurburgring-1",
+   "seasons": "1951-1976",
+   "length_km": 22.81,
+   "turns": 160,
+   "change": {
+    "en": "The Nordschleife, a combined road-circuit design opened in 1927, was the Formula 1 venue throughout this period. Motor Sport records that it was resurfaced in 1957 and largely rebuilt in 1970. After Niki Lauda's near-fatal crash at Bergwerk in 1976, the sport's governing body ruled it no longer safe for Formula 1, which ended its F1 use. Motor Sport counts 173 corners for the full lap, while F1DB records 160 turns.",
+    "uk": "Нордшляйфе, гоночна траса, що відкрилася 1927 року, була трасою Формули 1 протягом усього цього періоду. Motor Sport повідомляє, що її перекрили новим асфальтом 1957 року та значною мірою перебудували 1970 року. Після майже фатальної аварії Нікі Лауди в Бергверку 1976 року керівний орган спорту визнав її небезпечною для Формули 1, і на цьому її використання у Ф1 завершилося. Motor Sport налічує 173 повороти на повне коло, тоді як F1DB — 160."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/database/circuits/418-nurburgring",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Opening and early history; Later changes"
+    },
+    {
+     "url": "https://www.ferrari.com/en-EN/corse-clienti/nurburgring",
+     "publisher": "Ferrari",
+     "locator": "Page title and outline: 22.81 km, 173 corners"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "nurburgring-2",
+   "seasons": "1984-1985",
+   "length_km": 4.542,
+   "turns": 12,
+   "change": {
+    "en": "A new, separate Grand Prix circuit was built beside the old start/finish area and opened in 1984, using government funding, after Formula 1 had left the Nordschleife. It was built to modern safety standards but offered few overtaking opportunities. It hosted the 1984 European Grand Prix and the 1985 German Grand Prix.",
+    "uk": "Нову окрему Гран-прі трасу побудували поруч зі старою зоною старту й фінішу та відкрили 1984 року за державного фінансування, після того як Формула 1 залишила Нордшляйфе. Її збудували за сучасними стандартами безпеки, але вона пропонувала мало можливостей для обгонів. Вона приймала Гран-прі Європи 1984 року та Гран-прі Німеччини 1985 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.pitpass.com/circuits/14/nurburgring",
+     "publisher": "Pitpass",
+     "locator": "1984: New circuit"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/database/circuits/418-nurburgring",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Later changes: new Grand Prix circuit built at the old start/finish area"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+     "publisher": "Formula 1",
+     "locator": "Early races paragraph"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "nurburgring-3",
+   "seasons": "1995-2001",
+   "length_km": 4.556,
+   "turns": 12,
+   "change": {
+    "en": "F1 returned to the Grand Prix circuit in 1995, and it hosted the European Grand Prix, which was run as the Luxembourg Grand Prix in 1997 and 1998. F1DB records a length of 4.556 km, 0.014 km more than in 1984-1985, and the same 12 turns. The exact geometry changes behind that difference were not established from the sources opened. The chicane at the end of the start/finish straight remained until the 2002 rebuild.",
+    "uk": "Формула 1 повернулася на Гран-прі трасу 1995 року, і вона приймала Гран-прі Європи, яке 1997 і 1998 років проводили як Гран-прі Люксембургу. F1DB фіксує довжину 4,556 км, що на 0,014 км більше, ніж у 1984-1985 роках, і ті самі 12 поворотів. Точні зміни геометрії, що стоять за цією різницею, за відкритими джерелами встановити не вдалося. Шикана наприкінці стартової прямої зберігалася до перебудови 2002 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.pitpass.com/circuits/14/nurburgring",
+     "publisher": "Pitpass",
+     "locator": "1995-2006: European Grand Prix era; 2002: Layout changes"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/nurburgring-all-you-need-to-know-about-the-german-circuit.2TAWIELS2BSX3KhWmSBCAc",
+     "publisher": "Formula 1",
+     "locator": "Later races paragraph"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "nurburgring-4",
+   "seasons": "2002-2020",
+   "length_km": 5.148,
+   "turns": 15,
+   "change": {
+    "en": "For 2002 the first-corner complex was rebuilt: the old chicane section at the end of the start/finish straight was replaced by a sharp right-hander followed by a slow, omega-shaped stadium section, the Mercedes Arena, built on the site of the former kart track. Autosport reported that the aim was to reduce opening-lap carnage and create an extra overtaking opportunity, at a cost of 4 million pounds and with 10,000 extra grandstand seats. The lap grew to 5.148 km and 15 turns. Before the 2007 European Grand Prix the Audi S at Turns 8 and 9 was renamed the Michael Schumacher S. The layout was used again in 2020.",
+    "uk": "Для сезону 2002 року перебудували комплекс першого повороту: стару шикану наприкінці стартової прямої замінили різким правим поворотом із повільною секцією-стадіоном у формі омеги, Mercedes Arena, збудованою на місці колишнього картодрому. За повідомленням Autosport, мета полягала в тому, щоб зменшити хаос на першому колі й створити додаткову можливість для обгонів, а вартість становила 4 мільйони фунтів із додатковими 10 000 місць на трибунах. Коло подовшало до 5,148 км і 15 поворотів. Перед Гран-прі Європи 2007 року Audi S на поворотах 8 і 9 перейменували на Michael Schumacher S. Цю конфігурацію використали і 2020 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.autosport.com/f1/news/ring-replaces-castrol-esses-for-2002-4999983/4999983/",
+     "publisher": "Autosport",
+     "locator": "Ring replaces Castrol Esses for 2002: new Mercedes Stadium section, reasons, cost and seats"
+    },
+    {
+     "url": "https://www.pitpass.com/circuits/14/nurburgring",
+     "publisher": "Pitpass",
+     "locator": "2002: Layout changes; Corner names and notes (Turns 8 and 9)"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/database/circuits/418-nurburgring",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Later changes: new infield loop after Turn 1 added in 2002"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "nurburgring-4",
+  "turns": [
+   5,
+   6,
+   10,
+   11,
+   12
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No opened source gave names for GP-circuit turns 5, 6, 10, 11 and 12; the oversteer48 page covers only the Nordschleife and pitpass gives only descriptions. They are left as without established name; a search suggested Ford-Kurve exists on the GP circuit but no opened source tied it to a turn number.",
+  "The 1995 layout change (F1DB: 4.542 km to 4.556 km) could not be sourced; the nurburgring-3 description only restates what the sources say about the chicane and the era.",
+  "Sources disagree on the 2002 change: Autosport describes a new Mercedes Stadium section replacing a right-left section before the Esses, while Pitpass says the Castrol Chicane at the end of the start/finish straight was replaced by a sharp right-hander plus the omega section. The text follows the common elements.",
+  "Whether Nordschleife changes between 1951 and 1976 (1957 resurfacing, 1970 rebuilding) altered the lap length was not established; F1DB gives one layout at 22.81 km. Motor Sport counts 173 corners versus F1DB 160 turns.",
+  "The nuerburgring.de history page returned 404, so ownership history (including the 2012-2014 insolvency and sale) is not covered.",
+  "Imagery not assessed."
+ ]
+}

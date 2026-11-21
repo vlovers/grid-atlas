@@ -1,0 +1,83 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "magny-cours",
+ "writer": "research-batch-4",
+ "written_at": "2026-11-21",
+ "sections": [],
+ "layout_timeline": [
+  {
+   "layout_id": "magny-cours-1",
+   "seasons": "1991-1991",
+   "length_km": 4.271,
+   "turns": 17,
+   "change": {
+    "en": "The layout used for the first French Grand Prix at Magny-Cours in 1991, after the Nièvre General Council bought the site in 1986 and the old Jean Behra circuit was demolished in 1988 to make way for the new track. It still contained the esse-shaped curve just after the Adélaïde hairpin that was removed a year later.",
+    "uk": "Конфігурація першого Гран-прі Франції на Маньї-Кур у 1991 році: Генеральна рада департаменту Ньєвр придбала територію у 1986 році, а стару трасу імені Жана Бера знесли у 1988 році, щоб звільнити місце для нового кола. На ній ще була S-подібна ділянка одразу після шпильки Adélaïde, яку прибрали наступного року."
+   },
+   "sources": [
+    {
+     "url": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
+     "publisher": "Circuit de Nevers Magny-Cours (official site)",
+     "locator": "Formula 1 era section (1986, 1988, 1989, 1991) and 1992 layout change paragraph"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "magny-cours-2",
+   "seasons": "1992-2002",
+   "length_km": 4.25,
+   "turns": 15,
+   "change": {
+    "en": "For 1992 the Esse curve just after the Adélaïde hairpin was removed, taking the lap from 4.271 km to 4.25 km and the turn count from 17 to 15. The circuit's own history page gives sporting and safety reasons connected with Formula 1. This layout stayed in use until 2002.",
+    "uk": "Для 1992 року S-подібну ділянку Esse одразу після шпильки Adélaïde прибрали: коло скоротилося з 4.271 км до 4.25 км, а кількість поворотів зменшилася з 17 до 15. Офіційна історія траси називає причинами спортивні міркування та безпеку, пов'язані з Формулою 1. Ця конфігурація використовувалася до 2002 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
+     "publisher": "Circuit de Nevers Magny-Cours (official site)",
+     "locator": "1992 layout change paragraph (removal of the Esse after the Adelaide hairpin)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "magny-cours-3",
+   "seasons": "2003-2008",
+   "length_km": 4.411,
+   "turns": 17,
+   "change": {
+    "en": "In 2003 the Grand Prix track was modified at the Château d'Eau and Lycée turns, giving a 4.411 km lap with 17 turns. The circuit says the aim was a route that was less dangerous and more conducive to overtaking. This was the layout of the final six French Grands Prix, up to 2008.",
+    "uk": "У 2003 році трасу Гран-прі змінили на поворотах Château d'Eau та Lycée, і коло стало 4.411 км із 17 поворотами. За словами самої траси, мета полягала в тому, щоб зробити маршрут менш небезпечним і сприятливішим для обгонів. Цю конфігурацію використовували в останніх шести Гран-прі Франції, до 2008 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.circuitmagnycours.com/en/histoire-du-circuit/",
+     "publisher": "Circuit de Nevers Magny-Cours (official site)",
+     "locator": "2003 layout change paragraph"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "magny-cours-3",
+  "turns": [
+   2,
+   6,
+   10,
+   11
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The 2003 modification is sourced only to the circuit's own history page; the grandprix.com news item on the 2003 changes returned HTTP 429 and could not be opened, so no second independent publisher is cited.",
+  "The circuit guide page (circuitmagnycours.com/en/guide-decouvrez-le-circuit-de-nevers-magny-cours/) does not name turns 2, 6, 10 or 11 (turns 9-10 are only called a bumpy section); no source tying a name to them was found.",
+  "The exact geometry of the esse removed in 1992 and of the 2003 changes is not described in an opened source beyond the circuit's own wording; no corner-level claims were made.",
+  "Existing prose says karting began in 1960 and a car circuit followed in 1961; the official history says a 510 m kart track opened in 1960, a 1961 expansion added car and motorcycle tracks, and a 3.85 km circuit was inaugurated on 2 May 1971. Editors may wish to confirm the wording.",
+  "The 1991 race summary in existing prose (Mansell pass lap 22, Adelaide pass lap 54, Prost 2nd, Senna 3rd) was checked against grandprix.com and agrees.",
+  "No imagery assessed."
+ ]
+}

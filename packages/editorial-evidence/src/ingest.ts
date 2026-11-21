@@ -2,7 +2,7 @@
  * Read every existing circuit content source as-is. Nothing is regenerated or edited: each
  * block keeps its file, JSON path, original text and the URLs it already cites.
  */
-import { readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { ContentSource } from './claims.ts';
 
@@ -75,5 +75,25 @@ export function loadCorpus(root: string): Corpus {
     block_id: `${g.id}:corner_group:${j}`, circuit_id: g.id, kind: 'corner_group', file: `${E}circuit-corner-guides.json`,
     json_path: `[${i}].sections[${j}]`, en: s.en, uk: s.uk, cited_urls: urls(s.source, s.comparison_source), year_label: null,
   })));
+  // Research-lane dossier sections that fill gaps in the drafts above (one file per circuit).
+  const dossierDir = join(root, `${E}circuit-dossiers`);
+  const dossierFiles = existsSync(dossierDir) ? readdirSync(dossierDir).filter(f => f.endsWith('.json')).sort() : [];
+  for (const f of dossierFiles) {
+    const file = `${E}circuit-dossiers/${f}`;
+    const d = load(file) as Dossier;
+    d.sections.forEach((s, i) => blocks.push({ block_id: `${s.id}`, circuit_id: d.circuit_id, kind: `dossier_${s.kind}`, file,
+      json_path: `sections[${i}].text`, en: s.text.en, uk: s.text.uk, cited_urls: urls(s.sources), year_label: s.year === null ? null : String(s.year) }));
+    d.layout_timeline.forEach((t, i) => blocks.push({ block_id: `${d.circuit_id}:layout:${t.layout_id}`, circuit_id: d.circuit_id, kind: 'dossier_layout_change', file,
+      json_path: `layout_timeline[${i}].change`, en: t.change.en, uk: t.change.uk, cited_urls: urls(t.sources), year_label: t.seasons }));
+  }
   return { blocks, corners, legacy: Object.keys(legacy) };
 }
+
+type Source = { url: string; publisher: string; locator: string };
+export type DossierSectionKind = 'origins' | 'formula1_history' | 'legacy_present_day' | 'defining_moment' | 'historical_fact';
+export type Dossier = {
+  circuit_id: string;
+  sections: { id: string; kind: DossierSectionKind; year: number | null; title: Localized; text: Localized; sources: Source[]; review_status: string }[];
+  layout_timeline: { layout_id: string; seasons: string; length_km: number; turns: number; change: Localized; sources: Source[]; review_status: string }[];
+  corner_names: { layout_id: string; turns: number[]; name: string; status: string; period: string; source: Source; review_status: string }[];
+};

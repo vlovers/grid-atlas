@@ -1,0 +1,99 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "interlagos",
+ "writer": "research-batch-3",
+ "written_at": "2026-11-21",
+ "sections": [],
+ "layout_timeline": [
+  {
+   "layout_id": "interlagos-1",
+   "seasons": "1973-1980",
+   "length_km": 7.873,
+   "turns": 26,
+   "change": {
+    "en": "The long original-era circuit used for the championship rounds of 1973-1980 is recorded by F1DB at 7.873 km with 26 turns. The city's timeline says a 1978 reform brought the track to 7,873 m from an earlier, longer length, without giving a reason. Honda's circuit guide describes the pre-1990 course as roughly 8 km. This is the layout that the 1990 rebuild replaced.",
+    "uk": "Довга траса початкової епохи, що приймала етапи чемпіонату 1973-1980 років, за F1DB має 7.873 км і 26 поворотів. За хронологією міської адміністрації, реформа 1978 року скоротила трасу до 7873 м від попередньої, довшої довжини, причину не названо. Путівник Honda описує трасу до 1990 року як приблизно 8 км. Саме цю конфігурацію замінила перебудова 1990 року."
+   },
+   "sources": [
+    {
+     "url": "https://prefeitura.sp.gov.br/web/autodromodeinterlagos/linhadotempo",
+     "publisher": "Prefeitura de São Paulo (Autódromo de Interlagos)",
+     "locator": "timeline, 1978 reform entry"
+    },
+    {
+     "url": "https://global.honda/en/F1/circuit/autodromo-jose-carlos-pace/",
+     "publisher": "Honda",
+     "locator": "circuit history, original layout about 8 km"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "interlagos-2",
+   "seasons": "1990-2026",
+   "length_km": 4.309,
+   "turns": 15,
+   "change": {
+    "en": "At the end of 1989 the circuit was rebuilt to bring Formula 1 back, cutting the lap to roughly 4.3 km; the city timeline gives 4,325 m for that first rebuild and presents it as part of a move toward circuits of up to 4,500 m. The rebuilt lap kept the elevation changes, and the opening Senna S was created in the redesign with input from Ayrton Senna. The reopened circuit hosted the 1990 race on 23 March. The current length is given by Honda as 4.309 km, matching F1DB. Later work did not change the layout in the sources opened: a 2007 asphalt and drainage project with a new pit entrance, safety reforms at several points in 2009, new pits and paddock in 2014 and a full resurfacing in 2023.",
+    "uk": "Наприкінці 1989 року трасу перебудували, щоб повернути Формулу 1, скоротивши коло приблизно до 4.3 км; хронологія міста називає для першої перебудови 4325 м і подає її як частину тенденції до трас завдовжки до 4500 м. Нове коло зберегло перепади висот, а початковий S do Senna створили під час перепроєктування за участі Айртона Сенни. Оновлена траса прийняла гонку 1990 року 23 березня. Нинішню довжину Honda подає як 4.309 км, що збігається з F1DB. Подальші роботи, згадані у відкритих джерелах, конфігурацію не змінювали: у 2007 році — проєкт з асфальтом і дренажем та новий в'їзд до піт-лейну, у 2009 році — безпекові доробки в кількох місцях, у 2014 році — нові піти й паддок, у 2023 році — повне перекриття асфальту."
+   },
+   "sources": [
+    {
+     "url": "https://prefeitura.sp.gov.br/web/autodromodeinterlagos/linhadotempo",
+     "publisher": "Prefeitura de São Paulo (Autódromo de Interlagos)",
+     "locator": "timeline entries 1989-1990, 2007, 2009, 2014, 2023"
+    },
+    {
+     "url": "https://global.honda/en/F1/circuit/autodromo-jose-carlos-pace/",
+     "publisher": "Honda",
+     "locator": "circuit history: 1990 redevelopment, Senna S, 4.309 km"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [
+  {
+   "layout_id": "interlagos-2",
+   "turns": [
+    14
+   ],
+   "name": "Subida dos Boxes",
+   "status": "traditional",
+   "period": "1990-present",
+   "source": {
+    "url": "https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
+    "publisher": "Mercedes-AMG Petronas F1 Team",
+    "locator": "corner list, entry 'Turn 14: Subida dos Boxes'"
+   },
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "interlagos-2",
+   "turns": [
+    15
+   ],
+   "name": "Arquibancadas",
+   "status": "traditional",
+   "period": "1990-present",
+   "source": {
+    "url": "https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names",
+    "publisher": "Mercedes-AMG Petronas F1 Team",
+    "locator": "corner list, entry 'Turn 15: Arquibancadas'"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "interlagos-2",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Corner names for turns 14 and 15 come from a single publisher (Mercedes F1) and give no start year; 'period' reflects the current layout only, not the date the names were coined.",
+  "No source opened names turns of the 26-turn interlagos-1 layout.",
+  "Interlagos sources give differing lengths for the 1990 rebuild (4,325 m on the city timeline, 4.309 km current); F1DB's 4.309 km is used for interlagos-2 as a whole although the first 1990 lap may have been slightly different.",
+  "The reason for the 1978 reform and the reasons for the 1990 shortening are not stated in the opened sources beyond the city timeline's remark on a trend toward circuits up to 4,500 m."
+ ]
+}

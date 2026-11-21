@@ -5,49 +5,49 @@
   "name": "Silverstone Circuit",
   "pilot": true,
   "layouts": 8,
-  "sections_with_editorial_text": 4,
+  "sections_with_editorial_text": 8,
   "sections": {
    "introduction": "draft",
    "essential_facts": "dataset_only",
-   "origins": "absent",
-   "formula1_history": "absent",
+   "origins": "draft",
+   "formula1_history": "draft",
    "defining_moments": "draft:7",
-   "layout_evolution": "absent",
+   "layout_evolution": "draft",
    "corners": "one_layout_drafted:18/109",
    "important_races": "draft",
    "records_statistics": "dataset_only",
-   "legacy_present_day": "absent",
+   "legacy_present_day": "draft",
    "related_people": "dataset_only",
    "sources_methodology": "cited"
   },
-  "claims": 87,
+  "claims": 121,
   "claims_by_type": {
-   "statistic": 5,
-   "dated_event": 17,
-   "measurement": 0,
+   "statistic": 10,
+   "dated_event": 33,
+   "measurement": 7,
    "quotation": 0,
    "interpretation": 0,
-   "narrative": 65
+   "narrative": 71
   },
   "claims_unaligned_uk": 36,
   "name_agreement": {
-   "agree": 9,
+   "agree": 14,
    "differ": 0,
-   "uk_unrecognised": 1,
-   "no_names": 41
+   "uk_unrecognised": 2,
+   "no_names": 69
   },
   "dataset_checks": {
-   "supported": 1,
+   "supported": 15,
    "conflict": 0,
    "unmatched": 0
   },
   "factcheck_status": {
    "dataset_conflict": 0,
-   "dataset_supported": 0,
+   "dataset_supported": 2,
    "passages_cover_numbers": 70,
    "passages_partial": 5,
    "no_passage_in_live_sources": 11,
-   "cited_sources_unavailable": 0,
+   "cited_sources_unavailable": 32,
    "no_cited_sources": 1
   },
   "claims_verified": 13,
@@ -64,8 +64,9 @@
    }
   },
   "sources": {
-   "cited": 5,
-   "live": 4
+   "cited": 8,
+   "live": 4,
+   "not_checked": 3
   },
   "source_structural_issues": 0,
   "corners": {
@@ -75,16 +76,18 @@
    "names_found_in_cited_source": 18,
    "names_not_in_cited_text": 0,
    "names_sources_unavailable": 0,
-   "turns_queued": 91
+   "turns_queued": 91,
+   "dossier_named_turns": 0,
+   "dossier_turns_without_established_name": 0
   },
   "quality": {
-   "blocks": 39,
+   "blocks": 50,
    "shallow": 9,
    "repetitive": 0,
    "generic": 0,
-   "en_uk_issues": 0
+   "en_uk_issues": 1
   },
-  "evidence_lead_rate": 0.805,
+  "evidence_lead_rate": 0.595,
   "content_complete": false
  },
  "tasks": [
@@ -2850,6 +2853,628 @@
      "score": 6
     }
    ]
+  },
+  {
+   "claim_id": "silverstone:origins:1#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Silverstone began as RAF Silverstone, a three-runway triangular airfield specified by the Air Ministry in August 1942 and used in 1943 as a base for Wellington bombers.",
+   "uk": "Сілверстоун починався як база Королівських ВПС — трикутний аеродром із трьома злітно-посадковими смугами, який Міністерство авіації визначило в серпні 1942 року і який у 1943 році використовували як базу бомбардувальників Wellington.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:origins:1#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "After the war the Royal Automobile Club leased the site and converted it into a racing circuit within about two months, first using an X-shaped arrangement of runway links marked out with straw bales, oil drums and ropes.",
+   "uk": "Після війни Королівський автомобільний клуб орендував територію і приблизно за два місяці перетворив її на гоночну трасу: спочатку це була Х-подібна схема зі сполучень злітних смуг, позначена тюками соломи, бочками з-під оливи та мотузками.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:origins:1#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:origins:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The first official race there, the RAC International Grand Prix, was held in 1948 and won by Luigi Villoresi.",
+   "uk": "Перші офіційні перегони, Гран-прі RAC, відбулися 1948 року, їх виграв Луїджі Віллорезі.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:origins:1#s4",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "In 1949 the course moved onto the airfield's perimeter roads, a layout that forms the core of the modern circuit.",
+   "uk": "У 1949 році траса перемістилася на периметральні дороги аеродрому, і ця конфігурація стала основою сучасної траси.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:origins:1#s5",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:origins:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The following year, in 1950, Silverstone staged the first round of the Formula 1 World Championship, won by Giuseppe Farina.",
+   "uk": "Наступного, 1950 року, Сілверстоун прийняв першу гонку чемпіонату світу Формули 1, яку виграв Джузеппе Фаріна.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:origins:1#s6",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The British Racing Drivers' Club is the circuit's owner today.",
+   "uk": "Нині власником траси є Британський клуб гонщиків (BRDC).",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:formula1_history:1#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:formula1_history:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Silverstone hosted the first round of the Formula 1 World Championship in 1950 and has staged a Grand Prix in 60 seasons of the pinned F1DB archive, up to 2026.",
+   "uk": "Сілверстоун прийняв перший етап чемпіонату світу Формули 1 у 1950 році та проводив Гран-прі в 60 сезонах архіву F1DB, до 2026 року включно.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:formula1_history:1#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:formula1_history:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "After the early 1950s it appeared mostly in alternate years until 1985, and from 1987 it has hosted a race every year.",
+   "uk": "Після початку 1950-х він з'являвся в календарі здебільшого через рік до 1985 року, а з 1987 року приймає гонку щороку.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:formula1_history:1#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:formula1_history:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Its character moved from a fast airfield circuit of long, flat-out corners to a modern layout in several stages: a chicane at Woodcote in 1975, a heavy remodel for 1991, repeated reprofiling in the 1990s, and the Arena infield section from 2010.",
+   "uk": "Характер траси змінювався від швидкісного аеродромного кола з довгими поворотами на повному газі до сучасної конфігурації в кілька етапів: шикана у Woodcote в 1975 році, масштабна реконструкція перед 1991 роком, неодноразове перепрофілювання в 1990-х і інфілдна секція Arena з 2010 року.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:formula1_history:1#s4",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:formula1_history:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Winners include Jim Clark, Alain Prost and Nigel Mansell, and Lewis Hamilton won 9 times.",
+   "uk": "Серед переможців — Джим Кларк, Ален Прост і Найджел Менселл, а Льюїс Гамільтон переміг 9 разів.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:formula1_history:1#s5",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:formula1_history:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Silverstone never left the calendar for good: after the 2010 redevelopment it kept the British Grand Prix and still hosts it in 2026, when Charles Leclerc won.",
+   "uk": "Сілверстоун ніколи остаточно не залишав календар: після реконструкції 2010 року він зберіг Гран-прі Великої Британії і приймає його й у 2026 році, коли переміг Шарль Леклер.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:1158",
+       "field": "winner"
+      }
+     ],
+     "detail": "2026: Charles Marc Hervé Perceval Leclerc matches F1DB winner."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:legacy_present_day:1#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Silverstone remains an active Formula 1 venue.",
+   "uk": "Сілверстоун залишається чинним майданчиком Формули 1.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:legacy_present_day:1#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:legacy_present_day:1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "It is owned by the British Racing Drivers' Club and uses the Arena configuration introduced in 2010, which measures 5.891 km with 18 turns in the F1DB archive.",
+   "uk": "Власником є Британський клуб гонщиків, а траса використовує конфігурацію Arena, запроваджену в 2010 році; в архіві F1DB вона має довжину 5,891 км і 18 поворотів.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-8",
+       "field": "length_km"
+      }
+     ],
+     "detail": "5.891 km matches silverstone-8."
+    },
+    {
+     "kind": "turn_count",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-8",
+       "field": "turns"
+      }
+     ],
+     "detail": "18 turns matches silverstone-8."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:legacy_present_day:1#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 2010 works added the infield Village, The Loop and Aintree section, a new pit and paddock complex, and moved the start line to the straight between Club and Abbey.",
+   "uk": "Роботи 2010 року додали інфілдну секцію Village, The Loop і Aintree, новий комплекс піт-лейну та паддоку, а лінію старту перенесли на пряму між поворотами Club і Abbey.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:legacy_present_day:1#s4",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:legacy_present_day:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The most recent F1DB race at the circuit is the 2026 British Grand Prix, won by Charles Leclerc; the 2025 race was won by Lando Norris.",
+   "uk": "Останньою гонкою на трасі в F1DB є Гран-прі Великої Британії 2026 року, яке виграв Шарль Леклер; у 2025 році переміг Ландо Норріс.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:1158",
+       "field": "winner"
+      }
+     ],
+     "detail": "2026: Charles Marc Hervé Perceval Leclerc matches F1DB winner."
+    },
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:1137",
+       "field": "winner"
+      }
+     ],
+     "detail": "2025: Lando Norris matches F1DB winner."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-1#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The original Grand Prix configuration used the airfield's perimeter roads, adopted in 1949 after the early runway-link layout.",
+   "uk": "Початкова конфігурація Гран-прі використовувала периметральні дороги аеродрому, прийняті в 1949 році після ранньої схеми зі сполучень злітних смуг.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-1#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "It was a fast circuit and in the 1950s the start line was on the straight between Woodcote and Copse; minor tweaks followed in the late 1960s and early 1970s as speeds rose.",
+   "uk": "Це була швидкісна траса, у 1950-х роках лінія старту розташовувалася на прямій між Woodcote і Copse; наприкінці 1960-х і на початку 1970-х з'явилися незначні зміни через зростання швидкостей.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-2#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-2",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "A chicane was added at Woodcote for 1975 to reduce speeds there; Autosport links it to Jody Scheckter losing control of his McLaren at the corner.",
+   "uk": "Для 1975 року у Woodcote додали шикану, щоб зменшити швидкість у цьому місці; Autosport пов'язує це з тим, що Джоді Шектер втратив керування своїм McLaren у цьому повороті.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-2#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-2",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "F1DB records the lap as 70 m longer and with one more turn than the 1950-1973 layout.",
+   "uk": "За даними F1DB, коло стало на 70 м довшим і на один поворот складнішим порівняно з конфігурацією 1950-1973 років.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-3#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-3",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "In 1987 the quick right-left through Woodcote gave way to a heavier braking zone into a left-right at Luffield, with Woodcote taking its familiar shape, according to Autosport; Motor Sport Magazine also lists the track being resurfaced and the Bridge chicane introduced, mainly for safety.",
+   "uk": "У 1987 році швидкий правий-лівий проїзд через Woodcote змінила зона сильного гальмування перед лівим-правим поворотом Luffield, а Woodcote набув звичного вигляду (за Autosport); Motor Sport Magazine також згадує оновлення покриття та запровадження шикани Bridge, головно з міркувань безпеки.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-3#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-3",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Sources differ on details and none gives a reason beyond safety.",
+   "uk": "Джерела розходяться в деталях і не називають іншої причини, крім безпеки.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-4#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-4",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 1991 overhaul was the largest change of the pre-Arena era.",
+   "uk": "Реконструкція 1991 року була найбільшою зміною до ери Arena.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-4#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-4",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The Maggotts-Becketts-Chapel sequence was reconfigured, Vale was added and Luffield replaced Bridge, lengthening the lap from 4.778 km to 5.226 km.",
+   "uk": "Послідовність Maggotts-Becketts-Chapel перепроєктували, додали Vale, а Luffield замінив Bridge, внаслідок чого коло збільшилося з 4,778 км до 5,226 км.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-3",
+       "field": "length_km"
+      }
+     ],
+     "detail": "4.778 km matches silverstone-3."
+    },
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-4",
+       "field": "length_km"
+      }
+     ],
+     "detail": "5.226 km matches silverstone-4."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-4#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-4",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Motor Sport Magazine cites safety and a more technical, television-friendly layout as the motives.",
+   "uk": "Motor Sport Magazine називає причинами безпеку та прагнення до більш технічної траси, зручнішої для телетрансляцій.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-5#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-5",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "F1DB records a shorter lap (5.057 km) with 17 turns.",
+   "uk": "F1DB фіксує коротше коло (5,057 км) із 17 поворотами.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-5",
+       "field": "length_km"
+      }
+     ],
+     "detail": "5.057 km matches silverstone-5."
+    },
+    {
+     "kind": "turn_count",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-5",
+       "field": "turns"
+      },
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-6",
+       "field": "turns"
+      },
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-7",
+       "field": "turns"
+      }
+     ],
+     "detail": "17 turns matches silverstone-5, silverstone-6, silverstone-7."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-5#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-5",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Motor Sport Magazine describes corners being reprofiled and run-off areas enlarged for safety between 1994 and 1997 with the Abbey chicane tweaked, and Autosport notes that by 1995 the track turned right after Bridge towards Priory.",
+   "uk": "Motor Sport Magazine описує перепрофілювання поворотів і розширення зон виїзду з міркувань безпеки між 1994 і 1997 роками, зі зміною шикани Abbey, а Autosport зазначає, що до 1995 року після Bridge траса повертала праворуч у бік Priory.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-5#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-5",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The exact layout details for 1994 are not given by the sources opened.",
+   "uk": "Точні подробиці конфігурації 1994 року у відкритих джерелах не наведено.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-6#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-6",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "F1DB lists a one-season variant of 5.072 km with 17 turns.",
+   "uk": "F1DB наводить односезонний варіант довжиною 5,072 км із 17 поворотами.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-6",
+       "field": "length_km"
+      }
+     ],
+     "detail": "5.072 km matches silverstone-6."
+    },
+    {
+     "kind": "turn_count",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-5",
+       "field": "turns"
+      },
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-6",
+       "field": "turns"
+      },
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-7",
+       "field": "turns"
+      }
+     ],
+     "detail": "17 turns matches silverstone-5, silverstone-6, silverstone-7."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-6#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-6",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "None of the sources opened describes a specific 1996 change, so it is treated as part of the 1994-1997 reprofiling programme.",
+   "uk": "Жодне з відкритих джерел не описує конкретної зміни 1996 року, тому її розглядають як частину програми перепрофілювання 1994-1997 років.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-7#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-7",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The final sector was altered for 1997, and Copse, Priory, Brooklands and Luffield were redesigned in 1997-1998 to restore speed and flow, according to the sources.",
+   "uk": "Для 1997 року змінили останній сектор, а Copse, Priory, Brooklands і Luffield перепроєктували в 1997-1998 роках, щоб повернути швидкість і плавність, зазначають джерела.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-7#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-7",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "This configuration stayed in use through 2009 and measures 5.141 km in F1DB.",
+   "uk": "Ця конфігурація використовувалася до 2009 року і має довжину 5,141 км за F1DB.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-7",
+       "field": "length_km"
+      }
+     ],
+     "detail": "5.141 km matches silverstone-7."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-8#s1",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Arena layout added an infield section (Farm, Village, The Loop, Aintree) before the Wellington Straight, removed Bridge and Priory, built a new pitlane and paddock (the Wing) and moved the start line between Club and Abbey.",
+   "uk": "Конфігурація Arena додала інфілдну секцію (Farm, Village, The Loop, Aintree) перед прямою Wellington, прибрала Bridge і Priory, отримала новий піт-лейн і паддок (Wing), а лінію старту перенесли між Club і Abbey.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-8#s2",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-8",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The lap grew to 5.891 km and 18 turns.",
+   "uk": "Коло стало 5,891 км і 18 поворотів.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-8",
+       "field": "length_km"
+      }
+     ],
+     "detail": "5.891 km matches silverstone-8."
+    },
+    {
+     "kind": "turn_count",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:silverstone-8",
+       "field": "turns"
+      }
+     ],
+     "detail": "18 turns matches silverstone-8."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "silverstone:layout:silverstone-8#s3",
+   "circuit_id": "silverstone",
+   "block_id": "silverstone:layout:silverstone-8",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "It followed a period when the British Grand Prix was under threat over contract terms and Silverstone committed to redevelopment.",
+   "uk": "Це сталося після періоду, коли Гран-прі Великої Британії опинилося під загрозою через умови контракту, а Сілверстоун зобов'язався провести реконструкцію.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
   }
  ],
  "corner_names": [
@@ -3406,6 +4031,20 @@
     "shallow:short"
    ],
    "en_uk": []
+  },
+  {
+   "block_id": "silverstone:origins:1",
+   "circuit_id": "silverstone",
+   "kind": "dossier_origins",
+   "en_words": 134,
+   "uk_words": 115,
+   "sentences": 6,
+   "specificity": 0.239,
+   "lexical_diversity": 0.724,
+   "flags": [],
+   "en_uk": [
+    "latin_only_in_uk:BRDC"
+   ]
   }
  ],
  "sources": [
@@ -3531,6 +4170,68 @@
     "text_sha256": "1300ffa80111a2c634203684dbc573edb4c138104be2c16ed151f8fc4045a3db",
     "text_chars": 2317
    }
+  },
+  {
+   "source_id": "src-7122a88532ef",
+   "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/silverstone-circuit-how-f1s-spiritual-home-has-evolved/",
+   "normalized": "https://motorsportmagazine.com/articles/single-seaters/f1/silverstone-circuit-how-f1s-spiritual-home-has-evolved",
+   "host": "motorsportmagazine.com",
+   "class": "publication",
+   "cited_by": [
+    "silverstone:origins:1",
+    "silverstone:formula1_history:1",
+    "silverstone:legacy_present_day:1",
+    "silverstone:layout:silverstone-1",
+    "silverstone:layout:silverstone-2",
+    "silverstone:layout:silverstone-3",
+    "silverstone:layout:silverstone-4",
+    "silverstone:layout:silverstone-5",
+    "silverstone:layout:silverstone-6",
+    "silverstone:layout:silverstone-8"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
+   "source_id": "src-79edebc40cdc",
+   "url": "https://www.autosport.com/f1/news/how-silverstone-has-evolved-into-a-modern-classic/10493529/",
+   "normalized": "https://autosport.com/f1/news/how-silverstone-has-evolved-into-a-modern-classic/10493529",
+   "host": "autosport.com",
+   "class": "publication",
+   "cited_by": [
+    "silverstone:origins:1",
+    "silverstone:layout:silverstone-3",
+    "silverstone:layout:silverstone-5",
+    "silverstone:layout:silverstone-7"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
+   "source_id": "src-a8a27d08bf5a",
+   "url": "https://www.autosport.com/f1/news/silverstone-circuit-guide-to-f1-track-including-corner-names-and-history/10631887/",
+   "normalized": "https://autosport.com/f1/news/silverstone-circuit-guide-to-f1-track-including-corner-names-and-history/10631887",
+   "host": "autosport.com",
+   "class": "publication",
+   "cited_by": [
+    "silverstone:formula1_history:1",
+    "silverstone:legacy_present_day:1",
+    "silverstone:layout:silverstone-2",
+    "silverstone:layout:silverstone-4",
+    "silverstone:layout:silverstone-7",
+    "silverstone:layout:silverstone-8"
+   ],
+   "circuits": [
+    "silverstone"
+   ],
+   "issues": [],
+   "status": null
   },
   {
    "source_id": "src-fc0276b0cbbd",

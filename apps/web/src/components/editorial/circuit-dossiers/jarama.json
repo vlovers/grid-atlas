@@ -1,0 +1,132 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "jarama",
+ "writer": "research-batch-3",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "jarama:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "Madrid's permanent circuit of 1967",
+    "uk": "Постійна траса Мадрида 1967 року"
+   },
+   "text": {
+    "en": "The Circuito del Jarama was built on dry scrubland in San Sebastián de los Reyes, about 30 km north of Madrid beside the A-1 motorway. Construction began in 1966 and the circuit officially opened on 1 July 1967. It was designed by the Dutch engineer John Hugenholtz, who also laid out Suzuka and Zandvoort. For roughly two decades it was Spain's only permanent circuit, and it came to be operated by the Real Automóvil Club de España (RACE). A demonstration race was held in the autumn of 1967. Its first Formula 1 Spanish Grand Prix followed in 1968, won by Graham Hill for Lotus. In the 1970s the race alternated with the street circuit at Montjuïc Park in Barcelona.",
+    "uk": "Circuito del Jarama збудували на посушливому пустищі в Сан-Себастьян-де-лос-Рейєс, приблизно за 30 км на північ від Мадрида біля автостради A-1. Будівництво розпочалося у 1966 році, а офіційно траса відкрилася 1 липня 1967 року. Її спроєктував нідерландський інженер John Hugenholtz, який також розробив Suzuka і Zandvoort. Приблизно два десятиліття вона лишалася єдиною постійною трасою Іспанії, а експлуатує її Real Automóvil Club de España (RACE). Показова гонка відбулася восени 1967 року. Перше Гран прі Іспанії у Формулі 1 тут пройшло у 1968 році, його виграв Ґрем Гілл на Lotus. У 1970-х гонка чергувалася з вуличною трасою Montjuïc Park у Барселоні."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/circuito-del-jarama/",
+     "publisher": "Formula One History",
+     "locator": "key facts: construction 1966, opened 1 July 1967, scrubland near San Sebastián de los Reyes, Hugenholtz, alternation with Montjuïc"
+    },
+    {
+     "url": "https://www.motorsport.com/f1/news/why-f1-is-no-stranger-to-madrid/10568405/",
+     "publisher": "Motorsport.com",
+     "locator": "Origins paragraph (opened 1967, demonstration race that autumn); 1968 section (Graham Hill won for Lotus)"
+    },
+    {
+     "url": "https://www.race.es/conocenos/circuito-del-jarama",
+     "publisher": "RACE (Real Automóvil Club de España)",
+     "locator": "page text: inaugurated 1967, Spain's only permanent circuit for about two decades, on the A-1 motorway"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "jarama:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "A 1980 race outside the championship",
+    "uk": "Гонка 1980 року поза чемпіонатом"
+   },
+   "text": {
+    "en": "In 1980 Jarama hosted a Spanish Grand Prix at the height of the FISA-FOCA dispute. RACE ran it outside FISA's control, Ferrari, Renault and Alfa Romeo did not take part, and Alan Jones won a race that did not award championship points. That is why the F1DB shows no 1980 season for the circuit, while its race records jump from 1979 to 1981.",
+    "uk": "У 1980 році в розпал конфлікту FISA і FOCA Jarama прийняла Гран прі Іспанії. RACE провела його поза контролем FISA, Ferrari, Renault і Alfa Romeo участі не брали, а Алан Джонс виграв гонку, за яку не нараховували очок чемпіонату. Саме тому в F1DB для цієї траси немає сезону 1980 року, а записи про її гонки переходять із 1979 на 1981 рік."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsport.com/f1/news/why-f1-is-no-stranger-to-madrid/10568405/",
+     "publisher": "Motorsport.com",
+     "locator": "1980 bullet: FISA-FOCA dispute, RACE ran the race, Ferrari/Renault/Alfa Romeo absent, Alan Jones won non-points race"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "jarama-1",
+   "seasons": "1968-1979",
+   "length_km": 3.404,
+   "turns": 15,
+   "change": {
+    "en": "The original layout of the circuit, opened in 1967 and used for the Spanish Grand Prix from 1968 to 1979, measured 3.404 km with 15 turns in F1DB. It was a compact, twisty design with a short main straight, and its tight corners made passing hard.",
+    "uk": "Первісна конфігурація траси, відкритої у 1967 році й використовуваної для Гран прі Іспанії з 1968 по 1979 рік, за F1DB мала 3.404 км і 15 поворотів. Це був компактний звивистий дизайн із короткою основною прямою, а вузькі повороти ускладнювали обгони."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/circuito-del-jarama/",
+     "publisher": "Formula One History",
+     "locator": "layout paragraph: compact and technical, short main straight; classic-layout lap record 1979"
+    },
+    {
+     "url": "https://www.motorsport.com/f1/news/why-f1-is-no-stranger-to-madrid/10568405/",
+     "publisher": "Motorsport.com",
+     "locator": "Layout paragraph: 'twisty' 3.404 km circuit"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "jarama-2",
+   "seasons": "1981-1981",
+   "length_km": 3.314,
+   "turns": 14,
+   "change": {
+    "en": "For 1981, the year of the last Formula 1 race at Jarama, F1DB records a slightly shorter layout of 3.314 km and 14 turns. Formula One History refers to a separate Grand Prix configuration used from 1980 to 1990, but the sources opened do not say which corners were changed or why, so the nature of the change cannot be stated from them.",
+    "uk": "Для 1981 року, коли на Jarama відбулася остання гонка Формули 1, F1DB фіксує дещо коротшу конфігурацію — 3.314 км і 14 поворотів. Formula One History згадує окрему Grand Prix-конфігурацію, що використовувалася з 1980 по 1990 рік, але відкриті джерела не вказують, які повороти змінили й чому, тож характер змін на їхній основі назвати не можна."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/circuito-del-jarama/",
+     "publisher": "Formula One History",
+     "locator": "layout changes bullet: separate Grand Prix configuration 1980-1990; 1980-1990 lap record note"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "jarama-2",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No source opened describes how jarama-2 (1981, 3.314 km, 14 turns) differs from jarama-1; the Wikimedia Commons layout map cited in the brief was not opened.",
+  "Corner names were not found for the 1981 layout; the existing prose mentions the final bend as 'Tunnel' and a later 'María de Villota' dedication, which I did not verify in an opened source.",
+  "RACE ownership dates were not confirmed in an opened source (one search snippet said since 1981); the text says only that RACE operates it.",
+  "John Hugenholtz is left in Latin script in the Ukrainian text because he is not in the approved name table.",
+  "Imagery not assessed."
+ ]
+}

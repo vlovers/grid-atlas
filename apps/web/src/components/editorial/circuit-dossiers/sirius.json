@@ -1,0 +1,69 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "sirius",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "sirius:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "After the Russian Grand Prix",
+    "uk": "Після Гран-прі Росії"
+   },
+   "text": {
+    "en": "The last Formula 1 race at the circuit was the 2021 Russian Grand Prix, won by Lewis Hamilton. The 2022 race, planned for September, was cancelled after Russia's invasion of Ukraine, and on 3 March 2022 Formula 1 announced that it had terminated its contract with the Russian Grand Prix, saying the country would not host a race in future; a planned move to St Petersburg from 2023 also did not go ahead. The venue itself continued as a motorsport site. A shortened configuration of about 2.3 km, formed by joining the exit of the first turn to the 12th turn, opened on 15 December 2023, and the 5.848 km Grand Prix layout recorded in F1DB was no longer used for racing after an endurance-cup round in early November 2023. The site was renamed Sirius Autodrom in 2024.",
+    "uk": "Останньою гонкою Формули 1 на трасі було Гран-прі Росії 2021 року, яке виграв Льюїс Гамільтон. Гонку 2022 року, заплановану на вересень, скасували після вторгнення Росії в Україну, а 3 березня 2022 року Формула 1 оголосила про розірвання контракту з Гран-прі Росії, заявивши, що країна не прийматиме гонку в майбутньому; запланований перенос на Санкт-Петербург з 2023 року також не відбувся. Сам майданчик і далі працював як автоспортивний об'єкт. Скорочена конфігурація довжиною близько 2,3 км, утворена з'єднанням виїзду з першого повороту з 12-м поворотом, відкрилася 15 грудня 2023 року, а 5,848-кілометрова траса Гран-прі, зафіксована в F1DB, після етапу кубка з довготривалих перегонів на початку листопада 2023 року для перегонів більше не використовувалася. У 2024 році об'єкт перейменували на Sirius Autodrom."
+   },
+   "sources": [
+    {
+     "url": "https://www.skysports.com/f1/news/12433/12556381/formula-1-terminates-russian-gp-contract-in-wake-of-ukraine-invasion",
+     "publisher": "Sky Sports",
+     "locator": "Article of 3 March 2022: contract termination, 2022 race cancelled, St Petersburg move off"
+    },
+    {
+     "url": "https://www.zrkuban.ru/news/2023-Novaja-konfiguracija-Sochi-Avtodroma-nachnet-rabotat-s-15-dekabrja",
+     "publisher": "zrkuban.ru",
+     "locator": "Article of 1 November 2023: new 2.3 km configuration from 15 December 2023; old layout used 3-4 November 2023"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "sirius-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The rename to Sirius Autodrom (1 April 2024) is supported only through a Wikipedia citation to the circuit's own site, which was not opened; the text says only 'in 2024'. Editors should confirm the date on siriusautodrom.ru.",
+  "The statement that the 5.848 km layout was no longer used after early November 2023 rests on the zrkuban.ru preview article (which says the old layout would be used on 3-4 November 2023); the Russian-language source was not independently corroborated.",
+  "No source was opened naming individual corners; apart from the existing prose mention of Turn 3 (the long left-hander around the fountain area) no names are established and all 18 turns are listed as without established name.",
+  "Existing prose describes Turn 3 as 'a remarkable 750-metre constant-radius left-hander around the fountain'; not re-verified in this session (the formula1.com 2014 feature cited by Wikipedia was not opened).",
+  "Sensitive context: the cancellation relates to Russia's invasion of Ukraine; wording kept to the bare facts from the sources and needs editorial review for tone.",
+  "Imagery not assessed."
+ ]
+}

@@ -380,6 +380,7 @@
     "Деймоном Гіллом",
     "Гілл",
     "Гілла",
+    "Гіллу",
     "Гіллом"
    ],
    "forms_sha256": "89d0c2dfc7ffc7ac33e14cb669f4b020d821772bea413e4f4fa54c813a8dd7e6",
@@ -569,6 +570,7 @@
    ],
    "surname_key": "george-russell",
    "attested_in_drafts": [
+    "Джордж Расселл",
     "Джорджа Расселла",
     "Расселл",
     "Расселла"
@@ -672,9 +674,11 @@
    ],
    "surname_key": "ambiguous:hill",
    "attested_in_drafts": [
+    "Ґрем Гілл",
     "Ґрема Гілла",
     "Гілл",
     "Гілла",
+    "Гіллу",
     "Гіллом"
    ],
    "forms_sha256": "2e5a88add72333ee6ad3d69f58cf88ea17ffea731e0a3c2ad88a3eb91b60c628",
@@ -707,7 +711,11 @@
     "Брабемі"
    ],
    "surname_key": "ambiguous:brabham",
-   "attested_in_drafts": [],
+   "attested_in_drafts": [
+    "Джек Брабем",
+    "Брабем",
+    "Брабема"
+   ],
    "forms_sha256": "f65446adc7cbd112acd2476fe5d6e3ede99f871ded91a69a0761a9cce9ae57a7",
    "review": {
     "status": "approved",
@@ -1043,7 +1051,10 @@
     "Сіффері"
    ],
    "surname_key": "jo-siffert",
-   "attested_in_drafts": [],
+   "attested_in_drafts": [
+    "Жо Сіффера",
+    "Сіффера"
+   ],
    "forms_sha256": "652d2810b00b50ec276eef3effffaa92cab73d2eb0ac8be77a424135251866b3",
    "review": {
     "status": "changes_required",
@@ -1077,6 +1088,7 @@
    "attested_in_drafts": [
     "Йохен Масс",
     "Йохена Масса",
+    "Йохену Массу",
     "Масс",
     "Масса",
     "Массу"
@@ -1256,7 +1268,10 @@
     "Герберті"
    ],
    "surname_key": "johnny-herbert",
-   "attested_in_drafts": [],
+   "attested_in_drafts": [
+    "Джонні Герберт",
+    "Герберт"
+   ],
    "forms_sha256": "9465b174c33ad94e768bad6077e8f91a8c47540152f495a1f69108709fb3e65d",
    "review": {
     "status": "approved",
@@ -1317,6 +1332,8 @@
    ],
    "surname_key": "juan-manuel-fangio",
    "attested_in_drafts": [
+    "Хуан Мануель Фанхіо",
+    "Хуану Мануелю Фанхіо",
     "Фанхіо"
    ],
    "forms_sha256": "c2ee80290154fee9ace998a03e24156c61aa7d2cf89b35159a66c34c290c3b91",
@@ -1475,8 +1492,10 @@
    "attested_in_drafts": [
     "Ландо Норріс",
     "Ландо Норріса",
+    "Ландо Норрісом",
     "Норріс",
     "Норріса",
+    "Норрісу",
     "Норрісом"
    ],
    "forms_sha256": "c0736a5cc1fde87f8c9d664a5bd7ff6ac1b2c49af58e37b3e4638ae3c19bd687",
@@ -1610,7 +1629,9 @@
    "surname_key": "maurice-trintignant",
    "attested_in_drafts": [
     "Моріс Трентіньян",
-    "Трентіньян"
+    "Моріса Трентіньяна",
+    "Трентіньян",
+    "Трентіньяна"
    ],
    "forms_sha256": "ec72b654cb0949c8ef999f16ef5b04d8c6d67434782dfbda50d9851d1c60393a",
    "review": {
@@ -1644,6 +1665,7 @@
    "surname_key": "ambiguous:verstappen",
    "attested_in_drafts": [
     "Макс Ферстаппен",
+    "Макса Ферстаппена",
     "Ферстаппен",
     "Ферстаппена",
     "Ферстаппеном"
@@ -1681,6 +1703,7 @@
    "attested_in_drafts": [
     "Міхаель Шумахер",
     "Міхаеля Шумахера",
+    "Міхаелю Шумахеру",
     "Міхаелем Шумахером",
     "Шумахер",
     "Шумахера",
@@ -1751,9 +1774,11 @@
    "attested_in_drafts": [
     "Майк Готорн",
     "Майка Готорна",
+    "Майком Готорном",
     "Готорн",
     "Готорна",
-    "Готорну"
+    "Готорну",
+    "Готорном"
    ],
    "forms_sha256": "731ed85eb643d5e3493e6ee2f7b72db14235aabe24d1e64bb7f23ec7108d85ad",
    "review": {
@@ -1913,7 +1938,10 @@
    "surname_key": "niki-lauda",
    "attested_in_drafts": [
     "Нікі Лауда",
+    "Нікі Лауди",
+    "Нікі Лауду",
     "Лауда",
+    "Лауди",
     "Лауду"
    ],
    "forms_sha256": "0590113cd94ae1ff17239b022f8cf817077560ddb444c9c0f0e1eb5282771ef0",
@@ -1949,6 +1977,7 @@
    ],
    "surname_key": "nino-farina",
    "attested_in_drafts": [
+    "Ніно Фаріна",
     "Джузеппе Фаріна",
     "Фаріна",
     "Фаріну"
@@ -2124,6 +2153,7 @@
    ],
    "surname_key": "riccardo-patrese",
    "attested_in_drafts": [
+    "Рікардо Патрезе",
     "Патрезе"
    ],
    "forms_sha256": "df856b9502dcccaec73732beaec49e6380fe83cf0a554eef163d38723e9761b4",
@@ -2158,8 +2188,10 @@
    "attested_in_drafts": [
     "Ронні Петерсон",
     "Ронні Петерсона",
+    "Ронні Петерсоном",
     "Петерсон",
-    "Петерсона"
+    "Петерсона",
+    "Петерсоном"
    ],
    "forms_sha256": "b91e8a3e2d657b6dbbd0d7ee18e944ddb38a4961e7f82700f4e4dad971ff387c",
    "review": {
@@ -2290,9 +2322,11 @@
     "Стірлінг Мосс",
     "Стірлінга Мосса",
     "Стірлінгу Моссу",
+    "Стірлінгом Моссом",
     "Мосс",
     "Мосса",
-    "Моссу"
+    "Моссу",
+    "Моссом"
    ],
    "forms_sha256": "b8b2eaad139712f7f7720f8978aea21c111035d283e3910a5bf525a59f17df7a",
    "review": {

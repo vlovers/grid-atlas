@@ -1,0 +1,93 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "monsanto",
+ "writer": "research-batch-4",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "monsanto:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A Lisbon park already used for sports cars",
+    "uk": "Лісабонський парк, де вже гоняли спортивні авто"
+   },
+   "text": {
+    "en": "Monsanto Park lies in the hills north-west of central Lisbon. Motor Sport's circuit database says the park hosted the Portuguese Sports Car Grand Prix twice in the 1950s, using a temporary road course whose main straight was part of the road to Estoril and whose remainder ran on parkland roads, including a tramline crossing. When the Portuguese Grand Prix moved from Porto, the previous year's venue, to Lisbon in 1959, the National Automobile Club of Portugal chose the Monsanto circuit, which already hosted sports-car racing. Motor Sport's 1959 race report describes a drivers' circuit with a steep descent, a cobbled crossing, a dual-carriageway climb and blind, tree-lined corners. 1959 was the last year the full circuit was used.",
+    "uk": "Парк Монсанто розташований на пагорбах на північний захід від центру Лісабона. За базою трас журналу Motor Sport, у 1950-х роках у парку двічі проводили Гран-прі Португалії для спортивних авто на тимчасовій дорожній трасі: головна пряма була частиною дороги на Ешторил, решта проходила парковими дорогами, зокрема з перетином трамвайної колії. Коли в 1959 році Гран-прі Португалії перенесли з Порту, де воно проходило минулого року, до Лісабона, Автомобільний клуб Португалії обрав трасу Монсанто, яка вже приймала гонки спортивних авто. Звіт Motor Sport про гонку 1959 року описує трасу як гонщицьку: крутий спуск, перетин із бруківкою, підйом дворядною дорогою, сліпі повороти між деревами. 1959 рік став останнім, коли використовували повне коло."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/monsanto/",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Circuit database entry: sports car Grands Prix in the 1950s, layout description, 1959 last full-circuit year"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/",
+     "publisher": "Motor Sport Magazine (October 1959)",
+     "locator": "Report on the VIII Grand Prix of Portugal: circuit description and venue choice paragraphs"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "monsanto:defining_moment:1959",
+   "kind": "defining_moment",
+   "year": 1959,
+   "title": {
+    "en": "1959: Moss wins and Brabham's lap 24 crash",
+    "uk": "1959: перемога Мосса та аварія Брабема на 24-му колі"
+   },
+   "text": {
+    "en": "In the 62-lap Portuguese Grand Prix on 1959's Monsanto circuit, Jack Brabham led away but Stirling Moss passed him early and was never headed, opening about 17 seconds by lap 10 and lapping most of the field. On lap 24 Brabham misjudged a braking point while trying to lap a backmarker; his Cooper hit straw bales and a telegraph pole and was wrecked. He was thrown out but escaped unhurt. Moss's win cut the points gap to Brabham, and Cooper took three of the top four places. Motor Sport presented it as a first win of the season that made up for earlier misfortunes for Moss.",
+    "uk": "У 62-колесній гонці — Гран-прі Португалії 1959 року на трасі Монсанто — Джек Брабем стартував першим, але Стірлінг Мосс рано обігнав його й більше не поступався лідерством, до 10-го кола відірвавшись приблизно на 17 с і наздогнавши на коло більшість учасників. На 24-му колі Брабем неправильно розрахував точку гальмування, намагаючись обігнати відсталого, його Cooper врізався в солом'яні тюки та телеграфний стовп і був розбитий. Гонщика викинуло з боліда, але він не постраждав. Перемога Мосса скоротила розрив в очках до Брабема, а Cooper посів три з чотирьох перших місць. Motor Sport подав це як першу перемогу Мосса в сезоні, що компенсувала попередні невдачі."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/",
+     "publisher": "Motor Sport Magazine (October 1959)",
+     "locator": "Race report: laps 1-24, Brabham crash, championship effect"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "monsanto-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ]
+ },
+ "inconsistencies": [
+  {
+   "existing_text": "Moss took pole, led all 62 laps and eventually lapped even Masten Gregory in second place; Dan Gurney finished third.",
+   "problem": "Motor Sport's 1959 race report says Brabham led away at the start and Moss passed him early; Moss was never headed afterwards, so he did not lead every lap. The report says Moss set the fastest lap in practice at 2:02.89 and lapped most of the field; it does not say Gregory in second was lapped.",
+   "correct": "Brabham led the first part of the opening lap(s); Moss passed him early and then led to the finish. Check whether Gregory was lapped against the classification.",
+   "source": {
+    "url": "https://www.motorsportmagazine.com/archive/article/october-1959/28/viii-grand-prix-of-portugal-moss-and-cooper-walker/",
+    "publisher": "Motor Sport Magazine (October 1959)",
+    "locator": "Race paragraphs on the start and Moss's lead"
+   },
+   "resolution": "editor_decision_required"
+  }
+ ],
+ "limitations": [
+  "Motor Sport's circuit database gives the course as 1.696 miles (about 2.73 km) while the race report and F1DB give 5.44 km; the database figure probably describes a different configuration and was not used.",
+  "No source was found for who built or designed the Monsanto road course, the date of the first sports-car race, or why Lisbon was chosen beyond the club's selection; origins is limited to what the two opened pages say.",
+  "No source names any Monsanto corner; the opened pages describe features (cobbled crossing, steep descent, dual-carriageway climb, tramline crossing) but not named turns.",
+  "Gurney, Gregory and other drivers were not named in the Ukrainian text because they are absent from the approved name table.",
+  "The Portuguese Sports Car Grand Prix is described as having run at Monsanto twice in the 1950s (database wording); the exact years were not stated.",
+  "No imagery assessed."
+ ]
+}

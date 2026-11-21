@@ -1,0 +1,83 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "east-london",
+ "writer": "research-batch-2",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "east-london:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "From a circular road race to the Prince George Circuit",
+    "uk": "Від перегонів на кільцевій дорозі до Prince George Circuit"
+   },
+   "text": {
+    "en": "Motor racing at East London began in the 1930s after a circular road was built in the city's west. Brud Bishop, motoring editor of the Daily Dispatch, proposed a race on it. The event began as the local Border Hundred and grew into the South African Grand Prix; the 1934 race had six laps of a 24.6 km course, an estimated crowd of 65,000 and was won by Whitney Straight in a Maserati. The Grand Prix ran there from 1936 to 1939, with a Potters Pass section added to avoid the West Bank township. After the war the new East London airport cut off the original layout, so a 3.84 km circuit using parts of the old course, laid out along the coast through an old shooting range, was built. Named the Prince George Circuit, it hosted the South African Grand Prix again from 1960.",
+    "uk": "Автоперегони в Іст-Лондоні почалися у 1930-х роках після будівництва кільцевої дороги в західній частині міста. Ідею гонки на ній запропонував Бруд Бішоп, автомобільний оглядач Daily Dispatch. Подія почалася як місцева Border Hundred і переросла в Гран-прі Південної Африки; у 1934 році гонка складалася з шести кіл траси завдовжки 24,6 км, за оцінками її відвідали 65 000 глядачів, а виграв Вітні Стрейт на Maserati. Гран-прі проходило тут з 1936 по 1939 рік, а для обходу селища West Bank додали ділянку Potters Pass. Після війни новий аеропорт Іст-Лондона перерізав початкову трасу, тож збудували коло завдовжки 3,84 км із використанням частин старої траси, прокладене вздовж узбережжя через колишній стрілецький тир. Під назвою Prince George Circuit воно знову приймало Гран-прі Південної Африки з 1960 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.theracetorque.com/2020/08/wild-tracks-you-never-knew-about-east-london/",
+     "publisher": "The Race Torque",
+     "locator": "Origins (1930s), Post-war rebuild and Prince George Circuit and F1 years sections"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "east-london:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "A seaside lap with two very different slow points",
+    "uk": "Приморське коло з двома повільними точками"
+   },
+   "text": {
+    "en": "The East London lap is remembered for the fast, uncambered right-hander of Potters Pass at its start, taken at about 220 km/h, followed by Rifle Bend, a flat-out kink at about 240 km/h. The Beach Straight then ran parallel to the sea. A 2020 description of the current circuit says the lap's slowest points, the Cocobana hairpin and Beacon Bend, are around 60 km/h. The author calls the circuit a time capsule with few upgrades, but these speeds are not given for the 1960s configuration.",
+    "uk": "Коло в Іст-Лондоні запам'яталося швидким правим поворотом Potters Pass без нахилу на початку, який проходять приблизно на 220 км/год, а далі йшов Rifle Bend — прямий злам приблизно на 240 км/год. Потім Beach Straight проходила паралельно до моря. В описі сучасної траси за 2020 рік найповільніші точки кола — шпилька Cocobana і Beacon Bend — мають швидкість близько 60 км/год. Автор називає трасу «капсулою часу» з невеликими оновленнями, але ці швидкості не наведено для конфігурації 1960-х років."
+   },
+   "sources": [
+    {
+     "url": "https://www.theracetorque.com/2020/08/wild-tracks-you-never-knew-about-east-london/",
+     "publisher": "The Race Torque",
+     "locator": "Corners and locations (from the lap description); Later years paragraph"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [
+  {
+   "layout_id": "east-london-1",
+   "turns": [
+    1
+   ],
+   "name": "Potters Pass",
+   "status": "traditional",
+   "period": "name used for this section since the 1930s race (added to the pre-war circuit); described as Turn 1 in 2020",
+   "source": {
+    "url": "https://www.theracetorque.com/2020/08/wild-tracks-you-never-knew-about-east-london/",
+    "publisher": "The Race Torque",
+    "locator": "Origins (Potters Pass section added in the 1930s); Corners and locations: Potters Pass (Turn 1)"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "east-london-1",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Origins rest on a single fetched publisher (The Race Torque, 2020); a second search result (topauto.co.za) returned HTTP 403, and Wikipedia was not used as a source. Dates for the post-war circuit opening are not given in any opened source beyond 'hosted the Grand Prix again in 1960'.",
+  "A 2020 lap description names Rifle Bend, Cocobana (Turn 3), Butts Bend (Turn 4), The Esses (Turn 5), Cox's Corner (Turn 6), The Sweep and Beacon Bend, but it describes the circuit as it is today. Applicability of those names and numbers to the 1962-1965 layout and to F1DB's 9-turn numbering was not verified, so only Potters Pass (a pre-war name) is recorded. corners_without_established_name is left empty because no turn was shown to be unnamed.",
+  "The Race Torque gives East London as hosting the Grand Prix in 1960 and in 1966 (Mike Spence's non-championship win); F1DB lists only 1962, 1963 and 1965 as World Championship rounds, consistent with the brief.",
+  "Race Torque says the circuit was 3.84 km (2.4 miles); F1DB gives 3.92 km. F1DB value not contradicted in text.",
+  "The 1962 Motor Sport report fetched does not mention 61 laps led by Clark (existing prose); it confirms the oil leak from an unfitted locking washer and that Hill was champion. The '61 laps' and the podium order McLaren and Maggs were not verified.",
+  "Ukrainian forms for Brud Bishop and Whitney Straight are not in the approved name table.",
+  "Imagery not assessed."
+ ]
+}

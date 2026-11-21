@@ -5,41 +5,41 @@
   "name": "Pescara Circuit",
   "pilot": true,
   "layouts": 1,
-  "sections_with_editorial_text": 4,
+  "sections_with_editorial_text": 7,
   "sections": {
    "introduction": "draft",
    "essential_facts": "dataset_only",
-   "origins": "absent",
+   "origins": "draft",
    "formula1_history": "draft",
-   "defining_moments": "absent",
+   "defining_moments": "draft:1",
    "layout_evolution": "not_applicable",
    "corners": "grouped_sections_only",
-   "important_races": "absent",
+   "important_races": "draft",
    "records_statistics": "dataset_only",
-   "legacy_present_day": "mentioned_in_draft",
+   "legacy_present_day": "draft",
    "related_people": "dataset_only",
    "sources_methodology": "cited"
   },
-  "claims": 16,
+  "claims": 32,
   "claims_by_type": {
-   "statistic": 4,
-   "dated_event": 4,
-   "measurement": 2,
+   "statistic": 6,
+   "dated_event": 11,
+   "measurement": 4,
    "quotation": 0,
    "interpretation": 0,
-   "narrative": 6
+   "narrative": 11
   },
   "claims_unaligned_uk": 0,
   "name_agreement": {
-   "agree": 7,
+   "agree": 10,
    "differ": 0,
-   "uk_unrecognised": 0,
-   "no_names": 9
+   "uk_unrecognised": 1,
+   "no_names": 21
   },
   "dataset_checks": {
-   "supported": 4,
+   "supported": 5,
    "conflict": 0,
-   "unmatched": 0
+   "unmatched": 1
   },
   "factcheck_status": {
    "dataset_conflict": 0,
@@ -47,7 +47,7 @@
    "passages_cover_numbers": 7,
    "passages_partial": 3,
    "no_passage_in_live_sources": 3,
-   "cited_sources_unavailable": 0,
+   "cited_sources_unavailable": 16,
    "no_cited_sources": 0
   },
   "claims_verified": 3,
@@ -63,8 +63,9 @@
    }
   },
   "sources": {
-   "cited": 2,
-   "live": 2
+   "cited": 6,
+   "live": 2,
+   "not_checked": 4
   },
   "source_structural_issues": 0,
   "corners": {
@@ -74,16 +75,18 @@
    "names_found_in_cited_source": 0,
    "names_not_in_cited_text": 0,
    "names_sources_unavailable": 0,
-   "turns_queued": 24
+   "turns_queued": 24,
+   "dossier_named_turns": 0,
+   "dossier_turns_without_established_name": 0
   },
   "quality": {
-   "blocks": 4,
+   "blocks": 8,
    "shallow": 0,
    "repetitive": 0,
    "generic": 0,
    "en_uk_issues": 0
   },
-  "evidence_lead_rate": 0.625,
+  "evidence_lead_rate": 0.313,
   "content_complete": false
  },
  "tasks": [
@@ -633,6 +636,226 @@
    "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
+  },
+  {
+   "claim_id": "pescara:origins:1#s1",
+   "circuit_id": "pescara",
+   "block_id": "pescara:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The Pescara road circuit was built entirely on public roads near the Adriatic city.",
+   "uk": "Дорожню трасу Пескари повністю прокладено громадськими дорогами поблизу адріатичного міста.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:origins:1#s2",
+   "circuit_id": "pescara",
+   "block_id": "pescara:origins:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Its first race was held in July 1924 as the Coppa Acerbo, organised by Giacomo Acerbo and named after his brother Tito; Enzo Ferrari won it in an Alfa Romeo.",
+   "uk": "Перші перегони відбулися в липні 1924 року як Coppa Acerbo, їх організував Джакомо Ачербо, а назвали на честь його брата Тіто; перемогу здобув Енцо Феррарі на Alfa Romeo.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:origins:1#s3",
+   "circuit_id": "pescara",
+   "block_id": "pescara:origins:1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The triangular course used two straights of about 5.5 km each, linked by a winding hill section through villages such as Spoltore and Cappelle sul Tavo, with Spoltore the highest point at 185 metres.",
+   "uk": "Трикутний маршрут мав дві прямі приблизно по 5,5 км, з'єднані звивистою гірською ділянкою через села, такі як Сполторе та Каппелле-суль-Таво, причому Сполторе — найвища точка на висоті 185 метрів.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:pescara-1",
+       "field": "length_km"
+      }
+     ],
+     "detail": "5.5 km matches no F1DB layout (25.579 km); may be a non-F1 or pre-championship course."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:origins:1#s4",
+   "circuit_id": "pescara",
+   "block_id": "pescara:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "In 1934 an artificial chicane was added to the start/finish straight to slow cars before the pits.",
+   "uk": "1934 року на стартову пряму додали штучну шикану, щоб уповільнити машини перед боксами.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:origins:1#s5",
+   "circuit_id": "pescara",
+   "block_id": "pescara:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "After the Second World War the event dropped the Acerbo name and became the Pescara Grand Prix.",
+   "uk": "Після Другої світової війни змагання відмовилися від назви Acerbo і стали Гран-прі Пескари.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:origins:1#s6",
+   "circuit_id": "pescara",
+   "block_id": "pescara:origins:1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The lap was roughly 25.6 km, and the circuit ran until 1961.",
+   "uk": "Коло становило приблизно 25,6 км, а траса працювала до 1961 року.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:pescara-1",
+       "field": "length_km"
+      }
+     ],
+     "detail": "25.6 km matches pescara-1."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:defining_moment:1957#s1",
+   "circuit_id": "pescara",
+   "block_id": "pescara:defining_moment:1957",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 1957 Pescara Grand Prix was added to the calendar at short notice after the Suez crisis led to the cancellation of the Belgian Grand Prix, and it ran in a heatwave with an early start.",
+   "uk": "Гран-прі Пескари 1957 року додали до календаря в стислі терміни після того, як через Суецьку кризу скасували Гран-прі Бельгії, і воно відбулося в спеку з раннім стартом.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:defining_moment:1957#s2",
+   "circuit_id": "pescara",
+   "block_id": "pescara:defining_moment:1957",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Luigi Musso led early in the only Ferrari entered until his engine seized on lap 10.",
+   "uk": "Луїджі Муссо лідирував на початку на єдиному заявленому Ferrari, доки його двигун не заклинило на 10-му колі.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:defining_moment:1957#s3",
+   "circuit_id": "pescara",
+   "block_id": "pescara:defining_moment:1957",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Juan Manuel Fangio, in a Maserati 250F, lost time with a bent rear wheel and a pit stop.",
+   "uk": "Хуан Мануель Фанхіо на Maserati 250F втратив час через погнуте заднє колесо й піт-стоп.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:defining_moment:1957#s4",
+   "circuit_id": "pescara",
+   "block_id": "pescara:defining_moment:1957",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Stirling Moss, in a Vanwall, made a precautionary stop for fluctuating oil pressure and still won by more than three minutes, with Fangio second.",
+   "uk": "Стірлінг Мосс на Vanwall зробив запобіжну зупинку через коливання тиску оливи і все одно виграв понад трьома хвилинами, а Фанхіо став другим.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:defining_moment:1957#s5",
+   "circuit_id": "pescara",
+   "block_id": "pescara:defining_moment:1957",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Motor Sport calls it the last genuine road race of the world championship.",
+   "uk": "Motor Sport називає цю гонку останньою справжньою дорожньою гонкою чемпіонату світу.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:legacy_present_day:1#s1",
+   "circuit_id": "pescara",
+   "block_id": "pescara:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Pescara's final major event was a 1961 World Sportscar Championship race, after which the circuit was permanently retired because organisers could no longer guarantee the safety of drivers and spectators.",
+   "uk": "Останнім великим заходом у Пескарі стали перегони чемпіонату світу зі спортивних автомобілів 1961 року, після чого трасу остаточно закрили, бо організатори більше не могли гарантувати безпеку пілотів і глядачів.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:legacy_present_day:1#s2",
+   "circuit_id": "pescara",
+   "block_id": "pescara:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 1957 Grand Prix therefore remained its only round of the Formula 1 World Championship.",
+   "uk": "Тому Гран-прі 1957 року лишилося її єдиним етапом чемпіонату світу Формули 1.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:legacy_present_day:1#s3",
+   "circuit_id": "pescara",
+   "block_id": "pescara:legacy_present_day:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The public roads on which the course was laid still exist, with several roundabouts added over the years.",
+   "uk": "Громадські дороги, якими проходила траса, існують досі, але за ці роки на них додали кілька кільцевих розв'язок.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:historical_fact:1#s1",
+   "circuit_id": "pescara",
+   "block_id": "pescara:historical_fact:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "In the 1957 race Jack Brabham's Cooper, one of only two rear-engined cars, ran out of fuel near the finish and was given a few litres at a closed filling station; he still finished seventh.",
+   "uk": "У гонці 1957 року Cooper Джека Бребема, один із лише двох автомобілів із заднім розташуванням двигуна, залишився без пального поблизу фінішу, і йому дали кілька літрів на зачиненій заправці; він усе одно фінішував сьомим.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "pescara:historical_fact:1#s2",
+   "circuit_id": "pescara",
+   "block_id": "pescara:historical_fact:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The long course also meant local life spilled onto the roads: Motor Sport records children playing near the route and a goatherd crossing the track during practice.",
+   "uk": "Довга траса означала й те, що місцеве життя виходило на дороги: Motor Sport згадує дітей, що гралися біля маршруту, і пастуха кіз, який перетинав трасу під час практики.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
   }
  ],
  "corner_names": [],
@@ -673,6 +896,55 @@
  ],
  "quality": [],
  "sources": [
+  {
+   "source_id": "src-1bfbf94cc3be",
+   "url": "https://www.circuitsofthepast.com/pescara-circuit/amp/",
+   "normalized": "https://circuitsofthepast.com/pescara-circuit/amp",
+   "host": "circuitsofthepast.com",
+   "class": "other",
+   "cited_by": [
+    "pescara:origins:1",
+    "pescara:legacy_present_day:1"
+   ],
+   "circuits": [
+    "pescara"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
+   "source_id": "src-68540f96b892",
+   "url": "https://www.formulaonehistory.com/circuits/pescara/",
+   "normalized": "https://formulaonehistory.com/circuits/pescara",
+   "host": "formulaonehistory.com",
+   "class": "other",
+   "cited_by": [
+    "pescara:origins:1",
+    "pescara:legacy_present_day:1"
+   ],
+   "circuits": [
+    "pescara"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
+   "source_id": "src-6a1324dcb83d",
+   "url": "https://www.motorsportmagazine.com/archive/article/september-2017/78/last-road-race/",
+   "normalized": "https://motorsportmagazine.com/archive/article/september-2017/78/last-road-race",
+   "host": "motorsportmagazine.com",
+   "class": "publication",
+   "cited_by": [
+    "pescara:origins:1",
+    "pescara:defining_moment:1957",
+    "pescara:historical_fact:1"
+   ],
+   "circuits": [
+    "pescara"
+   ],
+   "issues": [],
+   "status": null
+  },
   {
    "source_id": "src-98f89c9b20b2",
    "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1957/races/07-pescara/race-results.yml",
@@ -725,6 +997,21 @@
     "text_sha256": "d3aa89422b7599d97e70f217e2811c857218845269d055a27b7992ab7e5ca380",
     "text_chars": 21591
    }
+  },
+  {
+   "source_id": "src-fd378326b8c6",
+   "url": "https://goodwood.com/grr/race/historic/fangios-1957-part-7-pescara-grand-prix---moss-bites-back",
+   "normalized": "https://goodwood.com/grr/race/historic/fangios-1957-part-7-pescara-grand-prix---moss-bites-back",
+   "host": "goodwood.com",
+   "class": "other",
+   "cited_by": [
+    "pescara:defining_moment:1957"
+   ],
+   "circuits": [
+    "pescara"
+   ],
+   "issues": [],
+   "status": null
   }
  ]
 }

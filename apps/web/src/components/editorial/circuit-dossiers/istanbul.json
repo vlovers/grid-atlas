@@ -1,0 +1,63 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "istanbul",
+ "writer": "research-batch-3",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "istanbul:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A new circuit for a new Grand Prix host",
+    "uk": "Нова траса для нового господаря Гран прі"
+   },
+   "text": {
+    "en": "Istanbul Park was a purpose-built circuit created for Formula 1's expansion into new countries. Honda's circuit history links it to the early-2000s strategy of Bernie Ecclestone, then F1's commercial head, to take the championship to new regions, including Türkiye. Construction began in 2003 in the Tuzla (Akfırat) area on the Asian side of Istanbul, and the circuit was designed by Hermann Tilke. It was completed in 2005 and its first Formula 1 race, the Turkish Grand Prix, took place in August 2005, won by Kimi Räikkönen for McLaren. Because the track was new, there was no earlier Grand Prix tradition on the site. Drivers noted its constant elevation changes, anticlockwise direction and the long multi-apex Turn 8, and it was soon seen as a template for modern F1 venues.",
+    "uk": "Istanbul Park — траса, збудована спеціально для виходу Формули 1 в нові країни. Історія траси від Honda пов'язує її з стратегією Берні Екклстоуна, тодішнього комерційного керівника F1, на початку 2000-х: вивести чемпіонат у нові регіони, зокрема до Туреччини. Будівництво почалося у 2003 році в районі Тузла (Акфират) на азійському боці Стамбула, а проєктував трасу Герман Тільке. Її завершили у 2005 році, а перша гонка Формули 1, Гран прі Туреччини, відбулася у серпні 2005 року; перемогу здобув Кімі Райкконен на McLaren. Оскільки траса нова, на цьому місці раніше не було традиції Гран прі. Пілоти відзначали постійні перепади висот, рух проти годинникової стрілки та довгий багатоапексний поворот 8, а трасу невдовзі стали сприймати як шаблон для сучасних майданчиків F1."
+   },
+   "sources": [
+    {
+     "url": "https://global.honda/en/F1/circuit/istanbul-park/",
+     "publisher": "Honda",
+     "locator": "circuit history: Ecclestone expansion strategy; construction 2003; completed 2005; Tuzla/Akfırat; Tilke; first race August 2005"
+    },
+    {
+     "url": "https://www.autosport.com/f1/news/how-turkey-was-established-as-tilkes-f1-gold-standard-5114553/5114553/",
+     "publisher": "Autosport",
+     "locator": "feature 'How Turkey was established as Tilke's F1 gold standard': Tilke design, Turn 8, driver reactions to 2005 debut"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "istanbul-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12,
+   13,
+   14
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The exact opening date (reported as 19-21 August 2005 in search snippets) was not confirmed in an opened source; only 'August 2005' is stated.",
+  "Autosport's article does not name the 2005 winner; the winner (Räikkönen) rests on Honda's page and the F1DB brief.",
+  "Ownership and financing of the circuit, and TOSFED's role, were not verified in an opened source.",
+  "Turn 8 is widely called just 'Turn 8'; no formal name found, so it is not offered as a corner name. Turn 8 and Turn 9 numbers in the existing prose were not checked against the 2021 numbering.",
+  "No turn names were found for turns 1-10 and 12-14."
+ ]
+}

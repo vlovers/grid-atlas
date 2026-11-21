@@ -1,0 +1,94 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "buddh",
+ "writer": "research-batch-1",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "buddh:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "India's purpose-built Grand Prix circuit",
+    "uk": "Спеціально збудована траса Гран-прі Індії"
+   },
+   "text": {
+    "en": "Buddh International Circuit was built by the Jaypee Group in Jaypee Sports City, Greater Noida, Uttar Pradesh, to bring Formula 1 to India. The track was designed by Hermann Tilke. A tentative agreement to host a Grand Prix was reached in 2007, but land acquisition and financial pressure delayed construction, and the design was revealed in late 2009 for a debut that had originally been planned for 2010. The circuit opened in 2011 (one source gives 18 October) and staged its first Indian Grand Prix on 30 October 2011. Its estimated cost was put at US$240 million. The F1DB records the 5.125 km layout with 16 turns, and the main straight is about 1.06 km long.",
+    "uk": "Buddh International Circuit збудувала група Jaypee у Jaypee Sports City в Греймтер-Нойді, штат Уттар-Прадеш, щоб привезти Формулу 1 до Індії. Трасу спроєктував Герман Тільке. Попередню домовленість про проведення Гран-прі було досягнуто в 2007 році, але придбання землі та фінансовий тиск затримали будівництво, а проєкт оприлюднили наприкінці 2009 року для дебюту, який спочатку планували на 2010 рік. Автодром відкрили в 2011 році (одне з джерел називає 18 жовтня), а перше Гран-прі Індії відбулося 30 жовтня 2011 року. Орієнтовну вартість оцінювали в 240 мільйонів доларів США. F1DB фіксує конфігурацію довжиною 5,125 км із 16 поворотами, а головна пряма має довжину близько 1,06 км."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/buddh-international-circuit/",
+     "publisher": "formulaonehistory.com",
+     "locator": "Designer, Built by, Opening and History paragraphs"
+    },
+    {
+     "url": "https://thebridge.in/motorsport/current-status-buddh-international-circuit-25253",
+     "publisher": "The Bridge (20 September 2021)",
+     "locator": "Construction and opening paragraph: built to develop and popularise F1 in India; inaugurated about a year after planned date"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "buddh:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "After Formula 1",
+    "uk": "Після Формули 1"
+   },
+   "text": {
+    "en": "Sebastian Vettel won all three Indian Grands Prix, in 2011, 2012 and 2013, and the 2013 race was the last Formula 1 event at the circuit. The 2014 race was suspended and then cancelled amid a long-running dispute over taxes and whether the event counted as sport or entertainment. The track has stayed in use for domestic racing, track days, manufacturer and press events, and hosted the Indian Motorcycle Grand Prix in 2023. In early 2020 the local development authority sealed the venue over unpaid dues, although the track stayed operational while the owners challenged the action in court. Redevelopment and a Formula 1 return have been discussed but no plan was confirmed in the sources opened.",
+    "uk": "Себастьян Феттель виграв усі три Гран-прі Індії, у 2011, 2012 і 2013 роках, а гонка 2013 року стала останньою подією Формули 1 на цій трасі. Гран-прі 2014 року призупинили, а згодом скасували через тривалий спір щодо податків і того, чи вважати подію спортом, чи розвагою. Траса лишається в користуванні для національних перегонів, трекдеїв, подій виробників і преси, а в 2023 році тут проходило Індійське мотоциклетне Гран-прі. На початку 2020 року місцева управа розвитку опечатала об'єкт через несплачені внески, проте траса продовжувала працювати, а власники оскаржували це рішення в суді. Реконструкцію та повернення Формули 1 обговорювали, але підтвердженого плану у відкритих джерелах немає."
+   },
+   "sources": [
+    {
+     "url": "https://thebridge.in/motorsport/current-status-buddh-international-circuit-25253",
+     "publisher": "The Bridge (20 September 2021)",
+     "locator": "Events held and Sealing paragraphs: three Vettel wins, tax dispute, YEIDA sealing in early 2020, owners' court challenge"
+    },
+    {
+     "url": "https://www.formulaonehistory.com/circuits/buddh-international-circuit/",
+     "publisher": "formulaonehistory.com",
+     "locator": "History: 2014 suspension and cancellation over tax dispute; Current status: domestic racing, 2023 Indian Motorcycle Grand Prix"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "buddh-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Opening date is inconsistent: formulaonehistory.com says 18 October 2011; The Bridge says inaugurated September 2011. The text avoids a firm date.",
+  "Cost: US$240 million is a single-source estimate (formulaonehistory.com); other reports (search snippets only) give different figures. Hedged as 'estimated'.",
+  "Sources dated before 2026: the circuit's status in 2026 (including reported Adani Group interest, seen only in a search snippet) was not verified with an opened source. Editors should confirm the present status before publishing.",
+  "Length: The Bridge quotes 5.14 km; F1DB 5.125 km is used.",
+  "Corner names: none found in opened sources; no names accepted.",
+  "Existing prose is consistent with the sources opened; the BBC and Deccan Herald pages could not be opened (blocked), so the 2013 race narrative was not re-verified.",
+  "Imagery not assessed."
+ ]
+}

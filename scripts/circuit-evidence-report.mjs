@@ -77,6 +77,14 @@ const ORIGINS = /\b(?:opened|built|constructed|designed|founded|inaugurat\w*|fir
 const EVOLUTION = /\b(?:chicane|re-?profil\w*|reconfigur\w*|shortened|lengthened|new layout|layout (?:was )?changed|redesign\w*|resurfac\w*|by-?pass\w*|realigned)\b/i;
 const PRESENT = /\b(?:today|remains|no longer|last hosted|returned|still|currently|demolished|closed|now (?:a|used|hosts))\b/i;
 const OUTCOMES = ['live', 'live_thin_or_scripted', 'live_pdf_no_text', 'robots_disallowed', 'gone', 'http_error', 'unreachable', 'invalid_url', 'not_checked'];
+/** Corner names proposed by the research-lane dossier (unverified), and turns researched without an established name. */
+const dossierCorners = id => {
+  const path = join(root, `apps/web/src/components/editorial/circuit-dossiers/${id}.json`);
+  if (!existsSync(path)) return {};
+  const d = JSON.parse(readFileSync(path, 'utf8'));
+  return { dossier_named_turns: new Set(d.corner_names.flatMap(n => n.turns.map(t => `${n.layout_id}#${t}`))).size,
+    dossier_turns_without_established_name: d.corners_without_established_name?.turns?.length ?? 0 };
+};
 const completeness = archive.circuits.map(circuit => {
   const id = circuit.circuit_id;
   const blocks = corpus.blocks.filter(b => b.circuit_id === id);
@@ -92,22 +100,24 @@ const completeness = archive.circuits.map(circuit => {
   const ownNames = names.filter(n => n.circuit_id === id);
   const q = quality.filter(r => r.circuit_id === id);
   const has = kind => blocks.some(b => b.kind === kind);
-  const moments = blocks.filter(b => b.kind === 'defining_moment' || b.kind === 'legacy_moment');
+  const moments = blocks.filter(b => b.kind === 'defining_moment' || b.kind === 'legacy_moment' || b.kind === 'dossier_defining_moment');
+  const count = (list, pred) => list.filter(pred).length;
   const sections = {
     introduction: has('short_summary') || has('legacy_history') || has('narrative_biography') ? 'draft' : 'absent',
     essential_facts: 'dataset_only',
-    origins: ORIGINS.test(proseText) ? 'mentioned_in_draft' : 'absent',
-    formula1_history: has('long_history_draft') ? 'draft' : 'absent',
+    origins: has('dossier_origins') ? 'draft' : ORIGINS.test(proseText) ? 'mentioned_in_draft' : 'absent',
+    formula1_history: has('long_history_draft') || has('dossier_formula1_history') ? 'draft' : 'absent',
     defining_moments: moments.length ? `draft:${moments.length}` : 'absent',
-    layout_evolution: circuit.layouts.length === 1 ? 'not_applicable' : EVOLUTION.test(proseText) ? 'mentioned_in_draft' : 'absent',
+    layout_evolution: circuit.layouts.length === 1 ? 'not_applicable'
+      : count(blocks, b => b.kind === 'dossier_layout_change') === circuit.layouts.length ? 'draft'
+      : EVOLUTION.test(proseText) ? 'mentioned_in_draft' : 'absent',
     corners: guide ? `one_layout_drafted:${guide.sections.flatMap(s => s.numbers).length}/${turns}` : blocks.some(b => b.kind === 'corner_group') ? 'grouped_sections_only' : 'absent',
     important_races: moments.filter(m => /^\d{4}$/.test(m.year_label ?? '') && index.racesIn(id, Number(m.year_label)).length === 1).length ? 'draft' : 'absent',
     records_statistics: 'dataset_only',
-    legacy_present_day: PRESENT.test(proseText) ? 'mentioned_in_draft' : 'absent',
+    legacy_present_day: has('dossier_legacy_present_day') ? 'draft' : PRESENT.test(proseText) ? 'mentioned_in_draft' : 'absent',
     related_people: 'dataset_only',
     sources_methodology: sources.length ? 'cited' : 'absent',
   };
-  const count = (list, pred) => list.filter(pred).length;
   return {
     circuit_id: id, name: circuit.name, pilot: PILOT.includes(id), layouts: circuit.layouts.length,
     sections_with_editorial_text: Object.values(sections).filter(v => /^(draft|mentioned|one_layout|grouped)/.test(v)).length,
@@ -129,6 +139,7 @@ const completeness = archive.circuits.map(circuit => {
       names_not_in_cited_text: count(ownNames, n => n.status === 'name_not_in_cited_text'),
       names_sources_unavailable: count(ownNames, n => n.status === 'cited_sources_unavailable'),
       turns_queued: queue.filter(t => t.circuit_id === id).reduce((s, t) => s + t.turns_to_research.length, 0),
+      ...dossierCorners(id),
     },
     quality: {
       blocks: q.length, shallow: count(q, r => r.flags.some(f => f.startsWith('shallow'))), repetitive: count(q, r => r.flags.some(f => f.startsWith('repetitive'))),

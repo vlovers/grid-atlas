@@ -1,0 +1,124 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "estoril",
+ "writer": "research-batch-2",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "estoril:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "A state-owned circuit awaiting a new model",
+    "uk": "Державна траса в пошуку нової моделі"
+   },
+   "text": {
+    "en": "Formula 1 left Estoril after the 1996 Portuguese Grand Prix and Portugal's later F1 return in 2020 was at a different circuit, Portimao. The Autodromo do Estoril remains open for motorsport: the circuit's own history page says it has been entirely state-owned since 2002 and is operated by CE - Circuito Estoril. MotoGP stayed its top event until the last race in 2012. The page lists series such as Superleague Formula, Auto GP and Spanish GT among its events, notes a September 2023 court decision regulating noise, and says Stand A has been closed since April 2025. It also states that motorcycle track days were excluded in August 2025 and that in March 2026 the operator announced a market consultation to grant a surface right over the site.",
+    "uk": "Формула 1 залишила Ештуріл після «Гран-прі Португалії» 1996 року, а повернення Формули 1 до Португалії у 2020 році відбулося на іншій трасі — в Портімау. Autodromo do Estoril залишається відкритим для автоспорту: за сторінкою історії самої траси, з 2002 року вона цілком державна й нею керує CE — Circuito Estoril. MotoGP залишався головною подією до останньої гонки у 2012 році. На сторінці серед подій названо Superleague Formula, Auto GP та іспанський GT, згадано судове рішення про рівень шуму у вересні 2023 року й повідомлено, що трибуну A закрито з квітня 2025 року. Також сказано, що у серпні 2025 року з дозволених заходів виключили мотоциклетні трек-дні, а у березні 2026 року оператор оголосив ринкову консультацію щодо надання права поверхні на територію."
+   },
+   "sources": [
+    {
+     "url": "https://www.circuito-estoril.pt/en/history/",
+     "publisher": "Circuito Estoril (official site)",
+     "locator": "Formula One (1984-1996); Motorcycle racing; Present-day events; Owner"
+    },
+    {
+     "url": "https://perencz.hu/f1/circuit/estoril/info/",
+     "publisher": "perencz.hu",
+     "locator": "History: 13 races held, most recently 1996, dropped after safety problems"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "estoril:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "Racing in Estoril before the circuit existed",
+    "uk": "Перегони в Ештурілі ще до появи траси"
+   },
+   "text": {
+    "en": "Long before the Autodromo opened on 17 June 1972, local races ran in 1937 on a 2.8 km temporary street circuit through the town of Estoril. The permanent circuit was built on a rocky plateau near Alcabideche with a 4.349 km lap, significant elevation changes, two tight hairpins and a 0.986 km main straight. Its 1982 inclusion on the FIA Formula 2 calendar helped prepare its international debut in Formula 1 in 1984.",
+    "uk": "Задовго до відкриття Autodromo 17 червня 1972 року, у 1937 році в місті Ештуріл проходили перегони на тимчасовій міській трасі завдовжки 2,8 км. Постійну трасу збудували на скелястому плато поблизу Алкабідеше: коло завдовжки 4,349 км, значні перепади висоти, дві тісні шпильки та головна пряма 0,986 км. Включення до календаря Формули 2 FIA у 1982 році допомогло підготувати її міжнародний дебют у Формулі 1 у 1984 році."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/autodromo-do-estoril/",
+     "publisher": "formulaonehistory.com",
+     "locator": "Layout changes by year: 1937 and 1972 entries"
+    },
+    {
+     "url": "https://www.circuito-estoril.pt/en/history/",
+     "publisher": "Circuito Estoril (official site)",
+     "locator": "Opening (17 June 1972); Formula One (1984-1996) paragraph: F2 in 1982"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "estoril-1",
+   "seasons": "1984-1993",
+   "length_km": 4.349,
+   "turns": 11,
+   "change": {
+    "en": "The original 1972 circuit, 4.349 km, built on a rocky plateau near Alcabideche, with elevation changes, two tight hairpins and a short main straight. In 1993 the pit zone was renovated, with two paddock tunnels, a control tower, hospital centre and showers, without a change to the lap.",
+    "uk": "Початкова траса 1972 року завдовжки 4,349 км на скелястому плато поблизу Алкабідеше, з перепадами висоти, двома тісними шпильками й короткою головною прямою. У 1993 році реконструювали піт-зону, додали два тунелі в паддок, диспетчерську вежу, медичний центр і душові, не змінюючи кола."
+   },
+   "sources": [
+    {
+     "url": "https://www.formulaonehistory.com/circuits/autodromo-do-estoril/",
+     "publisher": "formulaonehistory.com",
+     "locator": "1972 entry"
+    },
+    {
+     "url": "https://www.circuito-estoril.pt/en/history/",
+     "publisher": "Circuito Estoril (official site)",
+     "locator": "Layout changes: 1993"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "estoril-2",
+   "seasons": "1994-1996",
+   "length_km": 4.36,
+   "turns": 13,
+   "change": {
+    "en": "The first layout change came in 1994, when a Variante corner replaced the Tanque corner. The official site says this reduced lap speeds for safety reasons, and another source links the chicane to safety concerns after Ayrton Senna's death earlier that season. F1DB records the revised lap as 4.36 km with 13 turns.",
+    "uk": "Перша зміна конфігурації відбулася у 1994 році: поворот Variante замінив поворот Tanque. За даними офіційного сайту, це знизило швидкість кола з міркувань безпеки, а інше джерело пов'язує шикану із занепокоєнням щодо безпеки після смерті Айртона Сенни раніше того сезону. У F1DB оновлене коло має 4,36 км і 13 поворотів."
+   },
+   "sources": [
+    {
+     "url": "https://www.circuito-estoril.pt/en/history/",
+     "publisher": "Circuito Estoril (official site)",
+     "locator": "Layout changes: 1994"
+    },
+    {
+     "url": "https://www.formulaonehistory.com/circuits/autodromo-do-estoril/",
+     "publisher": "formulaonehistory.com",
+     "locator": "1994 entry"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "estoril-2",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No fetched source ties additional corner names to turns 2, 5, 8, 9, 10, 11, 12 of estoril-2. The official site mentions only Corner 1, Tanque and the 1994 Variante; the 1995 Autosport lap guide PDF exceeded the fetch size limit. corners_without_established_name is left empty because no turn was shown to be unnamed.",
+  "Which turn number the Variante occupies in F1DB's 13-turn layout is not stated, so it is not added to corner_names.",
+  "Length figures differ: formulaonehistory lists 4.349 km original, 4.182 km after 2000 (the Parabolica redesign to meet FIM homologation), and 4.360 km elsewhere; official history does not mention the 2000 redesign. Only the F1DB values are used for F1 layouts.",
+  "Official site says the later-1990s change radically altered corner 1 and the circuit reopened in 1999; whether this touched the 1994-1996 F1 layout is unclear, so it is not used.",
+  "Reason for leaving the F1 calendar is stated only by perencz.hu (recurring safety problems); no second source, so it is not asserted in the prose.",
+  "The 'present-day' statements are from the circuit's own page, whose publication date is unknown; the March 2026 consultation is as reported there.",
+  "Ukrainian transliterations of Estoril place names are conventional and not in the name table. Imagery not assessed."
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "yeongam",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "yeongam:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A purpose-built circuit in South Jeolla",
+    "uk": "Спеціально збудована траса в Південній Чолла"
+   },
+   "text": {
+    "en": "The Korea International Circuit was built to host a new Korean Grand Prix. Hermann Tilke designed it, and it stands in Yeongam County in South Jeolla Province, a rural coastal area in the south-west of South Korea. Motor Sport Magazine says the plan was for the circuit to host the race for seven years with a five-year option, with hotels, restaurants and a marina in the surrounding area; that wider development was never realised. The circuit was finished just in time for the 2010 Korean Grand Prix, the 17th round of the season, which was its first Formula 1 race and was won by Fernando Alonso in heavy rain. Formula One History describes the project as a joint venture between the Korean government and private investors.",
+    "uk": "Корейську міжнародну трасу збудували для нового Гран-прі Кореї. Її спроєктував Герман Тільке, а розташована вона в повіті Йонам у провінції Південна Чолла — сільській прибережній місцевості на південному заході Південної Кореї. За даними Motor Sport Magazine, планувалося, що траса прийматиме гонку сім років із можливістю продовження ще на п'ять, а довкола з'являться готелі, ресторани та марина; ці ширші плани так і не здійснилися. Трасу закінчили якраз до Гран-прі Кореї 2010 року — 17-го етапу сезону, який став першою гонкою Формули 1 на ній і який Фернандо Алонсо виграв під сильним дощем. Formula One History описує проєкт як спільне підприємство корейського уряду та приватних інвесторів."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/database/circuits/yeongam/",
+     "publisher": "Motor Sport Magazine database",
+     "locator": "Designer, Why it was built, Plans and Completion entries"
+    },
+    {
+     "url": "https://www.formulaonehistory.com/circuits/korea/",
+     "publisher": "Formula One History",
+     "locator": "Designer, Location, Construction and First race entries"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "yeongam-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No source opened names individual corners at Yeongam; all 18 turns remain without an established name.",
+  "Sources disagree on distance from Seoul (about 250 miles versus about 320 km) and on construction start (Formula One History says September 2009, which looks too late and was not used); the text avoids both.",
+  "The seven-year contract with a five-year option is reported by Motor Sport Magazine only; KAVO (the promoter) appeared only in a search snippet and was not opened.",
+  "Existing prose said the pit exit was realigned for 2013; Motor Sport Magazine says the pitlane initially exited directly onto the racing line and was later changed, which is consistent but not date-specific; the 2013 FIA preview was not opened.",
+  "Existing 2010 race narrative matches the Formula One History summary (rain, both Red Bulls retiring while leading, Alonso winning); finer details (Webber collecting Rosberg, Hamilton and Massa behind Alonso) were not re-verified.",
+  "Current status of the circuit after 2013 was not researched (Motor Sport Magazine says F1 left the calendar in 2014 and gives no present use).",
+  "Imagery not assessed."
+ ]
+}

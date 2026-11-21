@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "sepang",
+ "writer": "research-batch-5",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "sepang:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "Tilke's first scratch-built F1 track",
+    "uk": "Перша траса Тільке для Ф1, створена з нуля"
+   },
+   "text": {
+    "en": "Sepang International Circuit was designed by Hermann Tilke and, according to the Formula 1 circuit guide, was the first Formula 1 track he designed from scratch. Construction began in 1997 and the circuit opened in 1999; Honda's circuit page says it officially opened in March 1999 after construction began in November 1997. The first Malaysian Grand Prix was held in October 1999 and was won by Eddie Irvine. The 2016 resurfacing reshaped nine corners, including raising the inside of the Turn 15 hairpin by about one metre to alter the racing line and aid drainage.",
+    "uk": "Міжнародний автодром Сепанг спроєктував Герман Тільке, і, за путівником Формули 1 по трасі, це була перша траса Ф1, яку він створив з нуля. Будівництво розпочалося 1997 року, а траса відкрилася 1999 року; на сторінці Honda зазначено, що офіційне відкриття відбулося в березні 1999 року після початку будівництва в листопаді 1997 року. Перше Гран-прі Малайзії відбулося в жовтні 1999 року, і його виграв Едді Ірвайн. Перепрофілювання 2016 року змінило дев'ять поворотів, зокрема підняло внутрішню частину шпильки повороту 15 приблизно на один метр, щоб змінити траєкторію та покращити дренаж."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-sepang-international-circuit.2KTLvyxBXmwVftSJxmYeZ2",
+     "publisher": "Formula 1",
+     "locator": "Opening and design; Key statistics"
+    },
+    {
+     "url": "https://global.honda/en/F1/circuit/sepang-international-circuit/",
+     "publisher": "Honda",
+     "locator": "Opening and design; F1 history at Sepang"
+    },
+    {
+     "url": "https://www.autosport.com/f1/news/126370/nine-corners-modified-in-sepang-track-changes",
+     "publisher": "Autosport",
+     "locator": "2016 resurfacing, Turn 15 inside raised by about one metre"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "sepang:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "An unexpected 2026 return",
+    "uk": "Несподіване повернення 2026 року"
+   },
+   "text": {
+    "en": "Sepang hosted Formula 1 every year from 1999 to 2017; Honda's circuit page says the race was then discontinued because of rising hosting fees and declining attendance, and Max Verstappen was the last winner in 2017. On 26 July 2026 Formula 1 and the FIA announced that the circuit would host the Formula 1 Gulf Air Bahrain Grand Prix from 2 to 4 October 2026, as a substitute for the cancelled Bahrain race, between the Azerbaijan and Singapore rounds. The announcement was subject to final agreements and World Motor Sport Council approval. The F1DB record lists a 2026 race at Sepang won by Max Verstappen.",
+    "uk": "Сепанг приймав Формулу 1 щороку з 1999 до 2017 року; на сторінці Honda зазначено, що гонку потім припинили через зростання плати за проведення та падіння відвідуваності, а останнім переможцем став Макс Ферстаппен 2017 року. 26 липня 2026 року Формула 1 і FIA оголосили, що траса прийме Formula 1 Gulf Air Bahrain Grand Prix з 2 по 4 жовтня 2026 року як заміну скасованої гонки в Бахрейні, між етапами в Азербайджані та Сингапурі. Оголошення залежало від остаточних домовленостей і схвалення Всесвітньої ради з автоспорту. У записі F1DB зазначена гонка 2026 року в Сепанзі, яку виграв Макс Ферстаппен."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/formula-1-and-fia-confirm-malaysia-will-join-2026-calendar-as-host-venue-for-bahrain-grand-prix.6lL7vjFEM2VVynRHvg1TCf",
+     "publisher": "Formula 1",
+     "locator": "Announcement dated 26 July 2026: dates, reason, confirmation status"
+    },
+    {
+     "url": "https://global.honda/en/F1/circuit/sepang-international-circuit/",
+     "publisher": "Honda",
+     "locator": "F1 history at Sepang: race ran 1999 to 2017, discontinued"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [
+  {
+   "layout_id": "sepang-1",
+   "turns": [
+    4
+   ],
+   "name": "Langkawi",
+   "status": "traditional",
+   "period": "1999-2017",
+   "source": {
+    "url": "https://global.honda/en/F1/circuit/sepang-international-circuit/",
+    "publisher": "Honda",
+    "locator": "Corner names and turns: Turn 4, Langkawi, nearly right-angled right-hander (period as described for the 1999-2017 race era)"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "sepang-1",
+  "turns": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Only Turn 4 (Langkawi) was found named in an opened source (Honda); a search snippet mentioned the Sunway Lagoon name for Turn 14, but no page opened stated it, so Turn 14 is listed as without established name.",
+  "The F1 circuit guide and Honda describe turns only by number; their 2026 and 1999-2017 turn numbering is assumed to be the same as F1DB's single layout.",
+  "The F1DB brief lists a 2026 race with a winner (Max Verstappen); the opened sources only describe a 26 July 2026 announcement subject to sign-off. The race result was not independently verified, and the existing draft calls the 1999-2017 run a nineteen-season chapter while F1DB counts 20 seasons.",
+  "The existing prose's claims about Schumacher letting Irvine ahead and Coulthard's fuel-pressure failure at the 1999 race were not checked against opened sources.",
+  "Honda's date for opening (March 1999) versus the first race in October 1999 is not contradictory; no further sources on the track's financing.",
+  "Imagery not assessed."
+ ]
+}

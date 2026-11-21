@@ -1,0 +1,96 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "anderstorp",
+ "writer": "research-batch-1",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "anderstorp:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A circuit built beside an airstrip",
+    "uk": "Траса, збудована поряд зі злітною смугою"
+   },
+   "text": {
+    "en": "Anderstorp, in the forests of central Sweden, was built in 1968 on flat, marshy land beside an airstrip and originally called Scandinavian Raceway. The airstrip became the long back straight, with an infield section twisting around it, and the pits stood roughly halfway round the lap. GrandPrix.com credits the dream of a Swedish circuit to Sven 'Smokey' Asberg, while Motor Sport names Holger Eriksson and the Formula 1 driver Jo Bonnier as the designers; the sources were not reconciled. Motor Sport reports that the first run was said to be a private practice session for the local racing club, followed the same year by a first public event, an international sports car race won by Bonnier. Formula 1 arrived in 1973, five years after the opening, and stayed for six Swedish Grands Prix until 1978.",
+    "uk": "Андерсторп, у лісах центральної Швеції, збудували 1968 року на рівній болотистій ділянці поряд зі злітною смугою; спочатку траса називалася Scandinavian Raceway. Злітна смуга стала довгою задньою прямою, а навколо неї закрутилася внутрішня частина траси, а боксова зона розташовувалася приблизно посередині кола. GrandPrix.com пов'язує мрію про шведську трасу із Свеном «Смокі» Осбергом, а Motor Sport називає проєктувальниками Хольгера Еріксона та пілота Формули 1 Йо Боньє; ці джерела не узгоджено. Motor Sport пише, що перший виїзд, за переказами, був закритим тренуванням місцевого гоночного клубу, а того ж року відбулася й перша публічна подія — міжнародні перегони спорткарів, які виграв Боньє. Формула 1 прийшла в 1973 році, через п'ять років після відкриття, і залишалася тут шість Гран-прі Швеції до 1978 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/july-2025/25/anderstorp-raceway-site-of-brabham-f1-fan-car-win-has-now-been-virtually-silenced",
+     "publisher": "Motor Sport Magazine (July 2025)",
+     "locator": "origins passage: 1968 build on marshland, Eriksson and Bonnier design, first run and first public race, runway straight and mid-lap pits"
+    },
+    {
+     "url": "https://www.grandprix.com/gpe/cir-006.html",
+     "publisher": "GrandPrix.com (Grand Prix Encyclopedia)",
+     "locator": "Anderstorp circuit entry: Smokey Asberg, marshy land beside an airstrip, airstrip as back straight"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "anderstorp:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "Hulme wins the first Swedish Grand Prix at Anderstorp",
+    "uk": "Галм виграє перше Гран-прі Швеції в Андерсторпі"
+   },
+   "text": {
+    "en": "The first Formula 1 race at the circuit, in 1973, was won by Denny Hulme for McLaren. According to GrandPrix.com, he passed Ronnie Peterson, who was slowed late in the race by a puncture. Motor Sport reports that support for the race fell away after the deaths of Peterson and Gunnar Nilsson during the 1978 season.",
+    "uk": "Першу гонку Формули 1 на цій трасі, у 1973 році, виграв Денні Галм за McLaren. За даними GrandPrix.com, він обігнав Ронні Петерсона, якого наприкінці перегонів уповільнив прокол колеса. За даними Motor Sport, підтримка перегонів зникла після смертей Петерсона і Гуннара Нільссона протягом сезону 1978 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.grandprix.com/gpe/cir-006.html",
+     "publisher": "GrandPrix.com (Grand Prix Encyclopedia)",
+     "locator": "first F1 race paragraph (1973) and following paragraph on decline after 1978"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/july-2025/25/anderstorp-raceway-site-of-brabham-f1-fan-car-win-has-now-been-virtually-silenced",
+     "publisher": "Motor Sport Magazine (July 2025)",
+     "locator": "current state passage: support dropped after Peterson and Nilsson deaths in 1978 season"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "anderstorp-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ "inconsistencies": [
+  {
+   "existing_text": "Scandinavian Raceway combined a runway straight with long sweeping corners and an unusually placed pit lane. Norra changed for 1978, the year of the final Swedish Grand Prix.",
+   "problem": "Motor Sport (July 2025) states a chicane was added at Norra Kurvan in 1974, not 1978. Sources differ; the 1978 claim is unverified here. F1DB lists a single layout for 1973-1978 (4.031 km, 8 turns).",
+   "correct": "Possible: chicane at Norra Kurvan added in 1974 (Motor Sport); 1978 modification not confirmed. Editor should check against a dated source.",
+   "source": {
+    "url": "https://www.motorsportmagazine.com/archive/article/july-2025/25/anderstorp-raceway-site-of-brabham-f1-fan-car-win-has-now-been-virtually-silenced",
+    "publisher": "Motor Sport Magazine (July 2025)",
+    "locator": "layout changes passage"
+   },
+   "resolution": "editor_decision_required"
+  }
+ ],
+ "limitations": [
+  "Designer/founder attribution conflicts between Motor Sport (Eriksson, Bonnier) and GrandPrix.com (Asberg); no third source opened (racingcircuits.info returned 403). Text presents both.",
+  "Exact date of the first public event (Wikipedia lead says 16 June 1968) was not confirmed by an opened non-Wikipedia source.",
+  "Corner names: no source found tying names to the 8 F1DB turns; Norra Kurvan is mentioned by Motor Sport but not tied to a turn number.",
+  "Ukrainian forms for Jo Bonnier, Holger Eriksson, Sven Asberg are not in the approved name table: need editorial transliteration.",
+  "Imagery not assessed."
+ ]
+}

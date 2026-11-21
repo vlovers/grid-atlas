@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "donington",
+ "writer": "research-batch-2",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "donington:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "From pre-war road course to Wheatcroft's rebuilt circuit",
+    "uk": "Від довоєнної дорожньої траси до відбудованого кільця Вітокрофта"
+   },
+   "text": {
+    "en": "Donington Park's road course was run before the Second World War by Fred Craner and the Derby and District Motor Club. It hosted the RAC Tourist Trophy in 1937 and 1938 and the Donington Grand Prix, won in 1937 by Bernd Rosemeyer for Auto Union and in 1938 by Nuvolari, also for Auto Union. No Tourist Trophy was held in 1939. During the war the War Office took over the park, and it later served as a military transport depot into the 1950s and 1960s, leaving the circuit badly damaged. Tom Wheatcroft bought the neglected park around 1970-71 (sources differ on the year), opened the Donington Collection museum in 1973 and reopened the circuit for racing in 1977.",
+    "uk": "Дорожню трасу Donington Park до Другої світової війни організовували Фред Крейнер і Derby and District Motor Club. Тут проходили RAC Tourist Trophy у 1937 і 1938 роках та Гран-прі Донінгтона: у 1937 році його виграв Бернд Розмаєр на Auto Union, а у 1938 — Нуволарі, також на Auto Union. У 1939 році Tourist Trophy не проводили. Під час війни парк перейшов під контроль Військового міністерства, а згодом слугував військовою транспортною базою до 1950-х і 1960-х років, тож траса була сильно пошкоджена. Том Вітокрофт купив занедбаний парк близько 1970-71 років (джерела розходяться щодо року), у 1973 році відкрив музей Donington Collection, а у 1977 році знову відкрив трасу для перегонів."
+   },
+   "sources": [
+    {
+     "url": "https://www.goodwood.com/grr/columnists/doug-nye/doug-nye-donington-park...-when-it-was-still-a-park",
+     "publisher": "Goodwood Road & Racing (Doug Nye)",
+     "locator": "Fred Craner paragraph; 1937 and 1938; 1939; World War II; 1970 paragraph"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/january-2010/36/tom-wheatcroft-2/",
+     "publisher": "Motor Sport Magazine (Jan 2010)",
+     "locator": "Decline, Museum, Rebuilding and reopening points: army depot, museum 1973, reopened 1977"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "donington:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "A 1993 race that cost millions",
+    "uk": "Гонка 1993 року, що коштувала мільйони"
+   },
+   "text": {
+    "en": "The 1993 European Grand Prix was held on an Easter weekend in heavy, changeable rain. According to Motor Sport, the small crowd meant a large financial loss, which Tom Wheatcroft estimated at 3.5 million pounds. He had suffered three heart attacks in the weeks before the race and declined a bypass operation so that he would not miss it. After Ayrton Senna won, Wheatcroft told him he was glad it was him. The race was a 76-lap event sponsored by Sega.",
+    "uk": "«Гран-прі Європи» 1993 року відбулося на великодні вихідні під сильним і мінливим дощем. За даними Motor Sport, мала кількість глядачів призвела до великих фінансових втрат, які Том Вітокрофт оцінив у 3,5 мільйона фунтів. За кілька тижнів до гонки він пережив три інфаркти й відмовився від операції шунтування, щоб не пропустити її. Після перемоги Айртона Сенни Вітокрофт сказав йому, що радий, що це був саме він. Гонка тривала 76 кіл, а її спонсором була Sega."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/january-2010/36/tom-wheatcroft-2/",
+     "publisher": "Motor Sport Magazine (Jan 2010)",
+     "locator": "1993 European Grand Prix and Health points"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/may-1993/18/opportunity-knocked/",
+     "publisher": "Motor Sport Magazine archive (May 1993)",
+     "locator": "Race length 76 laps; Sega-sponsored Grand Prix of Europe"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "donington-1",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Year of Wheatcroft's purchase: Motor Sport (2010) gives none; Doug Nye places it by 1970; other sources (not opened) say 1971. Text says 'around 1970-71'.",
+  "Origins of the pre-war circuit (first meetings in 1931, first car racing 1933) are not stated in any opened source, so only the 1937-1939 period is described. Motor Sport/Nye give no start year for Craner's club.",
+  "When and why the Melbourne Loop was added (the F1 layout) is not stated in fetched sources; not covered here. The Donington circuit page was only used for the 12-corner count.",
+  "Existing prose says the race had 'pole-sitter Alain Prost finished third a lap down': consistent with F1DB brief in direction (Prost a lap down) but position was not verified against a fetched source.",
+  "Corner names already complete in the corner guide (turns 9 and 10 both 'The Esses' per the guide); not independently re-verified.",
+  "Ukrainian forms for Wheatcroft, Craner, Rosemeyer and Nuvolari are not in the approved name table.",
+  "Imagery not assessed."
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "zandvoort",
+ "writer": "research-batch-6",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "zandvoort:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "Back on the calendar, then a farewell",
+    "uk": "Повернення до календаря й прощання"
+   },
+   "text": {
+    "en": "Zandvoort returned to Formula 1 in 2021 on a renovated layout of 4.259 km and 14 turns with banked corners at Hugenholtzbocht and Arie Luyendykbocht, and has hosted the Dutch Grand Prix every year since; the 2026 race was won by Lando Norris. On 4 December 2024 Formula 1 and the race promoter announced a one-year extension through 2026 and that the promoter had decided not to stay on the calendar after that year, wanting to end on a high; the 2026 race was to be the last under the agreement and the first with a Sprint. The circuit itself remains an active venue: Motor Sport Magazine notes that DTM returned in 2001 and A1GP raced there in 2006, while the track continues as a permanent circuit after the F1 contract ends.",
+    "uk": "Зандворт повернувся до Формули 1 у 2021 році на оновленій трасі довжиною 4,259 км і 14 поворотами з віражами з нахилом у Hugenholtzbocht та Arie Luyendykbocht і щороку з того часу приймає Гран-прі Нідерландів; гонку 2026 року виграв Ландо Норріс. 4 грудня 2024 року Формула 1 і промоутер гонки оголосили про продовження контракту на один рік, до 2026-го, і про те, що промоутер вирішив не залишатися в календарі після цього року, бажаючи завершити на високій ноті; гонка 2026 року мала стати останньою за цією угодою та першою зі спринтом. Сама траса лишається чинним майданчиком: Motor Sport Magazine зазначає, що DTM повернувся у 2001 році, а A1GP їздив там у 2006-му, і траса продовжує діяти як постійна після завершення контракту з Ф1."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/formula-1-to-celebrate-final-dutch-grand-prix-in-2026-after-one-year.7EYLHSMGIJyqefI5tMjLrZ",
+     "publisher": "Formula1.com",
+     "locator": "Article on the 4 December 2024 announcement: one-year extension, promoter's decision, Sprint"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/a-circuit-reborn-the-many-lives-of-zandvoort",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Section 'Present status' (4.259 km, 14 turns; DTM 2001, A1GP 2006)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "zandvoort-1",
+   "seasons": "1952-1971",
+   "length_km": 4.193,
+   "turns": 19,
+   "change": {
+    "en": "The original dune circuit, first raced on 7 August 1948, was built around a main straight laid by the German occupiers during the war and disguised as a parade route. The roughly 4.3 km lap had fast, flowing corners such as Tarzan, Scheivlak and Bosuit with few run-offs. The first Dutch Grand Prix was held there in 1952.",
+    "uk": "Первісна траса серед дюн, на якій уперше їздили 7 серпня 1948 року, була збудована навколо головної прямої, яку під час війни проклали німецькі окупанти, замаскувавши її під плац для парадів. Коло довжиною приблизно 4,3 км мало швидкі плавні повороти — Tarzan, Scheivlak і Bosuit — з невеликою кількістю зон виїзду. Перше Гран-прі Нідерландів відбулося там у 1952 році."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/a-circuit-reborn-the-many-lives-of-zandvoort",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Origins 1939-1948 and 'original layout' 1948-1972"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "zandvoort-2",
+   "seasons": "1973-1978",
+   "length_km": 4.226,
+   "turns": 19,
+   "change": {
+    "en": "In 1973 the fast Bosuit corner was replaced by the Panorama chicane to reduce speed before a dangerous section. F1DB records the lap as 33 m longer than in 1952-1971, with the same number of turns.",
+    "uk": "У 1973 році швидкий поворот Bosuit замінили шиканою Panorama, щоб знизити швидкість перед небезпечною ділянкою. За F1DB, коло стало на 33 м довшим, ніж у 1952-1971 роках, із такою самою кількістю поворотів."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/a-circuit-reborn-the-many-lives-of-zandvoort",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Timeline entry for 1973"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "zandvoort-3",
+   "seasons": "1979-1979",
+   "length_km": 4.226,
+   "turns": 19,
+   "change": {
+    "en": "F1DB lists a one-season layout in 1979 with the same length and turn count as 1973-1978. None of the sources opened describes a change made for 1979; Motor Sport Magazine says only that safety concerns in the late 1970s led to more chicanes and reprofiled sections.",
+    "uk": "F1DB наводить односезонну конфігурацію 1979 року з тією самою довжиною й кількістю поворотів, що й у 1973-1978 роках. Жодне з відкритих джерел не описує зміни, зробленої для 1979 року; Motor Sport Magazine лише зазначає, що через безпеку наприкінці 1970-х з'явилося більше шикан і перепрофільованих ділянок."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/a-circuit-reborn-the-many-lives-of-zandvoort",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Timeline entry 'Late 1970s-early 1980s'"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "zandvoort-4",
+   "seasons": "1980-1985",
+   "length_km": 4.252,
+   "turns": 19,
+   "change": {
+    "en": "Further safety changes added chicanes and reprofiled sections in the late 1970s and early 1980s, and the Marlboro chicane was added in the early 1980s. This is the layout of the last Dutch Grands Prix before the break, ending with the 1985 race. F1DB lists 4.252 km.",
+    "uk": "Подальші заходи безпеки додали шикани та перепрофілювали ділянки наприкінці 1970-х і на початку 1980-х, а шикана Marlboro з'явилася на початку 1980-х. Це конфігурація останніх Гран-прі Нідерландів перед перервою, що завершилася гонкою 1985 року. F1DB наводить 4,252 км."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/a-circuit-reborn-the-many-lives-of-zandvoort",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Timeline entries 'Late 1970s-early 1980s' and 1985"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "zandvoort-5",
+   "seasons": "2021-2026",
+   "length_km": 4.259,
+   "turns": 14,
+   "change": {
+    "en": "The circuit was cut to about 2.5 km in 1989, citing financial difficulties, political pressure and land wanted for a holiday resort and golf course, and re-extended in 1998-1999 to reconnect the historic Hunzerug-to-Scheivlak section; neither version is an F1DB layout. After F1's return was confirmed in May 2019, the designer Dromo led a major upgrade with banked corners at Hugenholtz and Arie Luyendyk (about 18 degrees at the last corner), better safety infrastructure and a full resurface. The banked final corner debuted in 2021; the 2020 race was cancelled because of the pandemic.",
+    "uk": "У 1989 році траса скоротилася приблизно до 2,5 км через фінансові труднощі, політичний тиск і землю, потрібну під курорт та гольф-поле, а в 1998-1999 роках її знову подовжили, з'єднавши історичну ділянку від Hunzerug до Scheivlak; жодна з цих версій не є конфігурацією F1DB. Після підтвердження повернення Ф1 у травні 2019 року проєктувальник Dromo очолив масштабну модернізацію з віражами з нахилом у Hugenholtz і Arie Luyendyk (близько 18 градусів на останньому повороті), покращеною безпекою та повним оновленням покриття. Віраж на фінішному повороті дебютував у 2021 році; гонку 2020 року скасували через пандемію."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/a-circuit-reborn-the-many-lives-of-zandvoort",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Timeline entries 1989, 1998-1999 and 2019-2021"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [
+  {
+   "layout_id": "zandvoort-5",
+   "turns": [
+    9
+   ],
+   "name": "Renaultbocht",
+   "status": "historical",
+   "period": "late 1990s onward, 'for many years' per the circuit; not an official name on the circuit's current page",
+   "source": {
+    "url": "https://circuitzandvoort.nl/en/corners",
+    "publisher": "Circuit Zandvoort (official site)",
+    "locator": "Turn 9 entry: flowing exit 'known as the Renaultbocht' for many years"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "zandvoort-5",
+  "turns": [
+   10,
+   13
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Turn 9: the circuit page gives 'Renaultbocht' only as a former sponsor-era name of the flowing exit and says Turn 9 has no official name; it is entered as historical and applies to the post-1999 circuit, not to an F1DB layout before 2021. Editors may prefer to leave Turn 9 unnamed.",
+  "Turn 10 was called 'Bocht Zonder Naam' (corner without a name) and, per the same page, 'Vodafone-bocht' in some period; neither is accepted as an established name (the first is a placeholder, the second a sponsor name with no dates). Turn 13 has no name on the page.",
+  "The existing corner guide's names for turns 1-8, 11-12 and 14 are consistent with the circuit's page (Hans Ernst Chicane previously Nissanbocht; Arie Luyendykbocht previously Bos Uit before 2001). The existing prose spells 'Luyendijkbocht' and 'Luyendyk' inconsistently; the circuit uses 'Arie Luyendykbocht'.",
+  "The circuit page calls the director 'Hans Hugenholtz' (director 1949-1974) while existing prose says 'John Hugenholtz'; this is probably the same person but was not reconciled.",
+  "Zandvoort's 'Marlboro chicane' appears in Motor Sport Magazine but not on the circuit's corner page, so no turn mapping was made.",
+  "The layouts zandvoort-3 and -4 are not explained by a source with year-level detail; 1979 and 1980 changes were not found.",
+  "The 2026 winner (Norris) is from F1DB; the Formula1.com announcement of December 2024 was written before the 2026 season, so whether plans changed afterwards was not checked. Ownership of the circuit was not stated by any source opened.",
+  "Existing prose on the 1952 and 1985 races (Hawthorn two laps behind, Lauda 0.232 s ahead of Prost) was not re-verified.",
+  "Imagery not assessed."
+ ]
+}

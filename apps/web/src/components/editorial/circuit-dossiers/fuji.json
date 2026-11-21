@@ -1,0 +1,124 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "fuji",
+ "writer": "research-batch-2",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "fuji:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A planned American-style oval that became a road course",
+    "uk": "Задумана американська овальна траса, що стала шосейною"
+   },
+   "text": {
+    "en": "Fuji Speedway was conceived in 1963 as a Daytona-style superspeedway by the Japan NASCAR Company, with Bill France Sr. approving the deal that year. The hillside near Mount Fuji made the oval impractical, and Stirling Moss advised building a European-style road course instead. Only the first turn of the oval, a 30-degree banked downhill right-hander called Daiichi, was ever built. The circuit opened at Oyama on 3 January 1966 as a road course that kept the banking. Its first four-wheel race was a Clubman's race in March 1966, followed by the 3rd Japan Grand Prix in May. Road and Track reports that the banking was used until 1974, and later revisions bypassed it with slower first turns.",
+    "uk": "Fuji Speedway задумали у 1963 році як суперспідвей у стилі Дейтони компанія Japan NASCAR Company, а Білл Франс-старший схвалив угоду того ж року. Схил поблизу гори Фудзі робив овал непрактичним, і Стірлінг Мосс порадив збудувати натомість європейську шосейну трасу. Побудували лише перший поворот овала — правий поворот під ухил із нахилом 30 градусів під назвою Daiichi. Траса відкрилася в Ояма 3 січня 1966 року як шосейна з тим самим віражем. Першою автомобільною гонкою став Clubman's race у березні 1966 року, а в травні відбулося 3-тє Гран-прі Японії. За даними Road and Track, віраж використовували до 1974 року, а пізніші зміни обійшли його повільнішими першими поворотами."
+   },
+   "sources": [
+    {
+     "url": "https://www.aol.com/once-upon-time-japans-fuji-100000495.html",
+     "publisher": "Road & Track (via AOL)",
+     "locator": "NASCAR oval plan; Banked turn; Opening; 1974; Later changes paragraphs"
+    },
+    {
+     "url": "https://www.formulaonehistory.com/circuits/fuji/",
+     "publisher": "formulaonehistory.com",
+     "locator": "Origins: planned 1963 by Japan NASCAR Company; Moss advice; opened January 1966"
+    },
+    {
+     "url": "https://toyotagazooracing.com/archive/ms/public/en/features/0503_ralfinjapan/history.html",
+     "publisher": "Toyota Gazoo Racing",
+     "locator": "Opening: 3 January 1966, Oyama-cho; Early events"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "fuji:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "Fuji's banking stayed out of the 1976 race",
+    "uk": "Віраж Fuji не використовували в гонці 1976 року"
+   },
+   "text": {
+    "en": "For the 1976 Japanese Grand Prix the organisers used a 4.3 km course instead of the full 6 km circuit. Motor Sport reported that the steep banking at the end of the long start-finish straight had not been used for racing since a fatal multi-car pile-up in a 1974 sports-car race. The Grand Prix lap was a long straight linked by a couple of tight corners and one extremely fast long right-hander taken in fifth gear. The race ran for 73 laps in heavy rain, with Mario Andretti on pole in a Lotus.",
+    "uk": "Для Гран-прі Японії 1976 року організатори використали трасу завдовжки 4,3 км замість повного кола 6 км. За повідомленням Motor Sport, крутий віраж наприкінці довгої стартової прямої не використовували в гонках від фатального масового зіткнення в перегонах спорткарів 1974 року. Коло Гран-прі складалося з довгої прямої, з'єднаної кількома тісними поворотами, та одного надзвичайно швидкого довгого правого повороту, який проходили на п'ятій передачі. Гонка тривала 73 кола під сильним дощем, поул узяв Маріо Андретті на Lotus."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/december-1976/34/japanese-grand-prix-4/",
+     "publisher": "Motor Sport Magazine archive (Dec 1976)",
+     "locator": "Circuit layout: length, banking, layout; 1976 race facts"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "fuji-1",
+   "seasons": "1976-1977",
+   "length_km": 4.359,
+   "turns": 8,
+   "change": {
+    "en": "The 1976 and 1977 Grands Prix used the shortened road course of about 4.3 km (F1DB: 4.359 km, 8 turns), without the banked turn that had been out of racing use since 1974. A partial reconstruction in 1984 then increased the course from 4.3 km to 4.4 km, after Formula 1 had left.",
+    "uk": "У Гран-прі 1976 і 1977 років використовували скорочену шосейну трасу приблизно 4,3 км (F1DB: 4,359 км, 8 поворотів) без віражу з нахилом, який не застосовували в гонках з 1974 року. Часткова реконструкція у 1984 році збільшила трасу з 4,3 км до 4,4 км, коли Формула 1 уже залишила це місце."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/december-1976/34/japanese-grand-prix-4/",
+     "publisher": "Motor Sport Magazine archive (Dec 1976)",
+     "locator": "Circuit layout: 4.3 km course, banking not used since 1974"
+    },
+    {
+     "url": "https://toyotagazooracing.com/archive/ms/public/en/features/0503_ralfinjapan/history.html",
+     "publisher": "Toyota Gazoo Racing",
+     "locator": "Layout changes: partial reconstruction in 1984 from 4.3 km to 4.4 km"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "fuji-2",
+   "seasons": "2007-2008",
+   "length_km": 4.563,
+   "turns": 16,
+   "change": {
+    "en": "After a major reconstruction under Toyota ownership, the track closed in September 2003 and reopened in 2005 as a certified Grade 1 course able to host Formula 1. The new lap is 4.563 km (F1DB: 16 turns) with a main straight of 1.475 km. Toyota's page gives both April and October 2005 for the reopening.",
+    "uk": "Після великої реконструкції за власності Toyota траса закрилася у вересні 2003 року й у 2005 році відкрилася знову як сертифікована траса категорії Grade 1, здатна приймати Формулу 1. Нове коло має 4,563 км (F1DB: 16 поворотів), головна пряма — 1,475 км. На сторінці Toyota відкриття після реконструкції датовано і квітнем, і жовтнем 2005 року."
+   },
+   "sources": [
+    {
+     "url": "https://toyotagazooracing.com/archive/ms/public/en/features/0503_ralfinjapan/history.html",
+     "publisher": "Toyota Gazoo Racing",
+     "locator": "Reopening (2005): closed September 2003, reopened as Grade 1 course; current details 4,563 m"
+    },
+    {
+     "url": "https://www.formulaonehistory.com/circuits/fuji/",
+     "publisher": "formulaonehistory.com",
+     "locator": "Layout changes: reconstruction under Toyota ownership before 2007; 4.563 km, main straight 1.475 km"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "fuji-2",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No fetched source gives corner names for the 2007-2008 layout with F1DB turn numbers (fujispeedway.jp returned only a title; racingcircuits.info blocked), so no corner names are asserted. Daiichi is the name of the original banked Turn 1 of the 1960s-70s circuit, which was not part of the F1DB layouts; it is not mapped to a fuji-1 turn. corners_without_established_name is left empty because no turn was shown to be unnamed.",
+  "The 1974 accident is described as fatal by formulaonehistory and as a multi-car pile-up by Motor Sport (1976); the Road & Track article does not describe it. Text says 'fatal multi-car pile-up' only in attribution to Motor Sport.",
+  "Toyota Gazoo Racing page gives conflicting reopening dates for the new Fuji (April and 4 October 2005); text says 2005. Date for the start of the reconstruction is given only as closing in September 2003.",
+  "Why 4.359 km (F1DB) vs 'about 4.3 km' (Motor Sport) is not reconciled. The 1977 spectator deaths, reasons for 2008 exit and current events (formulaonehistory) are not used in this output beyond existing prose.",
+  "Hermann Tilke's role in the 2005 redesign was not found in any opened source, so it is omitted.",
+  "Ukrainian forms for Bill France Sr. and Stirling Moss (approved: Стірлінг Мосс) used; France is not in the name table.",
+  "Imagery not assessed."
+ ]
+}
