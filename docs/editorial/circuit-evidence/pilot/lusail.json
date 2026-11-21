@@ -5,49 +5,49 @@
   "name": "Lusail International Circuit",
   "pilot": true,
   "layouts": 1,
-  "sections_with_editorial_text": 3,
+  "sections_with_editorial_text": 7,
   "sections": {
    "introduction": "draft",
    "essential_facts": "dataset_only",
-   "origins": "absent",
+   "origins": "draft",
    "formula1_history": "draft",
-   "defining_moments": "absent",
+   "defining_moments": "draft:2",
    "layout_evolution": "not_applicable",
    "corners": "one_layout_drafted:16/16",
-   "important_races": "absent",
+   "important_races": "draft",
    "records_statistics": "dataset_only",
-   "legacy_present_day": "absent",
+   "legacy_present_day": "draft",
    "related_people": "dataset_only",
    "sources_methodology": "cited"
   },
-  "claims": 51,
+  "claims": 69,
   "claims_by_type": {
-   "statistic": 4,
-   "dated_event": 24,
+   "statistic": 9,
+   "dated_event": 34,
    "measurement": 4,
    "quotation": 0,
    "interpretation": 0,
-   "narrative": 19
+   "narrative": 22
   },
   "claims_unaligned_uk": 4,
   "name_agreement": {
-   "agree": 13,
-   "differ": 0,
+   "agree": 20,
+   "differ": 2,
    "uk_unrecognised": 0,
-   "no_names": 34
+   "no_names": 43
   },
   "dataset_checks": {
-   "supported": 3,
+   "supported": 5,
    "conflict": 0,
-   "unmatched": 3
+   "unmatched": 6
   },
   "factcheck_status": {
    "dataset_conflict": 0,
-   "dataset_supported": 2,
-   "passages_cover_numbers": 24,
-   "passages_partial": 9,
+   "dataset_supported": 4,
+   "passages_cover_numbers": 25,
+   "passages_partial": 12,
    "no_passage_in_live_sources": 16,
-   "cited_sources_unavailable": 0,
+   "cited_sources_unavailable": 12,
    "no_cited_sources": 0
   },
   "claims_verified": 4,
@@ -63,8 +63,9 @@
    }
   },
   "sources": {
-   "cited": 5,
-   "live": 4
+   "cited": 9,
+   "live": 4,
+   "not_checked": 4
   },
   "source_structural_issues": 0,
   "corners": {
@@ -74,16 +75,18 @@
    "names_found_in_cited_source": 0,
    "names_not_in_cited_text": 0,
    "names_sources_unavailable": 0,
-   "turns_queued": 0
+   "turns_queued": 0,
+   "dossier_named_turns": 0,
+   "dossier_turns_without_established_name": 16
   },
   "quality": {
-   "blocks": 20,
+   "blocks": 24,
    "shallow": 6,
    "repetitive": 0,
    "generic": 0,
-   "en_uk_issues": 0
+   "en_uk_issues": 1
   },
-  "evidence_lead_rate": 0.51,
+  "evidence_lead_rate": 0.42,
   "content_complete": false
  },
  "tasks": [
@@ -1476,6 +1479,388 @@
    "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
+  },
+  {
+   "claim_id": "lusail:origins:1#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The circuit near Lusail, Qatar, was originally built to host motorcycle Grand Prix racing.",
+   "uk": "Траса поблизу Лусаїла в Катарі спочатку була збудована для мотоциклетних Гран прі.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:origins:1#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Formula 1's circuit profile says it was constructed ahead of Qatar's first MotoGP event in 2004 and finished in just over a year, and a Formula 1 feature on Qatar's motorsport history says it opened in 2004, the same year as the MotoGP debut race there.",
+   "uk": "Профіль траси від Формули 1 пише, що її споруджували до першого етапу MotoGP у Катарі 2004 року й завершили трохи більше ніж за рік, а матеріал Формули 1 про історію автоспорту в Катарі каже, що вона відкрилася у 2004 році — того ж року, що й дебютна гонка MotoGP.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:lusail",
+       "field": "first_season"
+      }
+     ],
+     "detail": "2004: no lusail championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:origins:1#s3",
+   "circuit_id": "lusail",
+   "block_id": "lusail:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Its fast, flowing layout with wide run-offs suited both bikes and cars.",
+   "uk": "Швидка плавна конфігурація із широкими зонами вильоту підходила і мотоциклам, і боліди.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:origins:1#s4",
+   "circuit_id": "lusail",
+   "block_id": "lusail:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The motorcycle race later moved to night racing to avoid daytime heat, and MotoGP's 2008 race was the first full night race in that series.",
+   "uk": "Згодом мотоциклетну гонку перенесли на вечір, щоб уникнути денної спеки, а гонка MotoGP 2008 року стала першою повністю нічною в цій серії.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:origins:1#s5",
+   "circuit_id": "lusail",
+   "block_id": "lusail:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Formula 1 first came in 2021, as part of a revised calendar during the COVID-19 pandemic.",
+   "uk": "Формула 1 вперше приїхала у 2021 році в межах переглянутого календаря під час пандемії COVID-19.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:origins:1#s6",
+   "circuit_id": "lusail",
+   "block_id": "lusail:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The sources opened do not name the designer, the builders or the cost.",
+   "uk": "У відкритих джерелах не названо ні проєктувальника, ні будівельників, ні вартості.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:legacy_present_day:1#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Lusail joined the Formula 1 calendar in 2021 and, after a gap in 2022 when Qatar hosted the FIFA World Cup, returned in 2023 under a 10-year agreement that made the race a permanent fixture.",
+   "uk": "Lusail увійшла до календаря Формули 1 у 2021 році, а після паузи 2022 року, коли Катар приймав чемпіонат світу з футболу FIFA, повернулася у 2023 році за 10-річною угодою, яка зробила гонку постійним пунктом.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:lusail",
+       "field": "first_season"
+      }
+     ],
+     "detail": "2022: no lusail championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:legacy_present_day:1#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "A Formula 1 feature says the deal keeps the race there until at least 2032 and notes that capacity was raised from 8,000 to 52,000 after upgrades.",
+   "uk": "За матеріалом Формули 1, угода залишає гонку тут щонайменше до 2032 року, а місткість після оновлень зросла з 8 000 до 52 000 місць.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:legacy_present_day:1#s3",
+   "circuit_id": "lusail",
+   "block_id": "lusail:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 2023 race became a full night race in the sprint format, and kerb-related tyre concerns led to an 18-lap limit per set in that race.",
+   "uk": "Гонка 2023 року стала повністю нічною у спринтовому форматі, а через проблеми з шинами від поребриків у ній запровадили ліміт 18 кіл на комплект.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:legacy_present_day:1#s4",
+   "circuit_id": "lusail",
+   "block_id": "lusail:legacy_present_day:1",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "The F1DB lists races in 2021, 2023, 2024 and 2025, all three of the latest won by Max Verstappen, and the circuit remains an active Formula 1 venue.",
+   "uk": "F1DB наводить гонки 2021, 2023, 2024 і 2025 років, три останні виграв Макс Ферстаппен, і траса залишається діючою трасою Формули 1.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:1148",
+       "field": "winner"
+      }
+     ],
+     "detail": "2025: Max Emilian Verstappen matches F1DB winner."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:defining_moment:2021#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2021",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "In the inaugural Qatar Grand Prix Lewis Hamilton took pole and led every lap, cutting Max Verstappen's championship lead from 14 points to 8.",
+   "uk": "У першому Гран прі Катару Льюїс Гамільтон завоював поул і лідирував усі кола, скоротивши перевагу Макса Ферстаппена в чемпіонаті з 14 очок до 8.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "cf05ee11766d394358a728a2bbed1e5095a170dc57713fa27557198dc5cc5ff9",
+     "offset": 3861,
+     "length": 70,
+     "numbers_covered": true,
+     "names_matched": [
+      "Hamilton",
+      "Verstappen's"
+     ],
+     "score": 15
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "7eba1843f4a604734271a76d136e440684bd1ec243b577e15fc38f69eec9e4ea",
+     "offset": 0,
+     "length": 223,
+     "numbers_covered": false,
+     "names_matched": [
+      "Qatar",
+      "Lewis",
+      "Hamilton"
+     ],
+     "score": 14
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:defining_moment:2021#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2021",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Verstappen, who had a five-place grid penalty for failing to slow under double yellow flags, started seventh and finished second with the fastest lap.",
+   "uk": "Ферстаппен, який мав штраф на п'ять позицій на старті за те, що не уповільнився під подвійними жовтими прапорами, стартував сьомим і фінішував другим із найшвидшим колом.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "f2452317dd1d99c69324b575568f8908f370137b263df66c0f78f68af65ea605",
+     "offset": 2996,
+     "length": 247,
+     "numbers_covered": false,
+     "names_matched": [],
+     "score": 9
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "2d7a1b95e41b4b0190a3e218d56ada2b919b00ac86b297cc299b06838a8d2c55",
+     "offset": 288,
+     "length": 65,
+     "numbers_covered": false,
+     "names_matched": [
+      "Verstappen"
+     ],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:defining_moment:2021#s3",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2021",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Fernando Alonso finished third on a one-stop strategy, his first podium since the 2014 Hungarian Grand Prix.",
+   "uk": "Фернандо Алонсо фінішував третім за стратегією з одним піт-стопом — його перший подіум із Гран прі Угорщини 2014 року.",
+   "status": "passages_partial",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:lusail",
+       "field": "first_season"
+      }
+     ],
+     "detail": "2014: no lusail championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "c9a6ac5459d48e7b9200faf10ce62c8c2c93aebf56507a5a0a6959b707c586d4",
+     "offset": 3530,
+     "length": 74,
+     "numbers_covered": false,
+     "names_matched": [
+      "Alonso",
+      "Hungarian"
+     ],
+     "score": 15
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "4f10dc12eb6be32770d034daef84e3dfb4ee1f1bebe20f017bc1ad43ed0056c0",
+     "offset": 3244,
+     "length": 285,
+     "numbers_covered": false,
+     "names_matched": [
+      "Alonso"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:defining_moment:2021#s4",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2021",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Tyre failures shaped the race: Valtteri Bottas had a blowout on lap 31, and Nicholas Latifi's blowout on lap 54 caused a Virtual Safety Car.",
+   "uk": "Гонку визначили проблеми з шинами: у Валттері Боттаса стався розрив шини на 31-му колі, а розрив у Ніколаса Латіфі на 54-му колі призвів до віртуального автомобіля безпеки.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "22faebb838589d9024c04ad88dc096da55a3d01721f23aab8c7aced15bd50567",
+     "offset": 2256,
+     "length": 189,
+     "numbers_covered": false,
+     "names_matched": [
+      "Virtual",
+      "Safety",
+      "Car"
+     ],
+     "score": 13
+    },
+    {
+     "source_id": "src-bc638cbca6a3",
+     "passage_sha256": "6a24a5a24070091ebd9248cde948b13ba1aed7ae52e8fc446f8d0c2ac4d7a689",
+     "offset": 1829,
+     "length": 56,
+     "numbers_covered": false,
+     "names_matched": [
+      "Bottas"
+     ],
+     "score": 7
+    }
+   ]
+  },
+  {
+   "claim_id": "lusail:defining_moment:2023#s1",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2023",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "At Lusail in 2023 Max Verstappen secured his third consecutive drivers' title in Saturday's sprint, finishing second behind Oscar Piastri and ahead of Lando Norris.",
+   "uk": "У Лусаїлі у 2023 році Макс Ферстаппен забезпечив собі третій поспіль особистий титул у суботньому спринті, фінішувавши другим позаду Оскара Піастрі та перед Ландо Норрісом.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:defining_moment:2023#s2",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2023",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "His team mate Sergio Pérez, who needed a top-three finish to keep his title hopes alive, was out after a collision at Turn 2 when he attempted a double pass.",
+   "uk": "Його напарник Серхіо Перес, якому потрібне було місце в трійці, щоб зберегти шанси на титул, вибув після зіткнення на повороті 2 під час спроби здвоєного обгону.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:defining_moment:2023#s3",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2023",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Piastri took his first Formula 1 sprint win after losing the lead to George Russell early on.",
+   "uk": "Піастрі здобув свою першу перемогу в спринті Формули 1, після того як на початку втратив лідерство на користь Джорджа Расселла.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "lusail:defining_moment:2023#s4",
+   "circuit_id": "lusail",
+   "block_id": "lusail:defining_moment:2023",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Verstappen then won the 57-lap Grand Prix on Sunday, as the F1DB records for 2023.",
+   "uk": "У неділю Ферстаппен виграв 57-колове Гран прі, як зазначає F1DB для 2023 року.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:1096",
+       "field": "winner"
+      }
+     ],
+     "detail": "2023: Max Emilian Verstappen matches F1DB winner."
+    }
+   ],
+   "passages": []
   }
  ],
  "corner_names": [],
@@ -1564,9 +1949,54 @@
     "shallow:few_specifics"
    ],
    "en_uk": []
+  },
+  {
+   "block_id": "lusail:legacy_present_day:1",
+   "circuit_id": "lusail",
+   "kind": "dossier_legacy_present_day",
+   "en_words": 118,
+   "uk_words": 103,
+   "sentences": 4,
+   "specificity": 0.22,
+   "lexical_diversity": 0.669,
+   "flags": [],
+   "en_uk": [
+    "number_only_in_en:52.000/8.000",
+    "number_only_in_uk:52"
+   ]
   }
  ],
  "sources": [
+  {
+   "source_id": "src-03ad9ea3354a",
+   "url": "https://www.formula1.com/en/racing/2026/qatar/circuit",
+   "normalized": "https://formula1.com/en/racing/2026/qatar/circuit",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "lusail:origins:1"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
+   "source_id": "src-1d2ee2608e86",
+   "url": "https://www.formula1.com/en/latest/article/verstappen-secures-third-f1-world-title-as-piastri-takes-sprint-victory-in.4d0SLopnXU9W8uzefnJmu3",
+   "normalized": "https://formula1.com/en/latest/article/verstappen-secures-third-f1-world-title-as-piastri-takes-sprint-victory-in.4d0SLopnXU9W8uzefnJmu3",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "lusail:defining_moment:2023"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": null
+  },
   {
    "source_id": "src-2e17b165b057",
    "url": "https://www.fia.com/system/files/decision-document/2025_lusail_event_-_circuit_map_-_qatar_2025.pdf",
@@ -1674,13 +2104,46 @@
    }
   },
   {
+   "source_id": "src-4f886b37043e",
+   "url": "https://global.honda/en/F1/circuit/lusail-international-circuit/",
+   "normalized": "https://global.honda/en/F1/circuit/lusail-international-circuit",
+   "host": "global.honda",
+   "class": "other",
+   "cited_by": [
+    "lusail:origins:1",
+    "lusail:legacy_present_day:1"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
+   "source_id": "src-8f5aadf7c2a4",
+   "url": "https://www.formula1.com/en/latest/article/qatars-motorsport-evolution-the-sports-hub-with-an-f1-showpiece.3FdUaq1rMWCpNXmXvbAHHl",
+   "normalized": "https://formula1.com/en/latest/article/qatars-motorsport-evolution-the-sports-hub-with-an-f1-showpiece.3FdUaq1rMWCpNXmXvbAHHl",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "lusail:origins:1",
+    "lusail:legacy_present_day:1"
+   ],
+   "circuits": [
+    "lusail"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
    "source_id": "src-bc638cbca6a3",
    "url": "https://www.grandprix.com/races/qatar-gp-2021-race-analysis.html",
    "normalized": "https://grandprix.com/races/qatar-gp-2021-race-analysis.html",
    "host": "grandprix.com",
    "class": "publication",
    "cited_by": [
-    "lusail:long_history_draft"
+    "lusail:long_history_draft",
+    "lusail:defining_moment:2021"
    ],
    "circuits": [
     "lusail"

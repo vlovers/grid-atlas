@@ -1,0 +1,119 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "imola",
+ "writer": "research-batch-3",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "imola:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "After 2025: a venue still in use",
+    "uk": "Після 2025 року: траса, яка продовжує працювати"
+   },
+   "text": {
+    "en": "Imola returned to the Formula 1 calendar in 2020 with the Emilia-Romagna Grand Prix, and the F1DB lists its most recent race in 2025, won by Max Verstappen. That event was the last under the contract signed for the circuit's return, which ran to 2025. When the 2026 calendar was published, Imola was left out because the schedule had no space once Madrid was added. The local authorities said the omission was not the final word and called for talks to resume. Away from Formula 1 the autodrome remains an active venue: it hosted the FIA World Endurance Championship's 6 Hours of Imola in 2024, the road cycling world championships in 2020, a motocross world championship round in 2018 and large concerts in 2015-2017.",
+    "uk": "Imola повернулася до календаря Формули 1 у 2020 році з Гран прі Емільї-Романьї, а F1DB фіксує її останню гонку у 2025 році — перемогу Макса Ферстаппена. Це був останній етап за контрактом, укладеним для повернення траси, який діяв до 2025 року. Коли опублікували календар 2026 року, Imola до нього не потрапила, бо після додавання Мадрида місця в розкладі не залишилося. Місцева влада заявила, що це не останнє слово, і закликала відновити переговори. Поза Формулою 1 автодром лишається діючим майданчиком: у 2024 році він приймав 6 годин Imola чемпіонату світу FIA з гонок на витривалість, у 2020 році — чемпіонат світу з шосейних велоперегонів, у 2018 році — етап чемпіонату світу з мотокросу, а у 2015-2017 роках — масштабні концерти."
+   },
+   "sources": [
+    {
+     "url": "https://africa.espn.com/f1/story/_/id/45483485/formula-1-2026-calendar-madrid-gp-debuts-imola-dropped",
+     "publisher": "ESPN",
+     "locator": "summary: Imola removed from 2026 calendar; last race of current contract; Madrid takes the slot"
+    },
+    {
+     "url": "https://www.motorsport.com/f1/news/imola-releases-statement-after-2026-f1-exclusion-by-no-means-the-final-word/10731355/",
+     "publisher": "Motorsport.com",
+     "locator": "joint statement by Imola mayor and Emilia-Romagna president, paragraphs 7-9"
+    },
+    {
+     "url": "https://www.autodromoimola.it/en/history/",
+     "publisher": "Autodromo Enzo e Dino Ferrari (official)",
+     "locator": "list of recent events (2015-2024)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "imola-1",
+   "seasons": "1980-1994",
+   "length_km": 5.04,
+   "turns": 22,
+   "change": {
+    "en": "The layout used from the first Formula 1 race in 1980 until 1994. According to the circuit's own history, the Variante Bassa on the pit straight and the Variante Alta before Rivazza had already been added in 1972 to slow the cars, so they were part of the circuit before its championship debut. Tamburello and Villeneuve were still fast, flat-out sections; the 1994 weekend ended this configuration.",
+    "uk": "Конфігурація, якою користувалися від першої гонки Формули 1 у 1980 році до 1994 року. За історією самої траси, Variante Bassa на стартовій прямій і Variante Alta перед Rivazza з'явилися ще у 1972 році, щоб знизити швидкість боліди, тож існували до дебюту в чемпіонаті. Tamburello і Villeneuve залишалися швидкими ділянками; вихідні 1994 року поклали край цій конфігурації."
+   },
+   "sources": [
+    {
+     "url": "https://www.autodromoimola.it/en/history/",
+     "publisher": "Autodromo Enzo e Dino Ferrari (official)",
+     "locator": "history timeline, 1972 entries (Variante Bassa, Variante Alta)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "imola-2",
+   "seasons": "1995-2006",
+   "length_km": 4.959,
+   "turns": 22,
+   "change": {
+    "en": "After the 1994 deaths of Roland Ratzenberger and Ayrton Senna, Tamburello was replaced by a slower chicane and Villeneuve was slowed by a variant for 1995. The circuit's history also lists work at Acque Minerali, Rivazza and the Variante Bassa. F1DB gives this layout 4.959 km, shorter than the earlier 5.04 km.",
+    "uk": "Після загибелі Роланда Ратценбергера й Айртона Сенни у 1994 році Tamburello замінили повільнішою шиканою, а Villeneuve сповільнили додатковою шиканою на 1995 рік. В історії траси також згадано роботи на Acque Minerali, Rivazza та Variante Bassa. За F1DB довжина цієї конфігурації — 4.959 км, менше за попередні 5.04 км."
+   },
+   "sources": [
+    {
+     "url": "https://www.autodromoimola.it/en/history/",
+     "publisher": "Autodromo Enzo e Dino Ferrari (official)",
+     "locator": "history timeline, 1995 entries (Tamburello, Villeneuve, Acque Minerali, Rivazza, Variante Bassa)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "imola-3",
+   "seasons": "2020-2025",
+   "length_km": 4.909,
+   "turns": 19,
+   "change": {
+    "en": "Formula 1 returned in 2020 on a circuit revised after the 2006 race, with the end of the lap altered and the old pit garages and paddock completely rebuilt. The circuit's history adds works in 2008-2009 on the pit-lane entrance and Curva Piratella run-off and a new Low Variant in 2009 for motorcycle homologation. F1DB lists 19 turns and 4.909 km for this layout. The exact turn-by-turn geometry change is not described in the sources opened.",
+    "uk": "Формула 1 повернулася у 2020 році на трасі, змінений після гонки 2006 року: кінець кола переробили, а старі бокси й паддок повністю перебудували. В історії траси також згадано роботи 2008-2009 років на в'їзді в піт-лейн і зоні вильоту Curva Piratella та нову Low Variant 2009 року для омологації FIM. За F1DB ця конфігурація має 19 поворотів і 4.909 км. Точну зміну геометрії по поворотах у використаних джерелах не описано."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/imola-all-you-need-to-know-about-the-returning-italian-circuit.6ZtC4Qfqy4WKcUi3rgaDhD",
+     "publisher": "formula1.com",
+     "locator": "section 'When was the track built?', first paragraph"
+    },
+    {
+     "url": "https://www.autodromoimola.it/en/history/",
+     "publisher": "Autodromo Enzo e Dino Ferrari (official)",
+     "locator": "history timeline, 2008-2009 entries"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "imola-3",
+  "turns": [
+   1,
+   8,
+   10,
+   16,
+   19
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No source opened ties a name to turns 1, 8, 10, 16 or 19 of imola-3; they are left unnamed rather than guessed.",
+  "The exact turn-by-turn differences between imola-2 and imola-3 (22 to 19 turns, 4.959 to 4.909 km) were not found in an opened source.",
+  "Whether the 1972 variants are counted inside F1DB's imola-1 22 turns was not verified.",
+  "Prospects of a future return were not asserted; only the 2026 exclusion statement was sourced."
+ ]
+}

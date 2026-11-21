@@ -1,0 +1,97 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "jerez",
+ "writer": "research-batch-3",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "jerez:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A permanent circuit grown from motorcycle tradition",
+    "uk": "Постійна траса, що виросла з мотоциклетної традиції"
+   },
+   "text": {
+    "en": "The circuit at Jerez de la Frontera opened in 1985. The circuit's own history links it to the town's motorcycle racing tradition, including the Merced Trophy of the early 1960s, and describes it as a modern permanent speed circuit able to host top-level tests. It was still unfinished, with no pits or race-control building, when its first race took place on 8 December 1985, a rain-hit qualifying test for the Spanish Touring Car Championship. Only months later Formula 1 arrived: the first Formula 1 Grand Prix at Jerez, the 1986 Spanish Grand Prix, found the circuit brand new, and Ayrton Senna beat Nigel Mansell by 0.014 seconds. The first Spanish motorcycle Grand Prix followed in 1987. The sources opened do not name the promoters or the designer.",
+    "uk": "Траса в Хересі-де-ла-Фронтері відкрилася у 1985 році. Власна історія траси пов'язує її з місцевою традицією мотоциклетних перегонів, зокрема з Merced Trophy початку 1960-х, і описує як сучасний постійний автодром, здатний приймати тести найвищого рівня. Коли 8 грудня 1985 року відбулася її перша гонка — залікове тестування Іспанського чемпіонату туринг-автомобілів під дощем, — траса ще була недобудована: не було ні піт-лейну, ні будівлі керування гонкою. Лише через кілька місяців до Херес прийшла Формула 1: перше Гран прі Формули 1 на цій трасі, Гран прі Іспанії 1986 року, застало її новою, а Айртон Сенна випередив Найджела Менселла на 0.014 секунди. Перше мотоциклетне Гран прі Іспанії відбулося у 1987 році. У відкритих джерелах не названо ні промоутерів, ні проєктувальника."
+   },
+   "sources": [
+    {
+     "url": "https://circuitodejerez.com/en/circuito/",
+     "publisher": "Circuito de Jerez (official)",
+     "locator": "history/milestones: opened 1985, first race 8 December 1985, motorcycle tradition, 1986 first F1 Grand Prix, 1987 first motorcycle Grand Prix"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/special-article/the-75-greatest-grands-prix/8/72-1986-spanish-gp-tactical-senna-edges-out-mansell/",
+     "publisher": "Motor Sport Magazine",
+     "locator": "1986 Spanish GP: Jerez described as brand new; Senna beat Mansell by 0.014 seconds"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "jerez-1",
+   "seasons": "1986-1990",
+   "length_km": 4.218,
+   "turns": 16,
+   "change": {
+    "en": "F1DB records the Formula 1 layout of 1986-1990 as 4.218 km with 16 turns. The circuit's own milestone list notes that its original chicane was removed in 1992, replaced by a parabolic curve, with 700 m of Air Fence installed, which falls after the last 1990 race. The sources opened do not describe the 1986-1990 corner sequence in detail.",
+    "uk": "F1DB фіксує конфігурацію Формули 1 1986-1990 років як 4.218 км із 16 поворотами. Власний перелік віх траси зазначає, що її первісну шикану прибрали у 1992 році, замінивши параболічним поворотом і встановивши 700 м Air Fence, — це сталося після останньої гонки 1990 року. Відкриті джерела докладно не описують послідовність поворотів у 1986-1990 роках."
+   },
+   "sources": [
+    {
+     "url": "https://circuitodejerez.com/en/circuito/",
+     "publisher": "Circuito de Jerez (official)",
+     "locator": "milestones: 1992 chicane removed, parabolic curve, 700 m Air Fence"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "jerez-2",
+   "seasons": "1994-1997",
+   "length_km": 4.428,
+   "turns": 15,
+   "change": {
+    "en": "The 1994 and 1997 races used the layout with the Ayrton Senna chicane, which the circuit says was built in 1994 for car safety. F1DB gives this layout 4.428 km and 15 turns, matching the circuit's own figure of 4,428 m with the chicane. The circuit also records new pits and a viewing platform (the UFO) added in 2002, after Formula 1's last visit.",
+    "uk": "Гонки 1994 і 1997 років пройшли на конфігурації з шиканою Айртона Сенни, яку, за даними траси, збудували у 1994 році для безпеки автомобілів. F1DB подає для цієї конфігурації 4.428 км і 15 поворотів, що збігається з власним показником траси — 4428 м із шиканою. Траса також фіксує нові піти й оглядовий майданчик (UFO), додані у 2002 році, після останнього візиту Формули 1."
+   },
+   "sources": [
+    {
+     "url": "https://circuitodejerez.com/en/circuito/",
+     "publisher": "Circuito de Jerez (official)",
+     "locator": "layout line (4,423 m; 4,428 m with chicane); milestones: 1994 Ayrton Senna chicane, 2002 new pits and UFO platform"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "jerez-2",
+  "turns": [
+   3,
+   4,
+   7,
+   8,
+   9,
+   11,
+   12,
+   13,
+   14,
+   15
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The circuit's page names the Dry Sack curve, the Crivillé and Ferrari linked curves and the Ayrton Senna chicane but gives no turn numbers, so no number-to-name mapping for the unnamed turns 3, 4, 7, 8, 9, 11-15 was established.",
+  "The circuit page says 'thirteen turns' on the current layout; the F1 layout is recorded by F1DB at 15 turns.",
+  "The 4,423 m length in the circuit's text differs from F1DB's 4.428 km; the 4,428 m figure is the circuit's own 'with the chicane' value.",
+  "Designer and promoters were not found.",
+  "The existing prose's claim of a 'tighter sequence later replaced near Sito Pons' in 1986-1990 was not verified."
+ ]
+}

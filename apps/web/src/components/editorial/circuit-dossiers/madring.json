@@ -1,0 +1,97 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "madring",
+ "writer": "research-batch-3",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "madring:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "A new venue with a long contract",
+    "uk": "Нова траса з довгим контрактом"
+   },
+   "text": {
+    "en": "Madring is a new circuit in the IFEMA-Valdebebas area of Madrid, made up of street and non-street sections. Formula 1 announced the deal on 23 January 2024: IFEMA Madrid would organise the Spanish Grand Prix from 2026 to 2035, a period of about ten years. The first race, in 2026, was won by Kimi Antonelli for Mercedes, 4.351 seconds ahead of Max Verstappen, with Lando Norris third; a Virtual Safety Car after Lance Stroll stopped at Turn 20 shaped the pit-stop strategies. As of the sources opened, Madring is therefore an active Formula 1 venue rather than a historical one, and its 2026 race is both its first and, so far, its most recent. A city tourism listing found in a search gives 10-12 September 2027 for the next edition, but that page was not opened.",
+    "uk": "Madring — нова траса в районі IFEMA-Вальдебебас у Мадриді, що поєднує вуличні й невуличні ділянки. Формула 1 оголосила угоду 23 січня 2024 року: IFEMA Madrid організовуватиме Гран прі Іспанії з 2026 по 2035 рік, тобто приблизно десять років. Першу гонку у 2026 році виграв Кімі Антонеллі на Mercedes, випередивши Макса Ферстаппена на 4.351 секунди; третім був Ландо Норріс. Віртуальний автомобіль безпеки після зупинки Ленса Стролла на повороті 20 вплинув на піт-стоп-стратегії. Отже, за відкритими джерелами Madring — діюча траса Формули 1, а не історична, і її гонка 2026 року є одночасно першою та поки що останньою. Туристичний довідник міста, знайдений під час пошуку, називає наступну гонку 10-12 вересня 2027 року, але цю сторінку не відкривали."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/madrid-formula-1-calendar-2026-spanish-grand-prix.rKwSPJ74MczwzDhHVxdQz",
+     "publisher": "formula1.com",
+     "locator": "announcement of 23 January 2024: 2026 to 2035 deal, IFEMA Madrid organiser, street and non-street sections"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/antonelli-clinches-victory-over-verstappen-and-norris-in-spanish-gp.644ZZfPzRPEaUh2JBHcB9",
+     "publisher": "formula1.com",
+     "locator": "2026 race report: gaps to the winner, Stroll stopped at Turn 20, Virtual Safety Car"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [
+  {
+   "layout_id": "madring-1",
+   "turns": [
+    14,
+    15,
+    16
+   ],
+   "name": "Enlazadas de Valdebebas",
+   "status": "official",
+   "period": "2026-present",
+   "source": {
+    "url": "https://es.motorsport.com/f1/news/nombre-curvas-vueltas-longitud-dise%C3%B1o-definitivo-madring-circuito-madrid-2026/10716759/",
+    "publisher": "Motorsport.com (Spain)",
+    "locator": "list 'Curvas con nombre': Curvas 14, 15 y 16, Enlazadas de Valdebebas"
+   },
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "madring-1",
+   "turns": [
+    6
+   ],
+   "name": "Subida de las Cárcavas",
+   "status": "official",
+   "period": "2026-present",
+   "source": {
+    "url": "https://es.motorsport.com/f1/news/nombre-curvas-vueltas-longitud-dise%C3%B1o-definitivo-madring-circuito-madrid-2026/10716759/",
+    "publisher": "Motorsport.com (Spain)",
+    "locator": "list 'Curvas con nombre': Curva 6 (inicio de la subida), Subida de las Cárcavas"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "madring-1",
+  "turns": [
+   1,
+   2,
+   4,
+   5,
+   7,
+   9,
+   10,
+   11,
+   13,
+   17,
+   19,
+   20,
+   21
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The Reuters race report could not be fetched and the 2027 date comes from a search listing that was not opened, so no claim about 2027 beyond the contract is stated as verified.",
+  "The Spanish Motorsport.com article gives 5.47 km and 22 turns, and F1.com's January 2024 announcement 5.47 km with 20 corners (preliminary); F1DB gives 5.416 km and 22 turns. The prose uses no length.",
+  "Whether the corner names are 'official' circuit names or media/layout-presentation names was not verified; Motorsport.com (Spain) is the only publisher that ties them to turn numbers.",
+  "'Subida de las Cárcavas' is a named climb starting at Turn 6, not a single corner, so it should be reviewed before being placed as a corner name.",
+  "The Formula 1 race report states Antonelli won by 4.351 s but also quotes 4.2 s over his nearest rivals; the timed gap 4.351 s is used and matches the existing prose.",
+  "The F1 report did not mention the circuit's future; the contract term comes from the 2024 announcement."
+ ]
+}

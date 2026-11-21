@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "indianapolis",
+ "writer": "research-batch-3",
+ "written_at": "2026-11-21",
+ "sections": [],
+ "layout_timeline": [
+  {
+   "layout_id": "indianapolis-1",
+   "seasons": "1950-1960",
+   "length_km": 4.023,
+   "turns": 4,
+   "change": {
+    "en": "For the 11 World Championship Indianapolis 500 rounds of 1950-1960 the venue was used as its 2.5-mile oval, which F1DB records as 4.023 km with 4 turns. There was no road section: the layout is simply the oval used for the 500.",
+    "uk": "Упродовж 11 етапів чемпіонату світу 1950-1960 років, що збігалися з Indianapolis 500, трасою слугував її овал завдовжки 2.5 милі, який F1DB подає як 4.023 км із 4 поворотами. Дорожньої ділянки не було: ця конфігурація — просто овал, на якому проходили 500 миль."
+   },
+   "sources": [
+    {
+     "url": "https://lapledger.org/circuits/indianapolis",
+     "publisher": "Lap Ledger",
+     "locator": "layouts list: 1950-1960 oval, 4.023 km, 4 turns, 11 rounds"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "indianapolis-2",
+   "seasons": "2000-2007",
+   "length_km": 4.192,
+   "turns": 13,
+   "change": {
+    "en": "Formula 1 returned in 2000 on a new clockwise road course of 13 turns, announced by IMS and Formula One officials in 1998. It used the front straight, a newly built infield road section, the short chute between oval Turns 1 and 2, and oval Turn 1, so the final banked corner fed onto the start line. The construction project also brought new garages, suites, a media centre and a control tower. The sources opened describe no change to the layout between 2000 and 2007.",
+    "uk": "Формула 1 повернулася у 2000 році на нову дорожню трасу з 13 поворотів, що проходить за годинниковою стрілкою; її анонсували у 1998 році представники IMS і Formula One. Траса використовувала стартову пряму, новозбудовану ділянку всередині овалу, коротку перемичку між поворотами 1 і 2 овалу та поворот 1 овалу, тому останній віраж із нахилом виводив на стартову лінію. Будівництво також передбачало нові гаражі, ложі, медіацентр і диспетчерську вежу. У відкритих джерелах немає згадок про зміни конфігурації між 2000 і 2007 роками."
+   },
+   "sources": [
+    {
+     "url": "https://www.indianapolismotorspeedway.com/history/formula-one",
+     "publisher": "Indianapolis Motor Speedway (official)",
+     "locator": "introduction and paragraph beginning 'IMS and Formula One officials announced in 1998'"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "indianapolis-2",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Corner names for the 2000-2007 road course were not found in any opened source; the existing prose only calls the final turn 'Turn 13'.",
+  "The IMS page gives 2.605 miles for the road course; F1DB's 4.192 km was kept.",
+  "Lap Ledger notes a clockwise/anticlockwise inconsistency on its own page; the IMS official page confirms the road course ran clockwise.",
+  "The IMS page did not mention the 1950-1960 oval period; the oval facts rely on Lap Ledger (F1DB-derived) only."
+ ]
+}
