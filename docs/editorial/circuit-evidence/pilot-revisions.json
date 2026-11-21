@@ -350,6 +350,60 @@
    "old": "\"interlagos-names\": \"https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf\"",
    "new": "\"interlagos-names\": \"https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names\"",
    "old_sha256": "d4a8c3538c255b668d7bafa174aae3817c2325c7c46857c3caacaa8017a780a7"
+  },
+  {
+   "claim": "adelaide:narrative (1994)",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "en",
+   "reason": "factual: 1994 was Schumacher's first drivers' title, so he could not retain it (Motor Sport, December 1994; F1DB champions) [dossier research, 2026-11-21]",
+   "old": "Schumacher retained the championship, while",
+   "new": "Schumacher won his first championship, while",
+   "old_sha256": "39fe4676c2eb19248efa783a4bb60816ad28171727c53fc2f0f5fdb53c68c02c"
+  },
+  {
+   "claim": "adelaide:narrative (1994) (uk)",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "uk",
+   "reason": "mirror EN [dossier research, 2026-11-21]",
+   "old": "Шумахер зберіг чемпіонство, а",
+   "new": "Шумахер здобув свій перший чемпіонський титул, а",
+   "old_sha256": "9bd353182defc03f04f59c6287a6269741777be81c7fa3db20a57de6dcca61dd"
+  },
+  {
+   "claim": "reims:narrative (1966)",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "en",
+   "reason": "contradicted by pinned F1DB: layout reims-2 covers 1953-1966; Circuits of the Past dates the Gueux bypass to 1952-1953 [dossier research, 2026-11-21]",
+   "old": "The result belongs to the revised 1954–72 course, not the older route through the village of Gueux.",
+   "new": "The result belongs to the revised course used from 1953, not the older route through the village of Gueux.",
+   "old_sha256": "48479e1db9cf838232d0e6a70d43550849c5f10dcac21cda306f32a6af90d7e7"
+  },
+  {
+   "claim": "reims:narrative (1966) (uk)",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "uk",
+   "reason": "mirror EN [dossier research, 2026-11-21]",
+   "old": "Результат належить зміненій конфігурації 1954–1972 років, а не старому маршруту через село Гу.",
+   "new": "Результат належить зміненій конфігурації, що використовувалася з 1953 року, а не старому маршруту через село Гу.",
+   "old_sha256": "6e0b34794d9968a49ef1d94c7565e91210900f0a08665a96c0d2c3d7c3966142"
+  },
+  {
+   "claim": "zolder:narrative_biography",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "en",
+   "reason": "unsupported: no opened source gives a ten-corner count for the present circuit; clause removed [dossier research, 2026-11-21]",
+   "old": "the present shorter ten-corner circuit should not be substituted for it.",
+   "new": "the present, shorter circuit should not be substituted for it.",
+   "old_sha256": "ead0044f17d38fbd5e5b84164485321cdedaa2ce128ff1aae2a1b567f41e67c9"
+  },
+  {
+   "claim": "zolder:narrative_biography (uk)",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "uk",
+   "reason": "mirror EN [dossier research, 2026-11-21]",
+   "old": "її не можна замінювати сучасним коротшим маршрутом із десятьма поворотами.",
+   "new": "її не можна замінювати сучасним коротшим маршрутом.",
+   "old_sha256": "06e6e073b2df07392104f9d1fe59ab568166c295bdc6ec4186c573ff314b67c7"
   }
  ],
  "schema_version": 1,
