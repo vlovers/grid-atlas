@@ -59,7 +59,8 @@ test('Interlagos has 15 individually sourced bends and no invented names for its
   assert.equal(interlagos.sections[11].name, 'Junção');
   assert.equal(interlagos.sections[13].name, null);
   assert.equal(interlagos.sections[14].name, null);
-  assert.match(corners.sources['interlagos-names'], /f1sp_2025_media_kit/);
+  // B2 pilot fact-check: the FIA media kit names no Interlagos corner except Senna; the names page does.
+  assert.match(corners.sources['interlagos-names'], /how-the-interlagos-corners-got-their-names/);
 });
 
 test('Austin/Bahrain research is actually mapped into candidate UI, without invented named corners', () => {

@@ -23,13 +23,19 @@
   "claims": 53,
   "claims_by_type": {
    "statistic": 6,
-   "dated_event": 14,
+   "dated_event": 13,
    "measurement": 0,
    "quotation": 0,
    "interpretation": 0,
-   "narrative": 33
+   "narrative": 34
   },
-  "claims_unaligned_uk": 13,
+  "claims_unaligned_uk": 5,
+  "name_agreement": {
+   "agree": 20,
+   "differ": 1,
+   "uk_unrecognised": 0,
+   "no_names": 27
+  },
   "dataset_checks": {
    "supported": 1,
    "conflict": 0,
@@ -44,11 +50,22 @@
    "cited_sources_unavailable": 2,
    "no_cited_sources": 0
   },
-  "claims_verified": 0,
+  "claims_verified": 6,
+  "factcheck": {
+   "checked": 53,
+   "verified": 6,
+   "checker": "factcheck-agent-C",
+   "counts": {
+    "checker_verified_policy_rejected": 22,
+    "unsupported": 22,
+    "disputed": 1,
+    "verified": 6,
+    "unverifiable": 2
+   }
+  },
   "sources": {
    "cited": 11,
-   "live": 9,
-   "live_pdf_no_text": 1
+   "live": 9
   },
   "source_structural_issues": 0,
   "corners": {
@@ -138,7 +155,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "Nigel Mansell's home race seemed to last only moments.",
-   "uk": null,
+   "uk": "Домашня гонка Найджела Менселла, здавалося, тривала лише мить.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -172,8 +189,8 @@
    "block_id": "brands-hatch:long_history_draft",
    "claim_type": "narrative",
    "importance": "standard",
-   "en": "His Williams stopped with a broken CV joint.",
-   "uk": null,
+   "en": "His Williams stopped with a broken driveshaft joint.",
+   "uk": "На його Williams зламався шарнір приводного вала.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -207,8 +224,8 @@
    "block_id": "brands-hatch:long_history_draft",
    "claim_type": "narrative",
    "importance": "standard",
-   "en": "Then a red flag offered him another start — but the crash behind that stoppage had serious consequences for another driver.",
-   "uk": null,
+   "en": "Then a crash further back brought out the red flag and gave him another start.",
+   "uk": "Потім аварія позаду спричинила червоний прапор і дала йому ще один старт.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -225,14 +242,14 @@
     },
     {
      "source_id": "src-00f752b98688",
-     "passage_sha256": "0773798c72159be396e7ae07646b4aad704f8042158c5695d73939a8af93c683",
-     "offset": 16545,
-     "length": 154,
+     "passage_sha256": "48360dc8df1b1726b671a47852f16f57ab0ec0c5b5eea6bb413ce2c27963d59a",
+     "offset": 4235,
+     "length": 209,
      "numbers_covered": true,
      "names_matched": [
       "Then"
      ],
-     "score": 4
+     "score": 3
     }
    ]
   },
@@ -243,7 +260,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "For the restart he took the spare Williams prepared for Nelson Piquet.",
-   "uk": null,
+   "uk": "На рестарт він вийшов у запасному Williams, підготовленому для Нельсона Піке.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -283,7 +300,7 @@
    "claim_type": "dated_event",
    "importance": "critical",
    "en": "The accident had a far graver consequence for Jacques Laffite, whose severe leg injuries ended his Formula 1 career.",
-   "uk": null,
+   "uk": "Для Жака Лаффіта ця аварія мала значно тяжчі наслідки: серйозні травми ніг завершили його кар'єру у Формулі-1.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -317,10 +334,10 @@
    "claim_id": "brands-hatch:long_history_draft#s6",
    "circuit_id": "brands-hatch",
    "block_id": "brands-hatch:long_history_draft",
-   "claim_type": "dated_event",
-   "importance": "critical",
-   "en": "Piquet led the restart, but Mansell passed him on lap 23 after his team-mate missed a gear.",
-   "uk": null,
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Piquet led the restart, but Mansell passed him after his team-mate missed a gear.",
+   "uk": "Піке лідирував після рестарту, але пропустив Менселла через помилку під час перемикання передач.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -329,7 +346,7 @@
      "passage_sha256": "68072f8691c7595e49d8ec25c183dea43f86ddf68682c70cadb29ce6113e8849",
      "offset": 14493,
      "length": 198,
-     "numbers_covered": false,
+     "numbers_covered": true,
      "names_matched": [
       "Piquet",
       "Mansell"
@@ -337,16 +354,16 @@
      "score": 9
     },
     {
-     "source_id": "src-f1165736bdf8",
-     "passage_sha256": "cc18602104ff1c6ea2ca22f6d341767171285a916324761cacf5f8418cc8b0b9",
-     "offset": 2912,
-     "length": 1365,
+     "source_id": "src-00f752b98688",
+     "passage_sha256": "570b4636cbf2db91aa9ef85fe0e971022aa9834e85befd5055ed6f245d92c466",
+     "offset": 4445,
+     "length": 397,
      "numbers_covered": true,
      "names_matched": [
       "Piquet",
       "Mansell"
      ],
-     "score": 9
+     "score": 8
     }
    ]
   },
@@ -357,7 +374,7 @@
    "claim_type": "dated_event",
    "importance": "critical",
    "en": "Their tyre stops did not settle the contest; the Williams drivers continued racing, eventually finishing first and second with Alain Prost a lap behind.",
-   "uk": null,
+   "uk": "Піт-стопи не зняли напруги: напарники продовжили боротьбу й фінішували першими та другими, а Ален Прост відстав на коло.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -396,7 +413,7 @@
    "claim_type": "statistic",
    "importance": "critical",
    "en": "The result was a home win for Mansell, but the restart that made it possible came from a crash that must not be treated as a convenient plot device.",
-   "uk": null,
+   "uk": "Це була домашня перемога Менселла, проте не слід перетворювати чужу тяжку аварію на зручний сюжетний прийом.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -536,8 +553,8 @@
    "block_id": "brands-hatch:narrative_biography",
    "claim_type": "dated_event",
    "importance": "critical",
-   "en": "The original Dingle Dell chicane was still there in the final championship visit; the smoother Sheene Curve did not appear until 2003.",
-   "uk": "Під час останнього чемпіонатного візиту ще існувала стара шикана Dingle Dell; плавніша Sheene Curve з'явилася лише у 2003-му.",
+   "en": "The smoother Sheene Curve, which replaced the old Dingle Dell chicane, did not appear until 2003, long after Formula 1 had left.",
+   "uk": "Плавніша Sheene Curve, що замінила стару шикану Dingle Dell, з'явилася лише у 2003-му, коли Формула-1 давно покинула трасу.",
    "status": "passages_partial",
    "dataset": [],
    "passages": [
@@ -548,24 +565,23 @@
      "length": 128,
      "numbers_covered": false,
      "names_matched": [
-      "Dingle",
-      "Dell",
       "Sheene",
-      "Curve"
+      "Curve",
+      "Dingle",
+      "Dell"
      ],
      "score": 12
     },
     {
      "source_id": "src-1d5e90abd23f",
-     "passage_sha256": "d46cc9f803237103389a0df04ba128a0bd8ec7ab6a1cc1caa8856b153a17af56",
-     "offset": 406,
-     "length": 508,
+     "passage_sha256": "692f52f1b78e1b7fdd4a5984316e1d5c95de5b27b6f8b6c7a29e8f0bae8446f4",
+     "offset": 2592,
+     "length": 64,
      "numbers_covered": false,
      "names_matched": [
-      "Sheene",
       "Curve"
      ],
-     "score": 6
+     "score": 8
     }
    ]
   },
@@ -2095,13 +2111,13 @@
    "status": {
     "url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
     "source_id": "src-c6d92c8cfae5",
-    "checked_at": "2026-11-16T11:22:04.402Z",
-    "http_status": 200,
-    "final_url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
-    "content_type": "application/pdf",
-    "outcome": "live_pdf_no_text",
-    "bytes_sha256": "7c2e16c6df031fb2c7b4e3afb1668c395c16186c0c4bf910c0234315fae584b9",
-    "bytes": 425081
+    "checked_at": "2026-11-17T00:12:27.591841+00:00",
+    "bytes_sha256": "c3a923be8d815eed42a706e16652098488085506d427a9f1116597f121d29892",
+    "bytes": 425081,
+    "pages": 1,
+    "outcome": "live_pdf_text",
+    "text_sha256": "9577c5596421e28e3a31ca85047bedc9eb57ef789670aa266233d3193493c18c",
+    "text_chars": 194
    }
   },
   {

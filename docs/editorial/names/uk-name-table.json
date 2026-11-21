@@ -1,0 +1,2342 @@
+{
+ "schema_version": 1,
+ "generated_by": "scripts/build-uk-name-table.mjs",
+ "base": "docs/editorial/names/uk-names-base.json",
+ "scope": "Drivers named in the seven pilot circuits' claims plus every race winner at those circuits (71). Constructors stay in Latin script in Ukrainian prose (Ferrari, Williams, McLaren), as in the existing drafts, and are not listed.",
+ "convention": "Ukrainian practical transcription as used in Ukrainian motorsport media; forms already used in the repository's Ukrainian drafts are preferred (attested=true). Surnames ending in -о, -е, -є, -і, -у stay undeclined.",
+ "counts": {
+  "entries": 70,
+  "approved": 68,
+  "changes_required": 2,
+  "stale_review": 0,
+  "pending": 0,
+  "rejected": 0
+ },
+ "entries": [
+  {
+   "key": "alain-prost",
+   "en": "Alain Marie Pascal Prost",
+   "uk": "Ален Прост",
+   "full_forms": [
+    "Ален Прост",
+    "Алена Проста",
+    "Алену Просту",
+    "Алену Простові",
+    "Аленом Простом",
+    "Алені Прості",
+    "Алені Простові"
+   ],
+   "surname_forms": [
+    "Прост",
+    "Проста",
+    "Просту",
+    "Простові",
+    "Простом",
+    "Прості"
+   ],
+   "surname_key": "ambiguous:prost",
+   "attested_in_drafts": [
+    "Ален Прост",
+    "Алена Проста",
+    "Аленом Простом",
+    "Прост",
+    "Проста",
+    "Простом"
+   ],
+   "forms_sha256": "d374c43bfbecc190f45457043edaed4c633eb7446d0e3361b49f02bba27c3d32",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Standard form; hard-stem paradigm correct."
+   }
+  },
+  {
+   "key": "alan-jones",
+   "en": "Alan Stanley Jones",
+   "uk": "Алан Джонс",
+   "full_forms": [
+    "Алан Джонс",
+    "Алана Джонса",
+    "Алану Джонсу",
+    "Алану Джонсові",
+    "Аланом Джонсом",
+    "Алані Джонсі",
+    "Алані Джонсові"
+   ],
+   "surname_forms": [
+    "Джонс",
+    "Джонса",
+    "Джонсу",
+    "Джонсові",
+    "Джонсом",
+    "Джонсі"
+   ],
+   "surname_key": "ambiguous:jones",
+   "attested_in_drafts": [
+    "Алан Джонс",
+    "Алана Джонса",
+    "Джонс",
+    "Джонса"
+   ],
+   "forms_sha256": "1354d5a272347ca65d695f67e446b0695dd5b0536359ed0346c295b794ce2452",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Standard form; paradigm correct."
+   }
+  },
+  {
+   "key": "alberto-ascari",
+   "en": "Alberto Ascari",
+   "uk": "Альберто Аскарі",
+   "full_forms": [
+    "Альберто Аскарі"
+   ],
+   "surname_forms": [
+    "Аскарі"
+   ],
+   "surname_key": "alberto-ascari",
+   "attested_in_drafts": [
+    "Альберто Аскарі",
+    "Аскарі"
+   ],
+   "forms_sha256": "ef1dc529482c87883b480b4b397ce0fc3ae0573a324b1aed25b29bdfc7082115",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Both parts end in a vowel (-о/-і) and are not declined."
+   }
+  },
+  {
+   "key": "ayrton-senna",
+   "en": "Ayrton Senna da Silva",
+   "uk": "Айртон Сенна",
+   "full_forms": [
+    "Айртон Сенна",
+    "Айртона Сенни",
+    "Айртону Сенні",
+    "Айртона Сенну",
+    "Айртоном Сенною",
+    "Айртоні Сенні"
+   ],
+   "surname_forms": [
+    "Сенна",
+    "Сенни",
+    "Сенні",
+    "Сенну",
+    "Сенною"
+   ],
+   "surname_key": "ambiguous:senna",
+   "attested_in_drafts": [
+    "Айртон Сенна",
+    "Айртона Сенни",
+    "Айртону Сенні",
+    "Айртона Сенну",
+    "Айртоном Сенною",
+    "Сенна",
+    "Сенни",
+    "Сенні",
+    "Сенну",
+    "Сенною"
+   ],
+   "forms_sha256": "5c79fceb962177749684b9439ed8dad45ad293bc62e03c9792285e1add5c0548",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Standard form; a-declension of Сенна correct."
+   }
+  },
+  {
+   "key": "bruce-mclaren",
+   "en": "Bruce Leslie McLaren",
+   "uk": "Брюс Макларен",
+   "full_forms": [
+    "Брюс Макларен",
+    "Брюса Макларена",
+    "Брюсу Макларену",
+    "Брюсу Макларенові",
+    "Брюсом Маклареном",
+    "Брюсі Макларені",
+    "Брюсі Макларенові"
+   ],
+   "surname_forms": [
+    "Макларен",
+    "Макларена",
+    "Макларену",
+    "Макларенові",
+    "Маклареном",
+    "Макларені"
+   ],
+   "surname_key": "ambiguous:mclaren",
+   "attested_in_drafts": [
+    "Брюс Макларен",
+    "Брюса Макларена",
+    "Макларен",
+    "Макларена"
+   ],
+   "forms_sha256": "c9fb5973ea998916c22166d61635e243ee1fdf643c7cdfeeaec7ef015cd36b11",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Standard form; paradigm correct. The EN field reads 'Mclaren' (should be 'McLaren'); this does not affect the UK form."
+   }
+  },
+  {
+   "key": "carlos-pace",
+   "en": "José Carlos Pace",
+   "uk": "Карлос Паче",
+   "full_forms": [
+    "Карлос Паче",
+    "Карлоса Паче",
+    "Карлосу Паче",
+    "Карлосом Паче",
+    "Карлосі Паче"
+   ],
+   "surname_forms": [
+    "Паче"
+   ],
+   "surname_key": "carlos-pace",
+   "attested_in_drafts": [
+    "Карлос Паче",
+    "Карлоса Паче",
+    "Карлосом Паче",
+    "Паче"
+   ],
+   "forms_sha256": "525ffa69697afbc768a897eba4cfc33f72e02e02067a8f0b51cf6d46ad4f99fd",
+   "review": {
+    "status": "changes_required",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Pace was Brazilian, and the name is read in Portuguese, not Italian, so 'Паче' is an Italian reading. Use Пасе (the usual form in Ukrainian and Russian-language sources). Confirm against a Ukrainian source before re-approving, and update the drafts that use Паче. The surname is not declined either way."
+   }
+  },
+  {
+   "key": "carlos-reutemann",
+   "en": "Carlos Alberto Reutemann",
+   "uk": "Карлос Ройтеманн",
+   "full_forms": [
+    "Карлос Ройтеманн",
+    "Карлоса Ройтеманна",
+    "Карлосу Ройтеманну",
+    "Карлосу Ройтеманнові",
+    "Карлосом Ройтеманном",
+    "Карлосі Ройтеманні",
+    "Карлосі Ройтеманнові"
+   ],
+   "surname_forms": [
+    "Ройтеманн",
+    "Ройтеманна",
+    "Ройтеманну",
+    "Ройтеманнові",
+    "Ройтеманном",
+    "Ройтеманні"
+   ],
+   "surname_key": "carlos-reutemann",
+   "attested_in_drafts": [
+    "Карлос Ройтеманн",
+    "Карлоса Ройтеманна",
+    "Ройтеманн",
+    "Ройтеманна"
+   ],
+   "forms_sha256": "098fe3b89d98a687475357e4ff6d527f4206a4f44d300617fb0d6138f7695dc5",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Ройтеманн is the established form; keeping the double -нн in a proper name is allowed. Paradigm correct."
+   }
+  },
+  {
+   "key": "carlos-sainz-jr",
+   "en": "Carlos Sainz Vázquez de Castro",
+   "uk": "Карлос Сайнс",
+   "full_forms": [
+    "Карлос Сайнс",
+    "Карлоса Сайнса",
+    "Карлосу Сайнсу",
+    "Карлосу Сайнсові",
+    "Карлосом Сайнсом",
+    "Карлосі Сайнсі",
+    "Карлосі Сайнсові"
+   ],
+   "surname_forms": [
+    "Сайнс",
+    "Сайнса",
+    "Сайнсу",
+    "Сайнсові",
+    "Сайнсом",
+    "Сайнсі"
+   ],
+   "surname_key": "carlos-sainz-jr",
+   "attested_in_drafts": [
+    "Карлос Сайнс",
+    "Карлоса Сайнса",
+    "Сайнс",
+    "Сайнса"
+   ],
+   "forms_sha256": "a9317b386da685567daa92c4814e6a4b9eb08fd4f9292079b49bdec506bc9c49",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Сайнс is the established Ukrainian media form; paradigm correct."
+   }
+  },
+  {
+   "key": "charles-leclerc",
+   "en": "Charles Marc Hervé Perceval Leclerc",
+   "uk": "Шарль Леклер",
+   "full_forms": [
+    "Шарль Леклер",
+    "Шарля Леклера",
+    "Шарлю Леклеру",
+    "Шарлю Леклерові",
+    "Шарлем Леклером",
+    "Шарлі Леклері",
+    "Шарлі Леклерові"
+   ],
+   "surname_forms": [
+    "Леклер",
+    "Леклера",
+    "Леклеру",
+    "Леклерові",
+    "Леклером",
+    "Леклері"
+   ],
+   "surname_key": "ambiguous:leclerc",
+   "attested_in_drafts": [
+    "Шарль Леклер",
+    "Шарля Леклера",
+    "Леклер",
+    "Леклера",
+    "Леклером"
+   ],
+   "forms_sha256": "f515dd476b3da426cb33a140d66516065eb9ffd510af00a1f3867e2265ba93b2",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Standard form. The soft-stem given name (Шарля/Шарлю/Шарлем/Шарлі) is correct; Шарлеві is an optional variant that is not generated."
+   }
+  },
+  {
+   "key": "clay-regazzoni",
+   "en": "Gianclaudio Giuseppe Regazzoni",
+   "uk": "Клей Регаццоні",
+   "full_forms": [
+    "Клей Регаццоні",
+    "Клея Регаццоні",
+    "Клею Регаццоні",
+    "Клеєм Регаццоні",
+    "Клеї Регаццоні"
+   ],
+   "surname_forms": [
+    "Регаццоні"
+   ],
+   "surname_key": "clay-regazzoni",
+   "attested_in_drafts": [
+    "Клей Регаццоні",
+    "Клея Регаццоні",
+    "Регаццоні"
+   ],
+   "forms_sha256": "47bb4d2a2dec6b07c85f45007dd62de19ee673726fdeb87468316cd0a42f9b8e",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The -й stem now declines correctly: Клея, Клею, Клея (acc), Клеєм, Клеї. Регаццоні is not declined. Клеєві is an optional variant that is not generated, consistent with other given names."
+   }
+  },
+  {
+   "key": "damon-hill",
+   "en": "Damon Graham Devereux Hill",
+   "uk": "Деймон Гілл",
+   "full_forms": [
+    "Деймон Гілл",
+    "Деймона Гілла",
+    "Деймону Гіллу",
+    "Деймону Гіллові",
+    "Деймоном Гіллом",
+    "Деймоні Гіллі",
+    "Деймоні Гіллові"
+   ],
+   "surname_forms": [
+    "Гілл",
+    "Гілла",
+    "Гіллу",
+    "Гіллові",
+    "Гіллом",
+    "Гіллі"
+   ],
+   "surname_key": "ambiguous:hill",
+   "attested_in_drafts": [
+    "Деймон Гілл",
+    "Деймона Гілла",
+    "Деймоном Гіллом",
+    "Гілл",
+    "Гілла",
+    "Гіллом"
+   ],
+   "forms_sha256": "89d0c2dfc7ffc7ac33e14cb669f4b020d821772bea413e4f4fa54c813a8dd7e6",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Деймон Гілл (H→Г) is the established form; paradigm correct."
+   }
+  },
+  {
+   "key": "david-coulthard",
+   "en": "David Marshall Coulthard",
+   "uk": "Девід Култгард",
+   "full_forms": [
+    "Девід Култгард",
+    "Девіда Култгарда",
+    "Девіду Култгарду",
+    "Девіду Култгардові",
+    "Девідом Култгардом",
+    "Девіді Култгарді",
+    "Девіді Култгардові"
+   ],
+   "surname_forms": [
+    "Култгард",
+    "Култгарда",
+    "Култгарду",
+    "Култгардові",
+    "Култгардом",
+    "Култгарді"
+   ],
+   "surname_key": "david-coulthard",
+   "attested_in_drafts": [
+    "Девід Култгард",
+    "Девіда Култгарда",
+    "Култгард",
+    "Култгарда"
+   ],
+   "forms_sha256": "aa9067a684557cffab49dd462acb69253f8987e249a7e6988b0e673c5f88f22f",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Култгард follows the archive's H→Г rule (Coult+hard). 'Култхард' also appears in Ukrainian media, so keep Култгард as the house form for consistency. Paradigm correct."
+   }
+  },
+  {
+   "key": "denny-hulme",
+   "en": "Denis Clive Hulme",
+   "uk": "Денні Галм",
+   "full_forms": [
+    "Денні Галм",
+    "Денні Галма",
+    "Денні Галму",
+    "Денні Галмові",
+    "Денні Галмом",
+    "Денні Галмі"
+   ],
+   "surname_forms": [
+    "Галм",
+    "Галма",
+    "Галму",
+    "Галмові",
+    "Галмом",
+    "Галмі"
+   ],
+   "surname_key": "denny-hulme",
+   "attested_in_drafts": [
+    "Денні Галм",
+    "Денні Галма",
+    "Галм",
+    "Галма"
+   ],
+   "forms_sha256": "e095f98c3a6a156aa59eb0a66ed8f4ef4086e9fabace0c4ac210b294f2b9936a",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Денні is not declined; Галм declines as a hard stem. Correct."
+   }
+  },
+  {
+   "key": "emerson-fittipaldi",
+   "en": "Emerson Fittipaldi",
+   "uk": "Емерсон Фіттіпальді",
+   "full_forms": [
+    "Емерсон Фіттіпальді",
+    "Емерсона Фіттіпальді",
+    "Емерсону Фіттіпальді",
+    "Емерсоном Фіттіпальді",
+    "Емерсоні Фіттіпальді"
+   ],
+   "surname_forms": [
+    "Фіттіпальді"
+   ],
+   "surname_key": "ambiguous:fittipaldi",
+   "attested_in_drafts": [
+    "Емерсон Фіттіпальді",
+    "Емерсону Фіттіпальді",
+    "Фіттіпальді"
+   ],
+   "forms_sha256": "d8bf16a272b7817b11f7b111e1119b9ef382991bf5cea7c3900c01e9b6c3db2d",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Фіттіпальді is not declined; correct."
+   }
+  },
+  {
+   "key": "felipe-massa",
+   "en": "Felipe Massa",
+   "uk": "Феліпе Масса",
+   "full_forms": [
+    "Феліпе Масса",
+    "Феліпе Масси",
+    "Феліпе Массі",
+    "Феліпе Массу",
+    "Феліпе Массою"
+   ],
+   "surname_forms": [
+    "Масса",
+    "Масси",
+    "Массі",
+    "Массу",
+    "Массою"
+   ],
+   "surname_key": "felipe-massa",
+   "attested_in_drafts": [
+    "Феліпе Масса",
+    "Феліпе Масси",
+    "Масса",
+    "Масси",
+    "Массу"
+   ],
+   "forms_sha256": "08ac1e358474cfe145977a25c459b07c9331f6334d183a7dcb54b7b7dba44e27",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Established form; a-declension correct. Warning: Масса, Массу and Массі collide with forms of Масс (jochen-mass), but the surname_key is not marked ambiguous."
+   }
+  },
+  {
+   "key": "fernando-alonso",
+   "en": "Fernando Alonso Díaz",
+   "uk": "Фернандо Алонсо",
+   "full_forms": [
+    "Фернандо Алонсо"
+   ],
+   "surname_forms": [
+    "Алонсо"
+   ],
+   "surname_key": "fernando-alonso",
+   "attested_in_drafts": [
+    "Фернандо Алонсо",
+    "Алонсо"
+   ],
+   "forms_sha256": "b3ae2f4b132829f91a544790534b675d9f4ce52a386e70b539d910ef20187a38",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Not declined; correct."
+   }
+  },
+  {
+   "key": "george-russell",
+   "en": "George William Russell",
+   "uk": "Джордж Расселл",
+   "full_forms": [
+    "Джордж Расселл",
+    "Джорджа Расселла",
+    "Джорджу Расселлу",
+    "Джорджу Расселлові",
+    "Джорджем Расселлом",
+    "Джорджі Расселлі",
+    "Джорджі Расселлові"
+   ],
+   "surname_forms": [
+    "Расселл",
+    "Расселла",
+    "Расселлу",
+    "Расселлові",
+    "Расселлом",
+    "Расселлі"
+   ],
+   "surname_key": "george-russell",
+   "attested_in_drafts": [
+    "Джорджа Расселла",
+    "Расселл",
+    "Расселла"
+   ],
+   "forms_sha256": "1596c9a63e14b468160cb17bd2125cb178c9b5512ad4ba23ef02d8a650812102",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Established form. Джорджем (instrumental after ж) is correct; Джорджеві is an optional dative/locative variant that is not generated."
+   }
+  },
+  {
+   "key": "giancarlo-fisichella",
+   "en": "Giancarlo Fisichella",
+   "uk": "Джанкарло Фізікелла",
+   "full_forms": [
+    "Джанкарло Фізікелла",
+    "Джанкарло Фізікелли",
+    "Джанкарло Фізікеллі",
+    "Джанкарло Фізікеллу",
+    "Джанкарло Фізікеллою"
+   ],
+   "surname_forms": [
+    "Фізікелла",
+    "Фізікелли",
+    "Фізікеллі",
+    "Фізікеллу",
+    "Фізікеллою"
+   ],
+   "surname_key": "giancarlo-fisichella",
+   "attested_in_drafts": [
+    "Фізікеллу"
+   ],
+   "forms_sha256": "b3519d44bd673b17e9ec46857f37d31242e72138f4c3f86ae3a432722c5b6d26",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Established form; a-declension correct."
+   }
+  },
+  {
+   "key": "gilles-villeneuve",
+   "en": "Joseph Gilles Henri Villeneuve",
+   "uk": "Жиль Вільнев",
+   "full_forms": [
+    "Жиль Вільнев",
+    "Жиля Вільнева",
+    "Жилю Вільневу",
+    "Жилю Вільневові",
+    "Жилем Вільневом",
+    "Жилі Вільневі",
+    "Жилі Вільневові"
+   ],
+   "surname_forms": [
+    "Вільнев",
+    "Вільнева",
+    "Вільневу",
+    "Вільневові",
+    "Вільневом",
+    "Вільневі"
+   ],
+   "surname_key": "ambiguous:villeneuve",
+   "attested_in_drafts": [
+    "Жиль Вільнев",
+    "Жиля Вільнева",
+    "Вільнев",
+    "Вільнева",
+    "Вільневу",
+    "Вільневом"
+   ],
+   "forms_sha256": "84ee9b79e78999f1b20dc899f547f6fe3a916c7230400c761b516150815ba5ab",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Established form; the soft stem Жиль is correct."
+   }
+  },
+  {
+   "key": "graham-hill",
+   "en": "Norman Graham Hill",
+   "uk": "Ґрем Гілл",
+   "full_forms": [
+    "Ґрем Гілл",
+    "Ґрема Гілла",
+    "Ґрему Гіллу",
+    "Ґрему Гіллові",
+    "Ґремом Гіллом",
+    "Ґремі Гіллі",
+    "Ґремі Гіллові"
+   ],
+   "surname_forms": [
+    "Гілл",
+    "Гілла",
+    "Гіллу",
+    "Гіллові",
+    "Гіллом",
+    "Гіллі"
+   ],
+   "surname_key": "ambiguous:hill",
+   "attested_in_drafts": [
+    "Ґрема Гілла",
+    "Гілл",
+    "Гілла",
+    "Гіллом"
+   ],
+   "forms_sha256": "2e5a88add72333ee6ad3d69f58cf88ea17ffea731e0a3c2ad88a3eb91b60c628",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Ґрем follows the 2019 orthography, which allows ґ for [g] in names, and it keeps G apart from H (Гілл). Ukrainian media more often write 'Грем Гілл'; make a house-style decision and apply it consistently. Paradigm correct."
+   }
+  },
+  {
+   "key": "jack-brabham",
+   "en": "Sir John Arthur Brabham",
+   "uk": "Джек Брабем",
+   "full_forms": [
+    "Джек Брабем",
+    "Джека Брабема",
+    "Джеку Брабему",
+    "Джеку Брабемові",
+    "Джеком Брабемом",
+    "Джекові Брабемі",
+    "Джекові Брабемові"
+   ],
+   "surname_forms": [
+    "Брабем",
+    "Брабема",
+    "Брабему",
+    "Брабемові",
+    "Брабемом",
+    "Брабемі"
+   ],
+   "surname_key": "ambiguous:brabham",
+   "attested_in_drafts": [],
+   "forms_sha256": "f65446adc7cbd112acd2476fe5d6e3ede99f871ded91a69a0761a9cce9ae57a7",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The locative is now Джекові, and the collision with 'Джекі' (Jackie Stewart) is gone. Брабем paradigm correct."
+   }
+  },
+  {
+   "key": "jackie-stewart",
+   "en": "Sir John Young Stewart",
+   "uk": "Джекі Стюарт",
+   "full_forms": [
+    "Джекі Стюарт",
+    "Джекі Стюарта",
+    "Джекі Стюарту",
+    "Джекі Стюартові",
+    "Джекі Стюартом",
+    "Джекі Стюарті"
+   ],
+   "surname_forms": [
+    "Стюарт",
+    "Стюарта",
+    "Стюарту",
+    "Стюартові",
+    "Стюартом",
+    "Стюарті"
+   ],
+   "surname_key": "ambiguous:stewart",
+   "attested_in_drafts": [
+    "Джекі Стюарт",
+    "Джекі Стюарта",
+    "Стюарт",
+    "Стюарта",
+    "Стюартом"
+   ],
+   "forms_sha256": "e33df5b51920b04bc5a0018dca9422ece41bf345d9f355dd7a27fb88c7816d41",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Джекі is not declined; Стюарт declines as a hard stem. Correct."
+   }
+  },
+  {
+   "key": "jacques-laffite",
+   "en": "Jacques-Henri Marie Sabin Laffite",
+   "uk": "Жак Лаффіт",
+   "full_forms": [
+    "Жак Лаффіт",
+    "Жака Лаффіта",
+    "Жаку Лаффіту",
+    "Жаку Лаффітові",
+    "Жаком Лаффітом",
+    "Жакові Лаффіті",
+    "Жакові Лаффітові"
+   ],
+   "surname_forms": [
+    "Лаффіт",
+    "Лаффіта",
+    "Лаффіту",
+    "Лаффітові",
+    "Лаффітом",
+    "Лаффіті"
+   ],
+   "surname_key": "jacques-laffite",
+   "attested_in_drafts": [
+    "Жак Лаффіт",
+    "Жака Лаффіта",
+    "Лаффіт",
+    "Лаффіта"
+   ],
+   "forms_sha256": "ed4ccc0beb0f973dd63b947511eeb63807cef67a34acced3e9e6a3cf3fa09933",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The к-stem locative Жакові is correct; Лаффіт paradigm correct."
+   }
+  },
+  {
+   "key": "jacques-villeneuve",
+   "en": "Jacques Joseph Charles Villeneuve",
+   "uk": "Жак Вільнев",
+   "full_forms": [
+    "Жак Вільнев",
+    "Жака Вільнева",
+    "Жаку Вільневу",
+    "Жаку Вільневові",
+    "Жаком Вільневом",
+    "Жакові Вільневі",
+    "Жакові Вільневові"
+   ],
+   "surname_forms": [
+    "Вільнев",
+    "Вільнева",
+    "Вільневу",
+    "Вільневові",
+    "Вільневом",
+    "Вільневі"
+   ],
+   "surname_key": "ambiguous:villeneuve",
+   "attested_in_drafts": [
+    "Жак Вільнев",
+    "Жака Вільнева",
+    "Жаком Вільневом",
+    "Вільнев",
+    "Вільнева",
+    "Вільневу",
+    "Вільневом"
+   ],
+   "forms_sha256": "a632c4eca202fbbea1d43e6309d9a9a14cf7824679692a02ac559ccf355d2b7d",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The к-stem locative Жакові is correct; Вільнев paradigm correct."
+   }
+  },
+  {
+   "key": "james-hunt",
+   "en": "James Simon Wallis Hunt",
+   "uk": "Джеймс Гант",
+   "full_forms": [
+    "Джеймс Гант",
+    "Джеймса Ганта",
+    "Джеймсу Ганту",
+    "Джеймсу Гантові",
+    "Джеймсом Гантом",
+    "Джеймсі Ганті",
+    "Джеймсі Гантові"
+   ],
+   "surname_forms": [
+    "Гант",
+    "Ганта",
+    "Ганту",
+    "Гантові",
+    "Гантом",
+    "Ганті"
+   ],
+   "surname_key": "james-hunt",
+   "attested_in_drafts": [
+    "Джеймс Гант",
+    "Джеймса Ганта",
+    "Гант",
+    "Ганта"
+   ],
+   "forms_sha256": "812fc9ec10c4cae869a02ea260808e15b461c9c16a74c3ca08be7a134e3cd1c2",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Джеймс Гант is the established form; paradigm correct."
+   }
+  },
+  {
+   "key": "jarno-trulli",
+   "en": "Jarno Trulli",
+   "uk": "Ярно Труллі",
+   "full_forms": [
+    "Ярно Труллі"
+   ],
+   "surname_forms": [
+    "Труллі"
+   ],
+   "surname_key": "jarno-trulli",
+   "attested_in_drafts": [
+    "Ярно Труллі",
+    "Труллі"
+   ],
+   "forms_sha256": "1882468e0b667bceb273cc35bc3f0310b3bdb2e68cc3fcfe46d11cb125134d0d",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Not declined; correct."
+   }
+  },
+  {
+   "key": "jean-pierre-beltoise",
+   "en": "Jean-Pierre Maurice Georges Beltoise",
+   "uk": "Жан-П'єр Бельтуаз",
+   "full_forms": [
+    "Жан-П'єр Бельтуаз",
+    "Жан-П'єра Бельтуаза",
+    "Жан-П'єру Бельтуазу",
+    "Жан-П'єру Бельтуазові",
+    "Жан-П'єром Бельтуазом",
+    "Жан-П'єрі Бельтуазі",
+    "Жан-П'єрі Бельтуазові"
+   ],
+   "surname_forms": [
+    "Бельтуаз",
+    "Бельтуаза",
+    "Бельтуазу",
+    "Бельтуазові",
+    "Бельтуазом",
+    "Бельтуазі"
+   ],
+   "surname_key": "jean-pierre-beltoise",
+   "attested_in_drafts": [
+    "Жан-П'єр Бельтуаз",
+    "Бельтуаз",
+    "Бельтуаза"
+   ],
+   "forms_sha256": "dff2bfaaf459ed881ae7333c7db1a5c405e87f56a69ae8fdbc4679e64d823e0c",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Hyphenated given name: only the last element declines (Жан-П'єра), as in Жан-Поля Сартра. Apostrophe placement correct."
+   }
+  },
+  {
+   "key": "jean-pierre-jarier",
+   "en": "Jean-Pierre Jacques Jarier",
+   "uk": "Жан-П'єр Жар'є",
+   "full_forms": [
+    "Жан-П'єр Жар'є",
+    "Жан-П'єра Жар'є",
+    "Жан-П'єру Жар'є",
+    "Жан-П'єром Жар'є",
+    "Жан-П'єрі Жар'є"
+   ],
+   "surname_forms": [
+    "Жар'є"
+   ],
+   "surname_key": "jean-pierre-jarier",
+   "attested_in_drafts": [
+    "Жан-П'єр Жар'є",
+    "Жар'є"
+   ],
+   "forms_sha256": "a5bfd3f812cedd7ce73b28973795fea40730ecb87d9306a372de0cd7b3698aa6",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Жар'є is correct, with the apostrophe before є, and is not declined. The hyphenated given name is handled correctly."
+   }
+  },
+  {
+   "key": "jenson-button",
+   "en": "Jenson Alexander Lyons Button",
+   "uk": "Дженсон Баттон",
+   "full_forms": [
+    "Дженсон Баттон",
+    "Дженсона Баттона",
+    "Дженсону Баттону",
+    "Дженсону Баттонові",
+    "Дженсоном Баттоном",
+    "Дженсоні Баттоні",
+    "Дженсоні Баттонові"
+   ],
+   "surname_forms": [
+    "Баттон",
+    "Баттона",
+    "Баттону",
+    "Баттонові",
+    "Баттоном",
+    "Баттоні"
+   ],
+   "surname_key": "jenson-button",
+   "attested_in_drafts": [
+    "Дженсон Баттон",
+    "Дженсона Баттона",
+    "Дженсону Баттону",
+    "Баттон",
+    "Баттона",
+    "Баттону"
+   ],
+   "forms_sha256": "a95c42b8ae1a073930f6c537b23b1e4ab8a3a06e831a08d2684b04db1ffe3306",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Established form; paradigm correct."
+   }
+  },
+  {
+   "key": "jim-clark",
+   "en": "James Clark, Jr.",
+   "uk": "Джим Кларк",
+   "full_forms": [
+    "Джим Кларк",
+    "Джима Кларка",
+    "Джиму Кларку",
+    "Джиму Кларкові",
+    "Джимом Кларком",
+    "Джимі Кларкові",
+    "Джимі Кларку"
+   ],
+   "surname_forms": [
+    "Кларк",
+    "Кларка",
+    "Кларку",
+    "Кларкові",
+    "Кларком"
+   ],
+   "surname_key": "jim-clark",
+   "attested_in_drafts": [
+    "Джим Кларк",
+    "Джима Кларка",
+    "Кларк",
+    "Кларка",
+    "Кларку"
+   ],
+   "forms_sha256": "c7d7f7e80079e789fdc680b5d76ed4cdd9c256deb6e7b2696a13f900062927f7",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Кларкі has been removed. The locative is Кларкові/Кларку, with Джимі as the given-name locative; all forms correct."
+   }
+  },
+  {
+   "key": "jo-siffert",
+   "en": "Joseph Siffert",
+   "uk": "Жо Сіффер",
+   "full_forms": [
+    "Жо Сіффер",
+    "Жо Сіффера",
+    "Жо Сіфферу",
+    "Жо Сіфферові",
+    "Жо Сіффером",
+    "Жо Сіффері"
+   ],
+   "surname_forms": [
+    "Сіффер",
+    "Сіффера",
+    "Сіфферу",
+    "Сіфферові",
+    "Сіффером",
+    "Сіффері"
+   ],
+   "surname_key": "jo-siffert",
+   "attested_in_drafts": [],
+   "forms_sha256": "652d2810b00b50ec276eef3effffaa92cab73d2eb0ac8be77a424135251866b3",
+   "review": {
+    "status": "changes_required",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Siffert is a Swiss (Fribourg) surname of German origin, and the final -t is pronounced. Reference works write it with -т (Сіфферт). Dropping it as in French is not justified. The form is not attested in the drafts, so confirm it before approval. Жо is not declined; correct."
+   }
+  },
+  {
+   "key": "jochen-mass",
+   "en": "Jochen Richard Mass",
+   "uk": "Йохен Масс",
+   "full_forms": [
+    "Йохен Масс",
+    "Йохена Масса",
+    "Йохену Массу",
+    "Йохену Массові",
+    "Йохеном Массом",
+    "Йохені Массі",
+    "Йохені Массові"
+   ],
+   "surname_forms": [
+    "Масс",
+    "Масса",
+    "Массу",
+    "Массові",
+    "Массом",
+    "Массі"
+   ],
+   "surname_key": "jochen-mass",
+   "attested_in_drafts": [
+    "Йохен Масс",
+    "Йохена Масса",
+    "Масс",
+    "Масса",
+    "Массу"
+   ],
+   "forms_sha256": "c906f26913039ce3c10507c76ea9f94fbdf52de679ea1b679b81440e772c40b8",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Йохен Масс is correct; paradigm correct. Warning: Масса, Массу and Массі are identical to forms of Масса (felipe-massa), so the surname_key should be ambiguous and the recogniser must not resolve these forms on their own."
+   }
+  },
+  {
+   "key": "jochen-rindt",
+   "en": "Karl Jochen Rindt",
+   "uk": "Йохен Ріндт",
+   "full_forms": [
+    "Йохен Ріндт",
+    "Йохена Ріндта",
+    "Йохену Ріндту",
+    "Йохену Ріндтові",
+    "Йохеном Ріндтом",
+    "Йохені Ріндті",
+    "Йохені Ріндтові"
+   ],
+   "surname_forms": [
+    "Ріндт",
+    "Ріндта",
+    "Ріндту",
+    "Ріндтові",
+    "Ріндтом",
+    "Ріндті"
+   ],
+   "surname_key": "jochen-rindt",
+   "attested_in_drafts": [
+    "Йохен Ріндт",
+    "Йохена Ріндта",
+    "Йохеном Ріндтом",
+    "Ріндт",
+    "Ріндта",
+    "Ріндтом"
+   ],
+   "forms_sha256": "7056aed4394d547bbbad2a31959d16e254eb6596f5656e93649bfb9cef511709",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Established form; paradigm correct."
+   }
+  },
+  {
+   "key": "jody-scheckter",
+   "en": "Jody David Scheckter",
+   "uk": "Джоді Шектер",
+   "full_forms": [
+    "Джоді Шектер",
+    "Джоді Шектера",
+    "Джоді Шектеру",
+    "Джоді Шектерові",
+    "Джоді Шектером",
+    "Джоді Шектері"
+   ],
+   "surname_forms": [
+    "Шектер",
+    "Шектера",
+    "Шектеру",
+    "Шектерові",
+    "Шектером",
+    "Шектері"
+   ],
+   "surname_key": "ambiguous:scheckter",
+   "attested_in_drafts": [
+    "Джоді Шектер",
+    "Джоді Шектера",
+    "Шектер",
+    "Шектера"
+   ],
+   "forms_sha256": "30b97fab74a55366addcf40dd7c81a92dbf421e073d4f94de3db4a004cf70d75",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Джоді is not declined; Шектер is correct."
+   }
+  },
+  {
+   "key": "john-surtees",
+   "en": "John Norman Surtees",
+   "uk": "Джон Сертіс",
+   "full_forms": [
+    "Джон Сертіс",
+    "Джона Сертіса",
+    "Джону Сертісу",
+    "Джону Сертісові",
+    "Джоном Сертісом",
+    "Джоні Сертісі",
+    "Джоні Сертісові"
+   ],
+   "surname_forms": [
+    "Сертіс",
+    "Сертіса",
+    "Сертісу",
+    "Сертісові",
+    "Сертісом",
+    "Сертісі"
+   ],
+   "surname_key": "ambiguous:surtees",
+   "attested_in_drafts": [
+    "Джон Сертіс",
+    "Джона Сертіса",
+    "Сертіс",
+    "Сертіса"
+   ],
+   "forms_sha256": "2d038a7f9a6589db91512ad5b7385dfcdf8e40e04e4563aca3e23f3e5a5c1867",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Сертіс is the established form; paradigm correct."
+   }
+  },
+  {
+   "key": "john-watson",
+   "en": "John Marshall Watson",
+   "uk": "Джон Вотсон",
+   "full_forms": [
+    "Джон Вотсон",
+    "Джона Вотсона",
+    "Джону Вотсону",
+    "Джону Вотсонові",
+    "Джоном Вотсоном",
+    "Джоні Вотсоні",
+    "Джоні Вотсонові"
+   ],
+   "surname_forms": [
+    "Вотсон",
+    "Вотсона",
+    "Вотсону",
+    "Вотсонові",
+    "Вотсоном",
+    "Вотсоні"
+   ],
+   "surname_key": "ambiguous:watson",
+   "attested_in_drafts": [
+    "Джон Вотсон",
+    "Джона Вотсона",
+    "Вотсон",
+    "Вотсона",
+    "Вотсоном"
+   ],
+   "forms_sha256": "09643afaad3da6db7dc9c86a96361ccff2d37833fc3182e1319b05a746210d6d",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Вотсон follows the W→В rule; correct."
+   }
+  },
+  {
+   "key": "johnny-herbert",
+   "en": "John Paul Herbert",
+   "uk": "Джонні Герберт",
+   "full_forms": [
+    "Джонні Герберт",
+    "Джонні Герберта",
+    "Джонні Герберту",
+    "Джонні Гербертові",
+    "Джонні Гербертом",
+    "Джонні Герберті"
+   ],
+   "surname_forms": [
+    "Герберт",
+    "Герберта",
+    "Герберту",
+    "Гербертові",
+    "Гербертом",
+    "Герберті"
+   ],
+   "surname_key": "johnny-herbert",
+   "attested_in_drafts": [],
+   "forms_sha256": "9465b174c33ad94e768bad6077e8f91a8c47540152f495a1f69108709fb3e65d",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Джонні is not declined; Герберт is correct."
+   }
+  },
+  {
+   "key": "jose-froilan-gonzalez",
+   "en": "José Froilán González",
+   "uk": "Хосе Фройлан Гонсалес",
+   "full_forms": [
+    "Хосе Фройлан Гонсалес",
+    "Хосе Фройлана Гонсалеса",
+    "Хосе Фройлану Гонсалесу",
+    "Хосе Фройлану Гонсалесові",
+    "Хосе Фройланом Гонсалесом",
+    "Хосе Фройлані Гонсалесі",
+    "Хосе Фройлані Гонсалесові"
+   ],
+   "surname_forms": [
+    "Гонсалес",
+    "Гонсалеса",
+    "Гонсалесу",
+    "Гонсалесові",
+    "Гонсалесом",
+    "Гонсалесі"
+   ],
+   "surname_key": "ambiguous:gonzalez",
+   "attested_in_drafts": [
+    "Хосе Фройлан Гонсалес",
+    "Хосе Фройлана Гонсалеса",
+    "Гонсалес",
+    "Гонсалеса"
+   ],
+   "forms_sha256": "af67cfb04d7e452deb2bbc7292052f1cb5906b599419533c02213c4ab5791b54",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Хосе is not declined; Фройлан and Гонсалес decline as hard stems. Correct."
+   }
+  },
+  {
+   "key": "juan-manuel-fangio",
+   "en": "Juan Manuel Fangio Déramo",
+   "uk": "Хуан Мануель Фанхіо",
+   "full_forms": [
+    "Хуан Мануель Фанхіо",
+    "Хуана Мануеля Фанхіо",
+    "Хуану Мануелю Фанхіо",
+    "Хуаном Мануелем Фанхіо",
+    "Хуані Мануелі Фанхіо"
+   ],
+   "surname_forms": [
+    "Фанхіо"
+   ],
+   "surname_key": "juan-manuel-fangio",
+   "attested_in_drafts": [
+    "Фанхіо"
+   ],
+   "forms_sha256": "c2ee80290154fee9ace998a03e24156c61aa7d2cf89b35159a66c34c290c3b91",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Хуан (hard) and Мануель (soft) both decline; Фанхіо is not declined. Correct."
+   }
+  },
+  {
+   "key": "juan-pablo-montoya",
+   "en": "Juan Pablo Montoya Roldán",
+   "uk": "Хуан Пабло Монтойя",
+   "full_forms": [
+    "Хуан Пабло Монтойя",
+    "Хуана Пабло Монтойї",
+    "Хуану Пабло Монтойї",
+    "Хуана Пабло Монтойю",
+    "Хуаном Пабло Монтойєю",
+    "Хуані Пабло Монтойї"
+   ],
+   "surname_forms": [
+    "Монтойя",
+    "Монтойї",
+    "Монтойю",
+    "Монтойєю"
+   ],
+   "surname_key": "juan-pablo-montoya",
+   "attested_in_drafts": [
+    "Монтойя",
+    "Монтойї"
+   ],
+   "forms_sha256": "2a73632d73565a0c504dc1bde92dceb407e12be947b7136982b784afab814af6",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Пабло is not declined, and the я-declension of Монтойя is correct (Монтойї, Монтойєю). 'Монтоя' also appears in Ukrainian sources; keep the attested Монтойя."
+   }
+  },
+  {
+   "key": "keke-rosberg",
+   "en": "Keijo Erik Rosberg",
+   "uk": "Кеке Росберг",
+   "full_forms": [
+    "Кеке Росберг",
+    "Кеке Росберга",
+    "Кеке Росбергу",
+    "Кеке Росбергові",
+    "Кеке Росбергом"
+   ],
+   "surname_forms": [
+    "Росберг",
+    "Росберга",
+    "Росбергу",
+    "Росбергові",
+    "Росбергом"
+   ],
+   "surname_key": "ambiguous:rosberg",
+   "attested_in_drafts": [
+    "Кеке Росберг",
+    "Кеке Росберга",
+    "Кеке Росбергу",
+    "Росберг",
+    "Росберга",
+    "Росбергу"
+   ],
+   "forms_sha256": "9c72b9c71e2ef84859c748b3db398cd84c1fd499ea50ca55d0ec4a1bfca16b3f",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Росбергі has been removed. The г-stem locative is Росбергові/Росбергу, which is identical to the dative forms already listed. Кеке is not declined."
+   }
+  },
+  {
+   "key": "kimi-antonelli",
+   "en": "Andrea Kimi Antonelli",
+   "uk": "Кімі Антонеллі",
+   "full_forms": [
+    "Кімі Антонеллі"
+   ],
+   "surname_forms": [
+    "Антонеллі"
+   ],
+   "surname_key": "kimi-antonelli",
+   "attested_in_drafts": [
+    "Кімі Антонеллі",
+    "Антонеллі"
+   ],
+   "forms_sha256": "54d5a2986df33d342dd8337c88b9df310b48a3dbd881c3b2248081fb29221e4a",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Not declined; correct."
+   }
+  },
+  {
+   "key": "kimi-raikkonen",
+   "en": "Kimi-Matias Räikkönen",
+   "uk": "Кімі Райкконен",
+   "full_forms": [
+    "Кімі Райкконен",
+    "Кімі Райкконена",
+    "Кімі Райкконену",
+    "Кімі Райкконенові",
+    "Кімі Райкконеном",
+    "Кімі Райкконені"
+   ],
+   "surname_forms": [
+    "Райкконен",
+    "Райкконена",
+    "Райкконену",
+    "Райкконенові",
+    "Райкконеном",
+    "Райкконені"
+   ],
+   "surname_key": "kimi-raikkonen",
+   "attested_in_drafts": [
+    "Кімі Райкконен",
+    "Кімі Райкконеном",
+    "Райкконен",
+    "Райкконеном"
+   ],
+   "forms_sha256": "2e9722540dc88297b8df90db404c1f9bf31ab957f9f75a57bc997e70233c78e5",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Райкконен is the established Ukrainian media form; paradigm correct."
+   }
+  },
+  {
+   "key": "lando-norris",
+   "en": "Lando Norris",
+   "uk": "Ландо Норріс",
+   "full_forms": [
+    "Ландо Норріс",
+    "Ландо Норріса",
+    "Ландо Норрісу",
+    "Ландо Норрісові",
+    "Ландо Норрісом",
+    "Ландо Норрісі"
+   ],
+   "surname_forms": [
+    "Норріс",
+    "Норріса",
+    "Норрісу",
+    "Норрісові",
+    "Норрісом",
+    "Норрісі"
+   ],
+   "surname_key": "lando-norris",
+   "attested_in_drafts": [
+    "Ландо Норріс",
+    "Ландо Норріса",
+    "Норріс",
+    "Норріса",
+    "Норрісом"
+   ],
+   "forms_sha256": "c0736a5cc1fde87f8c9d664a5bd7ff6ac1b2c49af58e37b3e4638ae3c19bd687",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Established form; paradigm correct."
+   }
+  },
+  {
+   "key": "lewis-hamilton",
+   "en": "Lewis Carl Davidson Hamilton",
+   "uk": "Льюїс Гамільтон",
+   "full_forms": [
+    "Льюїс Гамільтон",
+    "Льюїса Гамільтона",
+    "Льюїсу Гамільтону",
+    "Льюїсу Гамільтонові",
+    "Льюїсом Гамільтоном",
+    "Льюїсі Гамільтоні",
+    "Льюїсі Гамільтонові"
+   ],
+   "surname_forms": [
+    "Гамільтон",
+    "Гамільтона",
+    "Гамільтону",
+    "Гамільтонові",
+    "Гамільтоном",
+    "Гамільтоні"
+   ],
+   "surname_key": "ambiguous:hamilton",
+   "attested_in_drafts": [
+    "Льюїс Гамільтон",
+    "Льюїса Гамільтона",
+    "Льюїсу Гамільтону",
+    "Гамільтон",
+    "Гамільтона",
+    "Гамільтону",
+    "Гамільтоном"
+   ],
+   "forms_sha256": "0e37dc0d2bf5c454c596c125a564aa58e3a30ad436e96dd99bf90e726d48068d",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Гамільтон is the established Ukrainian form, preferred over Гемілтон. Paradigm correct."
+   }
+  },
+  {
+   "key": "luigi-musso",
+   "en": "Luigi Musso",
+   "uk": "Луїджі Муссо",
+   "full_forms": [
+    "Луїджі Муссо"
+   ],
+   "surname_forms": [
+    "Муссо"
+   ],
+   "surname_key": "luigi-musso",
+   "attested_in_drafts": [
+    "Луїджі Муссо",
+    "Муссо"
+   ],
+   "forms_sha256": "48b71422135682dbf580aba615f4cf8bc47d075f3bcac982299375138379f7db",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Not declined; correct."
+   }
+  },
+  {
+   "key": "mark-webber",
+   "en": "Mark Alan Webber",
+   "uk": "Марк Веббер",
+   "full_forms": [
+    "Марк Веббер",
+    "Марка Веббера",
+    "Марку Вебберу",
+    "Марку Вебберові",
+    "Марком Веббером",
+    "Маркові Веббері",
+    "Маркові Вебберові"
+   ],
+   "surname_forms": [
+    "Веббер",
+    "Веббера",
+    "Вебберу",
+    "Вебберові",
+    "Веббером",
+    "Веббері"
+   ],
+   "surname_key": "mark-webber",
+   "attested_in_drafts": [
+    "Марк Веббер",
+    "Марка Веббера",
+    "Веббер",
+    "Веббера",
+    "Веббером"
+   ],
+   "forms_sha256": "733f01798576f075dfa50fb3c949ac83e3dc027fbca43ce6f82673260a5eb827",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The к-stem locative Маркові is correct; Веббер paradigm correct."
+   }
+  },
+  {
+   "key": "maurice-trintignant",
+   "en": "Maurice Bienvenu Jean Paul Trintignant",
+   "uk": "Моріс Трентіньян",
+   "full_forms": [
+    "Моріс Трентіньян",
+    "Моріса Трентіньяна",
+    "Морісу Трентіньяну",
+    "Морісу Трентіньянові",
+    "Морісом Трентіньяном",
+    "Морісі Трентіньяні",
+    "Морісі Трентіньянові"
+   ],
+   "surname_forms": [
+    "Трентіньян",
+    "Трентіньяна",
+    "Трентіньяну",
+    "Трентіньянові",
+    "Трентіньяном",
+    "Трентіньяні"
+   ],
+   "surname_key": "maurice-trintignant",
+   "attested_in_drafts": [
+    "Моріс Трентіньян",
+    "Трентіньян"
+   ],
+   "forms_sha256": "ec72b654cb0949c8ef999f16ef5b04d8c6d67434782dfbda50d9851d1c60393a",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Трентіньян renders the French 'in' as 'ен'; correct. Paradigm correct."
+   }
+  },
+  {
+   "key": "max-verstappen",
+   "en": "Max Emilian Verstappen",
+   "uk": "Макс Ферстаппен",
+   "full_forms": [
+    "Макс Ферстаппен",
+    "Макса Ферстаппена",
+    "Максу Ферстаппену",
+    "Максу Ферстаппенові",
+    "Максом Ферстаппеном",
+    "Максі Ферстаппені",
+    "Максі Ферстаппенові"
+   ],
+   "surname_forms": [
+    "Ферстаппен",
+    "Ферстаппена",
+    "Ферстаппену",
+    "Ферстаппенові",
+    "Ферстаппеном",
+    "Ферстаппені"
+   ],
+   "surname_key": "ambiguous:verstappen",
+   "attested_in_drafts": [
+    "Макс Ферстаппен",
+    "Ферстаппен",
+    "Ферстаппена",
+    "Ферстаппеном"
+   ],
+   "forms_sha256": "127aa1ca77b471a560ca7aad9f8f1d67bc5ba7cf4ec0a3f6eb97db488987ecc4",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Ферстаппен is the established Ukrainian media form, preferred over Верстаппен. Paradigm correct."
+   }
+  },
+  {
+   "key": "michael-schumacher",
+   "en": "Michael Schumacher",
+   "uk": "Міхаель Шумахер",
+   "full_forms": [
+    "Міхаель Шумахер",
+    "Міхаеля Шумахера",
+    "Міхаелю Шумахеру",
+    "Міхаелю Шумахерові",
+    "Міхаелем Шумахером",
+    "Міхаелі Шумахері",
+    "Міхаелі Шумахерові"
+   ],
+   "surname_forms": [
+    "Шумахер",
+    "Шумахера",
+    "Шумахеру",
+    "Шумахерові",
+    "Шумахером",
+    "Шумахері"
+   ],
+   "surname_key": "ambiguous:schumacher",
+   "attested_in_drafts": [
+    "Міхаель Шумахер",
+    "Міхаеля Шумахера",
+    "Міхаелем Шумахером",
+    "Шумахер",
+    "Шумахера",
+    "Шумахеру",
+    "Шумахером"
+   ],
+   "forms_sha256": "6e8fe3e7e96948279025748d9d6447c7bbee4fe07ca56e1522d20fc3a4f8e18a",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Міхаель (German reading) is the established form; the soft-stem paradigm is correct."
+   }
+  },
+  {
+   "key": "mika-hakkinen",
+   "en": "Mika Pauli Häkkinen",
+   "uk": "Міка Хаккінен",
+   "full_forms": [
+    "Міка Хаккінен",
+    "Міки Хаккінена",
+    "Міці Хаккінену",
+    "Міці Хаккіненові",
+    "Міку Хаккінена",
+    "Мікою Хаккіненом",
+    "Міці Хаккінені"
+   ],
+   "surname_forms": [
+    "Хаккінен",
+    "Хаккінена",
+    "Хаккінену",
+    "Хаккіненові",
+    "Хаккіненом",
+    "Хаккінені"
+   ],
+   "surname_key": "mika-hakkinen",
+   "attested_in_drafts": [],
+   "forms_sha256": "f2e794189ef0414739e117449b699abc5bce6b84119d9206d07a815887259ee3",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The к→ц change is applied: Міці in the dative and locative. Міки, Міку and Мікою are correct, and so is the Хаккінен paradigm."
+   }
+  },
+  {
+   "key": "mike-hawthorn",
+   "en": "John Michael Hawthorn",
+   "uk": "Майк Готорн",
+   "full_forms": [
+    "Майк Готорн",
+    "Майка Готорна",
+    "Майку Готорну",
+    "Майку Готорнові",
+    "Майком Готорном",
+    "Майкові Готорні",
+    "Майкові Готорнові"
+   ],
+   "surname_forms": [
+    "Готорн",
+    "Готорна",
+    "Готорну",
+    "Готорнові",
+    "Готорном",
+    "Готорні"
+   ],
+   "surname_key": "mike-hawthorn",
+   "attested_in_drafts": [
+    "Майк Готорн",
+    "Майка Готорна",
+    "Готорн",
+    "Готорна",
+    "Готорну"
+   ],
+   "forms_sha256": "731ed85eb643d5e3493e6ee2f7b72db14235aabe24d1e64bb7f23ec7108d85ad",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The к-stem locative Майкові is correct; Готорн paradigm correct."
+   }
+  },
+  {
+   "key": "nelson-piquet",
+   "en": "Nelson Piquet Souto Maior",
+   "uk": "Нельсон Піке",
+   "full_forms": [
+    "Нельсон Піке",
+    "Нельсона Піке",
+    "Нельсону Піке",
+    "Нельсоном Піке",
+    "Нельсоні Піке"
+   ],
+   "surname_forms": [
+    "Піке"
+   ],
+   "surname_key": "ambiguous:piquet",
+   "attested_in_drafts": [
+    "Нельсон Піке",
+    "Нельсона Піке",
+    "Нельсоном Піке",
+    "Піке"
+   ],
+   "forms_sha256": "c0c0bc7f313ae5caf556a96aca22d3ba2667b7f1910fafc62c9a3cd90e0d2bb9",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Піке is not declined; correct."
+   }
+  },
+  {
+   "key": "nicholas-latifi",
+   "en": "Nicholas Daniel Latifi",
+   "uk": "Ніколас Латіфі",
+   "full_forms": [
+    "Ніколас Латіфі",
+    "Ніколаса Латіфі",
+    "Ніколасу Латіфі",
+    "Ніколасом Латіфі",
+    "Ніколасі Латіфі"
+   ],
+   "surname_forms": [
+    "Латіфі"
+   ],
+   "surname_key": "nicholas-latifi",
+   "attested_in_drafts": [
+    "Ніколаса Латіфі",
+    "Латіфі"
+   ],
+   "forms_sha256": "bd3795093ecfa62f2f98d848738b800083aa0005e0bef9e8924f49ddf81f48ee",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Латіфі is not declined; correct."
+   }
+  },
+  {
+   "key": "nico-rosberg",
+   "en": "Nico Erik Rosberg",
+   "uk": "Ніко Росберг",
+   "full_forms": [
+    "Ніко Росберг",
+    "Ніко Росберга",
+    "Ніко Росбергу",
+    "Ніко Росбергові",
+    "Ніко Росбергом"
+   ],
+   "surname_forms": [
+    "Росберг",
+    "Росберга",
+    "Росбергу",
+    "Росбергові",
+    "Росбергом"
+   ],
+   "surname_key": "ambiguous:rosberg",
+   "attested_in_drafts": [
+    "Ніко Росберг",
+    "Ніко Росберга",
+    "Ніко Росбергу",
+    "Росберг",
+    "Росберга",
+    "Росбергу"
+   ],
+   "forms_sha256": "b310c1bbe0c64ec0917a0c519ac7c724a3002ed8d3847c032fd8d5121c80f6ba",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Росбергі has been removed. The г-stem locative is Росбергові/Росбергу (the same strings as the dative). Ніко is not declined."
+   }
+  },
+  {
+   "key": "nigel-mansell",
+   "en": "Nigel Ernest James Mansell",
+   "uk": "Найджел Менселл",
+   "full_forms": [
+    "Найджел Менселл",
+    "Найджела Менселла",
+    "Найджелу Менселлу",
+    "Найджелу Менселлові",
+    "Найджелом Менселлом",
+    "Найджелі Менселлі",
+    "Найджелі Менселлові"
+   ],
+   "surname_forms": [
+    "Менселл",
+    "Менселла",
+    "Менселлу",
+    "Менселлові",
+    "Менселлом",
+    "Менселлі"
+   ],
+   "surname_key": "nigel-mansell",
+   "attested_in_drafts": [
+    "Найджел Менселл",
+    "Найджела Менселла",
+    "Найджелом Менселлом",
+    "Менселл",
+    "Менселла",
+    "Менселлом"
+   ],
+   "forms_sha256": "14d4c5c579687a00d8fa6ec5e10e26b3b510fdcc1d59ed082b3c9df34677e3f2",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Менселл is the established form; paradigm correct."
+   }
+  },
+  {
+   "key": "niki-lauda",
+   "en": "Andreas Nikolaus Lauda",
+   "uk": "Нікі Лауда",
+   "full_forms": [
+    "Нікі Лауда",
+    "Нікі Лауди",
+    "Нікі Лауді",
+    "Нікі Лауду",
+    "Нікі Лаудою"
+   ],
+   "surname_forms": [
+    "Лауда",
+    "Лауди",
+    "Лауді",
+    "Лауду",
+    "Лаудою"
+   ],
+   "surname_key": "niki-lauda",
+   "attested_in_drafts": [
+    "Нікі Лауда",
+    "Лауда",
+    "Лауду"
+   ],
+   "forms_sha256": "0590113cd94ae1ff17239b022f8cf817077560ddb444c9c0f0e1eb5282771ef0",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Нікі is not declined; the a-declension of Лауда is correct."
+   }
+  },
+  {
+   "key": "nino-farina",
+   "en": "Emilio Giuseppe Farina",
+   "uk": "Ніно Фаріна",
+   "full_forms": [
+    "Ніно Фаріна",
+    "Ніно Фаріни",
+    "Ніно Фаріні",
+    "Ніно Фаріну",
+    "Ніно Фаріною",
+    "Джузеппе Фаріна",
+    "Джузеппе Фаріни",
+    "Джузеппе Фаріні",
+    "Джузеппе Фаріну",
+    "Джузеппе Фаріною"
+   ],
+   "surname_forms": [
+    "Фаріна",
+    "Фаріни",
+    "Фаріні",
+    "Фаріну",
+    "Фаріною"
+   ],
+   "surname_key": "nino-farina",
+   "attested_in_drafts": [
+    "Джузеппе Фаріна",
+    "Фаріна",
+    "Фаріну"
+   ],
+   "forms_sha256": "aca9fea0a8964b9b49fbb27f9ffc5fa5e9a3124da28ce078fca32fb46c6fb1a3",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The Ніно and Джузеппе variants are both correct; a-declension correct."
+   }
+  },
+  {
+   "key": "olivier-panis",
+   "en": "Olivier Jean Denis Marie Panis",
+   "uk": "Олів'є Паніс",
+   "full_forms": [
+    "Олів'є Паніс",
+    "Олів'є Паніса",
+    "Олів'є Панісу",
+    "Олів'є Панісові",
+    "Олів'є Панісом",
+    "Олів'є Панісі"
+   ],
+   "surname_forms": [
+    "Паніс",
+    "Паніса",
+    "Панісу",
+    "Панісові",
+    "Панісом",
+    "Панісі"
+   ],
+   "surname_key": "olivier-panis",
+   "attested_in_drafts": [
+    "Олів'є Паніс",
+    "Паніс"
+   ],
+   "forms_sha256": "c48424167ee3cf409bfe2b9bb21b29c266be22601ba990dedaa2aab4895e576e",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Олів'є (apostrophe before є) is correct and not declined; Паніс is correct."
+   }
+  },
+  {
+   "key": "patrick-depailler",
+   "en": "Patrick André Eugène Joseph Depailler",
+   "uk": "Патрік Депайє",
+   "full_forms": [
+    "Патрік Депайє",
+    "Патріка Депайє",
+    "Патріку Депайє",
+    "Патріком Депайє",
+    "Патрікові Депайє"
+   ],
+   "surname_forms": [
+    "Депайє"
+   ],
+   "surname_key": "patrick-depailler",
+   "attested_in_drafts": [
+    "Патрік Депайє",
+    "Депайє"
+   ],
+   "forms_sha256": "b176dcd55f85f0bd7d52cba2b1820ba1d5b2b9ca3a3376403480a3bfb4273279",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The locative Патрікові is correct; the locative variant Патріку is the same string as the dative. Депайє is not declined."
+   }
+  },
+  {
+   "key": "peter-collins",
+   "en": "Peter John Collins",
+   "uk": "Пітер Коллінз",
+   "full_forms": [
+    "Пітер Коллінз",
+    "Пітера Коллінза",
+    "Пітеру Коллінзу",
+    "Пітеру Коллінзові",
+    "Пітером Коллінзом",
+    "Пітері Коллінзі",
+    "Пітері Коллінзові"
+   ],
+   "surname_forms": [
+    "Коллінз",
+    "Коллінза",
+    "Коллінзу",
+    "Коллінзові",
+    "Коллінзом",
+    "Коллінзі"
+   ],
+   "surname_key": "peter-collins",
+   "attested_in_drafts": [
+    "Пітера Коллінза",
+    "Коллінза"
+   ],
+   "forms_sha256": "551ca6035cb1628b89db1e016ae3bac2fd90421648ad090d95b92b5d78bd3f36",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Коллінз is correct; paradigm correct."
+   }
+  },
+  {
+   "key": "peter-revson",
+   "en": "Peter Jeffrey Revlon Revson",
+   "uk": "Пітер Ревсон",
+   "full_forms": [
+    "Пітер Ревсон",
+    "Пітера Ревсона",
+    "Пітеру Ревсону",
+    "Пітеру Ревсонові",
+    "Пітером Ревсоном",
+    "Пітері Ревсоні",
+    "Пітері Ревсонові"
+   ],
+   "surname_forms": [
+    "Ревсон",
+    "Ревсона",
+    "Ревсону",
+    "Ревсонові",
+    "Ревсоном",
+    "Ревсоні"
+   ],
+   "surname_key": "peter-revson",
+   "attested_in_drafts": [
+    "Пітер Ревсон",
+    "Ревсон"
+   ],
+   "forms_sha256": "162f82235da3054a3057d998de20c6193437accb62426fa18a8ee660e6b77aef",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Correct."
+   }
+  },
+  {
+   "key": "rene-arnoux",
+   "en": "René Alexandre Arnoux",
+   "uk": "Рене Арну",
+   "full_forms": [
+    "Рене Арну"
+   ],
+   "surname_forms": [
+    "Арну"
+   ],
+   "surname_key": "rene-arnoux",
+   "attested_in_drafts": [
+    "Рене Арну",
+    "Арну"
+   ],
+   "forms_sha256": "dc70577973d9c5aedfac88a80445a7245a14d9b6e85e100e10afe0d5cc8ce7d4",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Not declined; correct."
+   }
+  },
+  {
+   "key": "riccardo-patrese",
+   "en": "Riccardo Gabriele Patrese",
+   "uk": "Рікардо Патрезе",
+   "full_forms": [
+    "Рікардо Патрезе"
+   ],
+   "surname_forms": [
+    "Патрезе"
+   ],
+   "surname_key": "riccardo-patrese",
+   "attested_in_drafts": [
+    "Патрезе"
+   ],
+   "forms_sha256": "df856b9502dcccaec73732beaec49e6380fe83cf0a554eef163d38723e9761b4",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Рікардо Патрезе is the common media form ('Ріккардо' also occurs). Not declined."
+   }
+  },
+  {
+   "key": "ronnie-peterson",
+   "en": "Bengt Ronnie Peterson",
+   "uk": "Ронні Петерсон",
+   "full_forms": [
+    "Ронні Петерсон",
+    "Ронні Петерсона",
+    "Ронні Петерсону",
+    "Ронні Петерсонові",
+    "Ронні Петерсоном",
+    "Ронні Петерсоні"
+   ],
+   "surname_forms": [
+    "Петерсон",
+    "Петерсона",
+    "Петерсону",
+    "Петерсонові",
+    "Петерсоном",
+    "Петерсоні"
+   ],
+   "surname_key": "ronnie-peterson",
+   "attested_in_drafts": [
+    "Ронні Петерсон",
+    "Ронні Петерсона",
+    "Петерсон",
+    "Петерсона"
+   ],
+   "forms_sha256": "b91e8a3e2d657b6dbbd0d7ee18e944ddb38a4961e7f82700f4e4dad971ff387c",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Ронні is not declined; Петерсон is correct."
+   }
+  },
+  {
+   "key": "rubens-barrichello",
+   "en": "Rubens Gonçalves Barrichello",
+   "uk": "Рубенс Барікелло",
+   "full_forms": [
+    "Рубенс Барікелло",
+    "Рубенса Барікелло",
+    "Рубенсу Барікелло",
+    "Рубенсом Барікелло",
+    "Рубенсі Барікелло"
+   ],
+   "surname_forms": [
+    "Барікелло"
+   ],
+   "surname_key": "rubens-barrichello",
+   "attested_in_drafts": [],
+   "forms_sha256": "bf31fba2e7b470837ce1d7ad2cfc0143ced750e7613c3332ce8e9a0ffb98a696",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Барікелло is the established media form and is not declined; correct."
+   }
+  },
+  {
+   "key": "sebastian-vettel",
+   "en": "Sebastian Vettel",
+   "uk": "Себастьян Феттель",
+   "full_forms": [
+    "Себастьян Феттель",
+    "Себастьяна Феттеля",
+    "Себастьяну Феттелю",
+    "Себастьяну Феттелеві",
+    "Себастьяном Феттелем",
+    "Себастьяні Феттелі",
+    "Себастьяні Феттелеві"
+   ],
+   "surname_forms": [
+    "Феттель",
+    "Феттеля",
+    "Феттелю",
+    "Феттелеві",
+    "Феттелем",
+    "Феттелі"
+   ],
+   "surname_key": "sebastian-vettel",
+   "attested_in_drafts": [
+    "Себастьян Феттель",
+    "Себастьяна Феттеля",
+    "Феттель",
+    "Феттеля"
+   ],
+   "forms_sha256": "63edd84567d102c505d61ae8e498fb5299bf23e1ab70277a0951a12b0e7ab1b1",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Феттель is the established form; the soft-stem paradigm (Феттелеві, Феттелем) is correct."
+   }
+  },
+  {
+   "key": "sergio-perez",
+   "en": "Sergio Michel Pérez Mendoza",
+   "uk": "Серхіо Перес",
+   "full_forms": [
+    "Серхіо Перес",
+    "Серхіо Переса",
+    "Серхіо Пересу",
+    "Серхіо Пересові",
+    "Серхіо Пересом",
+    "Серхіо Пересі"
+   ],
+   "surname_forms": [
+    "Перес",
+    "Переса",
+    "Пересу",
+    "Пересові",
+    "Пересом",
+    "Пересі"
+   ],
+   "surname_key": "sergio-perez",
+   "attested_in_drafts": [
+    "Серхіо Перес",
+    "Серхіо Переса",
+    "Перес",
+    "Переса"
+   ],
+   "forms_sha256": "946522d248e4271cb8fd1dcfc4a48db2e5a7b192e0571d08e2b6f4ef2bb02f64",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Серхіо Перес is correct; paradigm correct."
+   }
+  },
+  {
+   "key": "stirling-moss",
+   "en": "Stirling Craufurd Moss",
+   "uk": "Стірлінг Мосс",
+   "full_forms": [
+    "Стірлінг Мосс",
+    "Стірлінга Мосса",
+    "Стірлінгу Моссу",
+    "Стірлінгу Моссові",
+    "Стірлінгом Моссом",
+    "Стірлінгові Моссі",
+    "Стірлінгові Моссові"
+   ],
+   "surname_forms": [
+    "Мосс",
+    "Мосса",
+    "Моссу",
+    "Моссові",
+    "Моссом",
+    "Моссі"
+   ],
+   "surname_key": "ambiguous:moss",
+   "attested_in_drafts": [
+    "Стірлінг Мосс",
+    "Стірлінга Мосса",
+    "Стірлінгу Моссу",
+    "Мосс",
+    "Мосса",
+    "Моссу"
+   ],
+   "forms_sha256": "b8b2eaad139712f7f7720f8978aea21c111035d283e3910a5bf525a59f17df7a",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "The г-stem locative Стірлінгові is correct; Мосс paradigm correct."
+   }
+  },
+  {
+   "key": "valtteri-bottas",
+   "en": "Valtteri Viktor Bottas",
+   "uk": "Валттері Боттас",
+   "full_forms": [
+    "Валттері Боттас",
+    "Валттері Боттаса",
+    "Валттері Боттасу",
+    "Валттері Боттасові",
+    "Валттері Боттасом",
+    "Валттері Боттасі"
+   ],
+   "surname_forms": [
+    "Боттас",
+    "Боттаса",
+    "Боттасу",
+    "Боттасові",
+    "Боттасом",
+    "Боттасі"
+   ],
+   "surname_key": "valtteri-bottas",
+   "attested_in_drafts": [
+    "Валттері Боттас",
+    "Валттері Боттаса",
+    "Боттас",
+    "Боттаса",
+    "Боттасом"
+   ],
+   "forms_sha256": "b14c476ce9bf37fbd55f5119fcaf7dd7b0355cc687238fab32e587945db85f24",
+   "review": {
+    "status": "approved",
+    "reviewer": "uk-name-review-agent",
+    "reviewed_on": "2026-11-17",
+    "note": "Валттері is not declined; Боттас is correct."
+   }
+  }
+ ]
+}

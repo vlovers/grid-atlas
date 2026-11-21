@@ -30,6 +30,12 @@
    "narrative": 6
   },
   "claims_unaligned_uk": 0,
+  "name_agreement": {
+   "agree": 7,
+   "differ": 0,
+   "uk_unrecognised": 0,
+   "no_names": 9
+  },
   "dataset_checks": {
    "supported": 4,
    "conflict": 0,
@@ -38,13 +44,24 @@
   "factcheck_status": {
    "dataset_conflict": 0,
    "dataset_supported": 3,
-   "passages_cover_numbers": 8,
-   "passages_partial": 2,
+   "passages_cover_numbers": 7,
+   "passages_partial": 3,
    "no_passage_in_live_sources": 3,
    "cited_sources_unavailable": 0,
    "no_cited_sources": 0
   },
-  "claims_verified": 0,
+  "claims_verified": 3,
+  "factcheck": {
+   "checked": 16,
+   "verified": 3,
+   "checker": "factcheck-agent-D",
+   "counts": {
+    "checker_verified_policy_rejected": 8,
+    "unsupported": 4,
+    "disputed": 1,
+    "verified": 3
+   }
+  },
   "sources": {
    "cited": 2,
    "live": 2
@@ -66,7 +83,7 @@
    "generic": 0,
    "en_uk_issues": 0
   },
-  "evidence_lead_rate": 0.688,
+  "evidence_lead_rate": 0.625,
   "content_complete": false
  },
  "tasks": [
@@ -244,7 +261,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "The distance between corners and the sheer length of the route shaped the race as much as the finishing order.",
-   "uk": "Величезна дистанція між поворотами визначала характер гонки не менше за фінішний порядок.",
+   "uk": "Відстані між поворотами й сама довжина маршруту визначали характер гонки не менше за фінішний порядок.",
    "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
@@ -255,32 +272,32 @@
    "block_id": "pescara:long_history_draft",
    "claim_type": "dated_event",
    "importance": "critical",
-   "en": "Pescara hosted just one World Championship Grand Prix; that single afternoon left an unmatched circuit-length record.",
-   "uk": "Пескара прийняла лише один заліковий Гран-прі, зате залишила рекорд довжини кола.",
-   "status": "passages_cover_numbers",
+   "en": "Pescara hosted just one World Championship Grand Prix, in 1957, and its 25.6-kilometre lap remains the longest of any championship layout.",
+   "uk": "Пескара прийняла лише один заліковий Гран-прі, у 1957 році, і її коло завдовжки 25,6 кілометра досі залишається найдовшим серед усіх трас чемпіонату.",
+   "status": "passages_partial",
    "dataset": [],
    "passages": [
     {
+     "source_id": "src-98f89c9b20b2",
+     "passage_sha256": "c4788ac9ff892632af54568063b68b34fb3ec194fccc5360dc101b16a53548bd",
+     "offset": 0,
+     "length": 153,
+     "numbers_covered": false,
+     "names_matched": [
+      "Pescara"
+     ],
+     "score": 10
+    },
+    {
      "source_id": "src-a2df826858d1",
-     "passage_sha256": "299095f1c13fc46706cdd3b2d29f0aaf3fbeaee40bd68c9bbf078d66c78c7c12",
-     "offset": 3066,
-     "length": 413,
+     "passage_sha256": "f46b06ae646589f91625367188303a648d67b11ac09f6bc4e657b46c1d28b373",
+     "offset": 0,
+     "length": 489,
      "numbers_covered": false,
      "names_matched": [
       "Pescara"
      ],
      "score": 9
-    },
-    {
-     "source_id": "src-a2df826858d1",
-     "passage_sha256": "84ba0a6f0b75c999c5d099e7738ac8027a2f9278a85b173b13a5fd0b1f8f11ec",
-     "offset": 1642,
-     "length": 221,
-     "numbers_covered": true,
-     "names_matched": [
-      "Pescara"
-     ],
-     "score": 8
     }
    ]
   },
@@ -407,8 +424,8 @@
    "block_id": "pescara:corner_group:0",
    "claim_type": "measurement",
    "importance": "critical",
-   "en": "The Pescara road course ran for roughly 25.6 kilometres through the Abruzzo countryside, including the long coastal straight and the inland climb.",
-   "uk": "Дорожнє кільце Пескари простягалося приблизно на 25,6 кілометра через пагорби Абруццо, з довгою приморською прямою та підйомом углиб суходолу.",
+   "en": "The Pescara road course ran for roughly 25.6 kilometres through the Abruzzo countryside, including the inland climb, a long straight back down towards the sea and the coast road.",
+   "uk": "Дорожнє кільце Пескари простягалося приблизно на 25,6 кілометра через пагорби Абруццо, з підйомом углиб суходолу, довгою прямою назад до моря та прибережною дорогою.",
    "status": "passages_partial",
    "dataset": [
     {
@@ -435,7 +452,7 @@
      "names_matched": [
       "Pescara"
      ],
-     "score": 7
+     "score": 10
     },
     {
      "source_id": "src-a2df826858d1",
@@ -446,7 +463,7 @@
      "names_matched": [
       "Pescara"
      ],
-     "score": 5
+     "score": 7
     }
    ]
   },

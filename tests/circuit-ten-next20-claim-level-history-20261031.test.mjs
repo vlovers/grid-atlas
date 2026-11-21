@@ -7,7 +7,8 @@ const evidence = new Map([
   ['ain-diab', ['Brooks', 'Lewis-Evans', 'Брукс', 'Льюїса-Еванса']],
   ['aintree', ['lap 69', 'Brooks', '69-му', 'Брукса']],
   ['avus', ['two heats', 'sports-car support race', 'двома заїздами', 'спортивних автомобілів']],
-  ['brands-hatch', ['CV joint', 'lap 23', 'шарнір', '23-му']],
+  // B2 pilot fact-check: source says "drive shaft joint"; lap 22 vs 23 is disputed between publishers, so no lap is stated.
+  ['brands-hatch', ['driveshaft joint', 'missed a gear', 'шарнір', 'перемикання передач']],
   ['istanbul', ['Liuzzi', 'Turn 8', 'Ліуцці', 'восьмому']],
   ['long-beach', ['lap 77', 'differing recollections', '77-му', 'свідчення']],
   ['marina-bay', ['World Motor Sport Council', 'Alonso', 'Всесвітньої ради', 'Алонсо']],

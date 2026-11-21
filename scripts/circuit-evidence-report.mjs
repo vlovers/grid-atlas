@@ -15,7 +15,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import {
   F1dbIndex, assessCorpus, buildRegistry, buildTask, checkCandidate, checkExistingNames, cornerResearchQueue,
-  extractClaims, loadCorpus, normalizeWhitespace, sourceId,
+  extractClaims, loadCorpus, normalizeWhitespace, sourceId, ukNameMap,
 } from '../packages/editorial-evidence/src/index.ts';
 import { sha256 } from '../packages/editorial-policy/src/index.ts';
 
@@ -24,7 +24,9 @@ const OUT = join(root, 'docs/editorial/circuit-evidence');
 const SNAPSHOTS = join(root, '.grid-atlas/source-snapshots');
 const PILOT = ['monaco', 'silverstone', 'interlagos', 'lusail', 'brands-hatch', 'pescara', 'dallas'];
 const archive = JSON.parse(readFileSync(join(root, 'docs/editorial/circuit-completion/archive/f1db-v2026.17.0-circuit-facts.json'), 'utf8'));
-const index = new F1dbIndex(archive);
+// Ukrainian names are recognised only through independently approved entries of the reviewed table.
+const ukTable = JSON.parse(readFileSync(join(root, 'docs/editorial/names/uk-name-table.json'), 'utf8'));
+const index = new F1dbIndex(archive, ukNameMap(ukTable.entries));
 const corpus = loadCorpus(root);
 const statusPath = join(OUT, 'source-status.json');
 const sourceStatus = existsSync(statusPath) ? JSON.parse(readFileSync(statusPath, 'utf8')) : {};
@@ -113,9 +115,12 @@ const completeness = archive.circuits.map(circuit => {
     claims: own.length,
     claims_by_type: Object.fromEntries(['statistic', 'dated_event', 'measurement', 'quotation', 'interpretation', 'narrative'].map(t => [t, count(own, c => c.claim_type === t)])),
     claims_unaligned_uk: count(own, c => c.alignment === 'unaligned'),
+    /** Aligned claims whose EN and UK sentences name the same people (reviewed name table only). */
+    name_agreement: nameAgreement(own),
     dataset_checks: { supported: count(ownChecks, k => k.status === 'supported'), conflict: count(ownChecks, k => k.status === 'conflict'), unmatched: count(ownChecks, k => k.status === 'unmatched') },
     factcheck_status: Object.fromEntries(['dataset_conflict', 'dataset_supported', 'passages_cover_numbers', 'passages_partial', 'no_passage_in_live_sources', 'cited_sources_unavailable', 'no_cited_sources'].map(s => [s, count(ownTasks, t => t.status === s)])),
-    claims_verified: 0,
+    claims_verified: factcheck(id).verified,
+    factcheck: factcheck(id),
     sources: Object.fromEntries([['cited', sources.length], ...OUTCOMES.map(o => [o, count(sources, r => outcome(r) === o)])].filter(([k, v]) => k === 'cited' || v)),
     source_structural_issues: count(sources, r => r.issues.some(i => !i.startsWith('tertiary'))),
     corners: {
@@ -135,6 +140,32 @@ const completeness = archive.circuits.map(circuit => {
   };
 });
 
+/**
+ * EN/UK name agreement for sentence-aligned claims: "agree" when both name the same entity keys,
+ * "uk_unrecognised" when English names someone but no approved Ukrainian form was found,
+ * "differ" otherwise. Claims naming nobody are "no_names".
+ */
+function nameAgreement(list) {
+  const out = { agree: 0, differ: 0, uk_unrecognised: 0, no_names: 0 };
+  for (const c of list.filter(x => x.uk && x.alignment === 'sentence')) {
+    const people = keys => keys.filter(k => !k.startsWith('constructor:')).sort();
+    const en = people(index.entities(c.en, 'en')), uk = people(index.entities(c.uk, 'uk'));
+    if (!en.length && !uk.length) out.no_names++;
+    else if (en.join() === uk.join()) out.agree++;
+    else if (!uk.length) out.uk_unrecognised++;
+    else out.differ++;
+  }
+  return out;
+}
+
+/** Independent fact-check results recorded by scripts/pilot-factcheck-apply.mjs (committed, no third-party text). */
+function factcheck(id) {
+  const path = join(OUT, 'pilot-factcheck', `${id}.json`);
+  if (!existsSync(path)) return { checked: 0, verified: 0 };
+  const record = JSON.parse(readFileSync(path, 'utf8'));
+  return { checked: record.claims_checked, verified: record.counts.verified ?? 0, checker: record.checker, counts: record.counts };
+}
+
 // ---- Output ----
 const json = value => `${JSON.stringify(value, null, 1)}\n`;
 /** Large arrays: one compact record per line — small, and diffs stay line-per-record. */
@@ -144,7 +175,7 @@ const totals = {
   circuits: completeness.length, blocks: corpus.blocks.length, claims: claims.length,
   dataset_supported: sum('', c => c.dataset_checks.supported), dataset_conflicts: sum('', c => c.dataset_checks.conflict), dataset_unmatched: sum('', c => c.dataset_checks.unmatched),
   claims_with_lead: sum('', c => c.factcheck_status.dataset_supported + c.factcheck_status.passages_cover_numbers),
-  claims_verified: 0, sources_cited: registry.length,
+  claims_verified: sum('', c => c.claims_verified), sources_cited: registry.length,
   sources_live: Object.values(sourceStatus).filter(r => LIVE.has(r.outcome) || r.outcome === 'live_pdf_no_text').length,
   named_corners: names.length, names_found_in_cited_source: names.filter(n => n.status === 'name_found_in_cited_source').length,
   names_not_in_cited_text: names.filter(n => n.status === 'name_not_in_cited_text').length,

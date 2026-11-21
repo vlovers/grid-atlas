@@ -1,0 +1,1756 @@
+{
+ "circuit_id": "brands-hatch",
+ "checker": "factcheck-agent-C",
+ "checked_at": "2026-11-17T00:25:04.494Z",
+ "checker_declared_at": "2026-11-17T00:00:00Z",
+ "policy_version": "grid-atlas-editorial-policy/1.8.0",
+ "claims_in_package": 53,
+ "claims_checked": 53,
+ "missing_claims": [],
+ "counts": {
+  "checker_verified_policy_rejected": 22,
+  "unsupported": 22,
+  "disputed": 1,
+  "verified": 6,
+  "unverifiable": 2
+ },
+ "records": [
+  {
+   "claim_id": "brands-hatch:short_summary#s1",
+   "block_kind": "short_summary",
+   "assertion": "Brands Hatch hosted the 1986 British Grand Prix and Nigel Mansell won it.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-7489b82575d9",
+     "excerpt_sha256": "160feea869877198abb64d0f226e65b5fcce4a4872c2fbb5f6cc9bcb56b1ef5a",
+     "offset": 2118,
+     "length": 23,
+     "locator": "race-results.yml, position: 1 entry",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "winner",
+     "value": "nigel-mansell"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "F1DB 1986 British GP at brands-hatch, winner Mansell."
+  },
+  {
+   "claim_id": "brands-hatch:short_summary#s2",
+   "block_kind": "short_summary",
+   "assertion": "Evaluative: Brands Hatch's elevation changes make it feel unlike a flat airfield circuit.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": false,
+   "uk_issue": "UK adds 'among the Kent hills' (location not in EN) and drops 'not simply another venue' and 'airfield'.",
+   "issues": [
+    "no_checkable_fact",
+    "cited F1DB results file does not address topography"
+   ],
+   "notes": "Only source is a race-results YAML; nothing about elevation or character."
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s1",
+   "block_kind": "long_history_draft",
+   "assertion": "Mansell's first start at the 1986 British GP ended almost immediately when his car failed.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-f1165736bdf8",
+     "excerpt_sha256": "3e26b7e0f3a0092a01011d94ac2b120dd611351c5bf4183e0fff37e6ee724fb4",
+     "offset": 1005,
+     "length": 73,
+     "locator": "race report, para 3",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "c3163989f0513029bd6b1b1b9e10104c7cf1c921cd6998d923ef8557e2e08f8c",
+     "offset": 12025,
+     "length": 107,
+     "locator": "race report, start paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "figurative wording; read in context (he later won the restarted race)"
+   ],
+   "notes": "Figurative lead-in; factual core (failure at the start) supported by two sources."
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s2",
+   "block_kind": "long_history_draft",
+   "assertion": "Mansell's Williams stopped at the first start because of a broken CV (driveshaft) joint.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "c88ae95593b4600768464adcf90fcca18c82ec972bd76e7b976b1ed66df9840b",
+     "offset": 12083,
+     "length": 49,
+     "locator": "race report, start paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source says 'drive shaft joint'; 'CV joint' is narrower wording not stated verbatim"
+   ],
+   "notes": "Grandprix.com only says the car 'failed'. Consider using the source's 'driveshaft joint' wording."
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s3",
+   "block_kind": "long_history_draft",
+   "assertion": "The race was red-flagged because of a crash behind Mansell, giving him a restart; the crash seriously affected another driver.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-f1165736bdf8",
+     "excerpt_sha256": "073193024e71b7da95e361a8acac2657380b4cb33edc208bd6ac4eb82491cf03",
+     "offset": 1079,
+     "length": 106,
+     "locator": "race report, para 3",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-f1165736bdf8",
+     "excerpt_sha256": "785eef9e6258b49072175f569055f4c4760991e0ee263273a54c82cadce4702d",
+     "offset": 1662,
+     "length": 106,
+     "locator": "race report, para 4",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s4",
+   "block_kind": "long_history_draft",
+   "assertion": "Mansell used the spare Williams, set up for Piquet, for the restart.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "bfea08b02cbfeb702e3647b9d2a458189c392d163aeb395bfb00f23fc155db97",
+     "offset": 13703,
+     "length": 96,
+     "locator": "race report, restart paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Grandprix.com also: 'Mansell (in the spare car)'."
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s5",
+   "block_kind": "long_history_draft",
+   "assertion": "Jacques Laffite suffered severe leg injuries in the start crash, ending his F1 career.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "107edf7325d0c184944c4ddcb66d301e28973ffb4e1b4e336fb885ea9c914988",
+     "offset": 12959,
+     "length": 112,
+     "locator": "race report, accident paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-f1165736bdf8",
+     "excerpt_sha256": "785eef9e6258b49072175f569055f4c4760991e0ee263273a54c82cadce4702d",
+     "offset": 1662,
+     "length": 106,
+     "locator": "race report, para 4",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Sources also note a fractured pelvis."
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s6",
+   "block_kind": "long_history_draft",
+   "assertion": "Piquet led after the restart; Mansell passed him on lap 23 after Piquet missed a gear.",
+   "checker_verdict": "DISPUTED",
+   "contradicted": false,
+   "final": "disputed",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-f1165736bdf8",
+     "excerpt_sha256": "61561620e2079c97fe4918262e43fab19213349e9ec3409f17bb7852004edf84",
+     "offset": 2343,
+     "length": 96,
+     "locator": "race report, para 6 (same lap as Berger's lap-23 retirement)",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-f1165736bdf8",
+     "excerpt_sha256": "5bf3ff9cde4fe773c1c01aaad9e473c945638961bc1902c7761ce05e16877131",
+     "offset": 2292,
+     "length": 50,
+     "locator": "race report, para 6",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "fd56265a8189c2fc6e23e64dc9902dd41292e429acb825b898fb7e2d1060f888",
+     "offset": 16013,
+     "length": 70,
+     "locator": "race report, mid-race paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "lap of pass: Grandprix.com implies lap 23, Motor Sport says lap 22",
+    "missed-gear cause only in Grandprix.com"
+   ],
+   "notes": "Piquet leading the restart is supported by both. Lap number conflicts between the two sources."
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s7",
+   "block_kind": "long_history_draft",
+   "assertion": "Pit stops did not decide the Williams battle; Mansell and Piquet finished 1-2 with Prost third, one lap down.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "43fac6ccd49b31c338627d12abec6ee921a76f777c88eed7dd0bf0213013081d",
+     "offset": 16245,
+     "length": 139,
+     "locator": "race report, pit-stop paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "a2a4e0c6d2f7c763bb23b387cc5328c8704a3355a02554609c3bba70fb601aa3",
+     "offset": 16442,
+     "length": 102,
+     "locator": "race report, following paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "97fbdca5bb3fe49cd26251ec338df07c01ce19602af617c5c34260f85eecd6dd",
+     "offset": 337,
+     "length": 110,
+     "locator": "race report, opening paragraph",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "winner",
+     "value": "nigel-mansell"
+    },
+    {
+     "race_id": "429",
+     "field": "second",
+     "value": "nelson-piquet"
+    },
+    {
+     "race_id": "429",
+     "field": "third",
+     "value": "alain-prost"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:long_history_draft#s8",
+   "block_kind": "long_history_draft",
+   "assertion": "Mansell's win was a home win made possible by a restart caused by a crash (plus an editorial judgement).",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-00f752b98688",
+     "excerpt_sha256": "4942f3070b4a47f853dfbe5d12eaec79c0005f9617823798eda0bc08a04a87a7",
+     "offset": 4740,
+     "length": 60,
+     "locator": "race report, press-speculation paragraph",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-f1165736bdf8",
+     "excerpt_sha256": "073193024e71b7da95e361a8acac2657380b4cb33edc208bd6ac4eb82491cf03",
+     "offset": 1079,
+     "length": 106,
+     "locator": "race report, para 3",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "winner",
+     "value": "nigel-mansell"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "second clause is editorial/normative, not checkable"
+   ],
+   "notes": "Factual parts supported."
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s1",
+   "block_kind": "narrative_biography",
+   "assertion": "Evaluative: Brands Hatch is not a flat circuit.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "83d0b62f2b285c18781e1fbcd7929bd89d3279ee5a24dc1b6b0dd79f6d411d75",
+     "offset": 3487,
+     "length": 82,
+     "locator": "driving guide, 1 - Paddock Hill Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": "Source describes elevation at Paddock Hill but does not make the overall evaluation."
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s2",
+   "block_kind": "narrative_biography",
+   "assertion": "The GP loop dropped from Paddock Hill, climbed to Surtees, ran through woods, and returned to the main straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "3d40f7132a72c323adb81e488d984700912bf0744f9d17d4db54c35a7518c7ef",
+     "offset": 3571,
+     "length": 81,
+     "locator": "driving guide, 1 - Paddock Hill Bend",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "fc7c51f95a6ebe5c75be08d1fcbc98b4fc52f10ffe7d98b65e07d75b08c95383",
+     "offset": 2138,
+     "length": 111,
+     "locator": "corner names, Westfield Bend",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "c09bd2038aee4e73b78b671e5b82f6e6abb024aeffb84d4a598f0e4e40e744af",
+     "offset": 10278,
+     "length": 46,
+     "locator": "driving guide, 9 - Clark Curve",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'climbed towards Surtees' not stated",
+    "source describes the modern layout, not the 1986 one"
+   ],
+   "notes": "Partly supported; climb to Surtees not established."
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s3",
+   "block_kind": "narrative_biography",
+   "assertion": "F1 raced at Brands Hatch on more than one layout, the last time in 1986.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "verification_method_mismatch",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "season",
+     "value": "1986"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "F1DB lists two layouts (brands-hatch-1 1964-74, brands-hatch-2 1976-86); 'several' may overstate",
+    "cited oversteer48 source does not cover F1 history"
+   ],
+   "notes": "Verified via F1DB layouts and race list (last race 1986)."
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s4",
+   "block_kind": "narrative_biography",
+   "assertion": "The Dingle Dell chicane existed at the 1986 race; Sheene Curve was introduced in 2003.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "333413526754d6e7ca9c959c6a47f7dac0334cdddc785d312a3acf7fc0fbef47",
+     "offset": 2809,
+     "length": 57,
+     "locator": "corner names section",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "de306ce1b5b67ccc2bf981f27edbeb808a0f9289380c8d6846103d7692e469da",
+     "offset": 2250,
+     "length": 69,
+     "locator": "corner names section",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no date for Sheene Curve in cited source",
+    "no evidence the chicane existed in 1986",
+    "source calls Dingle Dell a 'corner', not a chicane"
+   ],
+   "notes": "ABC 2003 article (cited elsewhere) dates the Sheene Curve but not the chicane's 1986 status."
+  },
+  {
+   "claim_id": "brands-hatch:narrative_biography#s5",
+   "block_kind": "narrative_biography",
+   "assertion": "The 1986 GP lap had nine turns/sections (plus editorial caveat).",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_value_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "be3a6aeed880a0b02214fb25f2bd2fa11a70040bb6bc6e47481f11925b40074f",
+     "offset": 633,
+     "length": 59,
+     "locator": "circuits & corner numbers (modern layout)",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "layout:brands-hatch-2",
+     "field": "turns",
+     "value": "9"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "F1DB gives turn count, not names; corner names for 1986 not sourced",
+    "editorial clause not checkable"
+   ],
+   "notes": "F1DB brands-hatch-2 (1976-86): 9 turns."
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s1",
+   "block_kind": "defining_moment",
+   "assertion": "Mansell won the 1985 European GP at Brands Hatch for Williams, and it was his first WC win.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-54ea5a239722",
+     "excerpt_sha256": "7b8bfa3a5fa64cb12053b8d59e3fc7e9fc7ea57682e8e691f94464bb26823121",
+     "offset": 0,
+     "length": 45,
+     "locator": "page heading",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-54ea5a239722",
+     "excerpt_sha256": "0ddd409989e6ba1526cf39ccb053b2f3f5ff83c3355144c11c9ff217b6b45a54",
+     "offset": 784,
+     "length": 35,
+     "locator": "header under date 06 Oct 1985",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "418",
+     "field": "winner",
+     "value": "nigel-mansell"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'first' World Championship win not established by cited source or package F1DB"
+   ],
+   "notes": "Win, venue and Williams supported; 'first win' is commonly reported but unsourced here."
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s2",
+   "block_kind": "defining_moment",
+   "assertion": "Mansell started 3rd in 1985, behind pole-sitter Senna and second-placed Piquet.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "418",
+     "field": "pole",
+     "value": "ayrton-senna"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "cited page is race result only; no grid positions",
+    "Mansell P3 and Piquet P2 not established"
+   ],
+   "notes": "Senna pole confirmed by F1DB. Grid order commonly reported; Lap Ledger (not cited here) lists Mansell winning from 3rd."
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s3",
+   "block_kind": "defining_moment",
+   "assertion": "Mansell, often unlucky before, finally won a championship race (implying his first) at home.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "418",
+     "field": "winner",
+     "value": "nigel-mansell"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": "UK says 'often unlucky' and 'won' without 'championship'; meaning roughly preserved.",
+   "issues": [
+    "no_checkable_fact for 'near-misses'",
+    "'finally' (first win) and home nationality not in cited source"
+   ],
+   "notes": "Results page only."
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1985-mansell-first#s4",
+   "block_kind": "defining_moment",
+   "assertion": "The official 1985 European GP classification names Brands Hatch as the venue.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-54ea5a239722",
+     "excerpt_sha256": "0ddd409989e6ba1526cf39ccb053b2f3f5ff83c3355144c11c9ff217b6b45a54",
+     "offset": 784,
+     "length": 35,
+     "locator": "header under date 06 Oct 1985",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "418",
+     "field": "season",
+     "value": "1985"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s1",
+   "block_kind": "defining_moment",
+   "assertion": "The 1986 British GP was the last WC F1 race held at Brands Hatch.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-7a1feae23a6c",
+     "excerpt_sha256": "0ddd409989e6ba1526cf39ccb053b2f3f5ff83c3355144c11c9ff217b6b45a54",
+     "offset": 754,
+     "length": 35,
+     "locator": "header under date 13 Jul 1986",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "season",
+     "value": "1986"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'last' rests on F1DB (no later brands-hatch race), not the cited page"
+   ],
+   "notes": "F1DB v2026.17.0 has no Brands Hatch race after 1986."
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s2",
+   "block_kind": "defining_moment",
+   "assertion": "1986: Piquet on pole; Mansell won over 75 laps; Piquet 2nd; Prost 3rd.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-7a1feae23a6c",
+     "excerpt_sha256": "0da5d9a537e4f323284dce2085135b5618e35095d5dc3c99fd09fbb7d2706700",
+     "offset": 858,
+     "length": 31,
+     "locator": "race result row 1 (Mansell)",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "pole",
+     "value": "nelson-piquet"
+    },
+    {
+     "race_id": "429",
+     "field": "winner",
+     "value": "nigel-mansell"
+    },
+    {
+     "race_id": "429",
+     "field": "second",
+     "value": "nelson-piquet"
+    },
+    {
+     "race_id": "429",
+     "field": "third",
+     "value": "alain-prost"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s3",
+   "block_kind": "defining_moment",
+   "assertion": "1986 was the final championship race at the Kent circuit, held before the 2003 Sheene Curve layout.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "season",
+     "value": "1986"
+    }
+   ],
+   "uk_matches_en": false,
+   "uk_issue": "UK omits the year 2003.",
+   "issues": [
+    "cited results page mentions neither Kent nor Sheene Curve/2003",
+    "final-race part supported only by F1DB"
+   ],
+   "notes": "Sheene Curve 2003 is supported by the ABC source, which is cited for other claims but not this one."
+  },
+  {
+   "claim_id": "brands-hatch:moment:brands-hatch-1986-last-f1#s4",
+   "block_kind": "defining_moment",
+   "assertion": "Mansell set the fastest lap of the 1986 British GP.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_season_not_stated",
+    "claim_entity_unsupported",
+    "verification_method_mismatch",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [
+    {
+     "race_id": "429",
+     "field": "fastest_lap",
+     "value": "nigel-mansell"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "cited snapshot is the race-result tab and does not show fastest laps"
+   ],
+   "notes": "Verified via F1DB only."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t1#s1",
+   "block_kind": "corner_section",
+   "assertion": "Paddock Hill drops steeply from the start straight and is a right-hander.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-70014ca97d1a",
+     "excerpt_sha256": "1270e47ee8d80b2bb9e4deb5dc72f1a14607052c9a5a845d707d66a80923a18e",
+     "offset": 379,
+     "length": 70,
+     "locator": "circuit summary",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "3d40f7132a72c323adb81e488d984700912bf0744f9d17d4db54c35a7518c7ef",
+     "offset": 3571,
+     "length": 81,
+     "locator": "driving guide, 1 - Paddock Hill Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "right-hand direction not stated in cited sources"
+   ],
+   "notes": "Drop supported; direction not."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t1#s2",
+   "block_kind": "corner_section",
+   "assertion": "Paddock Hill is named after the nearby paddock; braking downhill unsettles the car and compression at the bottom widens the exit.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "126a25ae4748e79063365530de02b2bb0fd3b08f518fdc64b15c5ed664b84b95",
+     "offset": 996,
+     "length": 158,
+     "locator": "corner names, Paddock Hill Bend",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "2f890a4a1f118812fcf5bcce4b9c2c4f40a3e11d19acc417853ee7963b9a8692",
+     "offset": 4117,
+     "length": 93,
+     "locator": "driving guide, 1 - Paddock Hill Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source describes modern driving, not 1986"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t2#s1",
+   "block_kind": "corner_section",
+   "assertion": "The track climbs from Paddock Hill to Druids, a tight right-hand hairpin.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "1eb4505f5dec2c181634c830f458311ce89acc504c02be8fd8d28ffddb5b8135",
+     "offset": 4626,
+     "length": 96,
+     "locator": "driving guide, 2 - Druids",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "right-hand direction not stated in cited sources"
+   ],
+   "notes": "Uphill hairpin supported; direction not."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t2#s2",
+   "block_kind": "corner_section",
+   "assertion": "The origin of the Druids name is uncertain/disputed.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "fa1c31006f666497437278dda3d6492af91959c9ccbd11098b31e9b0616149f6",
+     "offset": 1320,
+     "length": 41,
+     "locator": "corner names, Druids",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Source lists two druid-related theories."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t2#s3",
+   "block_kind": "corner_section",
+   "assertion": "A patient exit from Druids matters before the downhill section.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "2e1305a45fb3e8cb557fcaa906f4966e279d81ad38ee0013cf17c258375592ce",
+     "offset": 5034,
+     "length": 53,
+     "locator": "driving guide, 2 - Druids tip",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "54be7160b02964492f89a3b7db1ed7cd03e92f94bf527a1da84cbc049a8193ca",
+     "offset": 5742,
+     "length": 60,
+     "locator": "driving guide, 3 - Graham Hill Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": "UK omits 'before the downhill run' (minor).",
+   "issues": [],
+   "notes": "Driving advice; source gives the same advice."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t3#s1",
+   "block_kind": "corner_section",
+   "assertion": "Graham Hill Bend is a left-hander dropping towards Cooper Straight, named after double champion Graham Hill.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "081f4344cd0d4f1c31e12d03e686c142ac29dff1664e76d76c40107fe6c6cfa1",
+     "offset": 1565,
+     "length": 70,
+     "locator": "corner names",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "42f46ddaec5b92bcc5d6b572ea1eef76396400b1593dd3e493e8a2626be86648",
+     "offset": 5353,
+     "length": 60,
+     "locator": "driving guide, 3 - Graham Hill Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'Cooper Straight' not mentioned in any cited source"
+   ],
+   "notes": "Name, direction and descent supported; Cooper Straight unsourced."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t3#s2",
+   "block_kind": "corner_section",
+   "assertion": "Graham Hill Bend's shape has changed since the F1 era.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "a20ba5c971bb78139a550638ae4ec8e2f43adefbc72102bc58dbbed855d022f3",
+     "offset": 5110,
+     "length": 102,
+     "locator": "driving guide, 3 - Graham Hill Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t4#s1",
+   "block_kind": "corner_section",
+   "assertion": "Surtees is an uphill left-hander after which the GP circuit leaves the Indy circuit.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "0e9fa3fa69ca483fd629e6b1b5aa2b786d711af8843e8c6424eb1e8b2597b379",
+     "offset": 5895,
+     "length": 84,
+     "locator": "driving guide, 4 - Surtees",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'climbing' not stated",
+    "split implied only by corner lists (GP: Hawthorn after Surtees; Indy: McLaren)"
+   ],
+   "notes": "Left-hander and split supported; climb not."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t4#s2",
+   "block_kind": "corner_section",
+   "assertion": "Surtees is named after John Surtees, world champion on motorcycles and in F1.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "e3f6e4bb273deaa05e8be74ae5dc0bfdb55c835bd26bb700b0cb387c21045321",
+     "offset": 1674,
+     "length": 127,
+     "locator": "corner names, Surtees",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t4#s3",
+   "block_kind": "corner_section",
+   "assertion": "A clean Surtees exit sets up the faster wooded section that follows.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "5e2c5c1d3a944c571154a785f7ec0709dd701e8c37bb94ac6d7a5f41d94b0d8e",
+     "offset": 7409,
+     "length": 54,
+     "locator": "driving guide, 5 - Hawthorn Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact",
+    "source gives exit advice for Surtees only on the Indy layout"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t5#s1",
+   "block_kind": "corner_section",
+   "assertion": "After descending Pilgrims Drop, Hawthorn Bend is a fast right-hander.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entities_differ_across_locales",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "028b9de78fb1fc22a9802316c27fe4f35927fa167a687a9dd1b1cdf06d33a725",
+     "offset": 7409,
+     "length": 102,
+     "locator": "driving guide, 5 - Hawthorn Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'Pilgrims Drop' not mentioned in any cited source"
+   ],
+   "notes": "Fast right-hander supported."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t5#s2",
+   "block_kind": "corner_section",
+   "assertion": "Sources disagree whether Hawthorn is named after Mike Hawthorn or a nearby farm.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_statement_missing",
+    "claim_entities_differ_across_locales"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "745c4c732bd8ebf0caf5fe1ed50f4deb65f0424bbde8ac9c167359e69d9bb2df",
+     "offset": 1961,
+     "length": 98,
+     "locator": "corner names, Hawthorn",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Same passage continues: other sources suggest a nearby farm."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t5#s3",
+   "block_kind": "corner_section",
+   "assertion": "Hawthorn's speed and camber make the approach unforgiving.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_statement_missing",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "652b7a24aac6e112ff907598f215ea595ab97f7301c97e80433c88b3f6c44b4c",
+     "offset": 7616,
+     "length": 72,
+     "locator": "driving guide, 5 - Hawthorn Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "camber not mentioned for Hawthorn"
+   ],
+   "notes": "Unforgiving/high speed supported; camber not."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t6#s1",
+   "block_kind": "corner_section",
+   "assertion": "Westfield is a quick right-hander named after nearby woodland.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "fc7c51f95a6ebe5c75be08d1fcbc98b4fc52f10ffe7d98b65e07d75b08c95383",
+     "offset": 2138,
+     "length": 111,
+     "locator": "corner names, Westfield Bend",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "4c15d6489f501145cc08b82288199f9ba9af75ee751a74b8f15d851f7a0a3389",
+     "offset": 7947,
+     "length": 43,
+     "locator": "driving guide, 6 - Westfield Bend",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'quick' not stated (source stresses it is tighter than Hawthorn)",
+    "right-hand direction only implied"
+   ],
+   "notes": "Name origin supported."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t6#s2",
+   "block_kind": "corner_section",
+   "assertion": "After Westfield the track drops to Dingle Dell; a wide exit compromised the old chicane that existed in 1986.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "c066480865e4afb6e9a41bc7d7afc96cd7c78357eb9872b54b06bc6f37609b3e",
+     "offset": 8213,
+     "length": 80,
+     "locator": "driving guide, 6 - Westfield Bend",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-e3bdf178ff3c",
+     "excerpt_sha256": "5545019e0644cfdeb3af2c3157a71bf15acb78964ee85bcb96f7de5746a5afb8",
+     "offset": 693,
+     "length": 67,
+     "locator": "article para 2 (18 Mar 2003)",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no source establishes the chicane existed at the 1986 race"
+   ],
+   "notes": "Chicane replaced in 2003; its 1986 existence is undated in the sources."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t7#s1",
+   "block_kind": "corner_section",
+   "assertion": "In 1986 turn 7 was the original Dingle Dell chicane, not the Sheene Curve.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-e3bdf178ff3c",
+     "excerpt_sha256": "5545019e0644cfdeb3af2c3157a71bf15acb78964ee85bcb96f7de5746a5afb8",
+     "offset": 693,
+     "length": 67,
+     "locator": "article para 2 (18 Mar 2003)",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'not Sheene Curve in 1986' is supported (named 2003); 'chicane in 1986' not established"
+   ],
+   "notes": "Needs a period source (e.g. 1986 circuit map)."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t7#s2",
+   "block_kind": "corner_section",
+   "assertion": "In 2003 the Dingle Dell chicane was replaced by a reprofiled curve named after Barry Sheene.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_number_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-e3bdf178ff3c",
+     "excerpt_sha256": "1bf05228c3755c1cf1f02ab6f3dc958ab7af475764aacbd188ad7e8e1a293ab8",
+     "offset": 515,
+     "length": 100,
+     "locator": "article para 1 (posted 18 Mar 2003)",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-e3bdf178ff3c",
+     "excerpt_sha256": "5545019e0644cfdeb3af2c3157a71bf15acb78964ee85bcb96f7de5746a5afb8",
+     "offset": 693,
+     "length": 67,
+     "locator": "article para 2",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "article says curve 'recently been completed' by March 2003; construction may have begun in 2002"
+   ],
+   "notes": "Naming in 2003 is firm; rebuild timing is approximate."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t7#s3",
+   "block_kind": "corner_section",
+   "assertion": "Evaluative: a modern turn-7 photo would misrepresent the historic corner.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact",
+    "depends on unestablished 1986 chicane"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t8#s1",
+   "block_kind": "corner_section",
+   "assertion": "Stirling's is a left-hander where the GP loop rejoins the stadium/Indy section.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "36cbe974d2546b3e02c7c797c2faef58251c106c3006600a8fbf638664512741",
+     "offset": 9488,
+     "length": 112,
+     "locator": "driving guide, 8 - Stirling's",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "'stadium section' read as the Indy circuit area"
+   ],
+   "notes": "Modern layout description."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t8#s2",
+   "block_kind": "corner_section",
+   "assertion": "Stirling's name origin is uncertain; a nearby farm is one explanation rather than Stirling Moss.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "6171e43aa22008f04f98eb399177c73977afc4679c1937c9e0bcd4955f65a690",
+     "offset": 2418,
+     "length": 173,
+     "locator": "corner names, Stirling's",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t8#s3",
+   "block_kind": "corner_section",
+   "assertion": "Stirling's exit leads towards Clearways.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "0d3503ba2287ba908151c8d9917d84d599d7bccaccb21af5cfacde542c9396fc",
+     "offset": 9957,
+     "length": 98,
+     "locator": "driving guide, 9 - Clark Curve",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Next corner after Stirling's is Clark Curve, part of the Clearways area."
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t9#s1",
+   "block_kind": "corner_section",
+   "assertion": "Clark Curve is the final, right-hand corner leading onto the pit straight.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "claim_entity_unsupported"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "d797f1d070b82ba477cb7a27ed9ce418e073ba9c5874a7c95848e30090c933dc",
+     "offset": 9840,
+     "length": 68,
+     "locator": "driving guide, 9 - Clark Curve",
+     "found_in_snapshot": true
+    },
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "c09bd2038aee4e73b78b671e5b82f6e6abb024aeffb84d4a598f0e4e40e744af",
+     "offset": 10278,
+     "length": 46,
+     "locator": "driving guide, 9 - Clark Curve tip",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "right-hand direction inferred from Clearways being described as a right hander"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t9#s2",
+   "block_kind": "corner_section",
+   "assertion": "Clark Curve is named after Jim Clark, twice F1 world champion.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "692f52f1b78e1b7fdd4a5984316e1d5c95de5b27b6f8b6c7a29e8f0bae8446f4",
+     "offset": 2592,
+     "length": 64,
+     "locator": "corner names",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner:brands-hatch-t9#s3",
+   "block_kind": "corner_section",
+   "assertion": "Clearways is a named section but not a separately numbered corner in the nine-turn count.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "checker_verified_policy_rejected",
+   "policy_findings": [
+    "dataset_value_not_stated"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-1d5e90abd23f",
+     "excerpt_sha256": "be3a6aeed880a0b02214fb25f2bd2fa11a70040bb6bc6e47481f11925b40074f",
+     "offset": 633,
+     "length": 59,
+     "locator": "circuits & corner numbers (list omits Clearways)",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [
+    {
+     "race_id": "layout:brands-hatch-2",
+     "field": "turns",
+     "value": "9"
+    }
+   ],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "source list is for the modern GP layout"
+   ],
+   "notes": "GP list of 9 excludes Clearways; F1DB 9 turns."
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:0#s1",
+   "block_kind": "corner_group",
+   "assertion": "The first corner is a downhill right-hander leaving the pit straight.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-8bb1c2866347",
+     "excerpt_sha256": "25926eea23ed7393a359cd57405561585d61752072de35d900f2712f498e76d8",
+     "offset": 386,
+     "length": 59,
+     "locator": "Pit Straight Grandstand",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "downhill and right-hand direction not stated in cited source"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:0#s2",
+   "block_kind": "corner_group",
+   "assertion": "Cars compress at the bottom of Paddock Hill before climbing to Druids.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-8bb1c2866347",
+     "excerpt_sha256": "5d0bf56e9f07fa9a9e5ae43ceb5ef67ed1bf8b972494f6310c2036562476b6c2",
+     "offset": 1035,
+     "length": 85,
+     "locator": "Hailwoods Grandstand",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "compression not mentioned in cited source"
+   ],
+   "notes": "Climb to Druids supported."
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:1#s1",
+   "block_kind": "corner_group",
+   "assertion": "The Druids hairpin at the top of the hill is a key braking/overtaking point.",
+   "checker_verdict": "VERIFIED",
+   "contradicted": false,
+   "final": "verified",
+   "policy_findings": [],
+   "checker_dataset_disagreements": [],
+   "evidence": [
+    {
+     "source_id": "src-8bb1c2866347",
+     "excerpt_sha256": "5d0bf56e9f07fa9a9e5ae43ceb5ef67ed1bf8b972494f6310c2036562476b6c2",
+     "offset": 1035,
+     "length": 85,
+     "locator": "Hailwoods Grandstand",
+     "found_in_snapshot": true
+    }
+   ],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [],
+   "notes": "Operator page, modern circuit."
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:1#s2",
+   "block_kind": "corner_group",
+   "assertion": "Viewing advice: watch whether an attacking driver exits cleanly.",
+   "checker_verdict": "UNSUPPORTED",
+   "contradicted": false,
+   "final": "unsupported",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "no_checkable_fact"
+   ],
+   "notes": ""
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:2#s1",
+   "block_kind": "corner_group",
+   "assertion": "On the GP circuit the route leaves the Indy loop after Surtees for the wooded section with Hawthorn Bend.",
+   "checker_verdict": "UNVERIFIABLE",
+   "contradicted": false,
+   "final": "unverifiable",
+   "policy_findings": [
+    "claim_entity_unsupported",
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "cited PDF snapshot contains only a header line; map content not readable as text"
+   ],
+   "notes": "Oversteer48 (cited elsewhere) would support most of this."
+  },
+  {
+   "claim_id": "brands-hatch:corner_group:2#s2",
+   "block_kind": "corner_group",
+   "assertion": "These landmarks appear on the operator's map; they should not be applied to every historic layout.",
+   "checker_verdict": "UNVERIFIABLE",
+   "contradicted": false,
+   "final": "unverifiable",
+   "policy_findings": [
+    "evidence_insufficient"
+   ],
+   "checker_dataset_disagreements": [],
+   "evidence": [],
+   "dataset": [],
+   "uk_matches_en": true,
+   "uk_issue": null,
+   "issues": [
+    "cited PDF snapshot has no readable map labels",
+    "normative clause not checkable"
+   ],
+   "notes": ""
+  }
+ ]
+}

@@ -30,6 +30,12 @@
    "narrative": 6
   },
   "claims_unaligned_uk": 3,
+  "name_agreement": {
+   "agree": 6,
+   "differ": 0,
+   "uk_unrecognised": 1,
+   "no_names": 7
+  },
   "dataset_checks": {
    "supported": 1,
    "conflict": 0,
@@ -44,7 +50,17 @@
    "cited_sources_unavailable": 0,
    "no_cited_sources": 0
   },
-  "claims_verified": 0,
+  "claims_verified": 1,
+  "factcheck": {
+   "checked": 17,
+   "verified": 1,
+   "checker": "factcheck-agent-D",
+   "counts": {
+    "checker_verified_policy_rejected": 13,
+    "unsupported": 3,
+    "verified": 1
+   }
+  },
   "sources": {
    "cited": 2,
    "live": 2
@@ -596,8 +612,8 @@
    "block_id": "dallas:corner_group:1",
    "claim_type": "narrative",
    "importance": "standard",
-   "en": "Workers patched the course overnight and the morning warm-up was cancelled.",
-   "uk": "Покриття латали вночі, а ранкову розминку скасували.",
+   "en": "The race-morning warm-up was cancelled so that crumbling sections could be patched with quick-drying concrete.",
+   "uk": "Ранкову розминку в день гонки скасували, щоб залатати зруйновані ділянки швидковисихаючим бетоном.",
    "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
@@ -608,8 +624,8 @@
    "block_id": "dallas:corner_group:1",
    "claim_type": "narrative",
    "importance": "standard",
-   "en": "During the Grand Prix, drivers had to avoid loose surface and concrete barriers while managing tyre wear and temperatures.",
-   "uk": "Під час гонки пілоти оминали крихкі ділянки дороги й бетонні бар'єри та боролися з перегрівом шин.",
+   "en": "During the Grand Prix, drivers had to avoid loose surface and concrete barriers.",
+   "uk": "Під час гонки пілоти оминали крихкі ділянки покриття й бетонні бар'єри.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [

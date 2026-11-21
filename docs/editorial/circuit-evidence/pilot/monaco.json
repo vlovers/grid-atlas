@@ -30,6 +30,12 @@
    "narrative": 14
   },
   "claims_unaligned_uk": 2,
+  "name_agreement": {
+   "agree": 0,
+   "differ": 0,
+   "uk_unrecognised": 0,
+   "no_names": 16
+  },
   "dataset_checks": {
    "supported": 0,
    "conflict": 0,
@@ -44,7 +50,18 @@
    "cited_sources_unavailable": 0,
    "no_cited_sources": 2
   },
-  "claims_verified": 0,
+  "claims_verified": 7,
+  "factcheck": {
+   "checked": 18,
+   "verified": 7,
+   "checker": "factcheck-agent-C",
+   "counts": {
+    "unverifiable": 1,
+    "unsupported": 5,
+    "checker_verified_policy_rejected": 5,
+    "verified": 7
+   }
+  },
   "sources": {
    "cited": 2,
    "live": 2
@@ -287,7 +304,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "Its name has changed with the building beside it: Station, Loews, Grand Hotel and Fairmont have all been used.",
-   "uk": "Її назва змінювалася разом із готелем: Station, Loews, Grand Hotel і Fairmont.",
+   "uk": "Її назва змінювалася разом із будівлею поруч: Station, Loews, Grand Hotel і Fairmont.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -406,7 +423,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "The city's racing tradition is remembered in the layout itself.",
-   "uk": "Так історія заснування гонки зберігається просто на схемі траси.",
+   "uk": "Так гоночна традиція міста закарбована в самій схемі траси.",
    "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []

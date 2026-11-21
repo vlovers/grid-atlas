@@ -1,0 +1,357 @@
+{
+ "revisions": [
+  {
+   "claim": "interlagos:long_history_draft#s4",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "en",
+   "reason": "disputed: retirement lap inconsistent within Motor Sport (32 vs 33); F1.com shows 32 laps completed",
+   "old": "until trouble with its fuel system ended his race on lap 32.",
+   "new": "until trouble with its fuel system ended his race after 32 laps.",
+   "old_sha256": "bb9ece7342fbf6856234653fd9109b434c583d522054ce08c6ff37fd5fbe5294"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s5",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "en",
+   "reason": "consistency with s8 correction: source says Fittipaldi never got close enough",
+   "old": "Pace inherited the lead, but he still had to keep Fittipaldi's closing McLaren behind him.",
+   "new": "Pace inherited the lead, with Fittipaldi's McLaren the car he had to keep behind him.",
+   "old_sha256": "9da5ec2c40655b0ccd4e2575c748f180caf0faaa571266c20b4dc65f6781e173"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s8",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "en",
+   "reason": "contradicted: Motor Sport report says the World Champion never got close enough; margin 5.79 s",
+   "old": "Pace did not inherit an easy victory: once Jarier was out, Fittipaldi remained close enough to make the finish a real contest.",
+   "new": "Once Jarier was out, Fittipaldi gave chase but never came close enough to challenge Pace for the win.",
+   "old_sha256": "eba0831009cad42d600dde58835603a42ab01b2ae650caa47b981b3feed9b2f9"
+  },
+  {
+   "claim": "interlagos:long_history_draft (uk)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "uk",
+   "reason": "UK misaligned with EN (UK s1 merged EN s1+s2; EN s6 split); UK s7 omitted Jarier; s9 broader than EN; mirrors EN corrections s4/s5/s8",
+   "old": "Інтерлагос уже знав, як звучить домашня перемога: Емерсон Фіттіпальді виграв тут перший заліковий Гран-прі Бразилії 1973 року й повторив успіх у 1974-му.",
+   "new": "Інтерлагос уже знав, як звучить домашня перемога. Емерсон Фіттіпальді виграв тут перший заліковий Гран-прі Бразилії 1973 року й повторив успіх у 1974-му.",
+   "old_sha256": "af8c57cb2e8fda2f6d8d7344d6b705a2632aee009414497afba9eaecd02a93f4"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s4 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "uk",
+   "reason": "mirror EN s4",
+   "old": "поки на 32-му колі не підвела паливна система.",
+   "new": "поки після 32 кіл не підвела паливна система.",
+   "old_sha256": "e68f8784b9c75cab2ad66368ebd15f07f92cde9fede986c585940b62bd329cf7"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s5 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "uk",
+   "reason": "mirror EN s5",
+   "old": "Паче очолив гонку, та попереду ще був фініш, а позаду наближався McLaren Фіттіпальді.",
+   "new": "Паче очолив гонку, а позаду, за McLaren, ішов Фіттіпальді, якого треба було стримати.",
+   "old_sha256": "a1cb272f3f36b44093818d76ea803b57f88467d6a2313ab60b64a7e150893933"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s6 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "uk",
+   "reason": "realign: EN s6 is one sentence",
+   "old": "Карлос утримав перевагу й здобув свою єдину перемогу у Формулі-1. Фіттіпальді став другим, Йохен Масс — третім.",
+   "new": "Йому це вдалося: це була його єдина перемога у Формулі-1, Фіттіпальді фінішував другим, Йохен Масс — третім.",
+   "old_sha256": "3cc94b07d2b11ac1127642119f391e3136e355dab77f3482f182b2429005ef46"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s7 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "uk",
+   "reason": "UK omitted Jarier and the crowd ending",
+   "old": "Протокол показує бразильський дубль; перебіг гонки нагадує, наскільки іншим міг бути цей день.",
+   "new": "Протокол показує бразильський дубль, але гонка, здавалося, належала Жар'є, доки трибуни не отримали свій фінал.",
+   "old_sha256": "3938045f0752b853e69b139b0f71f8017b35146baf0335d9775f663bf4cacce1"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s8 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "uk",
+   "reason": "mirror EN s8",
+   "old": "Перемога не дісталася Паче автоматично: після сходу Жар'є Фіттіпальді залишався досить близько, щоб тиснути до фінішу.",
+   "new": "Після сходу Жар'є Фіттіпальді переслідував Паче, але так і не наблизився настільки, щоб поборотися за перемогу.",
+   "old_sha256": "ea3190edb713b9ce3ade8b682ef704f8f53f8a1bafb5a68d63b6bd05582e7aba"
+  },
+  {
+   "claim": "interlagos:long_history_draft#s9 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "uk",
+   "reason": "UK said \"only one of his career\"; EN says only championship Grand Prix win",
+   "old": "і переможець, для якого цей Гран-прі став єдиним у кар'єрі.",
+   "new": "і місцевий переможець, для якого цей Гран-прі став єдиною перемогою в чемпіонаті.",
+   "old_sha256": "e34fac068582f236341c178467b25311a112aed0ca95bbc110cda9a9fe85d07b"
+  },
+  {
+   "claim": "interlagos:long_history_draft (sources)",
+   "file": "apps/web/src/components/editorial/circuit-extra-stories.json",
+   "lang": "meta",
+   "reason": "cite FIA 2025 media kit, which states Pace \"achieved the only victory of his career\" (checked in stored snapshot)",
+   "old": "\"historical_sources\": [\n      \"https://www.motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11/\"\n    ]",
+   "new": "\"historical_sources\": [\n      \"https://www.motorsportmagazine.com/archive/article/march-1975/39/brazilian-grand-prix-11/\",\n      \"https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf\"\n    ]",
+   "old_sha256": "1e7f27bd86ad2bb915fa6961f28b768d6d5c7d4535cfb3f7302bb98b8f701bea"
+  },
+  {
+   "claim": "brands-hatch:long_history_draft#s2",
+   "file": "apps/web/src/components/editorial/circuit-next20-stories.json",
+   "lang": "en",
+   "reason": "source wording is \"drive shaft joint\", not CV joint",
+   "old": "His Williams stopped with a broken CV joint.",
+   "new": "His Williams stopped with a broken driveshaft joint.",
+   "old_sha256": "7998d2bd2a7ff12ab998e8cafb4b105ab037215411379d95ba3cdea1add290ed"
+  },
+  {
+   "claim": "brands-hatch:long_history_draft#s3",
+   "file": "apps/web/src/components/editorial/circuit-next20-stories.json",
+   "lang": "en",
+   "reason": "removes duplicate of the Laffite consequence told in s5",
+   "old": "Then a red flag offered him another start — but the crash behind that stoppage had serious consequences for another driver.",
+   "new": "Then a crash further back brought out the red flag and gave him another start.",
+   "old_sha256": "f8c7c4680a258ca81c485636d3898645b7702b91a6336108bfbf520205fef021"
+  },
+  {
+   "claim": "brands-hatch:long_history_draft#s6",
+   "file": "apps/web/src/components/editorial/circuit-next20-stories.json",
+   "lang": "en",
+   "reason": "disputed: lap 23 (grandprix.com) vs lap 22 (Motor Sport); lap number removed",
+   "old": "Piquet led the restart, but Mansell passed him on lap 23 after his team-mate missed a gear.",
+   "new": "Piquet led the restart, but Mansell passed him after his team-mate missed a gear.",
+   "old_sha256": "efa33db3a9ab5edaeb7538ea7dd9c995672e6341cb3ff13c338cec4e05140d27"
+  },
+  {
+   "claim": "brands-hatch:long_history_draft (uk)",
+   "file": "apps/web/src/components/editorial/circuit-next20-stories.json",
+   "lang": "uk",
+   "reason": "UK s1 merged EN s1+s2; UK s3 repeated the red flag; mirrors EN s3/s6",
+   "old": "Домашня гонка Найджела Менселла майже закінчилася відразу: на Williams зламався шарнір приводу.",
+   "new": "Домашня гонка Найджела Менселла, здавалося, тривала лише мить. На його Williams зламався шарнір приводного вала.",
+   "old_sha256": "cb48fbbaed47096f031e3adace4636b5c5e34c23550a9548e5790f15616491d8"
+  },
+  {
+   "claim": "brands-hatch:long_history_draft#s3 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-next20-stories.json",
+   "lang": "uk",
+   "reason": "mirror EN s3",
+   "old": "Червоний прапор дав йому ще один шанс, але аварія, що спричинила зупинку, мала тяжкі наслідки для іншого пілота.",
+   "new": "Потім аварія позаду спричинила червоний прапор і дала йому ще один старт.",
+   "old_sha256": "1d4782ee9dba0a4efd3427a0d0e353e3bb48f6fc67c53f4b449d96f31236bcf5"
+  },
+  {
+   "claim": "brands-hatch:long_history_draft#s4 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-next20-stories.json",
+   "lang": "uk",
+   "reason": "UK repeated the red flag; EN s4 is the spare car only",
+   "old": "Масова аварія спричинила червоний прапор і дала йому другий шанс — у запасному Williams, підготовленому для Нельсона Піке.",
+   "new": "На рестарт він вийшов у запасному Williams, підготовленому для Нельсона Піке.",
+   "old_sha256": "48569ab711fd26db4568e8dd3875f14d3ece30c4960fe9e6fcbff393716bf828"
+  },
+  {
+   "claim": "brands-hatch:long_history_draft#s6 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-next20-stories.json",
+   "lang": "uk",
+   "reason": "mirror EN s6",
+   "old": "Піке лідирував після рестарту, але на 23-му колі пропустив Менселла через помилку під час перемикання передач.",
+   "new": "Піке лідирував після рестарту, але пропустив Менселла через помилку під час перемикання передач.",
+   "old_sha256": "dc1e0932493e6e9a247c07c4be2cd438b5119c8712469de67063b8756de9a549"
+  },
+  {
+   "claim": "brands-hatch:narrative_biography#s4",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "en",
+   "reason": "unsupported: no source shows a Dingle Dell chicane at the 1986 race; source supports only that the old Dingle Dell chicane was replaced in 2003",
+   "old": "The original Dingle Dell chicane was still there in the final championship visit; the smoother Sheene Curve did not appear until 2003.",
+   "new": "The smoother Sheene Curve, which replaced the old Dingle Dell chicane, did not appear until 2003, long after Formula 1 had left.",
+   "old_sha256": "98be60bb2ab86c88f2719efd2ee1742fa954736905b93b9f174e60fc5ecad4ea"
+  },
+  {
+   "claim": "brands-hatch:narrative_biography#s4 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-narratives-v3.json",
+   "lang": "uk",
+   "reason": "mirror EN",
+   "old": "Під час останнього чемпіонатного візиту ще існувала стара шикана Dingle Dell; плавніша Sheene Curve з'явилася лише у 2003-му.",
+   "new": "Плавніша Sheene Curve, що замінила стару шикану Dingle Dell, з'явилася лише у 2003-му, коли Формула-1 давно покинула трасу.",
+   "old_sha256": "2f4abc6bf250ce3d3d554d5f0200f94cd8dfb1381c7ab0b398893885f2d59c53"
+  },
+  {
+   "claim": "brands-hatch:short_summary#s2 (uk)",
+   "file": "apps/web/src/components/editorial/archive-summaries/circuit-next20-stories.json",
+   "lang": "uk",
+   "reason": "UK added \"Kent hills\", dropped airfield comparison",
+   "old": "Перепади висот на трасі серед пагорбів Кенту робили її зовсім іншою за характером, ніж рівні сучасні автодроми.",
+   "new": "Ця хвиляста англійська траса не була просто ще одним майданчиком: її підйоми й спуски створювали зовсім інше відчуття, ніж рівна сучасна траса на колишньому аеродромі.",
+   "old_sha256": "cdc17277fa19ddcbb549ab189d0d2f5b9be25807153af70fedd60b3873e168b8"
+  },
+  {
+   "claim": "monaco:corner_group:1#s2 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "uk",
+   "reason": "UK implied Station was a hotel; EN says the building beside it",
+   "old": "Її назва змінювалася разом із готелем: Station, Loews, Grand Hotel і Fairmont.",
+   "new": "Її назва змінювалася разом із будівлею поруч: Station, Loews, Grand Hotel і Fairmont.",
+   "old_sha256": "84a3db2e9ddd71b7f326753bf7f9c37e6ce66944b15a486069c89dc74c6492c5"
+  },
+  {
+   "claim": "monaco:corner_group:3#s2 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "uk",
+   "reason": "UK narrowed to founding history",
+   "old": "Так історія заснування гонки зберігається просто на схемі траси.",
+   "new": "Так гоночна традиція міста закарбована в самій схемі траси.",
+   "old_sha256": "8603300639ff948244dc78dce429983c2abef614b10168e6162daafd8ef86b75"
+  },
+  {
+   "claim": "dallas:corner_group:1#s2",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "en",
+   "reason": "source puts repairs on race morning in place of the warm-up, not overnight",
+   "old": "Workers patched the course overnight and the morning warm-up was cancelled.",
+   "new": "The race-morning warm-up was cancelled so that crumbling sections could be patched with quick-drying concrete.",
+   "old_sha256": "c152d57eeb45ad608f921b5aea8aeff3ae08299356780c82cf943111c7bc3ef7"
+  },
+  {
+   "claim": "dallas:corner_group:1#s2 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "uk",
+   "reason": "mirror EN",
+   "old": "Покриття латали вночі, а ранкову розминку скасували.",
+   "new": "Ранкову розминку в день гонки скасували, щоб залатати зруйновані ділянки швидковисихаючим бетоном.",
+   "old_sha256": "67a287047cb6197f4909f70df9adb19f21f376221bed57df9e012517652e9a6f"
+  },
+  {
+   "claim": "dallas:corner_group:1#s3",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "en",
+   "reason": "tyre wear/temperature management not in source",
+   "old": "During the Grand Prix, drivers had to avoid loose surface and concrete barriers while managing tyre wear and temperatures.",
+   "new": "During the Grand Prix, drivers had to avoid loose surface and concrete barriers.",
+   "old_sha256": "79fd30d5ce709a6aa6d3ab47473783f4db8f42546e31e01e006a51da34fc6c1b"
+  },
+  {
+   "claim": "dallas:corner_group:1#s3 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "uk",
+   "reason": "mirror EN",
+   "old": "Під час гонки пілоти оминали крихкі ділянки дороги й бетонні бар'єри та боролися з перегрівом шин.",
+   "new": "Під час гонки пілоти оминали крихкі ділянки покриття й бетонні бар'єри.",
+   "old_sha256": "83e51ae2493a7bbc54fc3d050bc9a5de78e9014fa6943f5c2c4d0767e7df2120"
+  },
+  {
+   "claim": "pescara:long_history_draft#s4",
+   "file": "apps/web/src/components/editorial/circuit-final33-stories.json",
+   "lang": "en",
+   "reason": "contradicted: race started about 9.30am (morning); \"unmatched\" restated as F1DB fact (pescara-1 25.579 km is the longest championship layout)",
+   "old": "Pescara hosted just one World Championship Grand Prix; that single afternoon left an unmatched circuit-length record.",
+   "new": "Pescara hosted just one World Championship Grand Prix, in 1957, and its 25.6-kilometre lap remains the longest of any championship layout.",
+   "old_sha256": "6a28c716893278e726479985956ae6daa68d5f0c44499bd725bfb9483c20703f"
+  },
+  {
+   "claim": "pescara:long_history_draft#s4 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-final33-stories.json",
+   "lang": "uk",
+   "reason": "mirror EN",
+   "old": "Пескара прийняла лише один заліковий Гран-прі, зате залишила рекорд довжини кола.",
+   "new": "Пескара прийняла лише один заліковий Гран-прі, у 1957 році, і її коло завдовжки 25,6 кілометра досі залишається найдовшим серед усіх трас чемпіонату.",
+   "old_sha256": "9fcec9e932e683ecd6d216b89c7a134d1701a362e49bd9602ca742addad906d2"
+  },
+  {
+   "claim": "pescara:long_history_draft#s3 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-final33-stories.json",
+   "lang": "uk",
+   "reason": "UK dropped \"sheer length of the route\"",
+   "old": "Величезна дистанція між поворотами визначала характер гонки не менше за фінішний порядок.",
+   "new": "Відстані між поворотами й сама довжина маршруту визначали характер гонки не менше за фінішний порядок.",
+   "old_sha256": "c9167961d4b54dce844e7ffe8dc432455fa75cfe2a1d2d81cdd47bb0c4de605c"
+  },
+  {
+   "claim": "pescara:corner_group:0#s1",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "en",
+   "reason": "source: the long straight ran at right angles to the coast; the coast road was a separate section",
+   "old": "including the long coastal straight and the inland climb.",
+   "new": "including the inland climb, a long straight back down towards the sea and the coast road.",
+   "old_sha256": "b4772c5a09e34fe66455ea5e18b3a3ef35e7e3f9a32b926707322a045b90ba8e"
+  },
+  {
+   "claim": "pescara:corner_group:0#s1 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-corner-guides.json",
+   "lang": "uk",
+   "reason": "mirror EN",
+   "old": "з довгою приморською прямою та підйомом углиб суходолу.",
+   "new": "з підйомом углиб суходолу, довгою прямою назад до моря та прибережною дорогою.",
+   "old_sha256": "3d86e7b76a0e6dc4a3c71b1a3a27cdcd072995ba0c8d19ab2e76d628dae39e1d"
+  },
+  {
+   "claim": "lusail:long_history_draft#s8",
+   "file": "apps/web/src/components/editorial/circuit-final33-stories.json",
+   "lang": "en",
+   "reason": "disputed: BBC says the late VSC put the place beyond doubt (removed uncertainty), punctures created tension; VSC already told in s4, so s8 keeps only the punctures (supported)",
+   "old": "The punctures elsewhere and the late neutralisation explain why the final laps felt so uncertain, even though Hamilton's victory was secure.",
+   "new": "Late punctures elsewhere kept the closing laps tense, even though Hamilton's victory was already secure.",
+   "old_sha256": "8d4d3f47793f2a05bffb74439459b67c0d62299f2ee1a5ee572ca461c32c29a8"
+  },
+  {
+   "claim": "lusail:long_history_draft#s8 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-final33-stories.json",
+   "lang": "uk",
+   "reason": "mirror EN; VSC already told in s4, so s8 keeps only the punctures (supported)",
+   "old": "Проколи в суперників і пізня нейтралізація пояснюють, чому останні кола були такими напруженими, хоча перемога Гамільтона вже не викликала сумнівів.",
+   "new": "Пізні проколи в суперників тримали напругу в останніх колах, хоча перемога Гамільтона вже не викликала сумнівів.",
+   "old_sha256": "f1aea5a3f30e012a5a58ff22bc8c9d640e7a7ee2d0044e260faed1c7c782a51a"
+  },
+  {
+   "claim": "lusail:long_history_draft#s6 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-final33-stories.json",
+   "lang": "uk",
+   "reason": "UK dropped Hamilton, Verstappen, Alonso and Alonso's tyres",
+   "old": "Протокол називає призерів, а напруга останніх кіл була в тому, чи витримають шини.",
+   "new": "Протокол називає Гамільтона, Ферстаппена й Алонсо; напруга останніх кіл полягала в тому, чи витримають шини Алонсо до фінішу.",
+   "old_sha256": "360327efcd77e81d4a384073a5f1145b53df00e28865e0163c65c7c8aba9ce0f"
+  },
+  {
+   "claim": "lusail:long_history_draft#s2 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-final33-stories.json",
+   "lang": "uk",
+   "reason": "\"штраф на старті\" reads as a start penalty; EN says grid penalty",
+   "old": "Макс Ферстаппен після штрафу на старті прорвався на друге місце.",
+   "new": "Макс Ферстаппен, покараний втратою позицій на стартовій решітці, прорвався на друге місце.",
+   "old_sha256": "597fec1779c8a6ddecc97784f00ec0e5a2df934cd9f4e1be72c1633c409030c1"
+  },
+  {
+   "claim": "silverstone:corner:silverstone-t6#s1 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-corners-v3.json",
+   "lang": "uk",
+   "reason": "UK said \"one of the oldest\"; EN says pioneering",
+   "old": "вшановує один із найстаріших британських автодромів.",
+   "new": "вшановує британський автодром-першопроходець.",
+   "old_sha256": "812b3c6c3d89872da2db7072561eaa78447c6884d113d2a3b0114d5fdfe71572"
+  },
+  {
+   "claim": "silverstone:corner:silverstone-t11#s2 (uk)",
+   "file": "apps/web/src/components/editorial/circuit-corners-v3.json",
+   "lang": "uk",
+   "reason": "UK added \"heavy\"",
+   "old": "Це не окрема зона сильного гальмування:",
+   "new": "Це не окрема зона гальмування:",
+   "old_sha256": "7da6628f4140e8e4ca281ab2b1235e3a9d9adf9221462333801a610a51a96d4b"
+  },
+  {
+   "claim": "interlagos:corner:* (sources)",
+   "file": "apps/web/src/components/editorial/circuit-corners-v3.json",
+   "lang": "meta",
+   "reason": "the \"interlagos-names\" key pointed to the FIA 2025 media kit, whose stored text names no Interlagos corner except Senna; the Mercedes corner-names page (src-eab4b8e4cfe6) names Descida do Lago, Ferradura, Laranjinha, Pinheirinho, Bico de Pato, Mergulho, Junção, Subida dos Boxes, Café, Curva do Sol, Reta Oposta",
+   "old": "\"interlagos-names\": \"https://www.fia.com/sites/default/files/f1sp_2025_media_kit_eng_051125.pdf\"",
+   "new": "\"interlagos-names\": \"https://www.mercedesamgf1.com/news/how-the-interlagos-corners-got-their-names\"",
+   "old_sha256": "d4a8c3538c255b668d7bafa174aae3817c2325c7c46857c3caacaa8017a780a7"
+  }
+ ],
+ "schema_version": 1,
+ "note": "Revisions to the repository's own drafts, each traced to an independent fact-check finding. Text quoted here is Grid Atlas text, not third-party text."
+}

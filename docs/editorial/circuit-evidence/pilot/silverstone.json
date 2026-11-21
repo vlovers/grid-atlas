@@ -30,6 +30,12 @@
    "narrative": 65
   },
   "claims_unaligned_uk": 36,
+  "name_agreement": {
+   "agree": 9,
+   "differ": 0,
+   "uk_unrecognised": 1,
+   "no_names": 41
+  },
   "dataset_checks": {
    "supported": 1,
    "conflict": 0,
@@ -44,11 +50,22 @@
    "cited_sources_unavailable": 0,
    "no_cited_sources": 1
   },
-  "claims_verified": 0,
+  "claims_verified": 13,
+  "factcheck": {
+   "checked": 87,
+   "verified": 13,
+   "checker": "factcheck-agent-A",
+   "counts": {
+    "checker_verified_policy_rejected": 23,
+    "unsupported": 49,
+    "unverifiable": 1,
+    "verified": 13,
+    "disputed": 1
+   }
+  },
   "sources": {
    "cited": 5,
-   "live": 4,
-   "live_pdf_no_text": 1
+   "live": 4
   },
   "source_structural_issues": 0,
   "corners": {
@@ -787,7 +804,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "Brooklands, a left-hander after Wellington Straight, commemorates Britain's pioneering racing venue.",
-   "uk": "Лівий Brooklands після Wellington Straight вшановує один із найстаріших британських автодромів.",
+   "uk": "Лівий Brooklands після Wellington Straight вшановує британський автодром-першопроходець.",
    "status": "passages_cover_numbers",
    "dataset": [],
    "passages": [
@@ -1231,7 +1248,7 @@
    "claim_type": "narrative",
    "importance": "standard",
    "en": "This is not a separate braking zone: the driver is managing weight transfer and the line into the following left while the tyres remain heavily loaded.",
-   "uk": "Це не окрема зона сильного гальмування: пілот контролює перенесення навантаження й готує наступний лівий віраж, поки шини залишаються сильно навантаженими.",
+   "uk": "Це не окрема зона гальмування: пілот контролює перенесення навантаження й готує наступний лівий віраж, поки шини залишаються сильно навантаженими.",
    "status": "no_passage_in_live_sources",
    "dataset": [],
    "passages": []
@@ -3425,13 +3442,13 @@
    "status": {
     "url": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
     "source_id": "src-05a991b7be3a",
-    "checked_at": "2026-11-16T11:22:04.382Z",
-    "http_status": 200,
-    "final_url": "https://www.fia.com/system/files/decision-document/2025_silverstone_event_-_circuit_map_-_silverstone_2025_0.pdf",
-    "content_type": "application/pdf",
-    "outcome": "live_pdf_no_text",
-    "bytes_sha256": "5ef9d024c0a6b29af78595cf712d25e496638234a781882f66194d8d1e0597b9",
-    "bytes": 412401
+    "checked_at": "2026-11-17T00:13:07.245284+00:00",
+    "bytes_sha256": "e5e79fa834b7d5e364a78a7a9756cb71d4d967c7d10bdb97ef9f68437b18a8ab",
+    "bytes": 412401,
+    "pages": 2,
+    "outcome": "live_pdf_text",
+    "text_sha256": "48ef0b207c46facb281051200e9605686fe0c6abe15f7a321117f08e70401d19",
+    "text_chars": 1424
    }
   },
   {

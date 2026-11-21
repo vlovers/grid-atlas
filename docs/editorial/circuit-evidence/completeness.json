@@ -6,13 +6,13 @@
   "dataset_supported": 143,
   "dataset_conflicts": 0,
   "dataset_unmatched": 25,
-  "claims_with_lead": 2242,
-  "claims_verified": 0,
+  "claims_with_lead": 2262,
+  "claims_verified": 48,
   "sources_cited": 539,
-  "sources_live": 498,
+  "sources_live": 456,
   "named_corners": 218,
-  "names_found_in_cited_source": 130,
-  "names_not_in_cited_text": 61,
+  "names_found_in_cited_source": 140,
+  "names_not_in_cited_text": 64,
   "turns_queued": 1882,
   "blocks_shallow": 456,
   "blocks_repetitive": 5,
@@ -51,6 +51,12 @@
     "narrative": 35
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 20,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 34
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -66,6 +72,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
     "live": 6
@@ -120,6 +130,12 @@
     "narrative": 23
    },
    "claims_unaligned_uk": 3,
+   "name_agreement": {
+    "agree": 16,
+    "differ": 4,
+    "uk_unrecognised": 8,
+    "no_names": 23
+   },
    "dataset_checks": {
     "supported": 4,
     "conflict": 0,
@@ -135,10 +151,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -190,6 +209,12 @@
     "narrative": 7
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 4,
+    "uk_unrecognised": 1,
+    "no_names": 5
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -205,6 +230,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 3,
     "live": 3
@@ -259,6 +288,12 @@
     "narrative": 19
    },
    "claims_unaligned_uk": 8,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 3,
+    "uk_unrecognised": 0,
+    "no_names": 24
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -274,6 +309,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
     "live": 6
@@ -328,6 +367,12 @@
     "narrative": 17
    },
    "claims_unaligned_uk": 3,
+   "name_agreement": {
+    "agree": 7,
+    "differ": 1,
+    "uk_unrecognised": 2,
+    "no_names": 24
+   },
    "dataset_checks": {
     "supported": 4,
     "conflict": 0,
@@ -343,6 +388,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
     "live": 9
@@ -397,6 +446,12 @@
     "narrative": 35
    },
    "claims_unaligned_uk": 12,
+   "name_agreement": {
+    "agree": 4,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 61
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -412,10 +467,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 5,
-    "live_pdf_no_text": 1
+    "live": 5
    },
    "source_structural_issues": 0,
    "corners": {
@@ -467,6 +525,12 @@
     "narrative": 15
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 0,
+    "differ": 3,
+    "uk_unrecognised": 7,
+    "no_names": 21
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -482,6 +546,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
     "live": 6
@@ -536,6 +604,12 @@
     "narrative": 33
    },
    "claims_unaligned_uk": 9,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 4,
+    "uk_unrecognised": 0,
+    "no_names": 57
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -551,10 +625,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -606,6 +683,12 @@
     "narrative": 31
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 1,
+    "differ": 1,
+    "uk_unrecognised": 5,
+    "no_names": 55
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -621,10 +704,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -669,13 +755,19 @@
    "claims": 53,
    "claims_by_type": {
     "statistic": 6,
-    "dated_event": 14,
+    "dated_event": 13,
     "measurement": 0,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 33
+    "narrative": 34
    },
-   "claims_unaligned_uk": 13,
+   "claims_unaligned_uk": 5,
+   "name_agreement": {
+    "agree": 20,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 27
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -690,11 +782,22 @@
     "cited_sources_unavailable": 2,
     "no_cited_sources": 0
    },
-   "claims_verified": 0,
+   "claims_verified": 6,
+   "factcheck": {
+    "checked": 53,
+    "verified": 6,
+    "checker": "factcheck-agent-C",
+    "counts": {
+     "checker_verified_policy_rejected": 22,
+     "unsupported": 22,
+     "disputed": 1,
+     "verified": 6,
+     "unverifiable": 2
+    }
+   },
    "sources": {
     "cited": 11,
-    "live": 9,
-    "live_pdf_no_text": 1
+    "live": 9
    },
    "source_structural_issues": 0,
    "corners": {
@@ -746,6 +849,12 @@
     "narrative": 37
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 11,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 43
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -761,6 +870,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
     "live": 6
@@ -815,6 +928,12 @@
     "narrative": 23
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 8,
+    "differ": 6,
+    "uk_unrecognised": 1,
+    "no_names": 44
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -830,10 +949,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
-    "live": 5,
-    "robots_disallowed": 1
+    "live": 5
    },
    "source_structural_issues": 0,
    "corners": {
@@ -885,6 +1007,12 @@
     "narrative": 25
    },
    "claims_unaligned_uk": 3,
+   "name_agreement": {
+    "agree": 17,
+    "differ": 1,
+    "uk_unrecognised": 4,
+    "no_names": 43
+   },
    "dataset_checks": {
     "supported": 4,
     "conflict": 0,
@@ -900,6 +1028,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 11,
     "live": 9,
@@ -955,6 +1087,12 @@
     "narrative": 25
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 0,
+    "differ": 2,
+    "uk_unrecognised": 5,
+    "no_names": 34
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -970,6 +1108,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 4,
     "live": 4
@@ -1024,6 +1166,12 @@
     "narrative": 36
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 4,
+    "uk_unrecognised": 0,
+    "no_names": 46
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -1039,6 +1187,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
     "live": 6
@@ -1093,6 +1245,12 @@
     "narrative": 30
    },
    "claims_unaligned_uk": 1,
+   "name_agreement": {
+    "agree": 7,
+    "differ": 2,
+    "uk_unrecognised": 1,
+    "no_names": 70
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -1108,10 +1266,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -1163,6 +1324,12 @@
     "narrative": 9
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 3,
+    "uk_unrecognised": 3,
+    "no_names": 5
+   },
    "dataset_checks": {
     "supported": 4,
     "conflict": 0,
@@ -1178,6 +1345,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 3,
     "live": 3
@@ -1232,6 +1403,12 @@
     "narrative": 6
    },
    "claims_unaligned_uk": 3,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 0,
+    "uk_unrecognised": 1,
+    "no_names": 7
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -1246,7 +1423,17 @@
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
    },
-   "claims_verified": 0,
+   "claims_verified": 1,
+   "factcheck": {
+    "checked": 17,
+    "verified": 1,
+    "checker": "factcheck-agent-D",
+    "counts": {
+     "checker_verified_policy_rejected": 13,
+     "unsupported": 3,
+     "verified": 1
+    }
+   },
    "sources": {
     "cited": 2,
     "live": 2
@@ -1301,6 +1488,12 @@
     "narrative": 7
    },
    "claims_unaligned_uk": 8,
+   "name_agreement": {
+    "agree": 4,
+    "differ": 2,
+    "uk_unrecognised": 0,
+    "no_names": 3
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -1316,6 +1509,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 3,
     "live": 3
@@ -1370,6 +1567,12 @@
     "narrative": 21
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 2,
+    "differ": 7,
+    "uk_unrecognised": 5,
+    "no_names": 33
+   },
    "dataset_checks": {
     "supported": 7,
     "conflict": 0,
@@ -1385,10 +1588,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
-    "live": 7,
-    "live_pdf_no_text": 1
+    "live": 7
    },
    "source_structural_issues": 1,
    "corners": {
@@ -1440,6 +1646,12 @@
     "narrative": 43
    },
    "claims_unaligned_uk": 19,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 1,
+    "uk_unrecognised": 1,
+    "no_names": 38
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -1455,6 +1667,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
     "live": 8,
@@ -1510,6 +1726,12 @@
     "narrative": 26
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 11,
+    "uk_unrecognised": 0,
+    "no_names": 26
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -1525,6 +1747,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
     "live": 7
@@ -1579,6 +1805,12 @@
     "narrative": 35
    },
    "claims_unaligned_uk": 3,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 2,
+    "uk_unrecognised": 8,
+    "no_names": 43
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -1594,10 +1826,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
-    "live": 8,
-    "live_pdf_no_text": 1
+    "live": 8
    },
    "source_structural_issues": 0,
    "corners": {
@@ -1649,6 +1884,12 @@
     "narrative": 29
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 3,
+    "uk_unrecognised": 3,
+    "no_names": 44
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -1664,6 +1905,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
     "live": 6,
@@ -1719,6 +1964,12 @@
     "narrative": 28
    },
    "claims_unaligned_uk": 9,
+   "name_agreement": {
+    "agree": 4,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 54
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -1734,10 +1985,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 10,
-    "live": 8,
-    "live_pdf_no_text": 2
+    "live": 8
    },
    "source_structural_issues": 0,
    "corners": {
@@ -1789,6 +2043,12 @@
     "narrative": 29
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 22,
+    "differ": 0,
+    "uk_unrecognised": 3,
+    "no_names": 53
+   },
    "dataset_checks": {
     "supported": 4,
     "conflict": 0,
@@ -1804,10 +2064,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
-    "live": 5,
-    "live_pdf_no_text": 1
+    "live": 5
    },
    "source_structural_issues": 0,
    "corners": {
@@ -1859,6 +2122,12 @@
     "narrative": 39
    },
    "claims_unaligned_uk": 8,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 3,
+    "uk_unrecognised": 1,
+    "no_names": 60
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -1874,10 +2143,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
-    "live": 6,
-    "live_pdf_no_text": 3
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -1929,6 +2201,12 @@
     "narrative": 19
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 3,
+    "differ": 2,
+    "uk_unrecognised": 0,
+    "no_names": 52
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -1944,6 +2222,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
     "live": 5,
@@ -1999,6 +2281,12 @@
     "narrative": 49
    },
    "claims_unaligned_uk": 9,
+   "name_agreement": {
+    "agree": 13,
+    "differ": 3,
+    "uk_unrecognised": 1,
+    "no_names": 48
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -2007,26 +2295,37 @@
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 2,
-    "passages_cover_numbers": 28,
-    "passages_partial": 1,
-    "no_passage_in_live_sources": 12,
-    "cited_sources_unavailable": 31,
+    "passages_cover_numbers": 49,
+    "passages_partial": 5,
+    "no_passage_in_live_sources": 18,
+    "cited_sources_unavailable": 0,
     "no_cited_sources": 0
    },
-   "claims_verified": 0,
+   "claims_verified": 14,
+   "factcheck": {
+    "checked": 74,
+    "verified": 14,
+    "checker": "factcheck-agent-B",
+    "counts": {
+     "checker_verified_policy_rejected": 12,
+     "disputed": 1,
+     "unsupported": 46,
+     "contradicted": 1,
+     "verified": 14
+    }
+   },
    "sources": {
     "cited": 8,
-    "live": 6,
-    "live_pdf_no_text": 2
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
     "numbered_turns_all_layouts": 41,
     "layouts_with_guide": 1,
     "named_in_guide": 13,
-    "names_found_in_cited_source": 0,
-    "names_not_in_cited_text": 0,
-    "names_sources_unavailable": 13,
+    "names_found_in_cited_source": 10,
+    "names_not_in_cited_text": 3,
+    "names_sources_unavailable": 0,
     "turns_queued": 26
    },
    "quality": {
@@ -2036,7 +2335,7 @@
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.405,
+   "evidence_lead_rate": 0.689,
    "content_complete": false
   },
   {
@@ -2069,6 +2368,12 @@
     "narrative": 17
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 4,
+    "uk_unrecognised": 2,
+    "no_names": 46
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -2084,10 +2389,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 11,
-    "live": 8,
-    "live_pdf_no_text": 1
+    "live": 8
    },
    "source_structural_issues": 0,
    "corners": {
@@ -2139,6 +2447,12 @@
     "narrative": 26
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 13,
+    "differ": 2,
+    "uk_unrecognised": 1,
+    "no_names": 34
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -2154,10 +2468,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -2209,6 +2526,12 @@
     "narrative": 25
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 10,
+    "differ": 7,
+    "uk_unrecognised": 4,
+    "no_names": 28
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -2224,6 +2547,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
     "live": 9
@@ -2278,6 +2605,12 @@
     "narrative": 35
    },
    "claims_unaligned_uk": 7,
+   "name_agreement": {
+    "agree": 1,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 65
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -2293,10 +2626,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -2348,6 +2684,12 @@
     "narrative": 32
    },
    "claims_unaligned_uk": 19,
+   "name_agreement": {
+    "agree": 7,
+    "differ": 3,
+    "uk_unrecognised": 1,
+    "no_names": 46
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -2363,6 +2705,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
     "live": 7,
@@ -2418,6 +2764,12 @@
     "narrative": 22
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 0,
+    "differ": 5,
+    "uk_unrecognised": 10,
+    "no_names": 31
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -2433,6 +2785,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
     "live": 8,
@@ -2488,6 +2844,12 @@
     "narrative": 35
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 14,
+    "differ": 2,
+    "uk_unrecognised": 0,
+    "no_names": 45
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -2503,10 +2865,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
-    "live": 5,
-    "live_pdf_no_text": 1
+    "live": 5
    },
    "source_structural_issues": 0,
    "corners": {
@@ -2558,6 +2923,12 @@
     "narrative": 28
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 5,
+    "uk_unrecognised": 3,
+    "no_names": 41
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -2573,6 +2944,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
     "live": 7
@@ -2627,6 +3002,12 @@
     "narrative": 19
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 13,
+    "differ": 0,
+    "uk_unrecognised": 0,
+    "no_names": 34
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -2641,11 +3022,21 @@
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
    },
-   "claims_verified": 0,
+   "claims_verified": 4,
+   "factcheck": {
+    "checked": 51,
+    "verified": 4,
+    "checker": "factcheck-agent-D",
+    "counts": {
+     "checker_verified_policy_rejected": 17,
+     "unsupported": 29,
+     "verified": 4,
+     "disputed": 1
+    }
+   },
    "sources": {
     "cited": 5,
-    "live": 4,
-    "live_pdf_no_text": 1
+    "live": 4
    },
    "source_structural_issues": 0,
    "corners": {
@@ -2697,6 +3088,12 @@
     "narrative": 32
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 12,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 52
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -2712,6 +3109,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 11,
     "live": 8,
@@ -2767,6 +3168,12 @@
     "narrative": 41
    },
    "claims_unaligned_uk": 2,
+   "name_agreement": {
+    "agree": 8,
+    "differ": 1,
+    "uk_unrecognised": 6,
+    "no_names": 67
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -2782,6 +3189,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
     "live": 8
@@ -2836,6 +3247,12 @@
     "narrative": 20
    },
    "claims_unaligned_uk": 8,
+   "name_agreement": {
+    "agree": 4,
+    "differ": 0,
+    "uk_unrecognised": 0,
+    "no_names": 47
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -2851,11 +3268,14 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
     "live": 4,
-    "live_thin_or_scripted": 1,
-    "live_pdf_no_text": 1
+    "live_thin_or_scripted": 1
    },
    "source_structural_issues": 0,
    "corners": {
@@ -2907,6 +3327,12 @@
     "narrative": 21
    },
    "claims_unaligned_uk": 12,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 0,
+    "uk_unrecognised": 4,
+    "no_names": 34
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -2922,10 +3348,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
-    "live": 5,
-    "live_pdf_no_text": 1
+    "live": 5
    },
    "source_structural_issues": 0,
    "corners": {
@@ -2977,6 +3406,12 @@
     "narrative": 35
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 3,
+    "uk_unrecognised": 4,
+    "no_names": 55
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -2992,10 +3427,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
-    "live": 7,
-    "live_pdf_no_text": 1
+    "live": 7
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3047,6 +3485,12 @@
     "narrative": 19
    },
    "claims_unaligned_uk": 5,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 40
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -3062,10 +3506,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 5,
-    "live": 4,
-    "live_pdf_no_text": 1
+    "live": 4
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3117,6 +3564,12 @@
     "narrative": 14
    },
    "claims_unaligned_uk": 2,
+   "name_agreement": {
+    "agree": 0,
+    "differ": 0,
+    "uk_unrecognised": 0,
+    "no_names": 16
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -3131,7 +3584,18 @@
     "cited_sources_unavailable": 0,
     "no_cited_sources": 2
    },
-   "claims_verified": 0,
+   "claims_verified": 7,
+   "factcheck": {
+    "checked": 18,
+    "verified": 7,
+    "checker": "factcheck-agent-C",
+    "counts": {
+     "unverifiable": 1,
+     "unsupported": 5,
+     "checker_verified_policy_rejected": 5,
+     "verified": 7
+    }
+   },
    "sources": {
     "cited": 2,
     "live": 2
@@ -3186,6 +3650,12 @@
     "narrative": 24
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 1,
+    "uk_unrecognised": 2,
+    "no_names": 26
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -3201,6 +3671,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 3,
     "live": 2,
@@ -3256,6 +3730,12 @@
     "narrative": 24
    },
    "claims_unaligned_uk": 5,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 2,
+    "uk_unrecognised": 5,
+    "no_names": 42
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -3271,10 +3751,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
-    "live": 4,
-    "live_pdf_no_text": 1
+    "live": 4
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3326,6 +3809,12 @@
     "narrative": 28
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 3,
+    "differ": 1,
+    "uk_unrecognised": 5,
+    "no_names": 30
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -3341,6 +3830,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
     "live": 6,
@@ -3396,6 +3889,12 @@
     "narrative": 24
    },
    "claims_unaligned_uk": 2,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 2,
+    "uk_unrecognised": 4,
+    "no_names": 46
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -3411,10 +3910,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3466,6 +3968,12 @@
     "narrative": 26
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 10,
+    "differ": 6,
+    "uk_unrecognised": 2,
+    "no_names": 27
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -3481,10 +3989,13 @@
     "no_cited_sources": 1
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 5,
-    "live": 4,
-    "live_pdf_no_text": 1
+    "live": 4
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3536,6 +4047,12 @@
     "narrative": 29
    },
    "claims_unaligned_uk": 10,
+   "name_agreement": {
+    "agree": 8,
+    "differ": 3,
+    "uk_unrecognised": 1,
+    "no_names": 25
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -3551,10 +4068,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
-    "live": 5,
-    "live_pdf_no_text": 1
+    "live": 5
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3606,6 +4126,12 @@
     "narrative": 48
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 2,
+    "uk_unrecognised": 4,
+    "no_names": 49
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -3621,10 +4147,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
-    "live": 7,
-    "live_pdf_no_text": 1
+    "live": 7
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3676,6 +4205,12 @@
     "narrative": 16
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 1,
+    "uk_unrecognised": 1,
+    "no_names": 22
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -3691,6 +4226,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
     "live": 5
@@ -3745,6 +4284,12 @@
     "narrative": 32
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 13,
+    "differ": 2,
+    "uk_unrecognised": 1,
+    "no_names": 48
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -3760,10 +4305,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 10,
-    "live": 9,
-    "live_pdf_no_text": 1
+    "live": 9
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3815,6 +4363,12 @@
     "narrative": 23
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 4,
+    "differ": 5,
+    "uk_unrecognised": 0,
+    "no_names": 49
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -3830,10 +4384,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3885,6 +4442,12 @@
     "narrative": 16
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 1,
+    "uk_unrecognised": 1,
+    "no_names": 22
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -3900,6 +4463,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 5,
     "live": 4,
@@ -3955,6 +4522,12 @@
     "narrative": 6
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 7,
+    "differ": 0,
+    "uk_unrecognised": 0,
+    "no_names": 9
+   },
    "dataset_checks": {
     "supported": 4,
     "conflict": 0,
@@ -3963,13 +4536,24 @@
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 3,
-    "passages_cover_numbers": 8,
-    "passages_partial": 2,
+    "passages_cover_numbers": 7,
+    "passages_partial": 3,
     "no_passage_in_live_sources": 3,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
    },
-   "claims_verified": 0,
+   "claims_verified": 3,
+   "factcheck": {
+    "checked": 16,
+    "verified": 3,
+    "checker": "factcheck-agent-D",
+    "counts": {
+     "checker_verified_policy_rejected": 8,
+     "unsupported": 4,
+     "disputed": 1,
+     "verified": 3
+    }
+   },
    "sources": {
     "cited": 2,
     "live": 2
@@ -3991,7 +4575,7 @@
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.688,
+   "evidence_lead_rate": 0.625,
    "content_complete": false
   },
   {
@@ -4024,6 +4608,12 @@
     "narrative": 24
    },
    "claims_unaligned_uk": 8,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 7,
+    "uk_unrecognised": 1,
+    "no_names": 35
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -4039,6 +4629,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
     "live": 5,
@@ -4095,6 +4689,12 @@
     "narrative": 22
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 12,
+    "differ": 0,
+    "uk_unrecognised": 1,
+    "no_names": 47
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -4110,10 +4710,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
-    "live": 7,
-    "live_pdf_no_text": 1
+    "live": 7
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4165,6 +4768,12 @@
     "narrative": 9
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 3,
+    "differ": 4,
+    "uk_unrecognised": 4,
+    "no_names": 6
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -4180,6 +4789,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 5,
     "live": 5
@@ -4234,6 +4847,12 @@
     "narrative": 16
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 3,
+    "differ": 4,
+    "uk_unrecognised": 6,
+    "no_names": 29
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -4249,6 +4868,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
     "live": 5
@@ -4303,6 +4926,12 @@
     "narrative": 20
    },
    "claims_unaligned_uk": 4,
+   "name_agreement": {
+    "agree": 2,
+    "differ": 5,
+    "uk_unrecognised": 2,
+    "no_names": 21
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -4318,6 +4947,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 4,
     "live": 3
@@ -4372,6 +5005,12 @@
     "narrative": 25
    },
    "claims_unaligned_uk": 3,
+   "name_agreement": {
+    "agree": 0,
+    "differ": 2,
+    "uk_unrecognised": 14,
+    "no_names": 34
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -4387,6 +5026,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
     "live": 7
@@ -4441,6 +5084,12 @@
     "narrative": 6
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 1,
+    "differ": 8,
+    "uk_unrecognised": 2,
+    "no_names": 7
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -4456,6 +5105,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 4,
     "live": 4
@@ -4510,6 +5163,12 @@
     "narrative": 19
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 5,
+    "differ": 8,
+    "uk_unrecognised": 2,
+    "no_names": 45
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -4525,10 +5184,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
-    "live": 4,
-    "live_pdf_no_text": 1
+    "live": 4
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4580,6 +5242,12 @@
     "narrative": 26
    },
    "claims_unaligned_uk": 11,
+   "name_agreement": {
+    "agree": 0,
+    "differ": 3,
+    "uk_unrecognised": 1,
+    "no_names": 58
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -4595,10 +5263,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
-    "live": 8,
-    "live_pdf_no_text": 1
+    "live": 8
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4650,6 +5321,12 @@
     "narrative": 65
    },
    "claims_unaligned_uk": 36,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 0,
+    "uk_unrecognised": 1,
+    "no_names": 41
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -4664,11 +5341,22 @@
     "cited_sources_unavailable": 0,
     "no_cited_sources": 1
    },
-   "claims_verified": 0,
+   "claims_verified": 13,
+   "factcheck": {
+    "checked": 87,
+    "verified": 13,
+    "checker": "factcheck-agent-A",
+    "counts": {
+     "checker_verified_policy_rejected": 23,
+     "unsupported": 49,
+     "unverifiable": 1,
+     "verified": 13,
+     "disputed": 1
+    }
+   },
    "sources": {
     "cited": 5,
-    "live": 4,
-    "live_pdf_no_text": 1
+    "live": 4
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4720,6 +5408,12 @@
     "narrative": 15
    },
    "claims_unaligned_uk": 3,
+   "name_agreement": {
+    "agree": 10,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 48
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -4735,10 +5429,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
-    "live": 6,
-    "live_pdf_no_text": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4790,6 +5487,12 @@
     "narrative": 17
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 1,
+    "differ": 0,
+    "uk_unrecognised": 0,
+    "no_names": 20
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -4805,6 +5508,10 @@
     "no_cited_sources": 2
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 3,
     "live": 3
@@ -4859,6 +5566,12 @@
     "narrative": 37
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 3,
+    "uk_unrecognised": 1,
+    "no_names": 56
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -4874,10 +5587,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
-    "live": 7,
-    "live_pdf_no_text": 1
+    "live": 7
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4929,6 +5645,12 @@
     "narrative": 25
    },
    "claims_unaligned_uk": 10,
+   "name_agreement": {
+    "agree": 9,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 40
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -4944,10 +5666,13 @@
     "no_cited_sources": 1
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 4,
-    "live": 2,
-    "live_pdf_no_text": 2
+    "live": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4999,6 +5724,12 @@
     "narrative": 33
    },
    "claims_unaligned_uk": 10,
+   "name_agreement": {
+    "agree": 7,
+    "differ": 4,
+    "uk_unrecognised": 1,
+    "no_names": 55
+   },
    "dataset_checks": {
     "supported": 3,
     "conflict": 0,
@@ -5014,6 +5745,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
     "live": 8
@@ -5068,6 +5803,12 @@
     "narrative": 32
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 3,
+    "differ": 7,
+    "uk_unrecognised": 10,
+    "no_names": 46
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -5083,6 +5824,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 10,
     "live": 7
@@ -5137,6 +5882,12 @@
     "narrative": 21
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 4,
+    "differ": 3,
+    "uk_unrecognised": 0,
+    "no_names": 46
+   },
    "dataset_checks": {
     "supported": 0,
     "conflict": 0,
@@ -5152,10 +5903,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 5,
-    "live_pdf_no_text": 1
+    "live": 5
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5207,6 +5961,12 @@
     "narrative": 17
    },
    "claims_unaligned_uk": 8,
+   "name_agreement": {
+    "agree": 6,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 47
+   },
    "dataset_checks": {
     "supported": 2,
     "conflict": 0,
@@ -5222,10 +5982,13 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 7,
-    "live": 6,
-    "robots_disallowed": 1
+    "live": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5277,6 +6040,12 @@
     "narrative": 43
    },
    "claims_unaligned_uk": 9,
+   "name_agreement": {
+    "agree": 3,
+    "differ": 1,
+    "uk_unrecognised": 0,
+    "no_names": 66
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -5292,10 +6061,14 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 8,
     "live": 7,
-    "live_pdf_no_text": 1
+    "unreachable": 1
    },
    "source_structural_issues": 0,
    "corners": {
@@ -5347,6 +6120,12 @@
     "narrative": 13
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 0,
+    "differ": 2,
+    "uk_unrecognised": 9,
+    "no_names": 20
+   },
    "dataset_checks": {
     "supported": 1,
     "conflict": 0,
@@ -5362,6 +6141,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 6,
     "live": 6
@@ -5416,6 +6199,12 @@
     "narrative": 29
    },
    "claims_unaligned_uk": 0,
+   "name_agreement": {
+    "agree": 8,
+    "differ": 3,
+    "uk_unrecognised": 5,
+    "no_names": 39
+   },
    "dataset_checks": {
     "supported": 4,
     "conflict": 0,
@@ -5431,6 +6220,10 @@
     "no_cited_sources": 0
    },
    "claims_verified": 0,
+   "factcheck": {
+    "checked": 0,
+    "verified": 0
+   },
    "sources": {
     "cited": 9,
     "live": 9
