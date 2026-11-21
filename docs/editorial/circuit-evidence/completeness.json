@@ -1,14 +1,14 @@
 {
  "totals": {
   "circuits": 78,
-  "blocks": 1691,
-  "claims": 4678,
-  "dataset_supported": 259,
+  "blocks": 1747,
+  "claims": 4878,
+  "dataset_supported": 300,
   "dataset_conflicts": 0,
-  "dataset_unmatched": 99,
-  "claims_with_lead": 2406,
+  "dataset_unmatched": 116,
+  "claims_with_lead": 2460,
   "claims_verified": 48,
-  "sources_cited": 609,
+  "sources_cited": 633,
   "sources_live": 456,
   "named_corners": 218,
   "names_found_in_cited_source": 140,
@@ -16,7 +16,7 @@
   "turns_queued": 1882,
   "blocks_shallow": 459,
   "blocks_repetitive": 5,
-  "blocks_en_uk_issues": 89,
+  "blocks_en_uk_issues": 90,
   "content_complete": 0,
   "snapshots_available": true
  },
@@ -3258,7 +3258,7 @@
     "origins": "mentioned_in_draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "mentioned_in_draft",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:17/49",
     "important_races": "draft",
     "records_statistics": "dataset_only",
@@ -3266,33 +3266,33 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 84,
+   "claims": 92,
    "claims_by_type": {
     "statistic": 12,
-    "dated_event": 31,
-    "measurement": 0,
+    "dated_event": 35,
+    "measurement": 2,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 41
+    "narrative": 43
    },
    "claims_unaligned_uk": 2,
    "name_agreement": {
     "agree": 8,
     "differ": 1,
-    "uk_unrecognised": 6,
-    "no_names": 67
+    "uk_unrecognised": 7,
+    "no_names": 74
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 5,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 2
    },
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 1,
-    "passages_cover_numbers": 42,
-    "passages_partial": 15,
-    "no_passage_in_live_sources": 21,
+    "passages_cover_numbers": 43,
+    "passages_partial": 19,
+    "no_passage_in_live_sources": 24,
     "cited_sources_unavailable": 5,
     "no_cited_sources": 0
    },
@@ -3313,16 +3313,18 @@
     "names_found_in_cited_source": 10,
     "names_not_in_cited_text": 3,
     "names_sources_unavailable": 0,
-    "turns_queued": 32
+    "turns_queued": 32,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 4
    },
    "quality": {
-    "blocks": 25,
+    "blocks": 28,
     "shallow": 3,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.512,
+   "evidence_lead_rate": 0.478,
    "content_complete": false
   },
   {
@@ -3330,49 +3332,49 @@
    "name": "Marina Bay Street Circuit",
    "pilot": false,
    "layouts": 4,
-   "sections_with_editorial_text": 4,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
-    "defining_moments": "absent",
-    "layout_evolution": "absent",
+    "defining_moments": "draft:2",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:19/88",
-    "important_races": "absent",
+    "important_races": "draft",
     "records_statistics": "dataset_only",
     "legacy_present_day": "mentioned_in_draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 59,
+   "claims": 85,
    "claims_by_type": {
-    "statistic": 3,
-    "dated_event": 30,
-    "measurement": 6,
+    "statistic": 6,
+    "dated_event": 43,
+    "measurement": 9,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 20
+    "narrative": 27
    },
    "claims_unaligned_uk": 8,
    "name_agreement": {
-    "agree": 4,
+    "agree": 15,
     "differ": 0,
     "uk_unrecognised": 0,
-    "no_names": 47
+    "no_names": 62
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 3,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 1,
-    "passages_cover_numbers": 18,
-    "passages_partial": 12,
+    "passages_cover_numbers": 25,
+    "passages_partial": 16,
     "no_passage_in_live_sources": 28,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 15,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -3381,9 +3383,10 @@
     "verified": 0
    },
    "sources": {
-    "cited": 7,
+    "cited": 13,
     "live": 4,
-    "live_thin_or_scripted": 1
+    "live_thin_or_scripted": 1,
+    "not_checked": 6
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3393,16 +3396,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 69
+    "turns_queued": 69,
+    "dossier_named_turns": 1,
+    "dossier_turns_without_established_name": 19
    },
    "quality": {
-    "blocks": 25,
+    "blocks": 32,
     "shallow": 6,
     "repetitive": 0,
     "generic": 0,
-    "en_uk_issues": 4
+    "en_uk_issues": 5
    },
-   "evidence_lead_rate": 0.322,
+   "evidence_lead_rate": 0.306,
    "content_complete": false
   },
   {
@@ -3410,14 +3415,14 @@
    "name": "Albert Park Circuit",
    "pilot": false,
    "layouts": 2,
-   "sections_with_editorial_text": 7,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "mentioned_in_draft",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:14/30",
     "important_races": "draft",
     "records_statistics": "dataset_only",
@@ -3425,32 +3430,32 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 56,
+   "claims": 67,
    "claims_by_type": {
-    "statistic": 11,
-    "dated_event": 22,
-    "measurement": 0,
+    "statistic": 12,
+    "dated_event": 26,
+    "measurement": 3,
     "quotation": 0,
     "interpretation": 2,
-    "narrative": 21
+    "narrative": 24
    },
    "claims_unaligned_uk": 12,
    "name_agreement": {
-    "agree": 6,
+    "agree": 7,
     "differ": 0,
-    "uk_unrecognised": 4,
-    "no_names": 34
+    "uk_unrecognised": 5,
+    "no_names": 43
    },
    "dataset_checks": {
-    "supported": 0,
+    "supported": 4,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 3
    },
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 0,
-    "passages_cover_numbers": 36,
-    "passages_partial": 6,
+    "passages_cover_numbers": 42,
+    "passages_partial": 11,
     "no_passage_in_live_sources": 14,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -3461,8 +3466,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 6,
-    "live": 5
+    "cited": 8,
+    "live": 5,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3472,16 +3478,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 16
+    "turns_queued": 16,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 14
    },
    "quality": {
-    "blocks": 21,
+    "blocks": 24,
     "shallow": 6,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.643,
+   "evidence_lead_rate": 0.627,
    "content_complete": false
   },
   {
@@ -3489,14 +3497,14 @@
    "name": "Autódromo Hermanos Rodríguez",
    "pilot": false,
    "layouts": 3,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "absent",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:17/45",
     "important_races": "draft",
     "records_statistics": "dataset_only",
@@ -3504,21 +3512,21 @@
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 68,
+   "claims": 84,
    "claims_by_type": {
-    "statistic": 5,
-    "dated_event": 28,
-    "measurement": 0,
+    "statistic": 6,
+    "dated_event": 40,
+    "measurement": 1,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 35
+    "narrative": 37
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
-    "agree": 6,
-    "differ": 3,
-    "uk_unrecognised": 4,
-    "no_names": 55
+    "agree": 7,
+    "differ": 4,
+    "uk_unrecognised": 6,
+    "no_names": 67
    },
    "dataset_checks": {
     "supported": 3,
@@ -3528,10 +3536,10 @@
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 3,
-    "passages_cover_numbers": 37,
-    "passages_partial": 10,
-    "no_passage_in_live_sources": 18,
-    "cited_sources_unavailable": 0,
+    "passages_cover_numbers": 39,
+    "passages_partial": 16,
+    "no_passage_in_live_sources": 19,
+    "cited_sources_unavailable": 7,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -3540,8 +3548,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 8,
-    "live": 7
+    "cited": 10,
+    "live": 7,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3551,16 +3560,18 @@
     "names_found_in_cited_source": 1,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 28
+    "turns_queued": 28,
+    "dossier_named_turns": 5,
+    "dossier_turns_without_established_name": 11
    },
    "quality": {
-    "blocks": 26,
+    "blocks": 30,
     "shallow": 11,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.588,
+   "evidence_lead_rate": 0.5,
    "content_complete": false
   },
   {
@@ -3568,49 +3579,49 @@
    "name": "Miami International Autodrome",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 4,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
     "origins": "mentioned_in_draft",
     "formula1_history": "draft",
-    "defining_moments": "absent",
+    "defining_moments": "draft:2",
     "layout_evolution": "not_applicable",
     "corners": "one_layout_drafted:19/19",
-    "important_races": "absent",
+    "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 52,
+   "claims": 66,
    "claims_by_type": {
-    "statistic": 7,
-    "dated_event": 26,
-    "measurement": 0,
+    "statistic": 11,
+    "dated_event": 33,
+    "measurement": 1,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 19
+    "narrative": 21
    },
    "claims_unaligned_uk": 5,
    "name_agreement": {
-    "agree": 6,
-    "differ": 1,
-    "uk_unrecognised": 0,
-    "no_names": 40
+    "agree": 14,
+    "differ": 2,
+    "uk_unrecognised": 1,
+    "no_names": 44
    },
    "dataset_checks": {
-    "supported": 3,
+    "supported": 6,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 1
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 3,
-    "passages_cover_numbers": 20,
-    "passages_partial": 9,
+    "dataset_supported": 5,
+    "passages_cover_numbers": 22,
+    "passages_partial": 12,
     "no_passage_in_live_sources": 20,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 7,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -3619,8 +3630,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 5,
-    "live": 4
+    "cited": 8,
+    "live": 4,
+    "not_checked": 3
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3630,16 +3642,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 0
+    "turns_queued": 0,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 19
    },
    "quality": {
-    "blocks": 23,
+    "blocks": 26,
     "shallow": 8,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.442,
+   "evidence_lead_rate": 0.409,
    "content_complete": false
   },
   {
@@ -3647,49 +3661,49 @@
    "name": "Circuit de Monaco",
    "pilot": true,
    "layouts": 6,
-   "sections_with_editorial_text": 4,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
-    "formula1_history": "absent",
+    "origins": "draft",
+    "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "absent",
+    "layout_evolution": "draft",
     "corners": "grouped_sections_only",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 18,
+   "claims": 46,
    "claims_by_type": {
-    "statistic": 0,
-    "dated_event": 4,
-    "measurement": 0,
+    "statistic": 2,
+    "dated_event": 21,
+    "measurement": 4,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 14
+    "narrative": 19
    },
    "claims_unaligned_uk": 2,
    "name_agreement": {
-    "agree": 0,
+    "agree": 3,
     "differ": 0,
-    "uk_unrecognised": 0,
-    "no_names": 16
+    "uk_unrecognised": 1,
+    "no_names": 40
    },
    "dataset_checks": {
-    "supported": 0,
+    "supported": 6,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 2
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 0,
-    "passages_cover_numbers": 10,
-    "passages_partial": 2,
-    "no_passage_in_live_sources": 4,
-    "cited_sources_unavailable": 0,
+    "dataset_supported": 1,
+    "passages_cover_numbers": 17,
+    "passages_partial": 10,
+    "no_passage_in_live_sources": 5,
+    "cited_sources_unavailable": 11,
     "no_cited_sources": 2
    },
    "claims_verified": 7,
@@ -3705,8 +3719,9 @@
     }
    },
    "sources": {
-    "cited": 2,
-    "live": 2
+    "cited": 4,
+    "live": 2,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3716,16 +3731,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 103
+    "turns_queued": 103,
+    "dossier_named_turns": 18,
+    "dossier_turns_without_established_name": 1
    },
    "quality": {
-    "blocks": 9,
+    "blocks": 18,
     "shallow": 2,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.556,
+   "evidence_lead_rate": 0.391,
    "content_complete": false
   },
   {
@@ -3733,36 +3750,36 @@
    "name": "Circuito de Monsanto",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 4,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
-    "defining_moments": "absent",
+    "defining_moments": "draft:1",
     "layout_evolution": "not_applicable",
     "corners": "one_layout_drafted:9/9",
-    "important_races": "absent",
+    "important_races": "draft",
     "records_statistics": "dataset_only",
     "legacy_present_day": "mentioned_in_draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 34,
+   "claims": 44,
    "claims_by_type": {
-    "statistic": 5,
-    "dated_event": 5,
+    "statistic": 8,
+    "dated_event": 10,
     "measurement": 0,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 24
+    "narrative": 26
    },
    "claims_unaligned_uk": 0,
    "name_agreement": {
-    "agree": 5,
+    "agree": 9,
     "differ": 1,
     "uk_unrecognised": 2,
-    "no_names": 26
+    "no_names": 32
    },
    "dataset_checks": {
     "supported": 1,
@@ -3772,9 +3789,9 @@
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 1,
-    "passages_cover_numbers": 11,
-    "passages_partial": 2,
-    "no_passage_in_live_sources": 20,
+    "passages_cover_numbers": 18,
+    "passages_partial": 4,
+    "no_passage_in_live_sources": 21,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
    },
@@ -3796,16 +3813,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 9
+    "turns_queued": 9,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 9
    },
    "quality": {
-    "blocks": 13,
+    "blocks": 15,
     "shallow": 9,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.353,
+   "evidence_lead_rate": 0.432,
    "content_complete": false
   },
   {
@@ -3813,49 +3832,49 @@
    "name": "Circuit Mont-Tremblant",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 3,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
-    "defining_moments": "absent",
+    "defining_moments": "draft:2",
     "layout_evolution": "not_applicable",
     "corners": "one_layout_drafted:15/15",
-    "important_races": "absent",
+    "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 59,
+   "claims": 78,
    "claims_by_type": {
-    "statistic": 7,
-    "dated_event": 28,
-    "measurement": 0,
+    "statistic": 9,
+    "dated_event": 36,
+    "measurement": 3,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 24
+    "narrative": 30
    },
    "claims_unaligned_uk": 5,
    "name_agreement": {
-    "agree": 5,
-    "differ": 2,
-    "uk_unrecognised": 5,
-    "no_names": 42
+    "agree": 7,
+    "differ": 3,
+    "uk_unrecognised": 7,
+    "no_names": 56
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 3,
     "conflict": 0,
-    "unmatched": 2
+    "unmatched": 3
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 1,
-    "passages_cover_numbers": 29,
-    "passages_partial": 13,
-    "no_passage_in_live_sources": 16,
-    "cited_sources_unavailable": 0,
+    "dataset_supported": 2,
+    "passages_cover_numbers": 34,
+    "passages_partial": 20,
+    "no_passage_in_live_sources": 19,
+    "cited_sources_unavailable": 3,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -3864,8 +3883,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 6,
-    "live": 4
+    "cited": 7,
+    "live": 4,
+    "not_checked": 1
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3875,16 +3895,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 0
+    "turns_queued": 0,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 13
    },
    "quality": {
-    "blocks": 19,
+    "blocks": 23,
     "shallow": 5,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 1
    },
-   "evidence_lead_rate": 0.508,
+   "evidence_lead_rate": 0.462,
    "content_complete": false
   },
   {
@@ -3892,49 +3914,49 @@
    "name": "Circuito de Montjuïc",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 3,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
-    "origins": "absent",
+    "origins": "draft",
     "formula1_history": "draft",
-    "defining_moments": "absent",
+    "defining_moments": "draft:1",
     "layout_evolution": "not_applicable",
     "corners": "one_layout_drafted:12/12",
-    "important_races": "absent",
+    "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 43,
+   "claims": 58,
    "claims_by_type": {
-    "statistic": 4,
-    "dated_event": 11,
-    "measurement": 0,
+    "statistic": 6,
+    "dated_event": 21,
+    "measurement": 3,
     "quotation": 0,
     "interpretation": 0,
     "narrative": 28
    },
    "claims_unaligned_uk": 4,
    "name_agreement": {
-    "agree": 3,
+    "agree": 5,
     "differ": 1,
-    "uk_unrecognised": 5,
-    "no_names": 30
+    "uk_unrecognised": 6,
+    "no_names": 42
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 3,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 1
    },
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 1,
-    "passages_cover_numbers": 28,
-    "passages_partial": 2,
+    "passages_cover_numbers": 35,
+    "passages_partial": 5,
     "no_passage_in_live_sources": 12,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 5,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -3943,9 +3965,10 @@
     "verified": 0
    },
    "sources": {
-    "cited": 7,
+    "cited": 9,
     "live": 6,
-    "live_thin_or_scripted": 1
+    "live_thin_or_scripted": 1,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -3955,16 +3978,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 12
+    "turns_queued": 12,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 12
    },
    "quality": {
-    "blocks": 16,
+    "blocks": 19,
     "shallow": 5,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.674,
+   "evidence_lead_rate": 0.621,
    "content_complete": false
   },
   {
@@ -3972,41 +3997,41 @@
    "name": "Circuit Gilles Villeneuve",
    "pilot": false,
    "layouts": 6,
-   "sections_with_editorial_text": 7,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
     "origins": "mentioned_in_draft",
     "formula1_history": "draft",
     "defining_moments": "draft:2",
-    "layout_evolution": "mentioned_in_draft",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:14/102",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 63,
+   "claims": 81,
    "claims_by_type": {
     "statistic": 8,
-    "dated_event": 31,
-    "measurement": 0,
+    "dated_event": 44,
+    "measurement": 1,
     "quotation": 0,
-    "interpretation": 0,
-    "narrative": 24
+    "interpretation": 1,
+    "narrative": 27
    },
    "claims_unaligned_uk": 2,
    "name_agreement": {
-    "agree": 9,
+    "agree": 12,
     "differ": 2,
     "uk_unrecognised": 4,
-    "no_names": 46
+    "no_names": 61
    },
    "dataset_checks": {
-    "supported": 1,
+    "supported": 2,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 2
    },
    "factcheck_status": {
     "dataset_conflict": 0,
@@ -4014,7 +4039,7 @@
     "passages_cover_numbers": 32,
     "passages_partial": 10,
     "no_passage_in_live_sources": 21,
-    "cited_sources_unavailable": 0,
+    "cited_sources_unavailable": 18,
     "no_cited_sources": 0
    },
    "claims_verified": 0,
@@ -4023,8 +4048,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 7,
-    "live": 6
+    "cited": 9,
+    "live": 6,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4034,16 +4060,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 1,
     "names_sources_unavailable": 0,
-    "turns_queued": 88
+    "turns_queued": 88,
+    "dossier_named_turns": 3,
+    "dossier_turns_without_established_name": 11
    },
    "quality": {
-    "blocks": 24,
+    "blocks": 31,
     "shallow": 8,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.508,
+   "evidence_lead_rate": 0.395,
    "content_complete": false
   },
   {
@@ -4051,49 +4079,49 @@
    "name": "Autodromo Nazionale Monza",
    "pilot": false,
    "layouts": 7,
-   "sections_with_editorial_text": 5,
+   "sections_with_editorial_text": 8,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
     "origins": "mentioned_in_draft",
-    "formula1_history": "absent",
+    "formula1_history": "draft",
     "defining_moments": "draft:7",
-    "layout_evolution": "absent",
+    "layout_evolution": "draft",
     "corners": "one_layout_drafted:11/55",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 49,
+   "claims": 72,
    "claims_by_type": {
-    "statistic": 3,
-    "dated_event": 20,
-    "measurement": 0,
+    "statistic": 5,
+    "dated_event": 28,
+    "measurement": 11,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 26
+    "narrative": 28
    },
    "claims_unaligned_uk": 4,
    "name_agreement": {
-    "agree": 10,
-    "differ": 6,
-    "uk_unrecognised": 2,
-    "no_names": 27
+    "agree": 12,
+    "differ": 8,
+    "uk_unrecognised": 3,
+    "no_names": 45
    },
    "dataset_checks": {
-    "supported": 0,
+    "supported": 15,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 4
    },
    "factcheck_status": {
     "dataset_conflict": 0,
-    "dataset_supported": 0,
-    "passages_cover_numbers": 32,
-    "passages_partial": 5,
-    "no_passage_in_live_sources": 11,
-    "cited_sources_unavailable": 0,
+    "dataset_supported": 1,
+    "passages_cover_numbers": 34,
+    "passages_partial": 15,
+    "no_passage_in_live_sources": 12,
+    "cited_sources_unavailable": 9,
     "no_cited_sources": 1
    },
    "claims_verified": 0,
@@ -4102,8 +4130,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 5,
-    "live": 4
+    "cited": 7,
+    "live": 4,
+    "not_checked": 2
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4113,16 +4142,18 @@
     "names_found_in_cited_source": 11,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 44
+    "turns_queued": 44,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 0
    },
    "quality": {
-    "blocks": 25,
+    "blocks": 34,
     "shallow": 10,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.653,
+   "evidence_lead_rate": 0.486,
    "content_complete": false
   },
   {
@@ -4130,7 +4161,7 @@
    "name": "Canadian Tire Motorsport Park",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
@@ -4141,37 +4172,37 @@
     "corners": "one_layout_drafted:10/10",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 47,
+   "claims": 54,
    "claims_by_type": {
-    "statistic": 7,
-    "dated_event": 11,
+    "statistic": 8,
+    "dated_event": 15,
     "measurement": 0,
     "quotation": 0,
     "interpretation": 0,
-    "narrative": 29
+    "narrative": 31
    },
    "claims_unaligned_uk": 10,
    "name_agreement": {
-    "agree": 8,
+    "agree": 9,
     "differ": 3,
-    "uk_unrecognised": 1,
-    "no_names": 25
+    "uk_unrecognised": 2,
+    "no_names": 30
    },
    "dataset_checks": {
-    "supported": 3,
+    "supported": 4,
     "conflict": 0,
-    "unmatched": 0
+    "unmatched": 1
    },
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 3,
-    "passages_cover_numbers": 20,
-    "passages_partial": 4,
-    "no_passage_in_live_sources": 13,
+    "passages_cover_numbers": 22,
+    "passages_partial": 8,
+    "no_passage_in_live_sources": 14,
     "cited_sources_unavailable": 7,
     "no_cited_sources": 0
    },
@@ -4181,8 +4212,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 9,
-    "live": 5
+    "cited": 10,
+    "live": 5,
+    "not_checked": 1
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4192,16 +4224,18 @@
     "names_found_in_cited_source": 0,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 10
+    "turns_queued": 10,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 10
    },
    "quality": {
-    "blocks": 17,
+    "blocks": 18,
     "shallow": 5,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.489,
+   "evidence_lead_rate": 0.463,
    "content_complete": false
   },
   {
@@ -4209,7 +4243,7 @@
    "name": "Autodromo Internazionale del Mugello",
    "pilot": false,
    "layouts": 1,
-   "sections_with_editorial_text": 6,
+   "sections_with_editorial_text": 7,
    "sections": {
     "introduction": "draft",
     "essential_facts": "dataset_only",
@@ -4220,15 +4254,15 @@
     "corners": "one_layout_drafted:15/15",
     "important_races": "draft",
     "records_statistics": "dataset_only",
-    "legacy_present_day": "absent",
+    "legacy_present_day": "draft",
     "related_people": "dataset_only",
     "sources_methodology": "cited"
    },
-   "claims": 60,
+   "claims": 65,
    "claims_by_type": {
     "statistic": 4,
-    "dated_event": 8,
-    "measurement": 0,
+    "dated_event": 11,
+    "measurement": 2,
     "quotation": 0,
     "interpretation": 0,
     "narrative": 48
@@ -4238,18 +4272,18 @@
     "agree": 5,
     "differ": 2,
     "uk_unrecognised": 4,
-    "no_names": 49
+    "no_names": 54
    },
    "dataset_checks": {
-    "supported": 3,
+    "supported": 4,
     "conflict": 0,
     "unmatched": 0
    },
    "factcheck_status": {
     "dataset_conflict": 0,
     "dataset_supported": 1,
-    "passages_cover_numbers": 45,
-    "passages_partial": 2,
+    "passages_cover_numbers": 46,
+    "passages_partial": 6,
     "no_passage_in_live_sources": 12,
     "cited_sources_unavailable": 0,
     "no_cited_sources": 0
@@ -4260,8 +4294,9 @@
     "verified": 0
    },
    "sources": {
-    "cited": 9,
-    "live": 7
+    "cited": 10,
+    "live": 7,
+    "not_checked": 1
    },
    "source_structural_issues": 0,
    "corners": {
@@ -4271,16 +4306,18 @@
     "names_found_in_cited_source": 15,
     "names_not_in_cited_text": 0,
     "names_sources_unavailable": 0,
-    "turns_queued": 0
+    "turns_queued": 0,
+    "dossier_named_turns": 0,
+    "dossier_turns_without_established_name": 0
    },
    "quality": {
-    "blocks": 24,
+    "blocks": 25,
     "shallow": 6,
     "repetitive": 0,
     "generic": 0,
     "en_uk_issues": 0
    },
-   "evidence_lead_rate": 0.767,
+   "evidence_lead_rate": 0.723,
    "content_complete": false
   },
   {

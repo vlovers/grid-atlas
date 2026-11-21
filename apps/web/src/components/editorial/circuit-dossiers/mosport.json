@@ -1,0 +1,60 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "mosport",
+ "writer": "research-batch-4",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "mosport:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "Still racing as Canadian Tire Motorsport Park",
+    "uk": "Досі діє як Canadian Tire Motorsport Park"
+   },
+   "text": {
+    "en": "Mosport's last Formula 1 Canadian Grand Prix was in 1977, won by Jody Scheckter, and the race moved to Montreal in 1978. The track has kept racing since. After a receivership in 1966 it was bought by Cantrack Motor Racing, led by Harvey M. Hudes until his death in 1996, and in 1997-1998 it passed through International Motorsports Group and Panoz Motorsports. Canadian Motorsport Ventures bought it in 2011, and in 2012 a long-term partnership gave it the name Canadian Tire Motorsport Park. The circuit's own history lists events such as NASCAR Pinty's racing, a vintage Grand Prix, an IMSA sports-car round and superbike meetings. On 11 December 2025 a new ownership group led by Peter Thomson was announced, with the existing management staying in place and scheduled activities continuing.",
+    "uk": "Останнє Гран-прі Канади Формули 1 на Mosport відбулося в 1977 році, його виграв Джоді Шектер, а в 1978 році гонка переїхала до Монреаля. Відтоді траса не припиняла працювати. Після процедури банкрутства в 1966 році її купила компанія Cantrack Motor Racing, яку до своєї смерті в 1996 році очолював Гарві М. Г'юдс, а в 1997-1998 роках вона переходила до International Motorsports Group і Panoz Motorsports. Canadian Motorsport Ventures придбала її в 2011 році, а в 2012 році довгострокове партнерство дало їй назву Canadian Tire Motorsport Park. В історії самої траси згадано такі події, як гонки NASCAR Pinty's, ретро-Гран-прі, етап IMSA для спортивних авто та змагання супербайків. 11 грудня 2025 року оголосили про нову групу власників на чолі з Пітером Томсоном: чинне керівництво залишається, а заплановані заходи тривають."
+   },
+   "sources": [
+    {
+     "url": "https://canadiantiremotorsportpark.com/pages/history",
+     "publisher": "Canadian Tire Motorsport Park (official site)",
+     "locator": "History page: owners and operators timeline (1966-2012); Formula 1 (1967-1977); Current events"
+    },
+    {
+     "url": "https://canadiantiremotorsportpark.com/blogs/whats-on/canadian-tire-motorsport-park-announces-new-ownership-group",
+     "publisher": "Canadian Tire Motorsport Park (official site)",
+     "locator": "Announcement dated 11 December 2025"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "mosport-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The circuit's history page shows content only to 2020 (footer 2019); the event list and the 1997-2012 ownership chain come from it. The post-2025 'roadmap' that the owners said would be presented in February 2026 was not found.",
+  "The December 2025 announcement does not name the seller; one search result named Canadian Motorsports Ventures, but that was not in an opened page and was not used.",
+  "No source for named corners other than the Moss Corner already in existing prose was opened; turns left without names are those without a name in an opened source.",
+  "Existing prose on the 1973 race (pace car, Revson win) was not rechecked in this session beyond F1DB; the 1961 opening matches the circuit history ('opened for racing in May 1961').",
+  "No imagery assessed."
+ ]
+}

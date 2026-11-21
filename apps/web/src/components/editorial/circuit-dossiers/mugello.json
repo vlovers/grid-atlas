@@ -1,0 +1,55 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "mugello",
+ "writer": "research-batch-4",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "mugello:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "A Ferrari-owned circuit with one Grand Prix",
+    "uk": "Автодром Ferrari з єдиним Гран-прі"
+   },
+   "text": {
+    "en": "Mugello, about 30 km north-east of Florence in Tuscany, has hosted only one Formula 1 World Championship race: the 2020 Tuscan Grand Prix, run on 13 September 2020 and also Ferrari's 1000th Grand Prix. Ferrari bought the 5.245 km track in 1988 and renovated it to its own standards. It first hosted a motorcycle Grand Prix in 1976 and became a permanent MotoGP venue in 1991, so it continues to race as a home of the Italian round of that championship. The Automobile Club di Firenze initiated its construction in the 1970s and it opened in 1974, and Ferrari and other teams often use it for testing. The F1DB brief lists no Formula 1 race there after 2020.",
+    "uk": "Mugello, приблизно за 30 км на північний схід від Флоренції в Тоскані, приймав лише одну гонку чемпіонату світу Формули 1: Гран-прі Тоскани 2020 року, що відбулося 13 вересня 2020 року й стало також 1000-м Гран-прі для Ferrari. Ferrari придбала трасу довжиною 5.245 км у 1988 році й відремонтувала за власними стандартами. Вона вперше прийняла мотоциклетне Гран-прі в 1976 році, а з 1991 року стала постійним майданчиком MotoGP, тож і далі діє як дім італійського етапу цього чемпіонату. Автомобільний клуб Флоренції ініціював будівництво в 1970-х, автодром відкрився в 1974 році, а Ferrari й інші команди часто використовують його для тестів. За F1DB, після 2020 року Формула 1 тут не гонялася."
+   },
+   "sources": [
+    {
+     "url": "https://www.motogp.com/en/calendar/2026/event/italy/bf2104f9-f5cc-4a99-a993-cb5d01bccd24?tab=circuit-info",
+     "publisher": "MotoGP",
+     "locator": "Circuit info: ownership (Ferrari, 1988), length, first Grand Prix 1976, permanent venue from 1991, location"
+    },
+    {
+     "url": "https://discovermugello.it/service/autodromo-del-mugello/",
+     "publisher": "Discover Mugello",
+     "locator": "History: Automobile Club di Firenze initiative, opened 1974; testing use"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/friday-pace-analysis-what-can-ferrari-achieve-in-their-1000th-grand-prix-at.62thH09Q6eRECOCZDPWooV.62thH09Q6eRECOCZDPWooV",
+     "publisher": "formula1.com",
+     "locator": "Ferrari's 1000th Grand Prix at Mugello; Formula 1 debut at the circuit"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "mugello-1",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The date 13 September 2020 comes from a search result and from F1DB context; the opened formula1.com page did not state it, so editors should confirm it against the cited race pages.",
+  "The Discover Mugello page appears to be a snapshot from around 2018, so its testing and event statements may be out of date; Ferrari's current testing use is not independently confirmed for 2026.",
+  "Ferrari's purchase in 1988 is from the MotoGP site only; a second publisher was not opened.",
+  "Mugello's current MotoGP round dates for 2026 were not shown on the opened page and are not stated.",
+  "All 15 corners are already named in the corner guide; the Discover Mugello list (Casanova Savelli 1 and 2 for turns 6-7, others) matches the guide except that it joins the names Casanova and Savelli as 'Casanova Savelli 1/2' while the guide gives 6=Casanova and 7=Savelli; editors may wish to confirm which form the circuit uses.",
+  "No imagery assessed."
+ ]
+}

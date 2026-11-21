@@ -1,0 +1,107 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "melbourne",
+ "writer": "research-batch-4",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "melbourne:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "From Adelaide to a Melbourne park",
+    "uk": "Від Аделаїди до парку в Мельбурні"
+   },
+   "text": {
+    "en": "Motor racing at Albert Park predates Formula 1: the Australian Grand Prix was run in the Melbourne parkland in 1953 and 1956, the second won by Stirling Moss. The modern circuit came from a decision to move the Grand Prix out of Adelaide. Formula 1's account says the switch was arranged in 1993 through a deal so secret that its proponents used aliases when travelling to the UK to meet Bernie Ecclestone. The new track used existing roads around Albert Park Lake, including Aughtie Drive and Lakeside Drive, with a detour through the Lakeside Stadium car park. Adelaide staged its last Grand Prix at the end of 1995, and Melbourne hosted its first about four months later, at the start of 1996.",
+    "uk": "Автоперегони в Albert Park з'явилися задовго до Формули 1: Гран-прі Австралії проводили в мельбурнському парку в 1953 і 1956 роках, а друге виграв Стірлінг Мосс. Сучасна траса виникла з рішення перенести Гран-прі з Аделаїди. За розповіддю Формули 1, перехід домовилися в 1993 році в межах угоди, яка була настільки таємною, що її прибічники користувалися вигаданими іменами під час поїздок до Великої Британії на зустріч із Берні Екклстоуном. Нова траса використала наявні дороги навколо озера Albert Park, зокрема Aughtie Drive і Lakeside Drive, з відгалуженням через автостоянку стадіону Lakeside. Аделаїда провела останнє Гран-прі наприкінці 1995 року, а Мельбурн прийняв перше приблизно через чотири місяці — на початку 1996 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.goodwood.com/grr/f1/the-history-of-the-australian-grand-prix/",
+     "publisher": "Goodwood Road & Racing",
+     "locator": "Paragraph 2: Albert Park hosted the race in 1953 and 1956, Moss winning in 1956"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/tremayne-how-melbourne-snatched-the-australian-gp-from-adelaide-30-years-ago.6dd1UXHv7YOOd5PSGXAFN9",
+     "publisher": "formula1.com",
+     "locator": "Paragraph 2: deal so secret that proponents used aliases; 1993 meeting with Ecclestone"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/circuit-guide-2026-australian-grand-prix-albert-park.19zPlhKhMbTaVNFIPKAAMa",
+     "publisher": "formula1.com",
+     "locator": "Circuit origins section: swap agreed 1993, Aughtie Drive and Lakeside Drive, Adelaide last race end of 1995"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "melbourne-1",
+   "seasons": "1996-2019",
+   "length_km": 5.303,
+   "turns": 16,
+   "change": {
+    "en": "The original lakeside lap used from 1996 to 2019, with a 5.303 km lap and 16 turns. It included a chicane on the kinked back straight, which was removed for the 2022 revision.",
+    "uk": "Початкове коло навколо озера, яким користувалися з 1996 до 2019 року: 5.303 км і 16 поворотів. На вигнутій задній прямій була шикана, яку прибрали під час перебудови 2022 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/why-the-albert-park-changes-should-add-up-to-a-thrilling-racing-spectacle.5XY84WeuRvqgKRkRGSjGKb",
+     "publisher": "formula1.com",
+     "locator": "Article on the 2022 changes: chicane removed from the back straight"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "melbourne-2",
+   "seasons": "2022-2026",
+   "length_km": 5.278,
+   "turns": 14,
+   "change": {
+    "en": "For 2022 the back-straight chicane was removed, so the former Turns 11 and 12 became Turns 9 and 10, giving a 5.278 km lap with 14 turns. The works also widened Turn 1 entry by 2.5 m, cut 4 m from the inside of Turn 3, added 7.5 m to Turn 6, tightened Turn 11 and widened Turn 13 by 3.5 m. The pit lane was widened and the whole surface was resurfaced for the first time since 1996. A fourth DRS zone was added.",
+    "uk": "Для 2022 року шикану на задній прямій прибрали, тож колишні повороти 11 і 12 стали поворотами 9 і 10, а коло стало 5.278 км із 14 поворотами. Також на 2.5 м розширили вхід у поворот 1, зрізали 4 м із внутрішньої сторони повороту 3, додали 7.5 м до повороту 6, суттєво затягнули поворот 11 і розширили поворот 13 на 3.5 м. Піт-лейн розширили, а все покриття вперше з 1996 року замінили. Додали четверту зону DRS."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/why-the-albert-park-changes-should-add-up-to-a-thrilling-racing-spectacle.5XY84WeuRvqgKRkRGSjGKb",
+     "publisher": "formula1.com",
+     "locator": "Article list of seven layout changes, pit lane, surface and DRS paragraphs"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "melbourne-2",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No opened source gives established names for the Albert Park corners; the two formula1.com articles refer to turns by number only. Turns are reported as without an established name for the sources opened, not as confirmed nameless.",
+  "The exact 1993 announcement date and the names of Ron Walker and Jeff Kennett are not in an opened source (search snippets only; the repco and racingcircuits.info pages returned HTTP 403), so they were left out.",
+  "The 1953 and 1956 Albert Park Grands Prix rest on a single opened source (Goodwood) and are not Formula 1 World Championship races.",
+  "The 2022 article says the layout of the former Turns 11-12 is unchanged but kerbs were reprofiled; it gives no lap length, so lengths come from F1DB (5.303 and 5.278 km).",
+  "Existing prose (Brundle crash, Villeneuve oil leak, Hill win; revision first raced in 2022; 'old high-speed pair became turns nine and ten') was compared with the sources and no contradiction found; the formula1.com circuit guide places Brundle's crash at Turn 3.",
+  "No imagery assessed."
+ ]
+}

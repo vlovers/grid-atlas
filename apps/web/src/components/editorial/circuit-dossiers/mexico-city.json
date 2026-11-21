@@ -1,0 +1,152 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "mexico-city",
+ "writer": "research-batch-4",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "mexico-city:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A park circuit built in under a year",
+    "uk": "Парковий автодром, збудований менш ніж за рік"
+   },
+   "text": {
+    "en": "The circuit was built in 1959 in Mexico City's Magdalena Mixiuhca sports park, using the park's existing internal roads. Formula 1's circuit page says the project was proposed by the father of the racing brothers Ricardo and Pedro Rodríguez, an adviser to President Adolfo López Mateos, and approved by the president, with work finished in under a year. Formula 1 cars first came in 1962 for a non-championship race won by Jim Clark, during which Ricardo Rodríguez was killed in a practice accident. The track was later renamed Autódromo Hermanos Rodríguez in tribute to him and to Pedro, who died in competition in 1971. Its final corner, the banked Peraltada, was a high-speed 180-degree right-hander with almost no run-off in the early years.",
+    "uk": "Автодром збудували в 1959 році в мексиканському спортивному парку Magdalena Mixiuhca, використавши наявні внутрішні дороги парку. За описом траси на сайті Формули 1, проєкт запропонував батько гонщиків Рікардо та Педро Родрігесів, радник президента Адольфо Лопеса Матеоса, а президент його схвалив; роботи завершили менш ніж за рік. Боліди Формули 1 вперше приїхали в 1962 році на позачемпіонатну гонку, яку виграв Джим Кларк; під час неї на тренуванні загинув Рікардо Родрігес. Пізніше трасу перейменували на Autódromo Hermanos Rodríguez на згадку про нього та про Педро, який загинув у змаганнях 1971 року. Останній поворот — похилий Peraltada — у ранні роки був швидким правим поворотом на 180 градусів майже без зон безпеки."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/information/mexico-autodromo-hermanos-rodriguez-mexico-city.1K2WPfBcI8kTXjcTHcbsBM",
+     "publisher": "formula1.com",
+     "locator": "Circuit information page, history section (1959 construction, 1962 non-championship race, 1963 championship)"
+    },
+    {
+     "url": "https://global.honda/en/F1/circuit/autodromo-hermanos-rodriguez/",
+     "publisher": "Honda",
+     "locator": "History section: Magdalena Mixhuca, 1962 race, renaming for Ricardo and Pedro Rodriguez"
+    },
+    {
+     "url": "https://www.mclaren.com/racing/formula-1/2018/mexican-grand-prix/peril-of-the-peraltada-2190643/",
+     "publisher": "McLaren Racing",
+     "locator": "Early era (1962-1970) section: original Peraltada description"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "mexico-city-1",
+   "seasons": "1963-1970",
+   "length_km": 5,
+   "turns": 14,
+   "change": {
+    "en": "The original 1959 outline used for the first period of championship races. It ended with the large banked Peraltada, a high-speed 180-degree right-hander with almost no run-off. The race was the season finale from 1964 and was dropped after 1970 over crowd-control problems.",
+    "uk": "Первісний контур 1959 року, яким користувалися в перший період чемпіонатних гонок. Він завершувався великим похилим поворотом Peraltada — швидким правим поворотом на 180 градусів майже без зон безпеки. З 1964 року гонка була фінальною в сезоні, а після 1970 року її зняли з календаря через проблеми з контролем глядачів."
+   },
+   "sources": [
+    {
+     "url": "https://www.mclaren.com/racing/formula-1/2018/mexican-grand-prix/peril-of-the-peraltada-2190643/",
+     "publisher": "McLaren Racing",
+     "locator": "Early era (1962-1970) section"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "mexico-city-2",
+   "seasons": "1986-1992",
+   "length_km": 4.421,
+   "turns": 14,
+   "change": {
+    "en": "The circuit returned in 1986 in mildly modified form after extensive renovations, renamed in honour of the Rodríguez brothers. The banked Peraltada was kept, but some of its gradient was reduced to make it more manageable for the powerful turbocharged cars of the time. The race left the calendar again after 1992. The opened sources do not itemise the other 1986 changes.",
+    "uk": "Траса повернулася в 1986 році в трохи зміненому вигляді після масштабної реновації та отримала ім'я братів Родрігесів. Похилий Peraltada зберегли, але частково зменшили його ухил, щоб поворот було легше проходити потужним турбованим болідам того часу. Після 1992 року гонка знову зникла з календаря. Інші зміни 1986 року відкриті джерела докладно не перелічують."
+   },
+   "sources": [
+    {
+     "url": "https://www.mclaren.com/racing/formula-1/2018/mexican-grand-prix/peril-of-the-peraltada-2190643/",
+     "publisher": "McLaren Racing",
+     "locator": "Return and changes (1986-1992) section"
+    },
+    {
+     "url": "https://global.honda/en/F1/circuit/autodromo-hermanos-rodriguez/",
+     "publisher": "Honda",
+     "locator": "History: returned 1986 after extensive renovations, dropped after 1992"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "mexico-city-3",
+   "seasons": "2015-2026",
+   "length_km": 4.304,
+   "turns": 17,
+   "change": {
+    "en": "A redevelopment designed by Tilke for the 2015 return changed about half of the layout. The Peraltada was bypassed: the track now turns right at Turn 12 and winds through the former Foro Sol baseball stadium. Turn 1 became deeper and tighter, the Esses were re-routed, the start-finish straight was moved 15 m to the right and the surface was renewed. Tilke's Christian Epp said the FIA would not allow the Peraltada to be kept because it was too dangerous.",
+    "uk": "Реконструкція за проєктом Tilke до повернення в 2015 році змінила приблизно половину траси. Peraltada обійшли: тепер траса повертає праворуч на повороті 12 і проходить колишнім бейсбольним стадіоном Foro Sol. Поворот 1 став глибшим і тіснішим, Esses прокладено інакше, лінію старту-фінішу змістили на 15 м праворуч, а покриття оновили. Представник Tilke Крістіан Епп сказав, що FIA не дозволила б залишити Peraltada, бо він був надто небезпечним."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/mexico-uncovered-the-inside-story-of-mexico-city-s-f1-return.1Wn5BBp9GHS4z6AbiAZ0C7",
+     "publisher": "formula1.com",
+     "locator": "Inside story article, What changed section (published 30 April 2015)"
+    },
+    {
+     "url": "https://global.honda/en/F1/circuit/autodromo-hermanos-rodriguez/",
+     "publisher": "Honda",
+     "locator": "Layout changes: 2015 redevelopment by Hermann Tilke, stadium section"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [
+  {
+   "layout_id": "mexico-city-3",
+   "turns": [
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "name": "Esses",
+   "status": "traditional",
+   "period": "1980s-present (Honda numbering as published: Turns 7-11)",
+   "source": {
+    "url": "https://global.honda/en/F1/circuit/autodromo-hermanos-rodriguez/",
+    "publisher": "Honda",
+    "locator": "Corner names: Esses, Turns 7 through 11, a high-speed sequence dating back to the 1980s"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "mexico-city-3",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   12,
+   13,
+   14,
+   15,
+   16
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "The Esses entry is a grouped name taken from Honda's page; the 2015 article says the Esses follow a new route 'almost inverted compared to the old Esses', so the name is traditional rather than tied to the old geometry. Honda's Turn 7-11 numbering was not cross-checked against the 2025 FIA circuit map.",
+  "Turns listed as without an established name are those for which no opened source gave a name; the Foro Sol stadium section is a feature name, not a per-turn name. Other names sometimes used (for example for Turn 1 or the Moisés Solana tribute) were not found in an opened source.",
+  "The 1986 modifications beyond the reduced Peraltada gradient are not itemised in any opened source; the F1DB length drop from 5.0 km to 4.421 km is therefore not explained in the text.",
+  "Existing prose says the 2015 route avoids 'the old Peraltada in full'; Honda says only the latter part of the original remains. This is consistent and was not treated as an error.",
+  "The origins text relies on formula1.com for the 1959 construction and on Honda and McLaren for the renaming and the 1962 events; the 1971 date of Pedro Rodríguez's death comes from McLaren's text. The 2026 winner is blank in the F1DB brief and was not used.",
+  "No imagery assessed."
+ ]
+}
