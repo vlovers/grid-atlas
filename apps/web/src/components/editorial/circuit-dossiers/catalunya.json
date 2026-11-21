@@ -1,0 +1,246 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "catalunya",
+ "writer": "research-batch-2",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "catalunya:legacy_present_day:1",
+   "kind": "legacy_present_day",
+   "year": null,
+   "title": {
+    "en": "Still on the calendar, under a new name",
+    "uk": "Досі в календарі, але під новою назвою"
+   },
+   "text": {
+    "en": "Circuit de Barcelona-Catalunya hosted the Spanish Grand Prix every year from 1991 and remains a Formula 1 venue, though its role has changed. In February 2026 it was announced that Madrid's new street race would take the Spanish Grand Prix title from 2026, while the Montmeló event became the Barcelona-Catalunya Grand Prix, scheduled for 12-14 June 2026. Barcelona is to alternate with the Belgian Grand Prix at Spa-Francorchamps, with Montmeló races planned for 2028, 2030 and 2032. The F1DB data records 2026 as the 36th consecutive season of the circuit. The venue is also long used for pre-season testing, and in 2023 nobody had driven the new final-corner layout with current cars before Friday practice.",
+    "uk": "Circuit de Barcelona-Catalunya приймала Гран-прі Іспанії щороку з 1991 року й досі є майданчиком Формули 1, хоча її роль змінилася. У лютому 2026 року оголосили, що назву Гран-прі Іспанії з 2026 року отримає нова вулична гонка в Мадриді, а подія в Монтмело стала Гран-прі Барселони-Каталонії, запланованим на 12-14 червня 2026 року. Барселона чергуватиметься з Гран-прі Бельгії у Спа-Франкоршам: гонки в Монтмело заплановані на 2028, 2030 і 2032 роки. У даних F1DB 2026 рік є 36-м сезоном траси. Місце також давно використовують для передсезонних тестів, а у 2023 році до п'ятниці на новій конфігурації останніх поворотів ніхто не їздив на сучасних болідах."
+   },
+   "sources": [
+    {
+     "url": "https://www.skysports.com/f1/news/12040/13508256/barcelona-to-remain-on-f1-calendar-until-2032-in-rotation-with-belgian-grand-prix-despite-addition-of-madrid-race",
+     "publisher": "Sky Sports",
+     "locator": "Article body: rotation with Spa, 2028/2030/2032, 2026 name and dates, Madrid, announcement 16 February 2026"
+    },
+    {
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/f1-gp-five-fast-facts-about-the-spanish-gp-76700/",
+     "publisher": "Pirelli",
+     "locator": "Fast facts 1 (every year since 1991), 5 (testing venue, 2023 new layout)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "catalunya:historical_fact:1",
+   "kind": "historical_fact",
+   "year": null,
+   "title": {
+    "en": "The chicane that was bypassed after Imola 1994",
+    "uk": "Шикана, яку обійшли після Імоли 1994"
+   },
+   "text": {
+    "en": "The original lap included a fast right-left chicane called Nissan, which Johnny Herbert once called the best corner on the track. After a spate of serious crashes, including those that killed Ayrton Senna and Roland Ratzenberger, drivers judged it had to go. A threatened drivers' strike in 1994 forced organisers to build a temporary tyre wall in front of it, and from 1995 the Campsa corner was lengthened to bypass the chicane. RaceFans and Motor Sport differ on whether the removal is dated 1994 or 1995; the F1DB layout split (1991-1994, then 1995-2003) supports 1995 for the new configuration.",
+    "uk": "Оригінальне коло містило швидку шикану праворуч-ліворуч під назвою Nissan, яку Джонні Герберт колись назвав найкращим поворотом траси. Після серії серйозних аварій, зокрема тих, у яких загинули Айртон Сенна та Роланд Ратценбергер, пілоти вирішили, що її потрібно прибрати. Погроза страйку пілотів у 1994 році змусила організаторів збудувати перед нею тимчасову стіну з шин, а з 1995 року поворот Campsa подовжили, щоб обійти шикану. RaceFans і Motor Sport по-різному датують усунення — 1994 чи 1995 роком; поділ конфігурацій у F1DB (1991-1994, далі 1995-2003) підтримує 1995 рік для нової конфігурації."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/?p=32378",
+     "publisher": "RaceFans",
+     "locator": "Nissan chicane and Campsa paragraphs"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-barcelona-circuit-de-catalunyas-explosive-opening-and-evolution",
+     "publisher": "Motor Sport Magazine",
+     "locator": "1995 changes; temporary tyre chicane in 1994"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "catalunya-1",
+   "seasons": "1991-1994",
+   "length_km": 4.747,
+   "turns": 14,
+   "change": {
+    "en": "The original 1991 layout, 4.747 km, included a fast right-left Nissan chicane. After a spate of crashes it was fronted by a temporary tyre barrier in 1994. RaceFans reports that the first eight corners are unchanged from 1991 today.",
+    "uk": "Оригінальна конфігурація 1991 року завдовжки 4,747 км включала швидку шикану Nissan праворуч-ліворуч. Після низки аварій у 1994 році перед нею встановили тимчасовий бар'єр із шин. За даними RaceFans, перші вісім поворотів і сьогодні такі самі, як у 1991 році."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/?p=32378",
+     "publisher": "RaceFans",
+     "locator": "Original layout, Nissan chicane"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-barcelona-circuit-de-catalunyas-explosive-opening-and-evolution",
+     "publisher": "Motor Sport Magazine",
+     "locator": "1995 changes; tyre chicane 1994"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "catalunya-2",
+   "seasons": "1995-2003",
+   "length_km": 4.73,
+   "turns": 13,
+   "change": {
+    "en": "The Nissan chicane was removed and replaced by a straight. Campsa became a longer corner to bypass it, Turn 9 gained a larger run-off area and La Caixa (Turn 10) was modified. Motor Sport does not give the reason; the removal followed the crashes of 1994.",
+    "uk": "Шикану Nissan прибрали, а на її місці з'явилася пряма. Поворот Campsa став довшим, щоб обійти її, Turn 9 отримав більшу зону виїзду, а La Caixa (Turn 10) змінили. Motor Sport не називає причини; усунення шикани сталося після аварій 1994 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-barcelona-circuit-de-catalunyas-explosive-opening-and-evolution",
+     "publisher": "Motor Sport Magazine",
+     "locator": "1995 bullet"
+    },
+    {
+     "url": "https://www.racefans.net/?p=32378",
+     "publisher": "RaceFans",
+     "locator": "Campsa (changed 1995)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "catalunya-3",
+   "seasons": "2004-2006",
+   "length_km": 4.627,
+   "turns": 14,
+   "change": {
+    "en": "The La Caixa corner at the end of the back straight was tightened to encourage overtaking.",
+    "uk": "Поворот La Caixa наприкінці задньої прямої зробили тіснішим, щоб заохотити обгони."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/?p=32378",
+     "publisher": "RaceFans",
+     "locator": "La Caixa (tightened 2004)"
+    },
+    {
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/f1-gp-five-fast-facts-about-the-spanish-gp-76700/",
+     "publisher": "Pirelli",
+     "locator": "Fast fact 2: Turn 10 2004 modification"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "catalunya-4",
+   "seasons": "2007-2020",
+   "length_km": 4.655,
+   "turns": 16,
+   "change": {
+    "en": "A chicane was inserted before the final corner to slow cars and reduce the speed built for overtaking on the main straight. RaceFans says it bypassed the fast Europcar and New Holland corners, which organisers felt were taken too quickly for the run-off available. Commentators later judged the change a failure that disrupted the lap's flow.",
+    "uk": "Перед останнім поворотом додали шикану, щоб знизити швидкість і зменшити розгін для обгонів на основній прямій. За даними RaceFans, вона обійшла швидкі повороти Europcar і New Holland, які, на думку організаторів, проїжджали надто швидко для наявних зон безпеки. Згодом оглядачі визнали зміну невдалою, бо вона порушила плинність кола."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/?p=32378",
+     "publisher": "RaceFans",
+     "locator": "Europcar and New Holland (2007)"
+    },
+    {
+     "url": "https://www.skysports.com/f1/grandprix/barcelona-catalunya/circuit-guide",
+     "publisher": "Sky Sports",
+     "locator": "Layout changes: 2007"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "catalunya-5",
+   "seasons": "2021-2022",
+   "length_km": 4.675,
+   "turns": 16,
+   "change": {
+    "en": "The Turn 10 hairpin was reprofiled so its entry is less shallow, with a larger run-off area; Pirelli describes it as largely reversing the 2004 modification.",
+    "uk": "Шпильку Turn 10 перепрофілювали, щоб вхід у неї став менш пологим, зі збільшеною зоною виїзду; Pirelli описує це як значне скасування зміни 2004 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.pirelli.com/global/en-ww/race/racingspot/formula-1/f1-gp-five-fast-facts-about-the-spanish-gp-76700/",
+     "publisher": "Pirelli",
+     "locator": "Fast fact 2"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-barcelona-circuit-de-catalunyas-explosive-opening-and-evolution",
+     "publisher": "Motor Sport Magazine",
+     "locator": "2021 bullet"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "catalunya-6",
+   "seasons": "2023-2026",
+   "length_km": 4.657,
+   "turns": 14,
+   "change": {
+    "en": "The 2007 chicane before the final corner was removed, restoring the original fast finish to the lap and aligning the layout with the MotoGP configuration. The official lap length became 4.657 km, 18 m shorter than before, and new TECPRO barriers and a widened Turn 1 run-off were added.",
+    "uk": "Шикану 2007 року перед останнім поворотом прибрали, повернувши колу швидкий фініш і зблизивши конфігурацію з тією, що використовує MotoGP. Офіційна довжина кола стала 4,657 км, на 18 м коротшою, а також з'явилися бар'єри TECPRO і ширша зона виїзду в Turn 1."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/circuit-de-barcelona-catalunya-to-feature-new-configuration-for-2023-spanish.6ZQgemg7eOlAJbBtu56PHE",
+     "publisher": "Formula1.com",
+     "locator": "2023 changes: chicane removed, 4.657 km, safety upgrades"
+    },
+    {
+     "url": "https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-barcelona-catalunya.7i1UoRE8Za0Jk4LI0r68qk.7i1UoRE8Za0Jk4LI0r68qk",
+     "publisher": "Formula1.com",
+     "locator": "Circuit guide: 2023 change to match MotoGP configuration"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [
+  {
+   "layout_id": "catalunya-6",
+   "turns": [
+    9
+   ],
+   "name": "Campsa",
+   "status": "traditional",
+   "period": "original name in use since the circuit opened; referenced as Turn 9",
+   "source": {
+    "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-barcelona-circuit-de-catalunyas-explosive-opening-and-evolution",
+    "publisher": "Motor Sport Magazine",
+    "locator": "Layout changes / Corner names list: Turn 9 (originally Campsa)"
+   },
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "catalunya-6",
+   "turns": [
+    10
+   ],
+   "name": "La Caixa",
+   "status": "traditional",
+   "period": "original name; referenced as Turn 10 (hairpin at end of back straight)",
+   "source": {
+    "url": "https://www.motorsportmagazine.com/articles/single-seaters/f1/f1-in-barcelona-circuit-de-catalunyas-explosive-opening-and-evolution",
+    "publisher": "Motor Sport Magazine",
+    "locator": "Corner names list: La Caixa, Turn 10"
+   },
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corners_without_established_name": {
+  "layout_id": "catalunya-6",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Only Campsa (Turn 9) and La Caixa (Turn 10) were tied to turn numbers by a fetched source. Other well-known names (Elf, Renault, Repsol, Seat, Wurth, Banc Sabadell, Europcar etc.) were not tied to F1DB turn numbers by any fetched source, so they are not asserted; corners_without_established_name is therefore empty because no turn was shown to be unnamed, not because all are named. Turns 1-8, 11-14 remain unresolved.",
+  "Sources disagree on whether the Nissan chicane was removed in 1994 (RaceFans) or 1995 (Motor Sport, F1DB layout split); text records both. The turn numbering of Campsa/La Caixa was not verified against the 14-turn 1991 layout.",
+  "Sources differ on the 2021 Turn 10 change: Motor Sport says slower, shorter approach; Pirelli says faster and wider; Sky/Formula1.com say entry less shallow. Text uses the neutral wording.",
+  "Existing prose says Formula 1 arrived 'two weeks after its touring-car debut' and that Gerhard Berger led early in 1991: neither was verified.",
+  "F1DB lists 36 seasons through 2026; the 2026 race winner and the June 2026 date come from F1DB brief/Sky, not independently verified. Layout length of 4.627 km for 2004-2006 and other lengths are F1DB values.",
+  "The FIA circuit map PDF could not be read as text; racingcircuits.info blocked. Imagery not assessed."
+ ]
+}

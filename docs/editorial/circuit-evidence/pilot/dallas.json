@@ -5,49 +5,49 @@
   "name": "Fair Park",
   "pilot": true,
   "layouts": 1,
-  "sections_with_editorial_text": 3,
+  "sections_with_editorial_text": 7,
   "sections": {
    "introduction": "draft",
    "essential_facts": "dataset_only",
-   "origins": "absent",
+   "origins": "draft",
    "formula1_history": "draft",
-   "defining_moments": "absent",
+   "defining_moments": "draft:1",
    "layout_evolution": "not_applicable",
    "corners": "grouped_sections_only",
-   "important_races": "absent",
+   "important_races": "draft",
    "records_statistics": "dataset_only",
-   "legacy_present_day": "absent",
+   "legacy_present_day": "draft",
    "related_people": "dataset_only",
    "sources_methodology": "cited"
   },
-  "claims": 17,
+  "claims": 36,
   "claims_by_type": {
-   "statistic": 4,
-   "dated_event": 7,
+   "statistic": 7,
+   "dated_event": 14,
    "measurement": 0,
    "quotation": 0,
    "interpretation": 0,
-   "narrative": 6
+   "narrative": 15
   },
   "claims_unaligned_uk": 3,
   "name_agreement": {
-   "agree": 6,
+   "agree": 12,
    "differ": 0,
    "uk_unrecognised": 1,
-   "no_names": 7
+   "no_names": 20
   },
   "dataset_checks": {
-   "supported": 1,
+   "supported": 2,
    "conflict": 0,
    "unmatched": 0
   },
   "factcheck_status": {
    "dataset_conflict": 0,
-   "dataset_supported": 1,
-   "passages_cover_numbers": 12,
-   "passages_partial": 3,
+   "dataset_supported": 2,
+   "passages_cover_numbers": 20,
+   "passages_partial": 4,
    "no_passage_in_live_sources": 1,
-   "cited_sources_unavailable": 0,
+   "cited_sources_unavailable": 9,
    "no_cited_sources": 0
   },
   "claims_verified": 1,
@@ -62,8 +62,9 @@
    }
   },
   "sources": {
-   "cited": 2,
-   "live": 2
+   "cited": 5,
+   "live": 2,
+   "not_checked": 3
   },
   "source_structural_issues": 0,
   "corners": {
@@ -73,16 +74,18 @@
    "names_found_in_cited_source": 0,
    "names_not_in_cited_text": 0,
    "names_sources_unavailable": 0,
-   "turns_queued": 23
+   "turns_queued": 23,
+   "dossier_named_turns": 0,
+   "dossier_turns_without_established_name": 0
   },
   "quality": {
-   "blocks": 4,
+   "blocks": 8,
    "shallow": 0,
    "repetitive": 0,
    "generic": 0,
    "en_uk_issues": 0
   },
-  "evidence_lead_rate": 0.765,
+  "evidence_lead_rate": 0.611,
   "content_complete": false
  },
  "tasks": [
@@ -687,6 +690,454 @@
      "score": 4
     }
    ]
+  },
+  {
+   "claim_id": "dallas:origins:1#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The Dallas circuit was a temporary street course laid out inside Fair Park, the city's fairground, for a single Formula 1 weekend in July 1984.",
+   "uk": "Траса в Далласі була тимчасовим вуличним маршрутом, прокладеним на території ярмаркових земель Fair Park, лише на один вікенд Формули 1 у липні 1984 року.",
+   "status": "passages_partial",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "dd9f79d5a4de98aaa49ad97634f28805105390a84049de81b845488929c5621c",
+     "offset": 8367,
+     "length": 432,
+     "numbers_covered": false,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "637c2ab4e80d2c22e90a9f49008dd026b949b9ad78a115e85e2b1cb1d3445584",
+     "offset": 18958,
+     "length": 256,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dallas",
+      "Fair"
+     ],
+     "score": 10
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:origins:1#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "It was meant to present Dallas as a world-class city, and it was the first World Championship race for its organisers, whose co-promoter was Larry Waldrop.",
+   "uk": "Вона мала показати Даллас як місто світового рівня, а для організаторів, співпромоутером яких був Ларрі Волдроп, це була перша гонка чемпіонату світу.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "e92e1341933a2db931d28a8efb69cc497df59c7d153e9287d15fc288a77617cf",
+     "offset": 2357,
+     "length": 227,
+     "numbers_covered": true,
+     "names_matched": [
+      "Dallas",
+      "Larry",
+      "Waldrop"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "3464d7bc0d3084de68fc67a36da9d66e08f18ab5398a1a5dc0e008fd4b1569c9",
+     "offset": 1872,
+     "length": 223,
+     "numbers_covered": true,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:origins:1#s3",
+   "circuit_id": "dallas",
+   "block_id": "dallas:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Chris Pook, who organised the United States Grand Prix West at Long Beach, helped plan the clockwise course, which was built quickly and modelled on the Long Beach event.",
+   "uk": "Кріс Пук, організатор Гран-прі США Захід у Лонг-Біч, допоміг спланувати трасу за годинниковою стрілкою; її збудували швидко за зразком події в Лонг-Біч.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "01e4e1ffb183a4cfd8165896b4fb38f59e5671ea0fe51d7a750fd4dd695c4b15",
+     "offset": 3326,
+     "length": 301,
+     "numbers_covered": true,
+     "names_matched": [
+      "Long",
+      "Beach"
+     ],
+     "score": 8
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "839b75aa148db516f575c6344993d66421073e12d74656d4907608413dace96d",
+     "offset": 1205,
+     "length": 419,
+     "numbers_covered": true,
+     "names_matched": [
+      "United",
+      "States"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:origins:1#s4",
+   "circuit_id": "dallas",
+   "block_id": "dallas:origins:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Motor Sport noted that FISA had dropped its requirement that new circuits stage a major meeting before hosting a championship race, which eased the way for such makeshift venues.",
+   "uk": "Motor Sport зазначив, що FISA скасувала вимогу до нових трас проводити крупний захід перед гонкою чемпіонату, що полегшило появу таких тимчасових майданчиків.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "60d1d3cb420e9f90fa78fa91a8417d56521893a1978a9f791c7b461a4423760d",
+     "offset": 2846,
+     "length": 210,
+     "numbers_covered": true,
+     "names_matched": [
+      "FISA"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "f879e319240d8c4bcda7b64fdbfb561c7f0b3463b5719584562297773582de55",
+     "offset": 13676,
+     "length": 233,
+     "numbers_covered": true,
+     "names_matched": [
+      "Motor",
+      "Sport"
+     ],
+     "score": 8
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:origins:1#s5",
+   "circuit_id": "dallas",
+   "block_id": "dallas:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The race was the ninth round of the 1984 season.",
+   "uk": "Гонка була дев'ятим етапом сезону 1984 року.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "e8bfc9d9d469b408902a8fd30f766fd1ee7dbdc071dd71c89a7e5aaa04cd0f01",
+     "offset": 0,
+     "length": 103,
+     "numbers_covered": true,
+     "names_matched": [],
+     "score": 5
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:defining_moment:1984#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:defining_moment:1984",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Keke Rosberg won the 1984 Dallas Grand Prix for Williams from eighth on the grid, wearing a water-cooled skullcap in temperatures topping 40 C.",
+   "uk": "Кеке Росберг виграв «Гран-прі Далласа» 1984 року за Williams, стартувавши восьмим і маючи під шоломом водоохолоджувальну шапочку, за температури понад 40 °C.",
+   "status": "dataset_supported",
+   "dataset": [
+    {
+     "kind": "race_winner",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "race:397",
+       "field": "winner"
+      }
+     ],
+     "detail": "1984: Keijo Erik Rosberg matches F1DB winner."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:defining_moment:1984#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:defining_moment:1984",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The surface broke up from the start of practice, emergency cement repairs failed to cure and the warm-up was cancelled.",
+   "uk": "Покриття руйнувалося вже з початку практики, аварійний цемент не встиг схопитися, а розминку скасували.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:defining_moment:1984#s3",
+   "circuit_id": "dallas",
+   "block_id": "dallas:defining_moment:1984",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "Nigel Mansell, on his first pole, led for over half the race before Rosberg passed him; Mansell then pushed his Lotus towards the finish and collapsed from exhaustion.",
+   "uk": "Найджел Менселл, який узяв перший у кар'єрі поул, лідирував понад половину гонки, доки Росберг його не обігнав; пізніше Менселл штовхав свій Lotus до фінішу й знепритомнів від виснаження.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:defining_moment:1984#s4",
+   "circuit_id": "dallas",
+   "block_id": "dallas:defining_moment:1984",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Only 8 of the 26 starters were classified.",
+   "uk": "Класифіковано лише 8 з 26 стартувавших.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:defining_moment:1984#s5",
+   "circuit_id": "dallas",
+   "block_id": "dallas:defining_moment:1984",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "René Arnoux started from the back after an engine failure on the formation lap and finished second, 22 seconds behind.",
+   "uk": "Рене Арну, який через відмову двигуна на формувальному колі стартував з кінця, фінішував другим, відставши на 22 секунди.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:defining_moment:1984#s6",
+   "circuit_id": "dallas",
+   "block_id": "dallas:defining_moment:1984",
+   "claim_type": "statistic",
+   "importance": "critical",
+   "en": "It was Rosberg's only win of 1984 and the first for the Williams-Honda partnership.",
+   "uk": "Це була єдина перемога Росберга в 1984 році та перша для зв'язки Williams-Honda.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:legacy_present_day:1#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:legacy_present_day:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The 1984 Dallas Grand Prix remained the city's only World Championship race: Crash.net lists the event as a single race, and Honda's account says Dallas never returned to the calendar after questions about circuit safety and organisation.",
+   "uk": "«Гран-прі Далласа» 1984 року залишилося єдиною гонкою чемпіонату світу в цьому місті: Crash.net зазначає лише одну гонку, а за повідомленням Honda, Даллас більше не повертався до календаря через питання щодо безпеки траси та організації.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "e8bfc9d9d469b408902a8fd30f766fd1ee7dbdc071dd71c89a7e5aaa04cd0f01",
+     "offset": 0,
+     "length": 103,
+     "numbers_covered": true,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "3464d7bc0d3084de68fc67a36da9d66e08f18ab5398a1a5dc0e008fd4b1569c9",
+     "offset": 1872,
+     "length": 223,
+     "numbers_covered": false,
+     "names_matched": [
+      "Dallas"
+     ],
+     "score": 9
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:legacy_present_day:1#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:legacy_present_day:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "The temporary street layout was a one-weekend construction in the grounds of Fair Park, so it does not survive as a permanent racing venue.",
+   "uk": "Тимчасова вулична траса була спорудою на один вікенд на території Fair Park, тож не збереглася як постійна гоночна траса.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "dd9f79d5a4de98aaa49ad97634f28805105390a84049de81b845488929c5621c",
+     "offset": 8367,
+     "length": 432,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 7
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "4d429ab795206efc93b1e0c9e1792cde4dc54ccec8cdc541ed0136cd049b3692",
+     "offset": 416,
+     "length": 283,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:legacy_present_day:1#s3",
+   "circuit_id": "dallas",
+   "block_id": "dallas:legacy_present_day:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "A Can-Am race was run on the same circuit on the Saturday evening before the Grand Prix.",
+   "uk": "У суботу ввечері перед Гран-прі на цій самій трасі провели гонку Can-Am.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "21b41d3344dac2a744daa63444a8fda498cfd4555f09147ac92d6100120afe2a",
+     "offset": 11762,
+     "length": 330,
+     "numbers_covered": true,
+     "names_matched": [
+      "Can-Am",
+      "Saturday"
+     ],
+     "score": 10
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "c0eb72d812b0b9621427abe2014f89e698b3f74a98e21e0d64fdd65e22c13af4",
+     "offset": 6166,
+     "length": 280,
+     "numbers_covered": true,
+     "names_matched": [
+      "Saturday"
+     ],
+     "score": 3
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:legacy_present_day:1#s4",
+   "circuit_id": "dallas",
+   "block_id": "dallas:legacy_present_day:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Fair Park itself remained the city's fairground; the present state of the former circuit route was not verified.",
+   "uk": "Сам Fair Park залишився ярмарковим майданчиком міста; нинішній стан колишнього маршруту не перевірявся.",
+   "status": "passages_cover_numbers",
+   "dataset": [],
+   "passages": [
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "4d429ab795206efc93b1e0c9e1792cde4dc54ccec8cdc541ed0136cd049b3692",
+     "offset": 416,
+     "length": 283,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 9
+    },
+    {
+     "source_id": "src-9f338fcb269b",
+     "passage_sha256": "dd9f79d5a4de98aaa49ad97634f28805105390a84049de81b845488929c5621c",
+     "offset": 8367,
+     "length": 432,
+     "numbers_covered": true,
+     "names_matched": [
+      "Fair",
+      "Park"
+     ],
+     "score": 6
+    }
+   ]
+  },
+  {
+   "claim_id": "dallas:historical_fact:1#s1",
+   "circuit_id": "dallas",
+   "block_id": "dallas:historical_fact:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "With temperatures topping 40 C, the start was moved to 11:00 am.",
+   "uk": "Коли температура перевищила 40 °C, старт перенесли на 11:00.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:historical_fact:1#s2",
+   "circuit_id": "dallas",
+   "block_id": "dallas:historical_fact:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Jacques Laffite arrived at the track in pyjamas as a joke about the early warm-up time, then finished fourth.",
+   "uk": "Жак Лаффіт приїхав на трасу в піжамі як жарт про ранню розминку, а потім фінішував четвертим.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:historical_fact:1#s3",
+   "circuit_id": "dallas",
+   "block_id": "dallas:historical_fact:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Ayrton Senna insisted a wall had hit him; engineer Pat Symonds later found a concrete block had been pushed out by a few millimetres.",
+   "uk": "Айртон Сенна наполягав, що в нього врізалася стіна; інженер Пет Саймондс згодом з'ясував, що бетонний блок змістився на кілька міліметрів.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "dallas:historical_fact:1#s4",
+   "circuit_id": "dallas",
+   "block_id": "dallas:historical_fact:1",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Larry Hagman and Linda Gray of the television series Dallas attended, and Hagman waved the green flag.",
+   "uk": "На гонку приїхали Ларрі Геґмен і Лінда Ґрей із серіалу «Даллас», а Геґмен змахнув зеленим прапором.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
   }
  ],
  "corner_names": [],
@@ -727,6 +1178,22 @@
  "quality": [],
  "sources": [
   {
+   "source_id": "src-7c9695ec79d3",
+   "url": "https://www.formula1.com/en/latest/article/9-reasons-why-the-84-dallas-grand-prix-was-one-of-the-wildest-ra.3NyLie6SKnHuw99aNrsRtF.3NyLie6SKnHuw99aNrsRtF",
+   "normalized": "https://formula1.com/en/latest/article/9-reasons-why-the-84-dallas-grand-prix-was-one-of-the-wildest-ra.3NyLie6SKnHuw99aNrsRtF.3NyLie6SKnHuw99aNrsRtF",
+   "host": "formula1.com",
+   "class": "f1_official",
+   "cited_by": [
+    "dallas:defining_moment:1984",
+    "dallas:historical_fact:1"
+   ],
+   "circuits": [
+    "dallas"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
    "source_id": "src-8a871b52a0a3",
    "url": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
    "normalized": "https://github.com/f1db/f1db/blob/v2026.17.0/src/data/seasons/1984/races/09-dallas/race-results.yml",
@@ -761,7 +1228,9 @@
    "cited_by": [
     "dallas:long_history_draft",
     "dallas:corner_group:0",
-    "dallas:corner_group:1"
+    "dallas:corner_group:1",
+    "dallas:origins:1",
+    "dallas:legacy_present_day:1"
    ],
    "circuits": [
     "dallas"
@@ -778,6 +1247,40 @@
     "text_sha256": "59158d1d1f162dfab38b1e6b9a487056d30b1467187a3274f0c2f10acafccc7b",
     "text_chars": 22443
    }
+  },
+  {
+   "source_id": "src-bd042f2d0c3b",
+   "url": "https://crash.net/track/48/fair-park",
+   "normalized": "https://crash.net/track/48/fair-park",
+   "host": "crash.net",
+   "class": "other",
+   "cited_by": [
+    "dallas:origins:1",
+    "dallas:defining_moment:1984",
+    "dallas:legacy_present_day:1"
+   ],
+   "circuits": [
+    "dallas"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
+   "source_id": "src-d7ae7e42e19e",
+   "url": "https://global.honda/en/F1/williams/race/1984_DallasGP/",
+   "normalized": "https://global.honda/en/F1/williams/race/1984_DallasGP",
+   "host": "global.honda",
+   "class": "other",
+   "cited_by": [
+    "dallas:origins:1",
+    "dallas:defining_moment:1984",
+    "dallas:legacy_present_day:1"
+   ],
+   "circuits": [
+    "dallas"
+   ],
+   "issues": [],
+   "status": null
   }
  ]
 }

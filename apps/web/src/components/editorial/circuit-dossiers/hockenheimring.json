@@ -1,0 +1,152 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "hockenheimring",
+ "writer": "research-batch-2",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "hockenheimring:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "From a triangular motorcycle course to the Motodrom",
+    "uk": "Від трикутної мотоциклетної траси до Motodrom"
+   },
+   "text": {
+    "en": "Hockenheimring grew from a proposal by local timekeeper Ernst Christ in 1930. The municipal council approved the plans on Christmas Day 1931, construction began on 23 March 1932 and the first motorcycle race was held on 25 May 1932. The original course was a triangle with unusually long straights, partly on public roads. In 1938 it was shortened and the Ostkurve was added, creating an oval-like layout; cars raced there again on 11 May 1947. The first German Motorcycle Grand Prix followed in 1957. A new autobahn forced a redesign in the 1960s by John Hugenholtz, who added the stadium section; the Motodrom opened on 22 May 1966. Formula 1 first raced there on 2 August 1970, when Jochen Rindt won in front of more than 100,000 spectators.",
+    "uk": "Hockenheimring виріс із пропозиції місцевого хронометриста Ернста Крайста у 1930 році. Міська рада затвердила плани на Різдво 1931 року, будівництво розпочалося 23 березня 1932 року, а перша мотоциклетна гонка відбулася 25 травня 1932 року. Початкова траса була трикутником з незвично довгими прямими, частково на громадських дорогах. У 1938 році її скоротили й додали Ostkurve, що надало їй форми, подібної до овалу; автомобілі знову гонялися тут 11 травня 1947 року. Перше Гран-прі Німеччини з мотоциклів відбулося у 1957 році. Нова автобахна змусила переробити трасу в 1960-х роках, і Джон Гуґенгольц додав стадіонну ділянку; Motodrom відкрили 22 травня 1966 року. Формула 1 вперше гонялася тут 2 серпня 1970 року, коли Йохен Ріндт переміг на очах понад 100 000 глядачів."
+   },
+   "sources": [
+    {
+     "url": "https://www.hockenheimring.de/en/info/hockenheimring/history/",
+     "publisher": "Hockenheimring (official site)",
+     "locator": "History timeline: 1930-1932, 1938, 1947, 1957, 1961-1966, 1970"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/august-2026/23/hockenheims-forest-straights-the-circuit-formula-1-left-behind/",
+     "publisher": "Motor Sport Magazine",
+     "locator": "Layout history: 1930-1932, before WWII, 1960s (Hugenholtz, stadium section)"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [
+  {
+   "layout_id": "hockenheimring-1",
+   "seasons": "1970-1981",
+   "length_km": 6.79,
+   "turns": 14,
+   "change": {
+    "en": "The F1 debut layout was the fast forest circuit of about 6.8 km, combining long straights through the woods with the stadium Motodrom section opened in 1966. RaceFans gives its 1970 length as 6.789 km.",
+    "uk": "Дебютна для Формули 1 конфігурація була швидкою лісовою трасою приблизно 6,8 км, що поєднувала довгі прямі через ліс зі стадіонною ділянкою Motodrom, відкритою у 1966 році. RaceFans наводить її довжину 1970 року як 6,789 км."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/?p=35357",
+     "publisher": "RaceFans",
+     "locator": "1970 layout (6.789 km)"
+    },
+    {
+     "url": "https://www.hockenheimring.de/en/info/hockenheimring/history/",
+     "publisher": "Hockenheimring (official site)",
+     "locator": "1961-1966 (Motodrom); 1970"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "hockenheimring-2",
+   "seasons": "1982-1991",
+   "length_km": 6.802,
+   "turns": 16,
+   "change": {
+    "en": "After Patrick Depailler was killed at the Ostkurve during testing in 1980, a new chicane was added there; RaceFans and Motor Sport both link the extra chicane to that accident. F1DB's jump from 14 to 16 turns for 1982 is consistent with this. The specific year is taken from the F1DB layout split, not from a source that names 1982.",
+    "uk": "Після того, як Патрік Депайє загинув на Ostkurve під час тестів 1980 року, там додали нову шикану; RaceFans і Motor Sport пов'язують додаткову шикану з цією аварією. Збільшення кількості поворотів у F1DB з 14 до 16 у 1982 році узгоджується з цим. Конкретний рік узято з поділу конфігурацій у F1DB, а не з джерела, яке називає 1982 рік."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/?p=35357",
+     "publisher": "RaceFans",
+     "locator": "1980 to 2001 bullet: chicane added at the Ostkurve after Depailler"
+    },
+    {
+     "url": "https://www.racefans.net/?p=11281",
+     "publisher": "RaceFans",
+     "locator": "Chicanes bullet: Ostkurve where Depailler died in 1980"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "hockenheimring-3",
+   "seasons": "1992-2001",
+   "length_km": 6.815,
+   "turns": 16,
+   "change": {
+    "en": "RaceFans describes the 1980-2001 period as one of minor change, with safety chicanes progressively tightened. The F1DB split at 1992 (6.815 km) matches such retuning, but no fetched source documents a specific 1992 modification, so the exact work is not stated here. The long forest straights remained until the layout was removed after 2001.",
+    "uk": "RaceFans описує період 1980-2001 років як час незначних змін, коли захисні шикани поступово робили тіснішими. Поділ F1DB на 1992 році (6,815 км) узгоджується з таким підлаштуванням, але жодне вивчене джерело не документує конкретної зміни 1992 року, тож точний обсяг робіт тут не наведено. Довгі лісові прямі залишалися, доки конфігурацію не прибрали після 2001 року."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/?p=35357",
+     "publisher": "RaceFans",
+     "locator": "1980 to 2001 bullet"
+    },
+    {
+     "url": "https://www.racefans.net/?p=11281",
+     "publisher": "RaceFans",
+     "locator": "Chicanes added over time and progressively tightened"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "layout_id": "hockenheimring-4",
+   "seasons": "2002-2019",
+   "length_km": 4.574,
+   "turns": 17,
+   "change": {
+    "en": "After the 2001 race the long forest straights were removed and Tilke GmbH redesigned the track. Safety concerns about the narrow forest circuit and environmental pressure were among the reasons, and the FIA required the circuit to be shortened. The new lap is 4.574 km, about two-thirds of the old length. The Motodrom, the Sachskurve and the Nordkurve remained; the track now turns right after the Nordkurve, then runs along the Parabolika to the Spitzkehre hairpin. Grandstand capacity rose from 83,000 to 120,000 and the old forest was left to regrow.",
+    "uk": "Після гонки 2001 року довгі лісові прямі прибрали, а трасу перепроєктувала Tilke GmbH. Серед причин були занепокоєння безпекою вузької лісової траси та тиск екологів, а FIA вимагала скоротити трасу. Нове коло завдовжки 4,574 км становить приблизно дві третини старої довжини. Motodrom, Sachskurve і Nordkurve збереглися; тепер траса після Nordkurve повертає праворуч, а далі йде вздовж Parabolika до шпильки Spitzkehre. Місткість трибун зросла з 83 000 до 120 000, а старий ліс залишили відростати."
+   },
+   "sources": [
+    {
+     "url": "https://www.formula1.com/en/latest/article/reinterpreting-a-classic-how-hockenheim-was-transformed.6kX5rdmSkR2pi70k0EOnMi",
+     "publisher": "Formula1.com",
+     "locator": "What changed: Nordkurve, Parabolika, Spitzkehre; length 4.574 km"
+    },
+    {
+     "url": "https://www.racefans.net/?p=11281",
+     "publisher": "RaceFans",
+     "locator": "2002 redesign paragraph"
+    },
+    {
+     "url": "https://www.hockenheimring.de/en/info/hockenheimring/history/",
+     "publisher": "Hockenheimring (official site)",
+     "locator": "1999-2003: planning, rebuild, 2 km shorter, capacity 83,000 to 120,000"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "hockenheimring-4",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Bernie-Ecclestone-Kurve is tied to turns 2-4 by inference: RaceFans says it is officially three corners between Turn 1 (Nordkurve) and the Parabolika (Turn 5 in the F1DB guide), but does not number them. The exact German form 'Mercedes-Kurve' for Turn 7 is an editorial rendering of 'named after Mercedes' in the source; confirm against the official circuit map (the official Lageplan PDF could not be read as text).",
+  "No source found for names of turns 8-11, 12, 14-16. Turns 8-11 are described only as a series of bends. corners_without_established_name is left empty because no turn was shown to be unnamed.",
+  "Layout change dates: no fetched source dates the Ostkurve chicane (other sources, not opened, say 1981-82) or any 1992 change; RaceFans gives the 1980-2001 period as minor tightening. Reports on the Clark and Senna chicanes and the 1990-1994 rebuilds appeared only in search snippets and are not used.",
+  "Rebuild cost conflicts: official site about 62 million euros, RaceFans 45 million dollars; omitted. The 2002 rebuild is credited to Tilke GmbH by RaceFans; the FIA requirement to shorten the track is from Motor Sport (Aug 2026) and was only briefly described.",
+  "The Motor Sport 'forest straights' page is dated August 2026 in its URL; its description of 1960s chicanes on the forest straights was not used because the year is not given.",
+  "Existing prose says 'Hockenheim began as a local motorcycle-racing project in 1932': consistent with the official first motorcycle race on 25 May 1932, though the proposal dates to 1930.",
+  "Ukrainian forms for Ernst Christ, John Hugenholtz, Patrick Depailler (approved: Патрік Депайє) used; Christ and Hugenholtz are not in the name table.",
+  "Imagery not assessed.",
+  "Bernie-Ecclestone-Kurve (hockenheimring-4) withheld: the opened source names it but its mapping to turns 2-4 was inferred, not stated.",
+  "Turn 7 name withheld (hockenheimring-4): the source says only that the corner is named after Mercedes; the exact official form was not confirmed."
+ ]
+}
