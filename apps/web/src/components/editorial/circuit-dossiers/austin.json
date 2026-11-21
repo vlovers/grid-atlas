@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "austin",
+ "writer": "research-batch-1",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "austin:defining_moment:2012",
+   "kind": "defining_moment",
+   "year": 2012,
+   "title": {
+    "en": "Hamilton passes Vettel on the first race at Austin",
+    "uk": "Гамільтон обганяє Феттеля в першій гонці в Остіні"
+   },
+   "text": {
+    "en": "The first United States Grand Prix at Circuit of the Americas, in 2012, was decided by one pass. Lewis Hamilton spent much of the race chasing Sebastian Vettel and struggled in the flowing corners. On lap 42 Vettel caught the HRT of Narain Karthikeyan, Hamilton followed him out of a corner into the DRS zone, and moved ahead despite Vettel weaving. Hamilton won for McLaren, with Vettel second and Fernando Alonso third, almost 40 seconds behind the winner. The race returned Formula 1 to the United States after the 2007 race, and the pass gave the new circuit an immediate talking point.",
+    "uk": "Перше Гран-прі США на Circuit of the Americas у 2012 році вирішив один обгін. Льюїс Гамільтон більшу частину перегонів переслідував Себастьяна Феттеля й мав труднощі в плавних поворотах. На 42-му колі Феттель наздогнав HRT Нарайна Картікеяна, Гамільтон вийшов слідом за ним із повороту в зону DRS і випередив суперника, хоча Феттель маневрував. Гамільтон переміг за McLaren, Феттель фінішував другим, а Фернандо Алонсо — третім, майже на 40 секунд позаду переможця. Перегони повернули Формулу 1 до США після гонки 2007 року, а обгін одразу дав новій трасі тему для розмов."
+   },
+   "sources": [
+    {
+     "url": "https://www.racefans.net/2012/11/18/2012-united-states-grand-prix-report/",
+     "publisher": "RaceFans",
+     "locator": "report intro paras 1-3 and 'Hamilton versus Vettel' section; closing note on 'recently-completed' circuit and last US GP in 2007"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "austin:defining_moment:2018",
+   "kind": "defining_moment",
+   "year": 2018,
+   "title": {
+    "en": "Raikkonen ends a 113-race wait for a win",
+    "uk": "Райкконен завершує очікування перемоги тривалістю 113 гонок"
+   },
+   "text": {
+    "en": "At Austin in 2018 Kimi Raikkonen won for Ferrari after starting second, finishing 1.281 seconds ahead of Max Verstappen, who had started 18th. Lewis Hamilton took third, 2.342 seconds behind, and so did not clinch the drivers' title: it moved on to Mexico with Hamilton 70 points clear. The FIA's report counts the win as coming after 113 races without a victory and recalls that his previous win was the 2013 Australian Grand Prix.",
+    "uk": "В Остіні 2018 року Кімі Райкконен виграв за Ferrari, стартувавши другим, і фінішував на 1,281 секунди попереду Макса Ферстаппена, який стартував з 18-ї позиції. Льюїс Гамільтон став третім, на 2,342 секунди позаду, тож не забезпечив собі титул: боротьба перейшла до Мексики, де Гамільтон мав перевагу в 70 очок. У звіті FIA ця перемога прийшла після 113 гонок без виграшу, а попередня була в Гран-прі Австралії 2013 року."
+   },
+   "sources": [
+    {
+     "url": "https://api.fia.com/news/raikkonen-wins-austin-ahead-verstappen-hamilton-title-fight-goes-mexico",
+     "publisher": "FIA",
+     "locator": "lead and paras 2, 4, 14, 15, 18; results table margins"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "austin-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Corner names: the fetched Formula 1 circuit guide only describes corners ('the uphill Turn 1', Turns 13-15 as an odd complex, Turn 19, Turn 20) without formal names. The NASCAR and Asetek guides returned 403. Widely used labels such as 'the Esses' (Turns 3-6) were seen only in search snippets and so are not accepted.",
+  "Existing prose says Hamilton passed Vettel 'into Turn 12'; RaceFans only says Hamilton followed Vettel 'out of turn nine into the DRS zone'. The turn number of the pass was not independently verified, and the new text avoids it.",
+  "Existing prose that Hamilton 'had already passed Mark Webber' was not verified (RaceFans mentions Webber retiring on lap 17).",
+  "2026 race has no F1DB winner (blank); not discussed.",
+  "Ukrainian transliterations Картікеян (Narain Karthikeyan) is not in the approved name table.",
+  "Imagery not assessed."
+ ]
+}

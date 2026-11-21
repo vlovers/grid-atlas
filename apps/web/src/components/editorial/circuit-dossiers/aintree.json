@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "aintree",
+ "writer": "research-batch-1",
+ "written_at": "2026-11-21",
+ "sections": [],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "aintree-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "No sections were missing for Aintree, so none were written.",
+  "Corner names: only a hobby blog (yorkshireferret.blogspot.com) listed names (Waterway, Anchor Crossing, Cottage, Tatt's, Melling crossing etc.) and it contains an evident error (claims a 1956 British GP at Aintree), so it is not accepted as a source. Official aintree.org.uk/history and lapledger.org carry no corner names. Wikipedia/f1-fansite were seen only as search leads. No name accepted; none could be tied to F1DB turn numbers 1-8 (F1DB 8 turns vs 10 on lapledger).",
+  "Existing prose names 'Tatts and Becher's' as coming from the racecourse; Becher's/Tatts are only seen in the blog source, so this claim in the existing narrative_biography was not independently verified.",
+  "aintree.org.uk/history credits Earl Howe and Raymond Mays in connection with the circuit's opening, while the blog credits Mirabel Topham's Aintree Automobile Racing Company (1953 formed, opened May 1954); not reconciled, so no origins text written.",
+  "Imagery not assessed."
+ ]
+}

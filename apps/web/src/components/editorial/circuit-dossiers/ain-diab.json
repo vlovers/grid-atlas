@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "ain-diab",
+ "writer": "research-batch-1",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "ain-diab:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "A road course built in weeks",
+    "uk": "Дорожня траса, збудована за кілька тижнів"
+   },
+   "text": {
+    "en": "Ain-Diab was created in 1957 on public roads south-west of Casablanca, on Morocco's Atlantic coast. The Royal Automobile Club of Morocco designed the course, which used the coast road and part of the main Casablanca to Azemmour highway, including a stretch through the Sidi Abderrahman forest. Construction is reported to have taken about six weeks. The first event was a non-championship Formula 1 race in 1957, considered a success, which led to the circuit being given a place on the 1958 World Championship calendar as the final round. The F1DB data records 18 turns and a length of 7.618 km for the only championship layout. No earlier history of the site as a permanent racing venue was established from the sources opened.",
+    "uk": "Ain-Diab створили 1957 року на громадських дорогах на південний захід від Касабланки, на атлантичному узбережжі Марокко. Трасу спроєктував Королівський автомобільний клуб Марокко; вона проходила прибережною дорогою та частиною головної магістралі Касабланка — Аземур, зокрема ділянкою крізь ліс Сіді-Абдеррахман. Будівництво, за повідомленнями, тривало близько шести тижнів. Першою подією стали позачемпіонські перегони Формули 1 1957 року, які вважали успішними, і згодом траса отримала місце в календарі чемпіонату світу 1958 року як фінальний етап. У даних F1DB для єдиної чемпіонатної конфігурації зазначено 18 поворотів і довжину 7,618 км. Даних про попередню історію цього місця як постійного гоночного майданчика у відкритих джерелах не встановлено."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+     "publisher": "Motor Sport Magazine (October 2026)",
+     "locator": "section on origins: Royal Automobile Club of Morocco design, six-week construction, coast road and Azemmour highway, Sidi Abderrahman forest, 1957 non-championship race"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  },
+  {
+   "id": "ain-diab:defining_moment:1958",
+   "kind": "defining_moment",
+   "year": 1958,
+   "title": {
+    "en": "Moss wins, Hawthorn takes the title by a point",
+    "uk": "Мосс перемагає, Готорн виграє титул з перевагою в одне очко"
+   },
+   "text": {
+    "en": "The 1958 Moroccan Grand Prix was the final round and settled the drivers' championship between Stirling Moss and Mike Hawthorn. Moss won the 53-lap race in a Vanwall, which secured the constructors' title for Vanwall, but he needed Hawthorn to finish lower than second. Tony Brooks passed Hawthorn on lap 28 before retiring on lap 30 with a blown engine, and a Ferrari signal to Phil Hill to ease off let Hawthorn take second place on lap 39. That result made Hawthorn world champion by one point over Moss, and Motor Sport notes he was the first British driver to take the title. The race was also overshadowed by Stuart Lewis-Evans's fatal crash 12 laps from the end.",
+    "uk": "Гран-прі Марокко 1958 року було фінальним етапом і вирішило особистий залік між Стірлінгом Моссом і Майком Готорном. Мосс виграв 53-колові перегони на Vanwall, що принесло Vanwall кубок конструкторів, але для титулу йому було потрібно, щоб Готорн фінішував нижче другого місця. Тоні Брукс обігнав Готорна на 28-му колі, а на 30-му зійшов через вибух двигуна, і сигнал Ferrari Філу Гіллу пригальмувати дав Готорну змогу посісти друге місце на 39-му колі. Цей результат зробив Готорна чемпіоном світу з перевагою в одне очко над Моссом, а Motor Sport зазначає, що він став першим британським гонщиком із цим титулом. Перегони затьмарила й фатальна аварія Стюарта Льюїса-Еванса за 12 кіл до фінішу."
+   },
+   "sources": [
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/november-1958/14/grand-prix-du-maroc-2/",
+     "publisher": "Motor Sport Magazine, Nov 1958",
+     "locator": "paras 20-30: Brooks lap 28/30, Hill signalled, Hawthorn passes Hill lap 39, title and Vanwall constructors' cup"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/october-2026/25/ain-diab-the-road-circuit-that-hosted-mosss-last-gasp-1958-title-bid/",
+     "publisher": "Motor Sport Magazine (October 2026)",
+     "locator": "1958 race section: 53 laps, one-point margin, Lewis-Evans crash 12 laps from end, died six days later"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "ain-diab-1",
+  "turns": []
+ },
+ "inconsistencies": [],
+ "limitations": [
+  "Corner names: none found in opened sources; the corner guide is grouped-only and no per-corner names were established.",
+  "Who commissioned the circuit and why (e.g. a royal wish to race closer to Casablanca, mentioned in search snippets only) was not stated by any opened source; omitted.",
+  "Reasons the circuit was not used again are not given by the opened sources; omitted.",
+  "Length: Motor Sport quotes 4.7 miles and 18 corners; F1DB 7.618 km; other sources quote 7.603 or 7.651 km. Only the F1DB figure is used.",
+  "Ukrainian forms for Tony Brooks (Тоні Брукс), Phil Hill (Філ Гілл), Stuart Lewis-Evans (Стюарт Льюїс-Еванс) are not in the approved name table and need editorial confirmation; Moss and Hawthorn use table forms.",
+  "formula1.com/grandprix.com race pages were not opened (rate limited); points totals 41 and 42 in existing prose were not re-verified, only the one-point margin.",
+  "Imagery not assessed."
+ ]
+}

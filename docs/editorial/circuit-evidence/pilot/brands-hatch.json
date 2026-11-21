@@ -5,14 +5,14 @@
   "name": "Brands Hatch",
   "pilot": true,
   "layouts": 2,
-  "sections_with_editorial_text": 7,
+  "sections_with_editorial_text": 8,
   "sections": {
    "introduction": "draft",
    "essential_facts": "dataset_only",
-   "origins": "absent",
+   "origins": "draft",
    "formula1_history": "draft",
    "defining_moments": "draft:2",
-   "layout_evolution": "mentioned_in_draft",
+   "layout_evolution": "draft",
    "corners": "one_layout_drafted:9/18",
    "important_races": "draft",
    "records_statistics": "dataset_only",
@@ -20,26 +20,26 @@
    "related_people": "dataset_only",
    "sources_methodology": "cited"
   },
-  "claims": 53,
+  "claims": 67,
   "claims_by_type": {
    "statistic": 6,
-   "dated_event": 13,
-   "measurement": 0,
+   "dated_event": 20,
+   "measurement": 5,
    "quotation": 0,
    "interpretation": 0,
-   "narrative": 34
+   "narrative": 36
   },
   "claims_unaligned_uk": 5,
   "name_agreement": {
-   "agree": 20,
+   "agree": 21,
    "differ": 1,
-   "uk_unrecognised": 0,
-   "no_names": 27
+   "uk_unrecognised": 1,
+   "no_names": 39
   },
   "dataset_checks": {
-   "supported": 1,
+   "supported": 6,
    "conflict": 0,
-   "unmatched": 1
+   "unmatched": 6
   },
   "factcheck_status": {
    "dataset_conflict": 0,
@@ -47,7 +47,7 @@
    "passages_cover_numbers": 33,
    "passages_partial": 5,
    "no_passage_in_live_sources": 12,
-   "cited_sources_unavailable": 2,
+   "cited_sources_unavailable": 16,
    "no_cited_sources": 0
   },
   "claims_verified": 6,
@@ -64,8 +64,9 @@
    }
   },
   "sources": {
-   "cited": 11,
-   "live": 9
+   "cited": 14,
+   "live": 9,
+   "not_checked": 3
   },
   "source_structural_issues": 0,
   "corners": {
@@ -75,16 +76,18 @@
    "names_found_in_cited_source": 8,
    "names_not_in_cited_text": 1,
    "names_sources_unavailable": 0,
-   "turns_queued": 18
+   "turns_queued": 18,
+   "dossier_named_turns": 0,
+   "dossier_turns_without_established_name": 0
   },
   "quality": {
-   "blocks": 17,
+   "blocks": 21,
    "shallow": 3,
    "repetitive": 0,
    "generic": 0,
-   "en_uk_issues": 1
+   "en_uk_issues": 2
   },
-  "evidence_lead_rate": 0.642,
+  "evidence_lead_rate": 0.507,
   "content_complete": false
  },
  "tasks": [
@@ -1651,6 +1654,321 @@
    "status": "cited_sources_unavailable",
    "dataset": [],
    "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:origins:1#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Brands Hatch began in 1926, when cyclists from Gravesend used a bowl-shaped mushroom field on Brands Hatch Farm, near West Kingsdown in Kent, as a venue.",
+   "uk": "Brands Hatch почався в 1926 році, коли велосипедисти з Грейвсенда використали чашоподібне грибне поле на фермі Brands Hatch поблизу Вест-Кінґсдауна в Кенті як місце для змагань.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:origins:1#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Motorcyclists began turning it into a grass-track circuit by 1928, and Brands Hatch Stadium Ltd was formed in 1947 after the Second World War.",
+   "uk": "До 1928 року мотоциклісти почали перетворювати його на трек із трав'яним покриттям, а після Другої світової війни, у 1947 році, було створено Brands Hatch Stadium Ltd.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:origins:1#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "In 1950 the grass track was paved as a one-mile tarmac course for cars at a reported cost of 17,000 pounds, with the first race, for 500cc Formula 3 cars, held on 16 April.",
+   "uk": "У 1950 році трав'яний трек заасфальтували як одномильну трасу для автомобілів, за повідомленнями, за 17 000 фунтів, а перші перегони, для боліддів Формули 3 класу 500 куб. см, відбулися 16 квітня.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:origins:1#s4",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:origins:1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The Druids hairpin was added in 1953, the direction was reversed to clockwise in 1954, and a large loop in 1959 extended the lap to 2.65 miles for Grand Prix racing.",
+   "uk": "Шпильку Druids додали в 1953 році, напрямок змінили на за годинниковою стрілкою в 1954 році, а велика петля 1959 року подовжила коло до 2,65 милі для Гран-прі.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:brands-hatch",
+       "field": "first_season"
+      }
+     ],
+     "detail": "1953: no brands-hatch championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    },
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:brands-hatch",
+       "field": "first_season"
+      }
+     ],
+     "detail": "1954: no brands-hatch championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    },
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:brands-hatch",
+       "field": "first_season"
+      }
+     ],
+     "detail": "1959: no brands-hatch championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:origins:1#s5",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:origins:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The non-championship Silver City Trophy followed in 1960, and the first world championship Grand Prix was held in 1964.",
+   "uk": "Позачемпіонський Silver City Trophy відбувся в 1960 році, а перше Гран-прі чемпіонату світу — у 1964 році.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "first_race",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:brands-hatch",
+       "field": "first_season"
+      }
+     ],
+     "detail": "First championship race 1960, 1964 matches F1DB."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:historical_fact:1#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:historical_fact:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "According to the Kent historic environment record, Brands Hatch erected a grandstand in 1955 that was the first permanent one on a British circuit; it no longer exists.",
+   "uk": "За записом Kent Historic Environment Record, у 1955 році на Brands Hatch звели трибуну, яка стала першою постійною на британській трасі; її більше не існує.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:historical_fact:1#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:historical_fact:1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "The same record notes that the lap was run anticlockwise at first and reversed to clockwise in 1954 when a pit lane and spectator banks were built, long before the 1964 world championship race.",
+   "uk": "У тому самому записі зазначено, що спершу коло проїжджали проти годинникової стрілки, а в 1954 році напрямок змінили на за годинниковою стрілкою, коли побудували піт-лейн і глядацькі насипи, задовго до гонки чемпіонату світу 1964 року.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:layout:brands-hatch-1#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:layout:brands-hatch-1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The 1964 to 1974 Grand Prix circuit was the extended layout created in 1959 by adding a large loop through the woods, taking the lap to 2.65 miles, on top of the 1953 Druids hairpin.",
+   "uk": "Траса Гран-прі 1964–1974 років була подовженою конфігурацією, створеною в 1959 році додаванням великої петлі крізь ліс, що довело коло до 2,65 милі, на додачу до шпильки Druids 1953 року.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:brands-hatch",
+       "field": "first_season"
+      }
+     ],
+     "detail": "1959: no brands-hatch championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    },
+    {
+     "kind": "race_year",
+     "status": "unmatched",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "circuit:brands-hatch",
+       "field": "first_season"
+      }
+     ],
+     "detail": "1953: no brands-hatch championship race in F1DB (may be a non-championship event, opening date or another venue)."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:layout:brands-hatch-1#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:layout:brands-hatch-1",
+   "claim_type": "dated_event",
+   "importance": "critical",
+   "en": "Several fatal accidents in the mid-1960s to 1971, including Jo Siffert's in October 1971, led to safety modifications around the track, though the opened sources do not detail which corners were altered.",
+   "uk": "Кілька смертельних аварій у середині 1960-х і до 1971 року, зокрема загибель Жо Сіффера в жовтні 1971 року, призвели до змін заради безпеки навколо траси, хоча у відкритих джерелах не уточнено, які саме повороти змінювали.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:layout:brands-hatch-1#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:layout:brands-hatch-1",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "The F1DB records this layout at 4.265 km with 9 turns.",
+   "uk": "F1DB фіксує цю конфігурацію як 4,265 км із 9 поворотами.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:brands-hatch-1",
+       "field": "length_km"
+      }
+     ],
+     "detail": "4.265 km matches brands-hatch-1."
+    },
+    {
+     "kind": "turn_count",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:brands-hatch-1",
+       "field": "turns"
+      },
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:brands-hatch-2",
+       "field": "turns"
+      }
+     ],
+     "detail": "9 turns matches brands-hatch-1, brands-hatch-2."
+    }
+   ],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:layout:brands-hatch-2#s1",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:layout:brands-hatch-2",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "Motor Sport's report on the March 1976 Race of Champions says the Grand Prix lap had been shortened over the winter from 2.65 to 2.61 miles, because a new motorway through the valley behind the paddock freed planning permission and money for a new paddock layout.",
+   "uk": "Звіт Motor Sport про березневу гонку Race of Champions 1976 року повідомляє, що коло Гран-прі взимку скоротили з 2,65 до 2,61 милі, бо нова автомагістраль у долині позаду паддока вивільнила дозволи на забудову й кошти для нового планування паддока.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:layout:brands-hatch-2#s2",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:layout:brands-hatch-2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Paddock Bend was remade as a tighter turn, the Bottom Straight was moved back into the South Bank so it ran straight, ending in a tighter climbing left-hander at South Bank Corner, and the descent from Druids Hairpin was renamed Graham Hill.",
+   "uk": "Паддок-бенд перебудували на тугіший поворот, Bottom Straight перенесли назад до South Bank, щоб вона була прямою й закінчувалася тугішим лівим поворотом під підйом у South Bank Corner, а спуск від шпильки Druids перейменували на Graham Hill.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:layout:brands-hatch-2#s3",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:layout:brands-hatch-2",
+   "claim_type": "narrative",
+   "importance": "standard",
+   "en": "Most drivers found the revised circuit slightly slower.",
+   "uk": "Більшість гонщиків вважали оновлену трасу трохи повільнішою.",
+   "status": "cited_sources_unavailable",
+   "dataset": [],
+   "passages": []
+  },
+  {
+   "claim_id": "brands-hatch:layout:brands-hatch-2#s4",
+   "circuit_id": "brands-hatch",
+   "block_id": "brands-hatch:layout:brands-hatch-2",
+   "claim_type": "measurement",
+   "importance": "critical",
+   "en": "F1 used this layout from 1976 to 1986; the F1DB lists it at 4.207 km with 9 turns.",
+   "uk": "Формула 1 використовувала цю конфігурацію з 1976 до 1986 року; F1DB фіксує її як 4,207 км із 9 поворотами.",
+   "status": "cited_sources_unavailable",
+   "dataset": [
+    {
+     "kind": "layout_length",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:brands-hatch-2",
+       "field": "length_km"
+      }
+     ],
+     "detail": "4.207 km matches brands-hatch-2."
+    },
+    {
+     "kind": "turn_count",
+     "status": "supported",
+     "refs": [
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:brands-hatch-1",
+       "field": "turns"
+      },
+      {
+       "dataset": "f1db",
+       "release": "v2026.17.0",
+       "record": "layout:brands-hatch-2",
+       "field": "turns"
+      }
+     ],
+     "detail": "9 turns matches brands-hatch-1, brands-hatch-2."
+    }
+   ],
+   "passages": []
   }
  ],
  "corner_names": [
@@ -1889,6 +2207,20 @@
     "shallow:few_specifics"
    ],
    "en_uk": []
+  },
+  {
+   "block_id": "brands-hatch:origins:1",
+   "circuit_id": "brands-hatch",
+   "kind": "dossier_origins",
+   "en_words": 136,
+   "uk_words": 127,
+   "sentences": 5,
+   "specificity": 0.287,
+   "lexical_diversity": 0.691,
+   "flags": [],
+   "en_uk": [
+    "number_only_in_en:17.000"
+   ]
   }
  ],
  "sources": [
@@ -1950,6 +2282,21 @@
     "text_sha256": "734de36d84780184c958daa5a8686fc2e83bb9230c24e50f9c651a2e079f6e6d",
     "text_chars": 12018
    }
+  },
+  {
+   "source_id": "src-523e6ec7df90",
+   "url": "https://www.brandshatch.co.uk/century-of-power",
+   "normalized": "https://brandshatch.co.uk/century-of-power",
+   "host": "brandshatch.co.uk",
+   "class": "other",
+   "cited_by": [
+    "brands-hatch:origins:1"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": null
   },
   {
    "source_id": "src-54ea5a239722",
@@ -2096,6 +2443,21 @@
    }
   },
   {
+   "source_id": "src-ac7524388aba",
+   "url": "https://www.motorsportmagazine.com/archive/page/april-1976/28",
+   "normalized": "https://motorsportmagazine.com/archive/page/april-1976/28",
+   "host": "motorsportmagazine.com",
+   "class": "publication",
+   "cited_by": [
+    "brands-hatch:layout:brands-hatch-2"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": null
+  },
+  {
    "source_id": "src-c6d92c8cfae5",
    "url": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
    "normalized": "https://msvstatic.blob.core.windows.net/documents/BSB%2024-11%20TK%20MAP%20071024.pdf",
@@ -2119,6 +2481,23 @@
     "text_sha256": "9577c5596421e28e3a31ca85047bedc9eb57ef789670aa266233d3193493c18c",
     "text_chars": 194
    }
+  },
+  {
+   "source_id": "src-d3ae3dd521cf",
+   "url": "https://heritage.kent.gov.uk/Monument/MKE78692",
+   "normalized": "https://heritage.kent.gov.uk/Monument/MKE78692",
+   "host": "heritage.kent.gov.uk",
+   "class": "other",
+   "cited_by": [
+    "brands-hatch:origins:1",
+    "brands-hatch:historical_fact:1",
+    "brands-hatch:layout:brands-hatch-1"
+   ],
+   "circuits": [
+    "brands-hatch"
+   ],
+   "issues": [],
+   "status": null
   },
   {
    "source_id": "src-de16aee2bac4",

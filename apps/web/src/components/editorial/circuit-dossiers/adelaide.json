@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "review_status": "independent_review_pending",
+ "circuit_id": "adelaide",
+ "writer": "research-batch-1",
+ "written_at": "2026-11-21",
+ "sections": [
+  {
+   "id": "adelaide:origins:1",
+   "kind": "origins",
+   "year": null,
+   "title": {
+    "en": "How Formula 1 came to Adelaide",
+    "uk": "Як Формула 1 прийшла до Аделаїди"
+   },
+   "text": {
+    "en": "Adelaide's Grand Prix grew out of a South Australian push in the early 1980s to give the city an international sporting event. According to a Speedcafe history, travel agent Bill O'Gorman wrote to Premier John Bannon in early 1983 proposing a street race, a Grand Prix Committee followed in August 1983, and the plan went public later that month. Organisers met Bernie Ecclestone in 1984, and on 28 October 1984 Adelaide signed a three-year deal to host the Australian Grand Prix as a world championship round. The circuit was laid out around the Victoria Park racecourse in the city's East Parklands, with public roads closed for the weekend. The first race, the 1985 season finale, was held on 3 November 1985 and won by Keke Rosberg. The event stayed on the calendar until 1995, after which the race moved to Melbourne.",
+    "uk": "Гран-прі Аделаїди виросло з прагнення Південної Австралії на початку 1980-х років подарувати місту міжнародну спортивну подію. За історією видання Speedcafe, турагент Білл О'Горман у 1983 році написав прем'єру штату Джону Беннону з пропозицією вуличних перегонів, у серпні 1983 року було створено Комітет Гран-прі, а згодом план оприлюднили. У 1984 році організатори зустрілися з Берні Екклстоуном, а 28 жовтня 1984 року Аделаїда підписала трирічну угоду про проведення Гран-прі Австралії як етапу чемпіонату світу. Траса пролягла навколо іподрому Victoria Park у східних парклендах міста, а міські дороги на вікенд перекривали. Перші перегони, фінал сезону 1985 року, відбулися 3 листопада 1985 року, їх виграв Кеке Росберг. Подія лишалася в календарі до 1995 року, після чого перегони перейшли до Мельбурна."
+   },
+   "sources": [
+    {
+     "url": "https://speedcafe.com/how-motorsport-came-to-the-streets-of-adelaide/",
+     "publisher": "Speedcafe (Mat Coch, 1 Nov 2020)",
+     "locator": "paragraphs on 1982-1983 proposal, August 1983 committee, 28 October 1984 three-year deal"
+    },
+    {
+     "url": "https://www.motorsportmagazine.com/archive/article/april-2025/96/adelaide-australias-200mph-streets-circuit-that-witnessed-incredible-f1-moments",
+     "publisher": "Motor Sport Magazine (April 2025)",
+     "locator": "body paras 11-17: October 1984 London meeting with Ecclestone; Victoria Park paddock loop; 3 November first race; move to Melbourne from 1996"
+    }
+   ],
+   "review_status": "independent_review_pending"
+  }
+ ],
+ "layout_timeline": [],
+ "corner_names": [],
+ "corners_without_established_name": {
+  "layout_id": "adelaide-1",
+  "turns": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16
+  ]
+ },
+ "inconsistencies": [
+  {
+   "existing_text": "Schumacher and Hill both retired on lap 35 after their collision; Schumacher retained the championship, while Nigel Mansell won the race for Williams.",
+   "problem": "Schumacher did not 'retain' the title: 1994 was his first drivers' championship. Also the collision occurred on lap 36 per Motor Sport (formula1.com lists both as retiring after 35 completed laps).",
+   "correct": "Schumacher won his first championship (first German champion); the pair retired after 35 completed laps.",
+   "source": {
+    "url": "https://www.motorsportmagazine.com/archive/article/december-1994/18/game",
+    "publisher": "Motor Sport Magazine, Dec 1994",
+    "locator": "paragraph beginning 'Schumacher hopped out...'; paragraph on East Terrace incident"
+   },
+   "resolution": "corrected_in_research_draft (pilot-revisions.json)"
+  }
+ ],
+ "limitations": [
+  "Corner names for the 16 turns were not found in any non-Wikipedia source I could open; Wikipedia lists names (Senna Chicane, Stag Turn, Banana Bend, Brabham Straight, Britannia Roundabout hairpin) but only as a lead, and not tied to F1DB turn numbers. None accepted.",
+  "Pre-1985 racing history of the Victoria Park site not confirmed by an opened source; omitted.",
+  "Accounts differ on who proposed the race (Speedcafe: O'Gorman; Motor Sport: Vern Schuppan lobbying Ecclestone); the text uses only the Speedcafe sequence and the shared October 1984 deal date. Needs editorial reconciliation.",
+  "Imagery not assessed."
+ ]
+}
